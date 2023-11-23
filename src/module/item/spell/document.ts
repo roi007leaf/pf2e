@@ -490,6 +490,12 @@ class SpellPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends Ite
             }
         }
 
+        /*                    const templateIds =
+                        canvas.scene?.templates.filter((t) => t.message === message).map((t) => t.id) ?? [];
+                    button.disabled = true;
+                    await canvas.scene?.deleteEmbeddedDocuments("MeasuredTemplate", templateIds);
+                    */
+
         const templateDoc = new MeasuredTemplateDocumentPF2e(templateData, { parent: canvas.scene });
         return new MeasuredTemplatePF2e(templateDoc);
     }

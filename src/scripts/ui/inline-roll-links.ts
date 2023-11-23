@@ -53,11 +53,50 @@ export const InlineRollLinks = {
         }
     },
 
+    injectDeleteTemplateElement: (links: HTMLElement[], foundryDoc: ClientDocument | null): void => {
+        for (const link of links) {
+            if (!foundryDoc || foundryDoc.isOwner) link.classList.add("with-repost");
+
+            const repostButtons = htmlQueryAll(link, "i[data-pf2-repost]");
+            if (repostButtons.length > 0) {
+                if (foundryDoc && !foundryDoc.isOwner) {
+                    for (const button of repostButtons) {
+                        button.remove();
+                    }
+                    link.classList.remove("with-repost");
+                }
+                continue;
+            }
+
+            if (foundryDoc && !foundryDoc.isOwner) continue;
+
+            const deleteTemplateButton = document.createElement("i");
+            const deleteTemplateIcon = "fa-solid fa-fw fa-trash";
+            deleteTemplateButton.classList.add("fa-solid", deleteTemplateIcon);
+            deleteTemplateButton.dataset.pf2Repost = "";
+            deleteTemplateButton.title = game.i18n.localize("PF2E.Repost");
+            link.appendChild(deleteTemplateButton);
+
+            deleteTemplateButton.addEventListener("click", async (event) => {
+                event.stopPropagation();
+                const target = event.target;
+                if (!(target instanceof HTMLElement)) return;
+                const parent = target?.parentElement;
+                if (!parent) return;
+
+                const templateIds =
+                    canvas.scene?.templates.filter((t) => t.message === foundryDoc).map((t) => t.id) ?? [];
+                await canvas.scene?.deleteEmbeddedDocuments("MeasuredTemplate", templateIds);
+            });
+        }
+    },
+
     listen: (html: HTMLElement, foundryDoc: ClientDocument | null = null): void => {
         foundryDoc ??= resolveDocument(html, foundryDoc);
 
         const links = htmlQueryAll(html, inlineSelector).filter((l) => ["A", "SPAN"].includes(l.nodeName));
         InlineRollLinks.injectRepostElement(links, foundryDoc);
+        InlineRollLinks.injectDeleteTemplateElement(links, foundryDoc);
 
         InlineRollLinks.flavorDamageRolls(html, foundryDoc instanceof ActorPF2e ? foundryDoc : null);
 
