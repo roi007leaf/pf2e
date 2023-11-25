@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/ogre-hook.webp",
     "name": "Ogre Hook",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "ogre-hook",
         "bonus": {
             "value": 0
@@ -13,7 +10,7 @@
         "bonusDamage": {
             "value": 0
         },
-        "category": "advanced",
+        "category": "martial",
         "containerId": null,
         "damage": {
             "damageType": "piercing",
@@ -35,16 +32,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": ""
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Bestiary"
-        },
         "splashDamage": {
             "value": null
         },

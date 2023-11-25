@@ -13,9 +13,6 @@
             "name": "Composite Longbow",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "composite-longbow",
                 "bonus": {
                     "value": 0
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "range": 100,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "composite-longbow",
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -121,7 +115,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/leather-armor.webp",
+            "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp",
             "name": "+1 Resilient Leather Armor",
             "sort": 200000,
             "system": {
@@ -151,18 +145,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -181,6 +169,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": "resilient"
@@ -188,12 +181,9 @@
                 "rules": [],
                 "size": "med",
                 "slug": "leather-armor",
-                "source": {
-                    "value": ""
-                },
-                "speedPenalty": null,
+                "speedPenalty": 0,
                 "stackGroup": null,
-                "strength": 0,
+                "strength": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -231,11 +221,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -280,11 +272,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -318,14 +312,16 @@
                 "description": {
                     "value": "<p>The archery specialist makes a longbow Strike. If the attack hits, it deals no damage and instead imparts the bow critical specialization effect. If the attack is a critical hit, the target must succeed at two separate Interact actions to pull the missile free.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -355,6 +351,11 @@
                 "description": {
                     "value": "<p>The archery specialist ignores the penalty to their attack rolls from the volley trait</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -366,9 +367,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -398,14 +396,16 @@
                 "description": {
                     "value": "<p>The archery specialist fires several arrows at once, each aimed to land in a @Template[type:burst|distance:10] within 60 feet. The archery specialist makes a longbow Strike and compares the attack roll result to the AC of all creatures in the burst. The specialist rolls damage only once and applies it to each creature hit. Rain of Arrows counts as three attacks for the archery specialist's multiple attack penalty.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -436,11 +436,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -459,11 +461,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -482,11 +486,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -505,11 +511,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -528,11 +536,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -585,18 +595,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 13
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #166: Despair on Danger Island"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #166: Despair on Danger Island"
             }
         },
         "resources": {},

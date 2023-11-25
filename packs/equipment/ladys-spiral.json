@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/ladys-spiral.webp",
     "name": "Lady's Spiral",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "whip",
         "bonus": {
             "value": 0
@@ -21,7 +18,7 @@
             "die": "d4"
         },
         "description": {
-            "value": "<p>This <em>+1 @UUID[Compendium.pf2e.equipment-srd.Item.Disrupting] striking whip</em> has a single strip of anointed leather wrapped around its hilt in a spiral pattern. The handle of the whip ends in an oak spike that has been sanctified with ashes from Pharasma's Boneyard. If the spike is used to stake a vampire that's vulnerable to being staked, the vampire is immediately destroyed, without having to sever its head and anoint it with holy water. If the whip is buried with a creature, that creature can't rise as an undead as long as the whip remains by its side.</p>"
+            "value": "<p>This <em>+1 @UUID[Compendium.pf2e.equipment-srd.Item.Vitalizing]{Disrupting} striking whip</em> has a single strip of anointed leather wrapped around its hilt in a spiral pattern. The handle of the whip ends in an oak spike that has been sanctified with ashes from Pharasma's Boneyard. If the spike is used to stake a vampire that's vulnerable to being staked, the vampire is immediately destroyed, without having to sever its head and anoint it with holy water. If the whip is buried with a creature, that creature can't rise as an undead as long as the whip remains by its side.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -35,17 +32,12 @@
         "level": {
             "value": 7
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Book of the Dead"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Book of the Dead"
-        },
         "splashDamage": {
             "value": 0
         },
@@ -86,7 +80,6 @@
             "value": [
                 "disarm",
                 "finesse",
-                "necromancy",
                 "nonlethal",
                 "reach",
                 "trip"

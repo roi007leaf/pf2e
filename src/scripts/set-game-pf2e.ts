@@ -2,7 +2,7 @@ import { Action } from "@actor/actions/index.ts";
 import { AutomaticBonusProgression } from "@actor/character/automatic-bonus-progression.ts";
 import { ElementalBlast } from "@actor/character/elemental-blast.ts";
 import { CheckModifier, ModifierPF2e, StatisticModifier } from "@actor/modifiers.ts";
-import { CoinsPF2e } from "@item/physical/helpers.ts";
+import { CoinsPF2e, generateItemName } from "@item/physical/helpers.ts";
 import { CompendiumBrowser } from "@module/apps/compendium-browser/index.ts";
 import { EffectsPanel } from "@module/apps/effects-panel.ts";
 import { LicenseViewer } from "@module/apps/license-viewer/app.ts";
@@ -12,6 +12,7 @@ import { RuleElementPF2e, RuleElements } from "@module/rules/index.ts";
 import { DicePF2e } from "@scripts/dice.ts";
 import {
     calculateXP,
+    checkPrompt,
     editPersistent,
     encouragingWords,
     launchTravelSheet,
@@ -23,7 +24,9 @@ import {
     showEarnIncomePopup,
     stealthForSelected,
     steelYourResolve,
+    takeABreather,
     treatWounds,
+    xpFromEncounter,
 } from "@scripts/macros/index.ts";
 import { remigrate } from "@scripts/system/remigrate.ts";
 import { ActionMacros, SystemActions } from "@system/action-macros/index.ts";
@@ -33,14 +36,13 @@ import { EffectTracker } from "@system/effect-tracker.ts";
 import { ModuleArt } from "@system/module-art.ts";
 import { TextEditorPF2e } from "@system/text-editor.ts";
 import { sluggify } from "@util";
-import { xpFromEncounter } from "./macros/xp/dialog.ts";
 
 /** Expose public game.pf2e interface */
 export const SetGamePF2e = {
     onInit: (): void => {
         type ActionCollection = Record<string, Function> & Map<string, Action>;
         const actions = new Map<string, Action>(
-            SystemActions.map((action) => [action.slug, action])
+            SystemActions.map((action) => [action.slug, action]),
         ) as ActionCollection;
         // keep the old action functions around until everything has been converted
         for (const [name, action] of Object.entries({
@@ -49,6 +51,7 @@ export const SetGamePF2e = {
             restForTheNight,
             earnIncome: showEarnIncomePopup,
             steelYourResolve,
+            takeABreather,
             treatWounds,
             ...ActionMacros,
         })) {
@@ -84,6 +87,7 @@ export const SetGamePF2e = {
             effectTracker: new EffectTracker(),
             gm: {
                 calculateXP,
+                checkPrompt,
                 editPersistent,
                 launchTravelSheet,
                 perceptionForSelected,
@@ -93,7 +97,7 @@ export const SetGamePF2e = {
             licenseViewer: new LicenseViewer(),
             rollActionMacro,
             rollItemMacro,
-            system: { moduleArt: new ModuleArt(), remigrate, sluggify },
+            system: { generateItemName, moduleArt: new ModuleArt(), remigrate, sluggify },
             variantRules: { AutomaticBonusProgression },
         };
         game.pf2e = mergeObject(game.pf2e ?? {}, initSafe);

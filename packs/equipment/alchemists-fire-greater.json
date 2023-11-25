@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-bombs/alchemists-fire.webp",
     "name": "Alchemist's Fire (Greater)",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "alchemical-bomb",
         "bonus": {
             "value": 2
@@ -26,7 +23,7 @@
             }
         },
         "description": {
-            "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<hr />\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 3d8 fire damage, 3 persistent fire damage, and 3 fire splash damage. You gain a +2 item bonus to attack rolls.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -40,16 +37,11 @@
         "level": {
             "value": 11
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -69,6 +61,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder GM Core"
+        },
         "quantity": 1,
         "range": 20,
         "reload": {
@@ -76,9 +73,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "splashDamage": {
             "value": 3
         },
@@ -97,6 +91,7 @@
             ]
         },
         "usage": {
+            "canBeAmmo": false,
             "value": "held-in-one-hand"
         },
         "weight": {

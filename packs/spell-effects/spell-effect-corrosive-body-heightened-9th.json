@@ -15,6 +15,11 @@
         "level": {
             "value": 9
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
+        },
         "rules": [
             {
                 "damageType": "acid",
@@ -44,14 +49,11 @@
                 "diceNumber": 1,
                 "key": "DamageDice",
                 "predicate": [
-                  "acid"
+                    "acid"
                 ],
                 "selector": "spell-damage"
             }
         ],
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "start": {
             "initiative": null,
             "value": 0

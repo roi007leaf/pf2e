@@ -13,9 +13,6 @@
             "name": "War Flail",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "war-flail",
                 "bonus": {
                     "value": 0
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "war-flail",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -128,10 +122,10 @@
                 "acBonus": 1,
                 "baseItem": "padded-armor",
                 "category": "light",
-                "checkPenalty": null,
+                "checkPenalty": 0,
                 "containerId": null,
                 "description": {
-                    "value": "<p>This +2 resilient padded armor is woven from many strands of gut cord strung with dried organs and preserved xulgath scent glands. When worn, it infuses your body with a ghastly and nauseating flavor.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">F</span> envision</p>\n<p><strong>Trigger</strong> You are grabbed or are hit by an unarmed attack</p>\n<hr />\n<p><strong>Effect</strong> Your attacker must attempt a DC 28 Fortitude saving throw. Creatures with a stench aura, such as otyughs and xulgaths, are immune to this effect.</p>\n<p><strong>Success</strong> The creature is unaffected and is immune to the effects of the noxious jerkin for 1 minute.</p>\n<p><strong>Failure</strong> The creature is sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature is sickened 1 and is slowed 1 for 1 round.</p>"
+                    "value": "<p>This +2 resilient padded armor is woven from many strands of gut cord strung with dried organs and preserved xulgath scent glands. When worn, it infuses your body with a ghastly and nauseating flavor.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Trigger</strong> You are grabbed or are hit by an unarmed attack</p>\n<hr />\n<p><strong>Effect</strong> Your attacker must attempt a DC 28 Fortitude saving throw. Creatures with a stench aura, such as otyughs and xulgaths, are immune to this effect.</p>\n<p><strong>Success</strong> The creature is unaffected and is immune to the effects of the noxious jerkin for 1 minute.</p>\n<p><strong>Failure</strong> The creature is sickened 1.</p>\n<p><strong>Critical Failure</strong> The creature is sickened 1 and is slowed 1 for 1 round.</p>"
                 },
                 "dexCap": 3,
                 "equipped": {
@@ -151,18 +145,12 @@
                 "level": {
                     "value": 13
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 2
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
@@ -181,6 +169,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #154: Siege of the Dinosaurs"
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": "resilient"
@@ -188,17 +181,24 @@
                 "rules": [],
                 "size": "med",
                 "slug": "noxious-jerkin",
-                "source": {
-                    "value": "Pathfinder #154: Siege of the Dinosaurs"
+                "specific": {
+                    "material": {
+                        "grade": null,
+                        "type": null
+                    },
+                    "runes": {
+                        "potency": 2,
+                        "resilient": 1
+                    },
+                    "value": true
                 },
-                "speedPenalty": null,
+                "speedPenalty": 0,
                 "stackGroup": null,
-                "strength": 0,
+                "strength": null,
                 "traits": {
                     "rarity": "rare",
                     "value": [
                         "comfort",
-                        "evocation",
                         "magical"
                     ]
                 },
@@ -244,11 +244,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -288,11 +290,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -327,11 +331,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -365,14 +371,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -402,14 +410,16 @@
                 "description": {
                     "value": "<p>Arskuva can't use reactions. If Helg issues a mental command as an action with the concentrate trait, Arskuva can use 2 actions on her turn. Otherwise, she can use only 1 action to Stride or Strike.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -435,11 +445,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -458,11 +470,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -532,24 +546,22 @@
             },
             "weaknesses": [
                 {
-                    "type": "positive",
+                    "type": "vitality",
                     "value": 15
                 }
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 12
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #154: Siege of the Dinosaurs"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #154: Siege of the Dinosaurs"
             }
         },
         "resources": {},
@@ -584,8 +596,10 @@
                 "value": "med"
             },
             "value": [
+                "evil",
                 "minion",
-                "undead"
+                "undead",
+                "unholy"
             ]
         }
     },

@@ -8,9 +8,6 @@
             "name": "+2 Greater Striking Longsword",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": null,
                 "bonus": {
                     "value": 0
@@ -45,17 +42,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -74,6 +66,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -82,9 +79,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -109,7 +103,7 @@
         },
         {
             "_id": "nUbnbXqOAEtycKyP",
-            "img": "systems/pf2e/icons/equipment//armor/fullplate.webp",
+            "img": "icons/equipment/chest/breastplate-layered-steel-green.webp",
             "name": "+2 Resilient Full Plate",
             "sort": 200000,
             "system": {
@@ -121,7 +115,7 @@
                 "description": {
                     "value": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of padded armor (see below) and a pair of gauntlets.</p>"
                 },
-                "dexCap": 0,
+                "dexCap": null,
                 "equipped": {
                     "carryType": "worn",
                     "handsHeld": 0,
@@ -139,18 +133,12 @@
                 "level": {
                     "value": 2
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 2
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
@@ -199,6 +187,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": "resilient"
@@ -206,9 +199,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "speedPenalty": -10,
                 "stackGroup": null,
                 "strength": 4,
@@ -254,32 +244,28 @@
                 "level": {
                     "value": 7
                 },
-                "negateBulk": {
-                    "value": ""
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 325
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "uncommon",
                     "value": [
-                        "conjuration",
                         "invested",
                         "magical"
                     ]
@@ -315,7 +301,7 @@
                 },
                 "containerId": null,
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> Envision</p>\n<p><strong>Requirements</strong> You are an expert in Stealth</p>\n<hr />\n<p>This teardrop-shaped gemstone has triangular facets and looks suitable for fancy attire, although close inspection shows that it's hollow. When it's activated, you can instantly impart up to 1 minute of speech (roughly 150 words) telepathically to any creatures you choose within 100 feet. You can impart this instantaneous telepathic message to creatures that you perceive and creatures @UUID[Compendium.pf2e.conditionitems.Item.Hidden] to you, but you can't do so to @UUID[Compendium.pf2e.conditionitems.Item.Undetected] creatures. Once used, the whisper briolette becomes unusable and subtly vanishes within the next few minutes, rather than crumbling to dust.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Envision</p>\n<p><strong>Requirements</strong> You are an expert in Stealth</p>\n<hr />\n<p>This teardrop-shaped gemstone has triangular facets and looks suitable for fancy attire, although close inspection shows that it's hollow. When it's activated, you can instantly impart up to 1 minute of speech (roughly 150 words) telepathically to any creatures you choose within 100 feet. You can impart this instantaneous telepathic message to creatures that you perceive and creatures @UUID[Compendium.pf2e.conditionitems.Item.Hidden] to you, but you can't do so to @UUID[Compendium.pf2e.conditionitems.Item.Undetected] creatures. Once used, the whisper briolette becomes unusable and subtly vanishes within the next few minutes, rather than crumbling to dust.</p>"
                 },
                 "equipped": {
                     "carryType": "worn"
@@ -331,33 +317,29 @@
                 "level": {
                     "value": 7
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 55
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "uncommon",
                     "value": [
                         "consumable",
-                        "divination",
                         "magical",
                         "mental",
                         "talisman"
@@ -404,11 +386,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -438,14 +422,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature within the monster's reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p><strong>Effect</strong> The monster attempts a melee Strike against the triggering creature. If the attack is a critical hit and the trigger was a manipulate action, the monster disrupts that action. This Strike doesn't count toward the monster's multiple attack penalty, and its multiple attack penalty doesn't apply to this Strike.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -475,6 +461,11 @@
                 "description": {
                     "value": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>Allies of lower level than Wynsal in the aura gain the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Attack of Opportunity] reaction. Allies who already have the Attack of Opportunity reaction can use it when a creature within their reach uses a concentrate action, in addition to normal triggers, and they disrupt a triggering concentrate action on a critical hit.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -483,15 +474,10 @@
                         "key": "Aura",
                         "radius": 60,
                         "slug": "tactical-aura",
-                        "traits": [
-                            "aura"
-                        ]
+                        "traits": []
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -523,14 +509,16 @@
                 "description": {
                     "value": "<p>Wynsal commands his allies to take action. Allies within 120 feet who hear and understand his order are @UUID[Compendium.pf2e.conditionitems.Item.Quickened]{Quickened 1} for 1 round and can use this extra action to Stride, Strike, or Step.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -563,14 +551,16 @@
                 "description": {
                     "value": "<p>Wynsal either ends a nonpermanent condition affecting him or counteracts a nonpermanent spell affecting him (counteract level 17th, counteract check [[/r 1d20+30 #Counteract]]{+30}). This doesn't remove Hit Point damage or prevent the spell or effect from affecting others. It can't remove an ongoing affliction or conditions from a situation outside his control (such as being grappled or flanked).</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -602,12 +592,17 @@
                 "description": {
                     "value": "<p>Wynsal deals 3d8 extra damage to any creature that's within reach of at least two of his allies.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [
                     {
-                        "domain": "damage-roll",
+                        "domain": "damage",
                         "key": "RollOption",
                         "option": "formation-attack",
                         "toggleable": true
@@ -623,9 +618,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -655,14 +647,16 @@
                 "description": {
                     "value": "<p>A foe that takes damage from Wynsal's melee Strike is @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1} for 1 round. If it's already slowed, the value of the slowed condition increases by 1.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "hampering-strike",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -691,11 +685,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -714,11 +710,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -737,11 +735,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -760,11 +760,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -783,11 +785,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -806,11 +810,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -829,11 +835,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -897,18 +905,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "LG"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 17
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #160: Assault on Hunting Lodge Seven"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #160: Assault on Hunting Lodge Seven"
             }
         },
         "resources": {},
@@ -948,8 +954,10 @@
                 "value": "med"
             },
             "value": [
+                "good",
                 "human",
-                "humanoid"
+                "humanoid",
+                "lawful"
             ]
         }
     },

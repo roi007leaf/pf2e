@@ -29,7 +29,8 @@ export const SetAsInitiative = {
             setInitiativeButton.title = game.i18n.localize("PF2E.ClickToSetInitiative");
             setInitiativeButton.appendChild(fontAwesomeIcon("fa-swords", { style: "solid" }));
             btnContainer.appendChild(setInitiativeButton);
-            li.querySelector(".dice-total")?.appendChild(btnContainer);
+            const selector = message.isReroll ? ".pf2e-reroll-second .dice-total" : ".dice-total";
+            li.querySelector(selector)?.appendChild(btnContainer);
 
             setInitiativeButton.addEventListener("click", async (event): Promise<void> => {
                 event.stopPropagation();
@@ -38,7 +39,7 @@ export const SetAsInitiative = {
                     ui.notifications.error(
                         game.i18n.format("PF2E.Encounter.NoTokenInScene", {
                             actor: message.actor?.name ?? message.user?.name ?? "",
-                        })
+                        }),
                     );
                     return;
                 }
@@ -50,7 +51,7 @@ export const SetAsInitiative = {
                 await combatant.encounter.setInitiative(combatant.id, value);
 
                 ui.notifications.info(
-                    game.i18n.format("PF2E.Encounter.InitiativeSet", { actor: actor.name, initiative: value })
+                    game.i18n.format("PF2E.Encounter.InitiativeSet", { actor: actor.name, initiative: value }),
                 );
             });
         }

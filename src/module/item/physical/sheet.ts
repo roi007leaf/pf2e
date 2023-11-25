@@ -1,45 +1,50 @@
-import { ItemSheetDataPF2e } from "@item/sheet/data-types.ts";
+import { AutomaticBonusProgression as ABP } from "@actor/character/automatic-bonus-progression.ts";
 import { createSheetTags, SheetOptions } from "@module/sheet/helpers.ts";
-import { htmlQueryAll, objectHasKey } from "@util";
-import { ItemSheetPF2e } from "../sheet/base.ts";
+import * as R from "remeda";
+import { ItemSheetDataPF2e, ItemSheetOptions, ItemSheetPF2e } from "../base/sheet/base.ts";
+import type { PhysicalItemPF2e } from "./document.ts";
 import {
     BasePhysicalItemSource,
     CoinsPF2e,
     ItemActivation,
-    MaterialGradeData,
     MaterialValuationData,
-    PhysicalItemPF2e,
     PhysicalItemType,
     PreciousMaterialGrade,
 } from "./index.ts";
 import { PRECIOUS_MATERIAL_GRADES } from "./values.ts";
 
 class PhysicalItemSheetPF2e<TItem extends PhysicalItemPF2e> extends ItemSheetPF2e<TItem> {
-    /** Show the identified data for editing purposes */
-    override async getData(options?: Partial<DocumentSheetOptions>): Promise<PhysicalItemSheetData<TItem>> {
-        const sheetData: ItemSheetDataPF2e<TItem> = await super.getData(options);
+    static override get defaultOptions(): ItemSheetOptions {
+        const options = super.defaultOptions;
+        options.classes.push("physical");
+        return { ...options, hasSidebar: true };
+    }
 
-        const basePrice = new CoinsPF2e(this.item._source.system.price.value);
+    /** Show the identified data for editing purposes */
+    override async getData(options?: Partial<ItemSheetOptions>): Promise<PhysicalItemSheetData<TItem>> {
+        const sheetData = await super.getData(options);
+        const { item } = this;
+        const basePrice = new CoinsPF2e(item._source.system.price.value);
         const priceAdjustment = ((): "higher" | "lower" | null => {
             const baseCopperValue = basePrice.copperValue;
-            const derivedCopperValue = this.item.system.price.value.copperValue;
+            const derivedCopperValue = item.system.price.value.copperValue;
             return derivedCopperValue > baseCopperValue
                 ? "higher"
                 : derivedCopperValue < baseCopperValue
-                ? "lower"
-                : null;
+                  ? "lower"
+                  : null;
         })();
 
         const { actionTraits } = CONFIG.PF2E;
 
         // Enrich content
-        const rollData = { ...this.item.getRollData(), ...this.actor?.getRollData() };
+        const rollData = { ...item.getRollData(), ...this.actor?.getRollData() };
         sheetData.enrichedContent.unidentifiedDescription = await TextEditor.enrichHTML(
             sheetData.item.system.identification.unidentified.data.description.value,
-            { rollData, async: true }
+            { rollData, async: true },
         );
         const activations: PhysicalItemSheetData<TItem>["activations"] = [];
-        for (const action of this.item.activations) {
+        for (const action of item.activations) {
             const description = await TextEditor.enrichHTML(action.description.value, { rollData, async: true });
             activations.push({
                 action,
@@ -53,17 +58,41 @@ class PhysicalItemSheetPF2e<TItem extends PhysicalItemPF2e> extends ItemSheetPF2
         // Show source value for item size in case it is changed by a rule element
         sheetData.data.size = this.item._source.system.size;
 
+        const baseData = item._source;
+        const hintText = ABP.isEnabled(this.actor)
+            ? "PF2E.Item.Weapon.FromABP"
+            : "PF2E.Item.Weapon.FromMaterialAndRunes";
+        const adjustedLevelHint =
+            item.level !== baseData.system.level.value
+                ? game.i18n.format(hintText, {
+                      property: game.i18n.localize("PF2E.LevelLabel"),
+                      value: item.level,
+                  })
+                : null;
+        const adjustedPriceHint = (() => {
+            const basePrice = new CoinsPF2e(baseData.system.price.value).scale(baseData.system.quantity).copperValue;
+            const derivedPrice = item.assetValue.copperValue;
+            return basePrice !== derivedPrice
+                ? game.i18n.format(hintText, {
+                      property: game.i18n.localize("PF2E.PriceLabel"),
+                      value: item.price.value.toString(),
+                  })
+                : null;
+        })();
+
         return {
             ...sheetData,
             itemType: game.i18n.localize("PF2E.ItemTitle"),
+            baseLevel: baseData.system.level.value,
+            adjustedLevelHint,
             basePrice,
             priceAdjustment,
+            adjustedPriceHint,
             actionTypes: CONFIG.PF2E.actionTypes,
             actionsNumber: CONFIG.PF2E.actionsNumber,
             bulkTypes: CONFIG.PF2E.bulkTypes,
             frequencies: CONFIG.PF2E.frequencies,
             sizes: CONFIG.PF2E.actorSizes,
-            stackGroups: CONFIG.PF2E.stackGroups,
             usages: CONFIG.PF2E.usages,
             isPhysical: true,
             activations,
@@ -82,30 +111,32 @@ class PhysicalItemSheetPF2e<TItem extends PhysicalItemPF2e> extends ItemSheetPF2
         return super.render(force, options);
     }
 
-    protected prepareMaterials(valuationData: MaterialValuationData): PreparedMaterials {
-        const { material } = this.item;
+    protected prepareMaterials(valuationData: MaterialValuationData): MaterialSheetData {
         const preciousMaterials: Record<string, string> = CONFIG.PF2E.preciousMaterials;
-        const materials = Object.entries(valuationData).reduce((result, [materialKey, materialData]) => {
-            const validGrades = [...PRECIOUS_MATERIAL_GRADES].filter((grade) => !!materialData[grade]);
-            if (validGrades.length) {
-                result[materialKey] = {
-                    label: game.i18n.localize(preciousMaterials[materialKey]),
-                    grades: Object.fromEntries(
-                        validGrades.map((grade) => [
-                            grade,
-                            {
-                                ...materialData[grade],
-                                label: game.i18n.localize(CONFIG.PF2E.preciousMaterialGrades[grade]),
-                            },
-                        ])
-                    ),
-                };
-            }
+        const materials = Object.entries(valuationData).reduce(
+            (result, [materialKey, materialData]) => {
+                const validGrades = [...PRECIOUS_MATERIAL_GRADES].filter((grade) => !!materialData[grade]);
+                if (validGrades.length) {
+                    result[materialKey] = {
+                        label: game.i18n.localize(preciousMaterials[materialKey]),
+                        grades: Object.fromEntries(
+                            validGrades.map((grade) => [
+                                grade,
+                                {
+                                    value: JSON.stringify({ type: materialKey, grade: grade }),
+                                    label: game.i18n.localize(CONFIG.PF2E.preciousMaterialGrades[grade]),
+                                },
+                            ]),
+                        ),
+                    };
+                }
 
-            return result;
-        }, {} as MaterialSheetData["materials"]);
+                return result;
+            },
+            {} as MaterialSheetData["materials"],
+        );
 
-        const value = material.precious ? `${material.precious.type}|${material.precious.grade}` : "";
+        const value = JSON.stringify(R.pick(this.item.material, ["type", "grade"]));
         return { value, materials };
     }
 
@@ -115,26 +146,6 @@ class PhysicalItemSheetPF2e<TItem extends PhysicalItemPF2e> extends ItemSheetPF2
 
     override activateListeners($html: JQuery): void {
         super.activateListeners($html);
-        const html = $html[0];
-
-        for (const input of htmlQueryAll<HTMLInputElement>(html, "input[data-property]")) {
-            const propertyPath = input.dataset.property ?? "";
-            const baseValue =
-                input.dataset.valueBase ?? String(getProperty(this.item._source, propertyPath) ?? "").trim();
-
-            input.addEventListener("focus", () => {
-                input.dataset.value = input.value;
-                input.value = baseValue;
-                input.name = propertyPath;
-            });
-
-            input.addEventListener("blur", () => {
-                input.removeAttribute("name");
-                if (input.value === baseValue) {
-                    input.value = input.dataset.value ?? "";
-                }
-            });
-        }
 
         $html.find("[data-action=activation-add]").on("click", (event) => {
             event.preventDefault();
@@ -174,48 +185,28 @@ class PhysicalItemSheetPF2e<TItem extends PhysicalItemPF2e> extends ItemSheetPF2
                 this.item.update({ [`system.activations.${id}.-=frequency`]: null });
             }
         });
-
-        for (const hintHoverZone of htmlQueryAll(html, "i[data-action=hint-tooltip]")) {
-            $(hintHoverZone).tooltipster({
-                maxWidth: Number(hintHoverZone.dataset.tooltipWidth) || 350,
-                theme: "crb-hover",
-                content: game.i18n.localize(hintHoverZone.title),
-            });
-        }
     }
 
     protected override async _updateObject(event: Event, formData: Record<string, unknown>): Promise<void> {
-        if (typeof formData["system.level.value"] === "number") {
-            formData["system.level.value"] = Math.trunc(Math.abs(formData["system.level.value"]));
+        if (formData["system.quantity"] === null) {
+            formData["system.quantity"] = 0;
         }
 
         // Process precious-material selection
-        if (typeof formData["preciousMaterial"] === "string") {
-            const typeGrade = formData["preciousMaterial"].split("|");
-            const isValidSelection =
-                objectHasKey(CONFIG.PF2E.preciousMaterials, typeGrade[0] ?? "") &&
-                objectHasKey(CONFIG.PF2E.preciousMaterialGrades, typeGrade[1] ?? "");
-            if (isValidSelection) {
-                formData["system.preciousMaterial.value"] = typeGrade[0];
-                formData["system.preciousMaterialGrade.value"] = typeGrade[1];
-            } else {
-                formData["system.preciousMaterial.value"] = null;
-                formData["system.preciousMaterialGrade.value"] = null;
-            }
-
-            delete formData["preciousMaterial"];
+        const [materialType, materialGrade] = [formData["system.material.type"], formData["system.material.grade"]];
+        const typeIsValid =
+            materialType === undefined ||
+            (typeof materialType === "string" && materialType in CONFIG.PF2E.preciousMaterials);
+        const gradeIsValid =
+            materialGrade === undefined ||
+            (typeof materialGrade === "string" && materialGrade in CONFIG.PF2E.preciousMaterialGrades);
+        if (!typeIsValid || !gradeIsValid) {
+            formData["system.material.type"] = null;
+            formData["system.material.grade"] = null;
         }
 
-        // Normalize nullable fields to actual `null`s
-        const propertyPaths = [
-            "system.baseItem",
-            "system.preciousMaterial.value",
-            "system.preciousMaterialGrade.value",
-            "system.group",
-            "system.group.value",
-        ];
-        for (const path of propertyPaths) {
-            if (formData[path] === "") formData[path] = null;
+        if (formData["system.baseItem"] === "") {
+            formData["system.baseItem"] = null;
         }
 
         // Convert price from a string to an actual object
@@ -242,15 +233,17 @@ class PhysicalItemSheetPF2e<TItem extends PhysicalItemPF2e> extends ItemSheetPF2
 
 interface PhysicalItemSheetData<TItem extends PhysicalItemPF2e> extends ItemSheetDataPF2e<TItem> {
     isPhysical: true;
+    baseLevel: number;
     basePrice: CoinsPF2e;
     priceAdjustment: "higher" | "lower" | null;
-    actionTypes: ConfigPF2e["PF2E"]["actionTypes"];
-    actionsNumber: ConfigPF2e["PF2E"]["actionsNumber"];
-    bulkTypes: ConfigPF2e["PF2E"]["bulkTypes"];
-    frequencies: ConfigPF2e["PF2E"]["frequencies"];
-    sizes: ConfigPF2e["PF2E"]["actorSizes"];
-    stackGroups: ConfigPF2e["PF2E"]["stackGroups"];
-    usages: ConfigPF2e["PF2E"]["usages"];
+    adjustedPriceHint: string | null;
+    adjustedLevelHint: string | null;
+    actionTypes: typeof CONFIG.PF2E.actionTypes;
+    actionsNumber: typeof CONFIG.PF2E.actionsNumber;
+    bulkTypes: typeof CONFIG.PF2E.bulkTypes;
+    frequencies: typeof CONFIG.PF2E.frequencies;
+    sizes: typeof CONFIG.PF2E.actorSizes;
+    usages: typeof CONFIG.PF2E.usages;
     bulkDisabled: boolean;
     activations: {
         action: ItemActivation;
@@ -261,19 +254,15 @@ interface PhysicalItemSheetData<TItem extends PhysicalItemPF2e> extends ItemShee
     }[];
 }
 
-interface PreparedMaterials {
-    value: string;
-    materials: Record<string, { label: string; grades: { [K in PreciousMaterialGrade]?: MaterialGradeData } }>;
+interface MaterialSheetEntry {
+    label: string;
+    grades: Partial<Record<PreciousMaterialGrade, { value: string; label: string }>>;
 }
 
-type MaterialSheetEntry = {
-    label: string;
-    grades: Partial<Record<PreciousMaterialGrade, MaterialGradeData>>;
-};
-
-type MaterialSheetData = {
+interface MaterialSheetData {
     value: string;
     materials: Record<string, MaterialSheetEntry>;
-};
+}
 
-export { MaterialSheetData, MaterialSheetEntry, PhysicalItemSheetData, PhysicalItemSheetPF2e, PreparedMaterials };
+export { PhysicalItemSheetPF2e };
+export type { MaterialSheetData, MaterialSheetEntry, PhysicalItemSheetData };

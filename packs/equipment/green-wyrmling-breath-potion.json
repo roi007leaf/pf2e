@@ -8,14 +8,14 @@
         },
         "baseItem": null,
         "charges": {
-            "max": "1",
-            "value": "1"
+            "max": 1,
+            "value": 1
         },
         "consumableType": {
             "value": "poison"
         },
         "consume": {
-            "value": null
+            "value": ""
         },
         "containerId": null,
         "description": {
@@ -32,32 +32,28 @@
         "level": {
             "value": 5
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 30
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Beginner Box"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Beginner Box"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
                 "consumable",
-                "evocation",
                 "magical",
                 "poison",
                 "potion"

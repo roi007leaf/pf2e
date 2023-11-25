@@ -13,9 +13,6 @@
             "name": "Javelin",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "javelin",
                 "bonus": {
                     "value": 0
@@ -50,16 +47,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 10,
                 "range": 30,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "javelin",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -123,9 +117,6 @@
             "name": "Longspear",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": null
-                },
                 "baseItem": "longspear",
                 "bonus": {
                     "value": 0
@@ -160,16 +151,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -189,6 +175,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -197,9 +188,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "longspear",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -229,7 +217,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/leather-armor.webp",
+            "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp",
             "name": "Leather Armor",
             "sort": 300000,
             "system": {
@@ -259,18 +247,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
@@ -289,6 +271,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": ""
@@ -296,12 +283,9 @@
                 "rules": [],
                 "size": "med",
                 "slug": "leather-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "speedPenalty": null,
+                "speedPenalty": 0,
                 "stackGroup": null,
-                "strength": 0,
+                "strength": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -344,11 +328,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -385,11 +371,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": "jaws",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -424,11 +412,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": "tail",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -470,11 +460,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -508,14 +500,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -545,14 +539,16 @@
                 "description": {
                     "value": "<p>A lizardfolk warrior can hold their breath for 180 rounds (18 minutes).</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -582,14 +578,16 @@
                 "description": {
                     "value": "<p>With a quick sprint, the lizardfolk warrior dashes up to their foe and swings. They Stride or Swim twice. If they end their movement within melee reach of at least one enemy, they can make a melee Strike against that enemy.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -616,14 +614,16 @@
                 "description": {
                     "value": "<p>Non-lizardfolk creatures in difficult terrain and non-lizardfolk creatures that are in water and lack a swim Speed are @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] to the lizardfolk scout.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -652,11 +652,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -675,11 +677,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -698,11 +702,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -721,11 +727,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -783,18 +791,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CN"
-            },
             "blurb": "Variant lizardfolk scout",
-            "creatureType": "Humanoid",
             "level": {
                 "value": 2
             },
             "privateNotes": "",
             "publicNotes": "<p>When human scholars speak of ancient civilizations, they usually turn their focus to themselves, researching and lecturing on the first human empires. When they drift to others, they invariably look to cultures that had conflicts or alliances with ancient humanity. That the culture of the people called lizardfolk often gets ignored or forgotten even by well-meaning researchers is thus no surprise, but to the lizardfolk themselves it is no matter. They know their history and value its integrity and privacy-if younger ancestries like humanity aren't interested in learning from lizardfolk empires dating back to before the first human knocked two rocks together to make their first campfire, that's fine with them.</p>\n<p>The word 'lizardfolk' is an excellent example of humanity's narrow-sighted view of this culture. The name of their people is 'iruxi', but these reptilian humanoids have patiently and good-naturedly accepted the name 'lizardfolk' as a variant, and they generally resist urges to call humans and other mammalians similarly derivative names in return. Iruxis dwell and thrive in all tropical and temperate biomes, but they are most at home in swamplands, coastal regions, and riverlands, for they are talented swimmers, and fish and aquatic plants make up a large part of their preferred diets.</p>",
-            "source": {
-                "value": "Pathfinder Kingmaker"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
             }
         },
         "resources": {},
@@ -829,6 +835,7 @@
                 "value": "med"
             },
             "value": [
+                "chaotic",
                 "humanoid",
                 "lizardfolk"
             ]

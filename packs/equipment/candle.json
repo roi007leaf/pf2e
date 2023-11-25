@@ -1,6 +1,6 @@
 {
     "_id": "Ti4gWILk69LPxKuU",
-    "img": "systems/pf2e/icons/equipment/adventuring-gear/candle.webp",
+    "img": "icons/sundries/lights/candle-unlit-grey.webp",
     "name": "Candle",
     "system": {
         "autoDestroy": {
@@ -32,20 +32,20 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "per": 10,
             "value": {
                 "cp": 1
             }
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
         },
         "quantity": 1,
         "rules": [
@@ -77,13 +77,10 @@
                 "predicate": [
                     "lit-candle"
                 ],
-                "value": "systems/pf2e/icons/equipment/adventuring-gear/candle.webp"
+                "value": "icons/sundries/lights/candle-unlit-grey.webp"
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",

@@ -1,7 +1,6 @@
-import { AfflictionPF2e, ConditionPF2e, EffectPF2e, ItemPF2e } from "@item";
+import { ItemPF2e, type AfflictionPF2e, type ConditionPF2e } from "@item";
 import { ActionTrait } from "@item/ability/types.ts";
-import { ItemSheetPF2e } from "@item/sheet/base.ts";
-import { ItemSheetDataPF2e } from "@item/sheet/data-types.ts";
+import { ItemSheetDataPF2e, ItemSheetOptions, ItemSheetPF2e } from "@item/base/sheet/base.ts";
 import { ConditionManager } from "@system/conditions/index.ts";
 import { DamageCategoryUnique } from "@system/damage/types.ts";
 import { DAMAGE_CATEGORIES_UNIQUE } from "@system/damage/values.ts";
@@ -11,22 +10,24 @@ import * as R from "remeda";
 import { AfflictionConditionData, AfflictionDamage, AfflictionOnset, AfflictionStageData } from "./data.ts";
 
 class AfflictionSheetPF2e extends ItemSheetPF2e<AfflictionPF2e> {
-    static override get defaultOptions(): DocumentSheetOptions {
-        const options = super.defaultOptions;
-        options.dragDrop = [{ dropSelector: "[data-stage-id]" }];
-        return options;
+    static override get defaultOptions(): ItemSheetOptions {
+        return {
+            ...super.defaultOptions,
+            dragDrop: [{ dropSelector: "[data-stage-id]" }],
+            hasSidebar: true,
+        };
     }
 
-    override async getData(options?: Partial<DocumentSheetOptions>): Promise<AfflictionSheetData> {
+    override async getData(options?: Partial<ItemSheetOptions>): Promise<AfflictionSheetData> {
+        const sheetData = await super.getData(options);
+
         // Find the "defining trait" for item sheet header purposes
         const definingTraits: ActionTrait[] = ["disease", "poison", "curse"];
         const traits = new Set(this.item.system.traits.value);
         const definingTrait = definingTraits.find((t) => traits.has(t));
 
         return {
-            ...(await super.getData(options)),
-            hasDetails: true,
-            hasSidebar: true,
+            ...sheetData,
             itemType: game.i18n.localize(definingTrait ? CONFIG.PF2E.actionTraits[definingTrait] : "PF2E.LevelLabel"),
             conditionTypes: R.omit(CONFIG.PF2E.conditionTypes, ["persistent-damage"]),
             damageTypes: CONFIG.PF2E.damageTypes,
@@ -42,11 +43,14 @@ class AfflictionSheetPF2e extends ItemSheetPF2e<AfflictionPF2e> {
         const stages: Record<string, AfflictionStageSheetData> = {};
 
         for (const [idx, [id, stage]] of Object.entries(Object.entries(this.item.system.stages))) {
-            const conditions = Object.entries(stage.conditions).reduce((result, [key, data]) => {
-                const document = ConditionManager.getCondition(data.slug);
-                result[key] = { ...data, document };
-                return result;
-            }, {} as Record<string, AfflictionConditionSheetData>);
+            const conditions = Object.entries(stage.conditions).reduce(
+                (result, [key, data]) => {
+                    const document = ConditionManager.getCondition(data.slug);
+                    result[key] = { ...data, document };
+                    return result;
+                },
+                {} as Record<string, AfflictionConditionSheetData>,
+            );
 
             const effectDocuments = await UUIDUtils.fromUUIDs(stage.effects.map((e) => e.uuid));
 
@@ -85,6 +89,10 @@ class AfflictionSheetPF2e extends ItemSheetPF2e<AfflictionPF2e> {
                 damage: {},
                 conditions: {},
                 effects: [],
+                duration: {
+                    value: -1,
+                    unit: "unlimited",
+                },
             };
 
             const id = randomID();
@@ -192,7 +200,7 @@ class AfflictionSheetPF2e extends ItemSheetPF2e<AfflictionPF2e> {
             }
         })();
 
-        if (item instanceof EffectPF2e) {
+        if (item?.isOfType("effect")) {
             const effects = [...stage.effects, { uuid: item.uuid }];
             this.item.update({ system: { stages: { [stageId]: { effects } } } });
         } else {
@@ -203,7 +211,7 @@ class AfflictionSheetPF2e extends ItemSheetPF2e<AfflictionPF2e> {
     protected override async _updateObject(event: Event, formData: Record<string, unknown>): Promise<void> {
         // Set empty-string damage categories to `null`
         const categories = Object.keys(formData).filter((k) =>
-            /^system\.stages\.[a-z0-9]+\.damage\.[a-z0-9]+\.category$/i.test(k)
+            /^system\.stages\.[a-z0-9]+\.damage\.[a-z0-9]+\.category$/i.test(k),
         );
         for (const key of categories) {
             formData[key] ||= null;

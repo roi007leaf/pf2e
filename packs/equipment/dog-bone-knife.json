@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/dog-bone-knife.webp",
     "name": "Dog-Bone Knife",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "dagger",
         "bonus": {
             "value": 0
@@ -21,7 +18,7 @@
             "die": "d4"
         },
         "description": {
-            "value": "<p>The blade of this <em>+1 striking dagger</em> is made from the thigh bone of a canine that died in the act of protecting its master. A werecreature or other creature willingly under the effects of a non-permanent polymorph effect damaged by a <em>dog‑bone knife</em> must attempt a @Check[type:will|dc:19] save or immediately revert to its natural form-this has no effect on a creature unwillingly polymorphed. On a successful save, the creature is temporarily immune to this effect for 1 minute. Kushtakas and other creatures vulnerable to canines take a -2 circumstance penalty to saves against this effect, and this weapon overcomes any resistance such creatures have to physical attacks.</p>"
+            "value": "<p>The blade of this <em>+1 striking dagger</em> is made from the thigh bone of a canine that died in the act of protecting its master. A werecreature or other creature willingly under the effects of a non-permanent polymorph effect damaged by a <em>dog-bone knife</em> must attempt a @Check[type:will|dc:19] save or immediately revert to its natural form-this has no effect on a creature unwillingly polymorphed. On a successful save, the creature is temporarily immune to this effect for 1 minute. Kushtakas and other creatures vulnerable to canines take a -2 circumstance penalty to saves against this effect, and this weapon overcomes any resistance such creatures have to physical attacks.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -35,17 +32,12 @@
         "level": {
             "value": 5
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Dark Archive"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Dark Archive"
-        },
         "specific": {
             "material": {
                 "base": [
@@ -105,9 +99,7 @@
         },
         "traits": {
             "rarity": "uncommon",
-            "value": [
-                "abjuration"
-            ]
+            "value": []
         },
         "usage": {
             "value": "held-in-one-hand"

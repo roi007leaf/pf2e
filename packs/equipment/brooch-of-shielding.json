@@ -1,6 +1,6 @@
 {
     "_id": "TmQalYKNNRuEdoTh",
-    "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/broach-of-shielding.webp",
+    "img": "icons/equipment/neck/amulet-round-engraved-gold.webp",
     "name": "Brooch of Shielding",
     "system": {
         "baseItem": null,
@@ -19,31 +19,27 @@
         "level": {
             "value": 2
         },
-        "negateBulk": {
-            "value": ""
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 30
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "abjuration",
                 "invested",
                 "magical"
             ]

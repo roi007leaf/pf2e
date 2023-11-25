@@ -17,13 +17,15 @@
             "max": 1,
             "per": "PT10M"
         },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
         "requirements": {
             "value": ""
         },
         "rules": [],
-        "source": {
-            "value": "Pathfinder Advanced Player's Guide"
-        },
         "traits": {
             "rarity": "common",
             "value": []

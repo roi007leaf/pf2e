@@ -28,7 +28,7 @@ class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
                 this.value = `@actor.abilities.${source.ability}.mod`;
             } else {
                 this.failValidation(
-                    'A flat modifier of type "ability" must also have an "ability" property with an ability abbreviation'
+                    'A flat modifier of type "ability" must also have an "ability" property with an ability abbreviation',
                 );
             }
         }
@@ -60,7 +60,7 @@ class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
         return {
             ...super.defineSchema(),
             selector: new fields.ArrayField(
-                new fields.StringField({ required: true, blank: false, initial: undefined })
+                new fields.StringField({ required: true, blank: false, initial: undefined }),
             ),
             type: new fields.StringField({
                 required: true,
@@ -80,7 +80,7 @@ class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
                 choices: damageCategoriesUnique,
                 initial: undefined,
             }),
-            critical: new fields.BooleanField({ required: false, nullable: true, initial: undefined }),
+            critical: new fields.BooleanField({ required: false, nullable: true, initial: null }),
             value: new ResolvableValueField({ required: false, nullable: false, initial: undefined }),
             removeAfterRoll: new DataUnionField(
                 [
@@ -90,14 +90,14 @@ class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
                         choices: ["if-enabled"],
                         initial: undefined,
                     }),
-                    new StrictBooleanField<boolean, boolean>({
+                    new StrictBooleanField({
                         required: false,
                         nullable: false,
                         initial: undefined,
                     }),
                     new PredicateField({ required: false, nullable: false, initial: undefined }),
                 ],
-                { required: false, nullable: false, initial: undefined }
+                { required: false, nullable: false, initial: false },
             ),
         };
     }
@@ -118,6 +118,8 @@ class FlatModifierRuleElement extends RuleElementPF2e<FlatModifierSchema> {
         }
 
         for (const selector of selectors) {
+            if (selector === "null") continue;
+
             const construct = (options: DeferredValueParams = {}): ModifierPF2e | null => {
                 const resolvedValue = Number(this.resolveValue(this.value, 0, options)) || 0;
                 if (this.ignored) return null;
@@ -206,7 +208,7 @@ type FlatModifierSchema = RuleElementSchema & {
     /** If a damage modifier, a special category */
     damageCategory: StringField<DamageCategoryUnique, DamageCategoryUnique, false, false, false>;
     /** If a damage modifier, whether it applies given the presence or absence of a critically successful attack roll */
-    critical: BooleanField<boolean, boolean, false, true, false>;
+    critical: BooleanField<boolean, boolean, false, true, true>;
     /** The numeric value of the modifier */
     value: ResolvableValueField<false, false, false>;
     /**
@@ -217,7 +219,7 @@ type FlatModifierSchema = RuleElementSchema & {
         StrictStringField<"if-enabled"> | StrictBooleanField | PredicateField<false, false, false>,
         false,
         false,
-        false
+        true
     >;
 };
 
@@ -234,4 +236,4 @@ interface FlatModifierSource extends RuleElementSource {
     hideIfDisabled?: unknown;
 }
 
-export { FlatModifierRuleElement, FlatModifierSource };
+export { FlatModifierRuleElement, type FlatModifierSource };

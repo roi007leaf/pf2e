@@ -32,31 +32,27 @@
         "level": {
             "value": 8
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 100
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "abjuration",
                 "consumable",
                 "fulu",
                 "magical",

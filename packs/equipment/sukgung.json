@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/default-icons/weapon.svg",
     "name": "Sukgung",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "sukgung",
         "bonus": {
             "value": 0
@@ -26,7 +23,7 @@
         "equippedBulk": {
             "value": ""
         },
-        "group": "bow",
+        "group": "crossbow",
         "hardness": 0,
         "hp": {
             "max": 0,
@@ -35,16 +32,11 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "range": 200,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "splashDamage": {
             "value": 0
         },
@@ -82,9 +76,6 @@
             "value": null
         },
         "traits": {
-            "otherTags": [
-                "crossbow"
-            ],
             "rarity": "common",
             "value": [
                 "fatal-aim-d12"

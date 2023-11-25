@@ -13,9 +13,6 @@
             "name": "Bastard Sword",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "bastard-sword",
                 "bonus": {
                     "value": 0
@@ -50,16 +47,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "bastard-sword",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -123,9 +117,6 @@
             "name": "Composite Longbow",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "composite-longbow",
                 "bonus": {
                     "value": 0
@@ -160,17 +151,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -189,6 +175,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": 100,
                 "reload": {
@@ -197,9 +188,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "composite-longbow",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -231,7 +219,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.YMQr577asquZIP65"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/scale-mail.webp",
+            "img": "icons/equipment/chest/breastplate-metal-scaled-grey.webp",
             "name": "Scale Mail",
             "sort": 300000,
             "system": {
@@ -261,18 +249,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
@@ -291,6 +273,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": ""
@@ -298,9 +285,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "scale-mail",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "speedPenalty": -5,
                 "stackGroup": null,
                 "strength": 2,
@@ -324,7 +308,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.3lgwjrFEsQVKzhh7"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/backpack.webp",
+            "img": "icons/containers/bags/pack-leather-white-tan.webp",
             "name": "Backpack",
             "sort": 400000,
             "system": {
@@ -349,27 +333,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "2"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "backpack",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "stowing": true,
                 "traits": {
@@ -392,7 +373,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.fagzYdmfYyMQ6J77"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/bedroll.webp",
+            "img": "icons/containers/ammunition/quiver-simple-brown.webp",
             "name": "Bedroll",
             "sort": 500000,
             "system": {
@@ -417,27 +398,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "cp": 2
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "bedroll",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -484,27 +462,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": ""
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "compass",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -526,14 +501,14 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.UlIxxLm71UdRgCFE"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/flint-and-steel.webp",
+            "img": "icons/commodities/stone/geode-raw-tan.webp",
             "name": "Flint and Steel",
             "sort": 700000,
             "system": {
                 "baseItem": null,
                 "containerId": null,
                 "description": {
-                    "value": "<p>Flint and steel are useful in creating a fire if you have the time to catch a spark, though using them is typically too time‑consuming to be practical during an encounter. Even in ideal conditions, using flint and steel to light a flame requires using at least 3 actions, and often significantly longer.</p>"
+                    "value": "<p>Flint and steel are useful in creating a fire if you have the time to catch a spark, though using them is typically too time-consuming to be practical during an encounter. Even in ideal conditions, using flint and steel to light a flame requires using at least 3 actions, and often significantly longer.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -551,27 +526,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "cp": 5
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "flint-and-steel",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -618,19 +590,19 @@
                 "level": {
                     "value": 3
                 },
-                "negateBulk": {
-                    "value": ""
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 10
                     }
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "rules": [
@@ -658,9 +630,6 @@
                 ],
                 "size": "med",
                 "slug": "survey-map",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "uncommon",
@@ -682,7 +651,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.Wc9og4mTKZDH3xmz"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/tent.webp",
+            "img": "icons/environment/settlement/tent.webp",
             "name": "Tent (Pup)",
             "sort": 900000,
             "system": {
@@ -707,27 +676,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 8
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "tent-pup",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -786,14 +752,9 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -801,13 +762,15 @@
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 10,
                 "rules": [],
                 "size": "med",
                 "slug": "arrows",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": "arrows",
                 "traits": {
                     "rarity": "common",
@@ -851,9 +814,14 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [
                     {
-                        "domain": "damage-roll",
+                        "domain": "damage",
                         "key": "RollOption",
                         "label": "PF2E.SpecificRule.TwoHanded.BastardSword",
                         "option": "two-handed",
@@ -872,9 +840,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -916,11 +881,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -954,14 +921,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> One of the warden's enemies within 100 feet attacks one of the warden's allies or a person the warden is sworn to protect</p>\n<hr />\n<p><strong>Effect</strong> The warden Strikes the triggering enemy. If the Strike hits, the enemy's attack is deflected, reducing its damage by 8, or by 16 if the warden's Strike was a critical hit.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -989,7 +958,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>A warden deals an extra [[/r 1d8]] damage to any creature trespassing on the territory the warden protects.</p>"
+                    "value": "<p>A warden deals an extra 1d8 damage to any creature trespassing on the territory the warden protects.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
@@ -1012,9 +986,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -1043,11 +1014,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1066,11 +1039,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1089,11 +1064,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1112,11 +1089,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1169,18 +1148,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "LN"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "<p>Wardens are the chief guardians of borders and frontiers. Whether they stand watch over a single village or an entire region, wardens keep a vigilant eye out for outside threats to their charges. Wardens are stalwart folk, often called to duty by Erastil to protect those around them. Be it times of war or upon the frontier, wardens are often the balanced edge of a blade between a community and the wilds at its fringes.</p>\n<hr />\n<p>Magistrates are the cogs and gears that keep bureaucracy running, moving the machine along under the inertia of the status quo.</p>",
-            "source": {
-                "value": "Pathfinder Gamemastery Guide"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Gamemastery Guide"
             }
         },
         "resources": {},
@@ -1215,7 +1192,8 @@
             },
             "value": [
                 "human",
-                "humanoid"
+                "humanoid",
+                "lawful"
             ]
         }
     },

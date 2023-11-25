@@ -1,6 +1,6 @@
 {
     "_id": "tzFMetc4VK6goDm2",
-    "img": "systems/pf2e/icons/equipment/armor/hide.webp",
+    "img": "icons/equipment/chest/vest-leather-tattered-white.webp",
     "name": "Trollhound Vest",
     "system": {
         "acBonus": 3,
@@ -9,7 +9,7 @@
         "checkPenalty": -2,
         "containerId": null,
         "description": {
-            "value": "<p>This suit of <em>+1 hide armor</em> is sickly green and covered in thick warts and nodules, fashioned from the hide of a trollhound and imbued with some of the beast's vitality. Wearing this armor gives you a –1 circumstance penalty to all checks made using Diplomacy to interact with trolls and a +1 circumstance bonus to Diplomacy checks used to @UUID[Compendium.pf2e.actionspf2e.Item.Make an Impression] in communities traditionally plagued by troll attacks.</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">r</span> Interact</p>\n<p><strong>Trigger</strong> You take damage from a melee attack while you have half or fewer of your normal maximum Hit Points</p>\n<hr />\n<p><strong>Effect</strong> Your body knits itself back together, healing you for [[/r 3d8[healing]]] Hit Points.</p>\n<hr />\n<p><strong>Craft Requirements</strong> The initial raw materials must include the hides of at least two trollhounds.</p>"
+            "value": "<p>This suit of <em>+1 hide armor</em> is sickly green and covered in thick warts and nodules, fashioned from the hide of a trollhound and imbued with some of the beast's vitality. Wearing this armor gives you a –1 circumstance penalty to all checks made using Diplomacy to interact with trolls and a +1 circumstance bonus to Diplomacy checks used to @UUID[Compendium.pf2e.actionspf2e.Item.Make an Impression] in communities traditionally plagued by troll attacks.</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">r</span> Interact</p>\n<p><strong>Trigger</strong> You take damage from a melee attack while you have half or fewer of your normal maximum Hit Points</p>\n<hr />\n<p><strong>Effect</strong> Your body knits itself back together, healing you for [[/r 3d8[healing]]] Hit Points.</p>\n<hr />\n<p><strong>Craft Requirements</strong> The initial raw materials must include the hides of at least two trollhounds.</p>"
         },
         "dexCap": 2,
         "equippedBulk": {
@@ -24,18 +24,12 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
-        "potency": {},
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -54,6 +48,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": null
@@ -71,17 +70,23 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
+        "specific": {
+            "material": {
+                "grade": null,
+                "type": null
+            },
+            "runes": {
+                "potency": 1,
+                "resilient": 0
+            },
+            "value": true
         },
         "speedPenalty": -5,
         "stackGroup": null,
         "strength": 2,
         "traits": {
             "rarity": "uncommon",
-            "value": [
-                "necromancy"
-            ]
+            "value": []
         },
         "usage": {
             "value": "wornarmor"

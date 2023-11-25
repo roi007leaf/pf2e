@@ -1,11 +1,8 @@
 {
     "_id": "4Thv3O2smZ8AHNjP",
-    "img": "systems/pf2e/icons/default-icons/weapon.svg",
+    "img": "icons/consumables/mushrooms/ovate-thin-blue.webp",
     "name": "Pernicious Spore Bomb (Major)",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "alchemical-bomb",
         "bonus": {
             "value": 3
@@ -26,7 +23,7 @@
             }
         },
         "description": {
-            "value": "<p>This flask contains fast-growing mold spores, which quickly take root but just as quickly rot away. You gain a +3 item bonus to attack rolls. The bomb deals @Damage[4[poison]] damage, @Damage[4d4[persistent,piercing]] damage, and [[/r (4[splash])[poison]]]{4 poison splash damage}. Except on a critical failure, the bomb's splash area is coated in vegetation, becoming difficult terrain for 1 minute.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>This flask contains fast-growing mold spores, which quickly take root but just as quickly rot away. You gain a +3 item bonus to attack rolls. The bomb deals @Damage[4[poison]] damage, @Damage[4d4[persistent,piercing]] damage, and [[/r (4[splash])[poison]]]{4 poison splash damage}. Except on a critical failure, the bomb's splash area is coated in vegetation, becoming difficult terrain for 1 minute.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -40,16 +37,11 @@
         "level": {
             "value": 17
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -68,6 +60,11 @@
         },
         "propertyRune4": {
             "value": null
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #176: Lost Mammoth Valley"
         },
         "quantity": 1,
         "range": 20,
@@ -93,9 +90,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder #176: Lost Mammoth Valley"
-        },
         "splashDamage": {
             "value": 4
         },

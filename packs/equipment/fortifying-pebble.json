@@ -19,7 +19,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p><strong>Usage</strong> affixed to armor, shield, or weapon</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">F</span> envision</p>\n<p><strong>Trigger</strong> The affixed object would take damage</p>\n<p>This small pebble is strangely dense and surprisingly durable, affixed to an object by a sturdy steel chain. When you activate the pebble, the affixed object takes 10 less damage.</p>"
+            "value": "<p><strong>Usage</strong> affixed to armor, shield, or weapon</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> envision</p>\n<p><strong>Trigger</strong> The affixed object would take damage</p>\n<p>This small pebble is strangely dense and surprisingly durable, affixed to an object by a sturdy steel chain. When you activate the pebble, the affixed object takes 10 less damage.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -32,31 +32,27 @@
         "level": {
             "value": 4
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 13
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Character Guide"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Character Guide"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "abjuration",
                 "consumable",
                 "magical",
                 "talisman"

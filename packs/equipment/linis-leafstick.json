@@ -1,6 +1,6 @@
 {
     "_id": "FbboejktKOMCm181",
-    "img": "systems/pf2e/icons/equipment/staves/linis-leafstick.webp",
+    "img": "icons/weapons/staves/staff-forest-spiral.webp",
     "name": "Lini's Leafstick",
     "system": {
         "baseItem": null,
@@ -19,34 +19,30 @@
         "level": {
             "value": 15
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 6500
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "unique",
             "value": [
                 "magical",
                 "plant",
-                "staff",
-                "transmutation"
+                "staff"
             ]
         },
         "usage": {

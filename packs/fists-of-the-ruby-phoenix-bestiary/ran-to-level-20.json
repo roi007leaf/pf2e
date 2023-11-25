@@ -9,13 +9,10 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.Ix2vicchE79d6Cl3"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/weapons/gauntlet.webp",
+            "img": "icons/equipment/hand/gauntlet-tooled-steel.webp",
             "name": "Gauntlet",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "gauntlet",
                 "bonus": {
                     "value": 0
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 3
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "gauntlet",
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -124,9 +118,6 @@
             "name": "Halfling Sling Staff",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "halfling-sling-staff",
                 "bonus": {
                     "value": 0
@@ -142,7 +133,7 @@
                     "die": "d10"
                 },
                 "description": {
-                    "value": "<p>This staff ends in a Y‑shaped split that cradles a sling. The length of the staff provides excellent leverage when used two‑handed to fling rocks or bullets from the sling.</p>"
+                    "value": "<p>This staff ends in a Y-shaped split that cradles a sling. The length of the staff provides excellent leverage when used two-handed to fling rocks or bullets from the sling.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -161,17 +152,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 3
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -190,6 +176,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "range": 80,
                 "reload": {
@@ -198,9 +189,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "halfling-sling-staff",
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": null
                 },
@@ -231,7 +219,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.ewQZ0VeL38v3qFnN"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/studded-leather-armor.webp",
+            "img": "icons/equipment/chest/breastplate-layered-leather-studded-brown.webp",
             "name": "+3 Greater Resilient Studded Leather Armor",
             "sort": 300000,
             "system": {
@@ -261,18 +249,12 @@
                 "level": {
                     "value": 18
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 3
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -291,6 +273,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": "greaterResilient"
@@ -298,10 +285,7 @@
                 "rules": [],
                 "size": "med",
                 "slug": "studded-leather-armor",
-                "source": {
-                    "value": ""
-                },
-                "speedPenalty": null,
+                "speedPenalty": 0,
                 "stackGroup": null,
                 "strength": 1,
                 "traits": {
@@ -344,7 +328,7 @@
                 },
                 "containerId": null,
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>This piece of ammunition is coated in gritty black soot. When activated <em>explosive ammunition</em> hits a target, the missile explodes in a @Template[type:burst|distance:10], dealing [[/r10d6]] fire damage to each creature in the area (including the target). Each creature must attempt a @Check[type:reflex|dc:30|basic:true|name:Greater Explosive Ammunition] save.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>This piece of ammunition is coated in gritty black soot. When activated <em>explosive ammunition</em> hits a target, the missile explodes in a @Template[type:burst|distance:10], dealing [[/r10d6]] fire damage to each creature in the area (including the target). Each creature must attempt a @Check[type:reflex|dc:30|basic:true|name:Greater Explosive Ammunition] save.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -361,33 +345,29 @@
                 "level": {
                     "value": 13
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 520
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 5,
                 "rules": [],
                 "size": "med",
                 "slug": "explosive-ammunition-greater",
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "consumable",
-                        "evocation",
                         "fire",
                         "magical"
                     ]
@@ -445,14 +425,9 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -460,13 +435,15 @@
                         "cp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 20,
                 "rules": [],
                 "size": "med",
                 "slug": "sling-bullets",
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": "slingBullets",
                 "traits": {
                     "rarity": "common",
@@ -513,11 +490,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -553,14 +532,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -590,24 +571,24 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [
                     {
                         "key": "FlatModifier",
-                        "predicate": [
-                            "evocation"
-                        ],
+                        "predicate": [],
                         "selector": "saving-throw",
                         "type": "status",
                         "value": 3
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -642,14 +623,16 @@
                 "description": {
                     "value": "<p>When a creature triggers Ran-to's Attack of Opportunity, he can attempt an Athletics check to Grapple the triggering creature instead of making a melee Strike. He can still disrupt a triggering manipulate action if he critically succeeds his attempt.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -679,14 +662,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> Ran-to is grabbing a creature</p>\n<hr />\n<p><strong>Effect</strong> Ran-to throws his foe against the ground. The grabbed creature takes @Damage[12d6[bludgeoning]] damage (@Check[type:fortitude|dc:43|basic:true] save) and is knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone]. The creature is no longer grabbed.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -721,14 +706,16 @@
                 "description": {
                     "value": "<p>@Damage[(7d4+5)[bludgeoning]] damage, @Check[type:fortitude|dc:43|basic:true] save</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "constrict",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -758,14 +745,16 @@
                 "description": {
                     "value": "<p>Ran-to leaps from the ground and attempts to grab a foe while he soars. He makes a Leap, High Jump, or Long Jump. His maximum distance is 100 feet. He must succeed at an Athletics check to perform the leap as usual, but regardless of the type of leap the DC is equal to half the number of feet he moves in the air. Ran-to can attempt an Athletics check to Grapple at any point during the jump. Immediately after the attempt, he (and the creature, if the Grapple was successful) falls to the ground. Ran-to takes no falling damage when using this ability, but the grabbed creature takes the appropriate amount of falling damage as if it had fallen the distance moved. Ran-to can spend three actions to use this ability instead of two; if he does, he can use Plummeting Fall to add @Damage[12d6[bludgeoning]] damage to the falling damage dealt to the grabbed creature, and the creature is knocked @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -800,14 +789,16 @@
                     "per": "round",
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -837,14 +828,16 @@
                 "description": {
                     "value": "<p>Ran-to can attempt to Disarm, Grapple, Shove, or Trip creatures up to two sizes larger than him.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -872,21 +865,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> Ran-to has a creature grabbed</p>\n<hr />\n<p><strong>Effect</strong> Ran-to spins the creature he's holding, smashing it against any creatures within his reach, then throws the creature aside. Ran-to attempts an Athletics check against the grabbed creature's Fortitude DC. Regardless of the result, the creature is no longer grabbed after this activity.</p>\n<hr />\n<p><strong>Critical Success</strong> Ran-to tosses his foe mightily. The grabbed creature is thrown into a space within 20 feet, takes @Damage[16d6[bludgeoning]] damage, and falls @UUID[Compendium.pf2e.conditionitems.Item.Prone]. All creatures adjacent to Ran-to take the same amount of bludgeoning damage (@Check[type:reflex|dc:43|basic:true] save).</p>\n<p><strong>Success</strong> As critical success, except the grabbed creature is thrown into a space within 10 feet, and creatures take @Damage[12d6[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> Ran-to tosses his foe aside. The grabbed creature falls prone.</p>\n<p><strong>Critical Failure</strong> Ran-to loses hold of his foe.</p>"
+                    "value": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> Ran-to has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed]</p>\n<hr />\n<p><strong>Effect</strong> Ran-to spins the creature he's holding, smashing it against any creatures within his reach, then throws the creature aside. Ran-to attempts an @Check[type:athletics|defense:fortitude] check against the grabbed creature's Fortitude DC. Regardless of the result, the creature is no longer grabbed after this activity.</p>\n<hr />\n<p><strong>Critical Success</strong> Ran-to tosses his foe mightily. The grabbed creature is thrown into a space within 20 feet, takes @Damage[16d6[bludgeoning]] damage, and falls @UUID[Compendium.pf2e.conditionitems.Item.Prone]. All creatures adjacent to Ran-to take the same amount of bludgeoning damage (@Check[type:reflex|dc:43|basic:true] save).</p>\n<p><strong>Success</strong> As critical success, except the grabbed creature is thrown into a space within 10 feet, and creatures take @Damage[12d6[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> Ran-to tosses his foe aside. The grabbed creature falls prone.</p>\n<p><strong>Critical Failure</strong> Ran-to loses hold of his foe.</p>"
                 },
                 "frequency": {
                     "max": 1,
                     "per": "round",
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -921,14 +916,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ImprovedGrab]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "improved-grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -957,11 +954,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -980,11 +979,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1003,11 +1004,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1026,11 +1029,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1049,11 +1054,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1114,18 +1121,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "LE"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 20
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #168: King of the Mountain"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #168: King of the Mountain"
             }
         },
         "resources": {},
@@ -1162,8 +1167,10 @@
                 "value": "med"
             },
             "value": [
+                "evil",
                 "goblin",
-                "humanoid"
+                "humanoid",
+                "lawful"
             ]
         }
     },

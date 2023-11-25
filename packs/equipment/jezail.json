@@ -1,11 +1,8 @@
 {
     "_id": "NEZfXSasFdLdQFBi",
-    "img": "systems/pf2e/icons/equipment/weapons/jezail.webp",
+    "img": "icons/weapons/guns/rifle-brown.webp",
     "name": "Jezail",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "jezail",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Guns & Gears"
+        },
         "quantity": 1,
         "range": 90,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Guns & Gears"
-        },
         "splashDamage": {
             "value": 0
         },

@@ -1,6 +1,6 @@
 {
     "_id": "FETCOUQa6rYtlAHB",
-    "img": "systems/pf2e/icons/default-icons/consumable.svg",
+    "img": "systems/pf2e/icons/equipment/consumables/fulus/fulu-fancy.webp",
     "name": "Kaiju Fulu",
     "system": {
         "autoDestroy": {
@@ -19,7 +19,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p><strong>Duration</strong> 1 week</p>\n<p>Despite the name, a kaiju fulu protects a building against damage of all sorts. When an affixed structure no larger than 100 feet × 100 feet and up to 50 feet tall takes damage, the structure is as hard as standard‑grade adamantine against that damage and any damage that occurs within 1 hour thereafter. The fulu then crumbles to dust, and its effects end.</p>"
+            "value": "<p><strong>Duration</strong> 1 week</p>\n<p>Despite the name, a kaiju fulu protects a building against damage of all sorts. When an affixed structure no larger than 100 feet × 100 feet and up to 50 feet tall takes damage, the structure is as hard as standard-grade adamantine against that damage and any damage that occurs within 1 hour thereafter. The fulu then crumbles to dust, and its effects end.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -32,31 +32,27 @@
         "level": {
             "value": 13
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 500
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "abjuration",
                 "consumable",
                 "fulu",
                 "magical"

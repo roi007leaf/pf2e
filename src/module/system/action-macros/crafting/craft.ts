@@ -18,7 +18,7 @@ export async function craft(options: CraftActionOptions): Promise<void> {
         return;
     } else if (!(item instanceof PhysicalItemPF2e)) {
         ui.notifications.warn(
-            game.i18n.format("PF2E.Actions.Craft.Warning.NotPhysicalItem", { item: item.name ?? "" })
+            game.i18n.format("PF2E.Actions.Craft.Warning.NotPhysicalItem", { item: item.name ?? "" }),
         );
         return;
     }
@@ -29,7 +29,7 @@ export async function craft(options: CraftActionOptions): Promise<void> {
     const quantity = options.quantity ?? 1;
 
     // figure out DC from item
-    const proficiencyWithoutLevel = game.settings.get("pf2e", "proficiencyVariant") === "ProficiencyWithoutLevel";
+    const proficiencyWithoutLevel = game.settings.get("pf2e", "proficiencyVariant");
     const dc: CheckDC = options.difficultyClass ?? {
         value: calculateDC(item.level, { proficiencyWithoutLevel }),
         visible: true,

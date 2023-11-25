@@ -1,5 +1,5 @@
 import { ABCSheetData, ABCSheetPF2e } from "../abc/sheet.ts";
-import { BackgroundPF2e } from "./document.ts";
+import type { BackgroundPF2e } from "./document.ts";
 import { createSheetOptions, SheetOptions } from "@module/sheet/helpers.ts";
 
 export class BackgroundSheetPF2e extends ABCSheetPF2e<BackgroundPF2e> {
@@ -11,7 +11,7 @@ export class BackgroundSheetPF2e extends ABCSheetPF2e<BackgroundPF2e> {
             ...data,
             trainedSkills: createSheetOptions(CONFIG.PF2E.skills, itemData.system.trainedSkills),
             selectedBoosts: Object.fromEntries(
-                Object.entries(itemData.system.boosts).map(([k, b]) => [k, this.getLocalizedAbilities(b)])
+                Object.entries(itemData.system.boosts).map(([k, b]) => [k, this.getLocalizedAbilities(b)]),
             ),
         };
     }

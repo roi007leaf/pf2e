@@ -1,11 +1,8 @@
 {
     "_id": "DFZj7RCrk6rk9fhf",
-    "img": "systems/pf2e/icons/equipment/weapons/hedge-trimmer.webp",
+    "img": "icons/weapons/polearms/spear-hooked-double-jeweled.webp",
     "name": "Granny's Hedge Trimmer",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": null,
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -62,6 +54,11 @@
         "propertyRune4": {
             "value": ""
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Adventure: Little Trouble in Big Absalom"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -69,9 +66,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Adventure: Little Trouble in Big Absalom"
-        },
         "splashDamage": {
             "value": 0
         },
@@ -82,7 +76,6 @@
         "traits": {
             "rarity": "rare",
             "value": [
-                "evocation",
                 "magical"
             ]
         },

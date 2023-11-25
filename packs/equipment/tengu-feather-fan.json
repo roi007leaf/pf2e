@@ -1,6 +1,6 @@
 {
     "_id": "KekfZ6eRzoZVRemw",
-    "img": "systems/pf2e/icons/equipment/consumables/other-consumables/feather-token.webp",
+    "img": "icons/commodities/materials/feather-blue.webp",
     "name": "Tengu Feather Fan",
     "system": {
         "baseItem": null,
@@ -19,29 +19,25 @@
         "level": {
             "value": 5
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {}
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Ancestry Guide"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Ancestry Guide"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "unique",
             "value": [
-                "evocation",
                 "primal"
             ]
         },

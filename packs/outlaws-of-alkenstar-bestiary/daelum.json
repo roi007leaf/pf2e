@@ -13,9 +13,6 @@
             "name": "Pick",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "pick",
                 "bonus": {
                     "value": 0
@@ -50,16 +47,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "lg",
                 "slug": "pick",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -141,11 +135,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -183,11 +179,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -225,11 +223,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -261,14 +261,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -303,14 +305,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -340,14 +344,16 @@
                 "description": {
                     "value": "<p>The daelum can Interact to stow or remove an item from their belly hatch, which can hold up to 10 Bulk.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -374,14 +380,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The daelum is in quadruped form</p>\n<hr />\n<p><strong>Effect</strong> The daelum Strides twice. They have a +10-foot circumstance bonus to their Speed during these Strides.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -408,14 +416,16 @@
                 "description": {
                     "value": "<p>The daelum transforms into a quadruped. While in this form, their Speed increases by 10 feet and they don't count the contents of their belly hatch against the total amount they can carry. The daelum can make hoof Strikes in quadruped form, but not pick or claw Strikes. Using this ability again returns the daelum to their bipedal form.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -442,19 +452,20 @@
                 "description": {
                     "value": "<p>The daelum unleashes a cloud of smog in a @Template[type:emanation|distance:10]. The cloud persists for 3 rounds, but doesn't move with the daelum. All creatures within the cloud are @UUID[Compendium.pf2e.conditionitems.Item.Concealed]. A creature that begins its turn in the smog cloud must attempt a @Check[type:fortitude|dc:18] save (creatures that must breathe and don't hold their breath take a -2 circumstance penalty on their save).</p>\n<hr />\n<p><strong>Critical Success</strong> No effect and temporarily immune for 1 hour.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is sickened 2 and @UUID[Compendium.pf2e.conditionitems.Item.Slowed]{Slowed 1}.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "arcane",
-                        "evocation",
                         "poison"
                     ]
                 },
@@ -479,11 +490,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -502,11 +515,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -525,11 +540,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -587,18 +604,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 4
             },
             "privateNotes": "",
             "publicNotes": "<p>During the height of the legendary war between Nex and Geb, Nex's agents grew increasingly creative in their \"recruiting\" methods for their armies. One such effort involved the construction of mechanical soldiers powered by arcane engines but directed by transplanted minds. While the process generally involved willing donors who were eager to give up dying bodies to \\\"live on\\\" in constructed frames, rumors persist that Nex harvested the minds of prisoners of war and criminals for these creations.</p>\n<p>Today, thousands of years after those wars ended, hundreds of daelums still live. Their intellects have, in large part, fully embraced their new \"lives,\" and very few remember their previous existences today. Daelums can be found throughout the Mana Wastes serving as guides, porters, mine workers, and mercenaries.</p>",
-            "source": {
-                "value": "Pathfinder #179: Cradle of Quartz"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #179: Cradle of Quartz"
             }
         },
         "resources": {},

@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/composite-longbow.webp",
     "name": "Mammoth Bow",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "composite-longbow",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 12
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 2
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #177: Burning Tundra"
+        },
         "quantity": 1,
         "range": 180,
         "reload": {
@@ -79,9 +76,6 @@
             }
         ],
         "size": "lg",
-        "source": {
-            "value": "Pathfinder #177: Burning Tundra"
-        },
         "specific": {
             "material": null,
             "runes": {
@@ -101,7 +95,6 @@
             "rarity": "unique",
             "value": [
                 "deadly-d10",
-                "evocation",
                 "magical",
                 "propulsive",
                 "volley-50"

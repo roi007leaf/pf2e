@@ -6,7 +6,7 @@
         "baseItem": null,
         "containerId": "null",
         "description": {
-            "value": "<p>Experimental clothing is custom tailored in radical, avant‑garde styles by independent dressmakers, utilizing expensive or eccentric materials and unconventional patterns.</p>\n<p>At the GM's discretion, wearing experimental clothing may impart a +1 item bonus or -1 item penalty on checks to Make An Impression, depending on the target's fashion sense.</p>"
+            "value": "<p>Experimental clothing is custom tailored in radical, avant-garde styles by independent dressmakers, utilizing expensive or eccentric materials and unconventional patterns.</p>\n<p>At the GM's discretion, wearing experimental clothing may impart a +1 item bonus or -1 item penalty on checks to Make An Impression, depending on the target's fashion sense.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -19,26 +19,23 @@
         "level": {
             "value": 2
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 25
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: The Grand Bazaar"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: The Grand Bazaar"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",

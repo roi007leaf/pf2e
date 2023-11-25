@@ -19,17 +19,17 @@
         "level": {
             "value": 10
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {}
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #190: The Choosing"
         },
         "quantity": 1,
         "rules": [
@@ -48,15 +48,11 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder #190: The Choosing"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
                 "arcane",
-                "conjuration",
                 "invested"
             ]
         },

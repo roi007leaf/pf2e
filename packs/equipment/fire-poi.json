@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/fire-poi.webp",
     "name": "Fire Poi",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "fire-poi",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -63,6 +55,11 @@
         },
         "propertyRune4": {
             "value": ""
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #151: The Show Must Go On"
         },
         "quantity": 1,
         "range": null,
@@ -123,9 +120,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder #151: The Show Must Go On"
-        },
         "splashDamage": {
             "value": null
         },

@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/sword-cane.webp",
     "name": "Exquisite Sword Cane Sheath",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "exquisite-sword-cane-sheath",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -62,6 +54,11 @@
         "propertyRune4": {
             "value": ""
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #157: Devil at the Dreaming Palace"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -69,9 +66,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder #157: Devil at the Dreaming Palace"
-        },
         "splashDamage": {
             "value": 0
         },

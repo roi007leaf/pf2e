@@ -23,6 +23,11 @@
                 "proficiency": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": true
@@ -97,9 +102,6 @@
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 30,
                     "item": 0,
@@ -125,33 +127,24 @@
             "name": "Charm",
             "sort": 200000,
             "system": {
-                "ability": {
-                    "value": ""
-                },
                 "area": null,
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
+                "counteraction": false,
+                "damage": {},
+                "defense": {
+                    "save": {
+                        "basic": false,
+                        "statistic": "will"
+                    }
                 },
                 "description": {
                     "value": "<p>To the target, your words are honey and your visage seems bathed in a dreamy haze. It must attempt a Will save, with a +4 circumstance bonus if you or your allies recently threatened it or used hostile actions against it.</p>\n<p>You can Dismiss the spell. If you use hostile actions against the target, the spell ends. When the spell ends, the target doesn't necessarily realize it was charmed unless its friendship with you or the actions you convinced it to take clash with its expectations, meaning you could potentially convince the target to continue being your friend via mundane means.</p>\n<hr />\n<p><strong>Critical Success</strong> The target is unaffected and aware you tried to charm it.</p>\n<p><strong>Success</strong> The target is unaffected but thinks your spell was something harmless instead of charm, unless it identifies the spell.</p>\n<p><strong>Failure</strong> The target's attitude becomes @UUID[Compendium.pf2e.conditionitems.Item.Friendly] toward you. If it was Friendly, it becomes @UUID[Compendium.pf2e.conditionitems.Item.Helpful]. It can't use hostile actions against you.</p>\n<p><strong>Critical Failure</strong> The target's attitude becomes Helpful toward you, and it can't use hostile actions against you.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The duration lasts until the next time you make your daily preparations.</p>\n<p><strong>Heightened (8th)</strong> The duration lasts until the next time you make your daily preparations, and you can target up to 10 creatures.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": "1 hour"
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -159,59 +152,36 @@
                 "location": {
                     "value": "sYXfITwv3x9VIqGF"
                 },
-                "materials": {
-                    "value": ""
-                },
-                "prepared": {
-                    "value": ""
-                },
-                "primarycheck": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "range": {
                     "value": "30 feet"
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": "will"
-                },
-                "secondarycasters": {
-                    "value": ""
-                },
-                "secondarycheck": {
-                    "value": ""
-                },
                 "slug": "charm",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "spellType": {
-                    "value": "save"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": "1 creature"
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
+                        "concentrate",
                         "emotion",
                         "incapacitation",
-                        "mental",
-                        "enchantment"
+                        "manipulate",
+                        "mental"
                     ]
                 }
             },
@@ -228,9 +198,6 @@
             "name": "Deflecting Branch",
             "sort": 300000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "greatclub",
                 "bonus": {
                     "value": 0
@@ -246,7 +213,7 @@
                     "die": "d10"
                 },
                 "description": {
-                    "value": "<p>This massive branch has been cut into a general club shape but still bears several knots and has a number of runes carved along its length. The <em>deflecting branch</em> is a <em>+2 greater striking greatclub</em>.</p>\n<p>On a critical hit, you knock the target @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>\n<hr />\n<p><strong>Activate</strong><span class=\"pf2-icon\">r</span> Interact</p>\n<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> You are the target of a physical ranged attack</p>\n<p><strong>Requirements</strong> You're aware of the attack and are not @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] against it</p>\n<hr />\n<p><strong>Effect</strong> You gain a +4 circumstance bonus to AC against the triggering attack. If the attack misses, you have knocked it away. You can't use this ability to deflect unusually massive ranged projectiles (such as boulders or ballista bolts).</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">f</span> Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You knock away a physical ranged attack by using the deflecting branch's other activation</p>\n<hr />\n<p><strong>Effect</strong> You swing the club and reflect the oncoming attack. The attack is redirected toward a creature within 60 feet. Make a ranged attack against the creature using your highest proficiency with a ranged weapon.</p>"
+                    "value": "<p>This massive branch has been cut into a general club shape but still bears several knots and has a number of runes carved along its length. The <em>deflecting branch</em> is a <em>+2 greater striking greatclub</em>.</p>\n<p>On a critical hit, you knock the target @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>\n<hr />\n<p><strong>Activate</strong><span class=\"action-glyph\">r</span> Interact</p>\n<p><strong>Frequency</strong> once per minute</p>\n<p><strong>Trigger</strong> You are the target of a physical ranged attack</p>\n<p><strong>Requirements</strong> You're aware of the attack and are not @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] against it</p>\n<hr />\n<p><strong>Effect</strong> You gain a +4 circumstance bonus to AC against the triggering attack. If the attack misses, you have knocked it away. You can't use this ability to deflect unusually massive ranged projectiles (such as boulders or ballista bolts).</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You knock away a physical ranged attack by using the deflecting branch's other activation</p>\n<hr />\n<p><strong>Effect</strong> You swing the club and reflect the oncoming attack. The attack is redirected toward a creature within 60 feet. Make a ranged attack against the creature using your highest proficiency with a ranged weapon.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -265,17 +232,12 @@
                 "level": {
                     "value": 14
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -293,6 +255,11 @@
                 },
                 "propertyRune4": {
                     "value": null
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #172: Secrets of the Temple-City"
                 },
                 "quantity": 1,
                 "range": null,
@@ -318,9 +285,6 @@
                 ],
                 "size": "med",
                 "slug": "deflecting-branch",
-                "source": {
-                    "value": "Pathfinder #172: Secrets of the Temple-City"
-                },
                 "specific": {
                     "material": null,
                     "price": "4500 gp",
@@ -340,7 +304,6 @@
                 "traits": {
                     "rarity": "uncommon",
                     "value": [
-                        "abjuration",
                         "backswing",
                         "magical",
                         "shove"
@@ -366,9 +329,6 @@
             "name": "Spear",
             "sort": 400000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "spear",
                 "bonus": {
                     "value": 0
@@ -384,7 +344,7 @@
                     "die": "d6"
                 },
                 "description": {
-                    "value": "<p>A long metal shaft ending with a metal spike, a spear can be used one‑handed as a melee weapon and can be thrown.</p>"
+                    "value": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -403,16 +363,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -432,6 +387,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 3,
                 "range": null,
                 "reload": {
@@ -440,9 +400,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "spear",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -472,7 +429,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/leather-armor.webp",
+            "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp",
             "name": "Leather Armor",
             "sort": 500000,
             "system": {
@@ -502,18 +459,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
@@ -532,6 +483,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": ""
@@ -539,12 +495,9 @@
                 "rules": [],
                 "size": "med",
                 "slug": "leather-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "speedPenalty": null,
+                "speedPenalty": 0,
                 "stackGroup": null,
-                "strength": 0,
+                "strength": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -588,11 +541,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -634,11 +589,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -679,11 +636,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -717,14 +676,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -759,14 +720,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -801,14 +764,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -837,6 +802,11 @@
                 "category": "offensive",
                 "description": {
                     "value": "<p>If a biloko feasts on a human corpse for 1 minute or more, they gain a +1 status bonus to attack rolls and a +2 status bonus to damage rolls for 1 hour.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
@@ -868,9 +838,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -900,20 +867,21 @@
                 "description": {
                     "value": "<p>Gambulami is affected by a 4th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.Enlarge]</em> spell. This lasts for 1 minute, and Gambulami can Dismiss the Spell.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "polymorph",
-                        "primal",
-                        "transmutation"
+                        "primal"
                     ]
                 },
                 "trigger": {
@@ -936,16 +904,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> Gambulami is larger than Small in size and has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] with his jaws</p><hr />\n<p><strong>Effect</strong> Gambulami whips the creature around, smashing it against other nearby creatures. He makes an Athletics check against the grabbed creature's Fortitude DC. Regardless of the result, the creature is released from Gambulami's jaws afterward, escaping into the space in which it was grabbed.</p>\n<hr />\n<p><strong>Critical Success</strong> Gambulami uses a mighty spin to smash the held creature against every creature within his reach. Every creature, including the grabbed creature, takes @Damage[(1d10+7)[bludgeoning]] damage.</p>\n<p><strong>Success</strong> As critical success, but creatures take @Damage[1d10[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> The creature breaks free.</p>\n<p><strong>Critical Failure</strong> The creature breaks free and Gambulami's spin causes him to fall @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>"
+                    "value": "<p><strong>Requirements</strong> Gambulami is larger than Small in size and has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] with his jaws</p><hr />\n<p><strong>Effect</strong> Gambulami whips the creature around, smashing it against other nearby creatures. He makes an @Check[type:athletics|defense:fortitude] check against the grabbed creature's Fortitude DC. Regardless of the result, the creature is released from Gambulami's jaws afterward, escaping into the space in which it was grabbed.</p>\n<hr />\n<p><strong>Critical Success</strong> Gambulami uses a mighty spin to smash the held creature against every creature within his reach. Every creature, including the grabbed creature, takes @Damage[(1d10+7)[bludgeoning]] damage.</p>\n<p><strong>Success</strong> As critical success, but creatures take @Damage[1d10[bludgeoning]] damage.</p>\n<p><strong>Failure</strong> The creature breaks free.</p>\n<p><strong>Critical Failure</strong> The creature breaks free and Gambulami's spin causes him to fall @UUID[Compendium.pf2e.conditionitems.Item.Prone].</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -977,14 +947,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -1013,11 +985,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1036,11 +1010,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1059,11 +1035,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1082,11 +1060,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1105,11 +1085,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1128,11 +1110,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1151,11 +1135,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1214,18 +1200,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 11
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #172: Secrets of the Temple-City"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #172: Secrets of the Temple-City"
             }
         },
         "resources": {},
@@ -1261,6 +1245,7 @@
                 "value": "sm"
             },
             "value": [
+                "evil",
                 "fey"
             ]
         }

@@ -1,6 +1,6 @@
 {
     "_id": "hAPCk1A2a4kJDzhV",
-    "img": "systems/pf2e/icons/default-icons/equipment.svg",
+    "img": "icons/equipment/finger/ring-bone-carved.webp",
     "name": "Spiritsight Ring",
     "system": {
         "baseItem": null,
@@ -19,19 +19,19 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 225
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #176: Lost Mammoth Valley"
         },
         "quantity": 1,
         "rules": [
@@ -53,14 +53,10 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder #176: Lost Mammoth Valley"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "enchantment",
                 "invested",
                 "magical"
             ]

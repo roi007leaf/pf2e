@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/brilliant-rapier.webp",
     "name": "Brilliant Rapier",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "rapier",
         "bonus": {
             "value": 0
@@ -21,7 +18,7 @@
             "die": "d6"
         },
         "description": {
-            "value": "<p>This <em>+2 brilliant greater striking rapier</em> is formed entirely out of radiant energy, even more so than a usual brilliant weapon, and has left its physical form behind entirely. Instead of dealing piercing damage, it deals fire damage, and in addition to a rapier's normal weapon traits, it gains the versatile good or positive trait.</p>"
+            "value": "<p>This <em>+2 brilliant greater striking rapier</em> is formed entirely out of radiant energy, even more so than a usual brilliant weapon, and has left its physical form behind entirely. Instead of dealing piercing damage, it deals fire damage, and in addition to a rapier's normal weapon traits, it gains the versatile spirit or vitality trait.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -35,17 +32,12 @@
         "level": {
             "value": 14
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 2
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: The Grand Bazaar"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: The Grand Bazaar"
-        },
         "specific": {
             "material": null,
             "runes": {
@@ -96,7 +90,9 @@
                 "disarm",
                 "finesse",
                 "good",
-                "versatile-positive"
+                "holy",
+                "versatile-spirit",
+                "versatile-vitality"
             ]
         },
         "usage": {

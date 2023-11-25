@@ -1,6 +1,6 @@
 {
     "_id": "Cb44J1g1nO43DEBd",
-    "img": "systems/pf2e/icons/default-icons/feats.webp",
+    "img": "icons/sundries/books/book-red-exclamation.webp",
     "name": "Ceremony of the Evened Hand",
     "system": {
         "actionType": {
@@ -19,6 +19,11 @@
         "maxTakable": 2,
         "prerequisites": {
             "value": []
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: The Mwangi Expanse"
         },
         "rules": [
             {
@@ -47,7 +52,7 @@
                     }
                 },
                 "group": "brawling",
-                "img": "systems/pf2e/icons/unarmed-attacks/claw.webp",
+                "img": "icons/commodities/claws/claw-bear-brown-grey.webp",
                 "key": "Strike",
                 "label": "PF2E.BattleForm.Attack.Claw",
                 "predicate": [
@@ -81,9 +86,6 @@
                 ]
             }
         ],
-        "source": {
-            "value": "Pathfinder Lost Omens: The Mwangi Expanse"
-        },
         "traits": {
             "rarity": "common",
             "value": [

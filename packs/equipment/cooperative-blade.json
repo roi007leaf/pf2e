@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/cooperative-blade.webp",
     "name": "Cooperative Blade",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "longsword",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -63,6 +55,11 @@
         },
         "propertyRune4": {
             "value": null
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #164: Hands of the Devil"
         },
         "quantity": 1,
         "range": null,
@@ -82,9 +79,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder #164: Hands of the Devil"
-        },
         "specific": {
             "material": null,
             "runes": {
@@ -103,7 +97,6 @@
         "traits": {
             "rarity": "unique",
             "value": [
-                "divination",
                 "versatile-p"
             ]
         },

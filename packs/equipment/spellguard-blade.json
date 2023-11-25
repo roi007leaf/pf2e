@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/spellguard-blade.webp",
     "name": "Spellguard Blade",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "main-gauche",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 7
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Advanced Player's Guide"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Advanced Player's Guide"
-        },
         "specific": {
             "material": null,
             "runes": {
@@ -92,7 +86,6 @@
         "traits": {
             "rarity": "common",
             "value": [
-                "abjuration",
                 "agile",
                 "disarm",
                 "finesse",

@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/taw-launcher.webp",
     "name": "Taw Launcher",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "taw-launcher",
         "bonus": {
             "value": 0
@@ -26,7 +23,7 @@
         "equippedBulk": {
             "value": ""
         },
-        "group": "bow",
+        "group": "crossbow",
         "hardness": 0,
         "hp": {
             "max": 0,
@@ -35,17 +32,12 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 0
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Ancestry Guide"
+        },
         "quantity": 1,
         "range": 100,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Ancestry Guide"
-        },
         "splashDamage": {
             "value": 0
         },
@@ -82,9 +76,6 @@
             "value": ""
         },
         "traits": {
-            "otherTags": [
-                "crossbow"
-            ],
             "rarity": "uncommon",
             "value": [
                 "conrasu",

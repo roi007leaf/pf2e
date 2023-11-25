@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-bombs/bottled-lightning.webp",
     "name": "Bottled Lightning (Lesser)",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "alchemical-bomb",
         "bonus": {
             "value": 0
@@ -21,7 +18,7 @@
             "die": "d6"
         },
         "description": {
-            "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 1d6 electricity damage and 1 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] until the start of your next turn.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Bottled lightning is packed with volatile reagents that create a blast of electricity when they are exposed to air. Bottled lightning deals 1d6 electricity damage and 1 electricity splash damage. On a hit, the target becomes @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] until the start of your next turn.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -35,17 +32,12 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 0
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
+        },
         "quantity": 1,
         "range": 20,
         "reload": {
@@ -77,9 +74,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "splashDamage": {
             "value": 1
         },

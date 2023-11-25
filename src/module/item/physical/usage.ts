@@ -3,7 +3,7 @@ import { EquippedData } from "./data.ts";
 interface HeldUsage {
     value: string;
     type: "held";
-    hands: number;
+    hands: 1 | 2;
 }
 
 interface WornUsage {
@@ -91,4 +91,5 @@ function getUsageDetails(usage: string): UsageDetails {
     return { value: usage, type: "worn" };
 }
 
-export { UsageDetails, UsageType, getUsageDetails, isEquipped };
+export { getUsageDetails, isEquipped };
+export type { HeldUsage, UsageDetails, UsageType };

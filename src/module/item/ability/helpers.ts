@@ -1,10 +1,13 @@
-import { EffectPF2e, ItemPF2e } from "@item";
-import { FrequencySource } from "@item/data/base.ts";
+import type { ActorPF2e } from "@actor";
+import type { AbilityItemPF2e, FeatPF2e, SpellPF2e } from "@item";
+import { ItemPF2e } from "@item";
+import { FrequencySource } from "@item/base/data/system.ts";
 import type { FeatSheetPF2e } from "@item/feat/sheet.ts";
 import { RangeData } from "@item/types.ts";
 import { ErrorPF2e, htmlQuery, isImageFilePath } from "@util";
+import * as R from "remeda";
 import { AbilitySystemData, SelfEffectReference } from "./data.ts";
-import type { ActionSheetPF2e } from "./sheet.ts";
+import type { AbilitySheetPF2e } from "./sheet.ts";
 
 interface SourceWithActionData {
     system: {
@@ -78,7 +81,7 @@ interface SelfEffectSheetReference extends SelfEffectReference {
 }
 
 /** Save data from an effect item dropped on an ability or feat sheet. */
-async function handleSelfEffectDrop(sheet: ActionSheetPF2e | FeatSheetPF2e, event: ElementDragEvent): Promise<void> {
+async function handleSelfEffectDrop(sheet: AbilitySheetPF2e | FeatSheetPF2e, event: ElementDragEvent): Promise<void> {
     if (!sheet.isEditable || sheet.item.system.actionType.value === "passive") {
         return;
     }
@@ -91,7 +94,7 @@ async function handleSelfEffectDrop(sheet: ActionSheetPF2e | FeatSheetPF2e, even
             return null;
         }
     })();
-    if (!(item instanceof EffectPF2e)) throw ErrorPF2e("Invalid item drop");
+    if (!item?.isOfType("effect")) throw ErrorPF2e("Invalid item drop");
 
     await sheet.item.update({ "system.selfEffect": { uuid: item.uuid, name: item.name } });
 }
@@ -105,10 +108,24 @@ function createActionRangeLabel(range: Maybe<RangeData>): string | null {
     return game.i18n.format(key, { n: value });
 }
 
+/**  Add the holy/unholy trait to sanctified actions and spells if the owning actor is also holy/unholy */
+function processSanctification(item: AbilityItemPF2e<ActorPF2e> | FeatPF2e<ActorPF2e> | SpellPF2e<ActorPF2e>): void {
+    const itemTraits: { value: string[] } = item.system.traits;
+    if (!itemTraits.value.includes("sanctified")) return;
+
+    const actorTraits: string[] = item.actor.system.traits?.value ?? [];
+    const isHoly = actorTraits.includes("holy");
+    const isUnholy = actorTraits.includes("unholy");
+    if ((isHoly || isUnholy) && !(isHoly && isUnholy)) {
+        itemTraits.value = R.uniq([...itemTraits.value, isHoly ? "holy" : "unholy"]).sort();
+    }
+}
+
 export {
     activateActionSheetListeners,
     createActionRangeLabel,
     createSelfEffectSheetData,
     handleSelfEffectDrop,
     normalizeActionChangeData,
+    processSanctification,
 };

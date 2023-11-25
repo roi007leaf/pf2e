@@ -1,6 +1,6 @@
 {
     "_id": "4Lo2qb5PmavSsLNk",
-    "img": "systems/pf2e/icons/spells/energy-aegis.webp",
+    "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
     "name": "Spell Effect: Energy Aegis",
     "system": {
         "description": {
@@ -15,6 +15,11 @@
         "level": {
             "value": 7
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
+        },
         "rules": [
             {
                 "key": "Resistance",
@@ -24,16 +29,13 @@
                     "electricity",
                     "fire",
                     "force",
-                    "negative",
-                    "positive",
+                    "void",
+                    "vitality",
                     "sonic"
                 ],
                 "value": "5*floor((@item.level -5)/2)"
             }
         ],
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "start": {
             "initiative": null,
             "value": 0

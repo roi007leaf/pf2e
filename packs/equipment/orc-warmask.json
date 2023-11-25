@@ -1,6 +1,6 @@
 {
     "_id": "ZEDDVQDtUZ2qOB5q",
-    "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/demon-mask.webp",
+    "img": "icons/equipment/head/mask-horned-brown.webp",
     "name": "Orc Warmask",
     "system": {
         "baseItem": null,
@@ -19,17 +19,17 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {}
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Ancestry Guide"
         },
         "quantity": 1,
         "rules": [
@@ -64,14 +64,10 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Ancestry Guide"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
-                "divination",
                 "invested",
                 "magical"
             ]

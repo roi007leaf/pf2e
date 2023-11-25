@@ -1,6 +1,6 @@
 {
     "_id": "7zy4W2RXQiMEr6cp",
-    "img": "systems/pf2e/icons/spells/dragon-claws.webp",
+    "img": "icons/creatures/claws/claw-hooked-barbed.webp",
     "name": "Spell Effect: Dragon Claws",
     "system": {
         "description": {
@@ -14,6 +14,11 @@
         },
         "level": {
             "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
         },
         "rules": [
             {
@@ -88,9 +93,6 @@
                 }
             }
         ],
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "start": {
             "initiative": null,
             "value": 0

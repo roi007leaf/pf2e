@@ -1,6 +1,6 @@
 {
     "_id": "MGtlUc6cy4nCM4Lk",
-    "img": "systems/pf2e/icons/default-icons/feats.webp",
+    "img": "icons/sundries/books/book-red-exclamation.webp",
     "name": "Bound in Ice",
     "system": {
         "actionType": {
@@ -23,6 +23,11 @@
                 }
             ]
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Monsters of Myth"
+        },
         "rules": [
             {
                 "key": "Resistance",
@@ -43,9 +48,6 @@
                 "uuid": "Compendium.pf2e.actionspf2e.Item.Blizzard Evasion"
             }
         ],
-        "source": {
-            "value": "Pathfinder Lost Omens: Monsters of Myth"
-        },
         "traits": {
             "rarity": "common",
             "value": [

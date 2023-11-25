@@ -1,6 +1,6 @@
 {
     "_id": "cKYWot4ifTOa6ans",
-    "img": "systems/pf2e/icons/default-icons/equipment.svg",
+    "img": "icons/sundries/documents/blueprint-recipe-alchemical.webp",
     "name": "Alchemical Chart (Lesser)",
     "system": {
         "baseItem": null,
@@ -19,26 +19,23 @@
         "level": {
             "value": 4
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 100
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",

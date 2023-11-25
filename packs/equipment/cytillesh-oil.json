@@ -1,6 +1,6 @@
 {
     "_id": "aZm1x9tpvBAT8YCd",
-    "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-poisons/cytillesh-oil.webp",
+    "img": "icons/commodities/materials/liquid-purple.webp",
     "name": "Cytillesh Oil",
     "system": {
         "autoDestroy": {
@@ -19,7 +19,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>This thick substance is distilled from the mind-robbing cytillesh fungus, though it lacks memory-altering capabilities.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage (1 round)</p>"
+            "value": "<p>This thick substance is distilled from the mind-robbing cytillesh fungus, though it lacks memory-altering capabilities.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">D</span> Interact (Injury)</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:19]</p>\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d10[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[1d12[poison]] damage (1 round)</p>\n<p><strong>Stage 3</strong> @Damage[2d10[poison]] damage (1 round)</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -32,26 +32,23 @@
         "level": {
             "value": 3
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 10
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",

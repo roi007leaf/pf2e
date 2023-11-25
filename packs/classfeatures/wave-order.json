@@ -1,6 +1,6 @@
 {
     "_id": "FuUXyv2yBs7zRgqT",
-    "img": "systems/pf2e/icons/features/classes/wave-order.webp",
+    "img": "icons/magic/water/wave-water-blue.webp",
     "name": "Wave Order",
     "system": {
         "actionType": {
@@ -18,6 +18,11 @@
         },
         "prerequisites": {
             "value": []
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
         },
         "rules": [
             {
@@ -39,10 +44,10 @@
                 "uuid": "Compendium.pf2e.feats-srd.Item.Shore Step"
             }
         ],
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "traits": {
+            "otherTags": [
+                "druid-order"
+            ],
             "rarity": "common",
             "value": [
                 "druid"

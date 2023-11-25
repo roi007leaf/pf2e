@@ -19,19 +19,19 @@
         "level": {
             "value": 9
         },
-        "negateBulk": {
-            "value": ""
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 645
             }
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder GM Core"
         },
         "quantity": 1,
         "rules": [
@@ -43,16 +43,12 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
                 "invested",
-                "magical",
-                "transmutation"
+                "magical"
             ]
         },
         "usage": {

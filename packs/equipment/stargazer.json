@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/detector-stone.webp",
     "name": "Stargazer",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "club",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 14
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 2
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "specific": {
             "material": {
                 "precious": null
@@ -100,11 +94,10 @@
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "divination",
                 "invested",
                 "magical",
-                "thrown-10",
-                "scrying"
+                "scrying",
+                "thrown-10"
             ]
         },
         "usage": {

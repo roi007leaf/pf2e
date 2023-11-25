@@ -19,19 +19,19 @@
         "level": {
             "value": 14
         },
-        "negateBulk": {
-            "value": ""
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 4000
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
         },
         "quantity": 1,
         "rules": [
@@ -67,14 +67,10 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "divination",
                 "invested",
                 "magical"
             ]

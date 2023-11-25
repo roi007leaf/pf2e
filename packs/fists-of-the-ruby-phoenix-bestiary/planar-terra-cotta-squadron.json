@@ -9,19 +9,16 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.Yr9yCuJiAlFh3QEB"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/shields/steel-shield.webp",
+            "img": "icons/equipment/shield/heater-steel-boss-red.webp",
             "name": "Steel Shield",
             "sort": 100000,
             "system": {
                 "acBonus": 2,
-                "baseItem": null,
-                "category": "shield",
-                "checkPenalty": null,
+                "baseItem": "steel-shield",
                 "containerId": null,
                 "description": {
                     "value": "<p>Like wooden shields, steel shields come in a variety of shapes and sizes. Though more expensive than wooden shields, they are much more durable.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>5</td>\n<td>20</td>\n<td>10</td>\n</tr>\n</tbody>\n</table>"
                 },
-                "dexCap": 0,
                 "equipped": {
                     "carryType": "held",
                     "handsHeld": 1,
@@ -30,7 +27,6 @@
                 "equippedBulk": {
                     "value": ""
                 },
-                "group": null,
                 "hardness": 5,
                 "hp": {
                     "max": 20,
@@ -39,50 +35,31 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 2
                     }
                 },
-                "propertyRune1": {
-                    "value": ""
-                },
-                "propertyRune2": {
-                    "value": ""
-                },
-                "propertyRune3": {
-                    "value": ""
-                },
-                "propertyRune4": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": ""
-                },
                 "rules": [],
+                "runes": {
+                    "reinforcing": 0
+                },
                 "size": "med",
                 "slug": "steel-shield",
-                "source": {
-                    "value": ""
-                },
-                "speedPenalty": null,
+                "speedPenalty": 0,
                 "stackGroup": null,
-                "strength": null,
                 "traits": {
+                    "integrated": null,
                     "rarity": "common",
                     "value": []
                 },
@@ -93,7 +70,7 @@
                     "value": "1"
                 }
             },
-            "type": "armor"
+            "type": "shield"
         },
         {
             "_id": "SlKd6WmjF0C4lXGp",
@@ -116,14 +93,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FormUp]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "form-up",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -153,18 +132,19 @@
                 "description": {
                     "value": "<p>The planar terra-cotta squadron momentarily moves beneath the Material Plane, instantly transporting itself to a location within 90 feet. The squadron can't use Planar Step again for [[/br 1d4 #Recharge Planar Step]]{1d4 rounds}</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "conjuration",
                         "teleportation"
                     ]
                 },
@@ -198,14 +178,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -240,14 +222,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "shield-block",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -282,14 +266,16 @@
                 "description": {
                     "value": "<p><strong>Thresholds</strong> 200 (12 squares), 100 (8 squares)</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.TroopDefenses]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 3"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "troop-defenses",
-                "source": {
-                    "value": "Pathfinder Bestiary 3"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -319,14 +305,16 @@
                 "description": {
                     "value": "<p>The troop launches a ranged attack in the form of a @Template[type:burst|distance:10] within 100 feet that deals [[/r 3d8+13]] damage (@Check[type:reflex|dc:33|basic:true] save). When the garrison is reduced to 8 or fewer squares, this area decreases to a @Template[type:burst|distance:5].</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -356,14 +344,16 @@
                 "description": {
                     "value": "<p>The troop raises steel shields, with the effects of @UUID[Compendium.pf2e.actionspf2e.Item.Raise a Shield].</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -391,21 +381,23 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><span class=\"pf2-icon\">A</span> to <span class=\"pf2-icon\">T</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The garrison makes a melee attack against each enemy within 5 feet (@Check[type:reflex|dc:30|basic:true] save). The damage depends on the number of actions.</p>\n<p><span class=\"pf2-icon\">A</span> @Damage[2d8[slashing]] damage.</p>\n<p><span class=\"pf2-icon\">D</span> @Damage[(3d8+13)[slashing]] damage.</p>\n<p><span class=\"pf2-icon\">T</span> @Damage[(4d8+16)[slashing]] damage.</p>"
+                    "value": "<p><span class=\"action-glyph\">A</span> to <span class=\"action-glyph\">T</span></p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> The garrison makes a melee attack against each enemy within 5 feet (@Check[type:reflex|dc:30|basic:true] save). The damage depends on the number of actions.</p>\n<p><span class=\"action-glyph\">A</span> @Damage[2d8[slashing]] damage.</p>\n<p><span class=\"action-glyph\">D</span> @Damage[(3d8+13)[slashing]] damage.</p>\n<p><span class=\"action-glyph\">T</span> @Damage[(4d8+16)[slashing]] damage.</p>"
                 },
                 "frequency": {
                     "max": 1,
                     "per": "round",
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -435,14 +427,16 @@
                 "description": {
                     "value": "<p>Whenever a troop Strides, it first Forms Up as a free action to condense into a 20-foot-by-20-foot area (minus any missing squares), then moves up to its Speed. This works just like a Gargantuan creature moving; for instance, if any square enters difficult terrain, the extra movement cost applies to the whole troop.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -471,11 +465,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -494,11 +490,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -566,18 +564,16 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Variant terra-cotta soldier garrison",
-            "creatureType": "",
             "level": {
                 "value": 15
             },
             "privateNotes": "",
             "publicNotes": "<p>Terra-cotta warriors guard the tombs of ancient rulers, where they stand vigil, animating only when intruders break in to pilfer riches or defile the tomb itself. Each warrior is meticulously crafted from clay and given unique features.</p>\n<hr />\n<p>These constructed warriors can work together as a trained group to repel intruders.</p>",
-            "source": {
-                "value": "Pathfinder #166: Despair on Danger Island"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #166: Despair on Danger Island"
             }
         },
         "resources": {},

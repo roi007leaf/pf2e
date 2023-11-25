@@ -1,8 +1,8 @@
-import { TraitViewData } from "@actor/data/base.ts";
 import { ModifierPF2e } from "@actor/modifiers.ts";
 import { RollTarget } from "@actor/types.ts";
-import { RangeData } from "@item/types.ts";
+import { ActionTrait } from "@item/ability/types.ts";
 import { TokenPF2e } from "@module/canvas/index.ts";
+import { CheckRollContextFlag } from "@module/chat-message/index.ts";
 import { ZeroToTwo } from "@module/data.ts";
 import { RollNotePF2e, RollNoteSource } from "@module/notes.ts";
 import { RollTwiceOption } from "./check/index.ts";
@@ -41,7 +41,8 @@ interface AttackRollParams extends RollParameters {
 }
 
 interface DamageRollParams extends Omit<AttackRollParams, "consumAmmo" | "rollTwice"> {
-    mapIncreases?: ZeroToTwo | null;
+    mapIncreases?: Maybe<ZeroToTwo>;
+    checkContext?: Maybe<CheckRollContextFlag>;
 }
 
 interface BaseRollContext {
@@ -53,10 +54,8 @@ interface BaseRollContext {
     rollMode?: RollMode | "roll";
     /** If this is an attack, the target of that attack */
     target?: RollTarget | null;
-    /** Any traits for the check. */
-    traits?: TraitViewData[];
-    /** Range data related to the check: if not provided, it is acquired from a weapon or melee item (if any) */
-    range?: Maybe<RangeData>;
+    /** Action traits associated with the roll */
+    traits?: ActionTrait[];
     /** The outcome a roll (usually relevant only to rerolls) */
     outcome?: (typeof DEGREE_OF_SUCCESS_STRINGS)[number] | null;
     /** The outcome prior to being changed by abilities raising or lowering degree of success */
@@ -67,4 +66,4 @@ interface BaseRollContext {
     skipDialog?: boolean;
 }
 
-export { AttackRollParams, BaseRollContext, DamageRollParams, RollDataPF2e, RollParameters, RollTwiceOption };
+export type { AttackRollParams, BaseRollContext, DamageRollParams, RollDataPF2e, RollParameters, RollTwiceOption };

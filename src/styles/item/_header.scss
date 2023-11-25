@@ -1,34 +1,33 @@
-.sheet-header {
+form > header {
     display: flex;
-    flex: 0 0 70px;
-    align-items: bottom;
-    width: 100%;
-    padding-bottom: 6px;
+    padding-bottom: 0.5em;
     border-bottom: 1px solid var(--secondary-background);
 
     img {
         border: none;
         object-fit: contain;
-        flex: 0 0 64px;
-        margin-right: 6px;
     }
 
     .details {
         display: flex;
         flex-wrap: wrap;
+        column-gap: 0.33rem;
         align-items: baseline;
 
-        input, .level {
+        input,
+        .level {
             font-family: var(--serif-condensed);
             font-size: var(--font-size-36);
             font-weight: 700;
         }
     }
 
-    input[type="text"], input[type="number"] {
+    input[type="text"],
+    input[type="number"] {
         border: none;
         height: var(--font-size-34);
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             box-shadow: none;
         }
     }
@@ -41,12 +40,10 @@
         flex: 0;
         white-space: nowrap;
         margin-left: auto;
-        padding-left: 8px;
 
         i {
             font-size: 0.6em;
-            margin-right: 4px;
-            margin-bottom: 4px;
+            vertical-align: middle;
         }
 
         input {
@@ -55,11 +52,8 @@
         }
     }
 
-    .feat-action-cost {
-        font-size: 2.5rem;
-        margin-top: -0.6rem;
-        margin-bottom: -0.3rem;
-        padding-left: 0.4rem;
+    .action-glyph {
+        font-size: 2.25rem;
     }
 
     .paizo-style {

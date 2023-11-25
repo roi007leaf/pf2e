@@ -1,6 +1,6 @@
 {
     "_id": "6sbuDCFHt89Uqykn",
-    "img": "systems/pf2e/icons/default-icons/feats.webp",
+    "img": "icons/sundries/books/book-red-exclamation.webp",
     "name": "Mountain Skin",
     "system": {
         "actionType": {
@@ -23,25 +23,27 @@
                 }
             ]
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Highhelm"
+        },
         "rules": [
             {
                 "key": "ActiveEffectLike",
                 "mode": "upgrade",
-                "path": "system.martial.medium.rank",
+                "path": "system.proficiencies.defenses.medium.rank",
                 "priority": 41,
                 "value": 1
             },
             {
                 "key": "ActiveEffectLike",
                 "mode": "upgrade",
-                "path": "system.martial.heavy.rank",
+                "path": "system.proficiencies.defenses.heavy.rank",
                 "priority": 41,
                 "value": 1
             }
         ],
-        "source": {
-            "value": "Pathfinder Lost Omens: Highhelm"
-        },
         "traits": {
             "rarity": "common",
             "value": [

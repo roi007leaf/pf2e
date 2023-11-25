@@ -1,6 +1,6 @@
 {
     "_id": "MizJPiKnopfpGmvw",
-    "img": "systems/pf2e/icons/spells/blinding-fury.webp",
+    "img": "icons/magic/fire/flame-burning-eye.webp",
     "name": "Catharsis Emotion (Anger)",
     "system": {
         "actionType": {
@@ -19,6 +19,11 @@
         "prerequisites": {
             "value": []
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
+        },
         "rules": [
             {
                 "key": "FlatModifier",
@@ -34,9 +39,6 @@
                 "value": "@spell.level"
             }
         ],
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "traits": {
             "rarity": "uncommon",
             "value": []

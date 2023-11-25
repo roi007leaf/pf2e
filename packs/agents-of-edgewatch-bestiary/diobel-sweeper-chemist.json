@@ -13,9 +13,6 @@
             "name": "Acid Flask (Moderate)",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "alchemical-bomb",
                 "bonus": {
                     "value": 1
@@ -27,11 +24,16 @@
                 "containerId": null,
                 "damage": {
                     "damageType": "acid",
-                    "dice": 2,
-                    "die": "d6"
+                    "dice": 1,
+                    "die": "",
+                    "persistent": {
+                        "faces": 6,
+                        "number": 2,
+                        "type": "acid"
+                    }
                 },
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, @Damage[2d6[persistent,acid]] damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>This flask filled with corrosive acid deals 1 acid damage, 2d6 persistent acid damage, and 2 acid splash damage. You gain a +1 item bonus to attack rolls.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -50,16 +52,11 @@
                 "level": {
                     "value": 3
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -79,6 +76,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 3,
                 "range": 20,
                 "reload": {
@@ -87,9 +89,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "acid-flask-moderate",
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": 2
                 },
@@ -127,9 +126,6 @@
             "name": "Alchemist's Fire (Moderate)",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "alchemical-bomb",
                 "bonus": {
                     "value": 1
@@ -142,10 +138,15 @@
                 "damage": {
                     "damageType": "fire",
                     "dice": 2,
-                    "die": "d8"
+                    "die": "d8",
+                    "persistent": {
+                        "faces": null,
+                        "number": 2,
+                        "type": "fire"
+                    }
                 },
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, @Damage[2[persistent,fire]] damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Strike</p>\n<p>Alchemist's fire is a combination of volatile liquids that ignite when exposed to air. Alchemist's fire deals 2d8 fire damage, 2 persistent fire damage, and 2 fire splash damage. You gain a +1 item bonus to attack rolls.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -164,16 +165,11 @@
                 "level": {
                     "value": 3
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -193,6 +189,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 3,
                 "range": 20,
                 "reload": {
@@ -201,9 +202,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "alchemists-fire-moderate",
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": 2
                 },
@@ -241,9 +239,6 @@
             "name": "+1 Striking Sickle",
             "sort": 300000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "sickle",
                 "bonus": {
                     "value": 0
@@ -259,7 +254,7 @@
                     "die": "d4"
                 },
                 "description": {
-                    "value": "<p>Originally a farming tool used for reaping grain, this one‑handed weapon has a short wooden handle ending in a curved blade, sometimes sharpened on both sides.</p>"
+                    "value": "<p>Originally a farming tool used for reaping grain, this one-handed weapon has a short wooden handle ending in a curved blade, sometimes sharpened on both sides.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -278,17 +273,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -307,6 +297,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -315,9 +310,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "sickle",
-                "source": {
-                    "value": ""
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -349,7 +341,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.ewQZ0VeL38v3qFnN"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/studded-leather-armor.webp",
+            "img": "icons/equipment/chest/breastplate-layered-leather-studded-brown.webp",
             "name": "+1 Studded Leather Armor",
             "sort": 400000,
             "system": {
@@ -379,18 +371,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
@@ -409,6 +395,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": ""
@@ -416,10 +407,7 @@
                 "rules": [],
                 "size": "med",
                 "slug": "studded-leather-armor",
-                "source": {
-                    "value": ""
-                },
-                "speedPenalty": null,
+                "speedPenalty": 0,
                 "stackGroup": null,
                 "strength": 1,
                 "traits": {
@@ -442,7 +430,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.4ftXXUCBHcf4b0MH"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/alchemists-tools.webp",
+            "img": "icons/tools/laboratory/vials-blue-pink.webp",
             "name": "Alchemist's Tools",
             "sort": 500000,
             "system": {
@@ -467,27 +455,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": ""
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 3
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "alchemists-tools",
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -509,7 +494,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/formula-book.webp",
+            "img": "icons/sundries/books/book-tooled-brass-brown.webp",
             "name": "Formula Book",
             "sort": 600000,
             "system": {
@@ -534,27 +519,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": ""
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "formula-book-blank",
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -599,11 +581,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -654,11 +638,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -716,11 +702,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -754,14 +742,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The chemist has at least one bomb in their possession</p>\n<hr />\n<p><strong>Effect</strong> The chemist adds a hasty mix of noxious substances to the bomb and makes a ranged Strike with it. If it hits and deals damage, the target must attempt a @Check[type:fortitude|dc:27] save or become @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 2} for [[/br 1d6 #rounds]]{1d6 rounds}; if the result of the save is a critical failure, this increases to @UUID[Compendium.pf2e.conditionitems.Item.Stupefied]{Stupefied 3}. For the next 24 hours, the affected target takes a -2 circumstance penalty (-3 on a critical failure) to additional Fortitude saving throws against the same chemist's Crude Bombs.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Dirty Bomb]</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Dirty Bomb (Critical Failure)]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -791,14 +781,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The chemist has their alchemist's tools, formula book, and a free hand</p>\n<hr />\n<p><strong>Effect</strong> The chemist creates a @UUID[Compendium.pf2e.equipment-srd.Item.Acid Flask (Moderate)]{Moderate Acid Flask} or @UUID[Compendium.pf2e.equipment-srd.Item.Alchemist's Fire (Moderate)]{Alchemist's Fire} that they must use before the end of their next turn or else it becomes inert.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -827,11 +819,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -850,11 +844,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -873,11 +869,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -896,11 +894,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -953,18 +953,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 9
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #159: All or Nothing"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #159: All or Nothing"
             }
         },
         "resources": {},
@@ -1003,6 +1001,7 @@
                 "value": "med"
             },
             "value": [
+                "evil",
                 "human",
                 "humanoid"
             ]

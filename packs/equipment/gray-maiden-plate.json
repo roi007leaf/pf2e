@@ -11,7 +11,7 @@
         "description": {
             "value": "<p>These suits of faceless full plate were first designed and distributed under Queen Ileosa's rule, but today, each new suit of this infamous style of plate armor is made by a Gray Maiden herself or a new member's sponsor.</p>"
         },
-        "dexCap": 0,
+        "dexCap": null,
         "equippedBulk": {
             "value": "3"
         },
@@ -24,17 +24,12 @@
         "level": {
             "value": 2
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 0
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -53,15 +48,17 @@
         "propertyRune4": {
             "value": ""
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Adventure: Shadows at Sundown"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": ""
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Adventure: Shadows at Sundown"
-        },
         "speedPenalty": -10,
         "stackGroup": null,
         "strength": 3,

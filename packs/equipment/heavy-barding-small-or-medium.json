@@ -24,16 +24,11 @@
         "level": {
             "value": 2
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -53,15 +48,17 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": null
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "speedPenalty": -10,
         "stackGroup": null,
         "strength": 5,

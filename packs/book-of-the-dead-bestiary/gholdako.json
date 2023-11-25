@@ -13,9 +13,6 @@
             "name": "Javelin",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "javelin",
                 "bonus": {
                     "value": 0
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 4,
                 "range": 30,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "huge",
                 "slug": "javelin",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -137,11 +131,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -185,11 +181,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -233,11 +231,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -271,14 +271,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -313,6 +315,11 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -325,9 +332,6 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -362,20 +366,21 @@
                     "per": "day",
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divination",
-                        "occult",
-                        "fortune"
+                        "fortune",
+                        "occult"
                     ]
                 },
                 "trigger": {
@@ -398,23 +403,24 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The gholdako exhales a @Template[type:cone|distance:60] of noxious breath that deals @Damage[7d8[negative]] damage (@Check[type:reflex|dc:29|basic:true]). A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.Blinded] until the end of its next turn (or for 1 minute on a critical failure) as a milky film coats its eyes.</p>\n<p>The gholdako can't use Blinding Breath again for [[/r 1d4 #Recharge]]{1d4 rounds}.</p>"
+                    "value": "<p>The gholdako exhales a @Template[type:cone|distance:60] of noxious breath that deals @Damage[7d8[void]] damage (@Check[type:reflex|dc:29|basic:true]). A creature that fails its save is also @UUID[Compendium.pf2e.conditionitems.Item.Blinded] until the end of its next turn (or for 1 minute on a critical failure) as a milky film coats its eyes.</p>\n<p>The gholdako can't use Blinding Breath again for [[/br 1d4 #Recharge Blinding Breath]]{1d4 rounds}.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "divine",
-                        "necromancy",
-                        "negative"
+                        "void"
                     ]
                 },
                 "trigger": {
@@ -439,19 +445,20 @@
                 "description": {
                     "value": "<p>The first time each round the gholdako damages a creature with a claw Strike, the creature must attempt a @Check[type:will|dc:27] save, as its mind is assaulted by horrifying visions. On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Confused] until the end of its next turn. On a critical success, the creature is immune for 24 hours.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "infectious-visions",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "divine",
-                        "enchantment",
                         "mental",
                         "poison"
                     ]
@@ -477,11 +484,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -500,11 +509,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -523,11 +534,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -546,11 +559,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -586,7 +601,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 215,
                 "temp": 0,
                 "value": 215
@@ -627,18 +642,16 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 10
             },
             "privateNotes": "",
             "publicNotes": "<p>Cyclops necromancers created gholdakos untold ages ago by performing foul rituals over the corpses of their fellow cyclopes. Although these rituals varied through the history of Ghol-Gan, each involved the sacrifice of numerous humanoids whose blood was used to write the runes scribed upon a gholdako's linens. Rarely, a cyclops initiated their own transformation into a gholdako, scribing runes glimpsed from oracular visions and fevered dreams on their clothes or carving them into their bare flesh. Regardless of their origin, gholdakos are guardians, bound beyond death to protect a location, relic, or person—often the same thing they once defended in life.</p>\n<p>Despite their death and subsequent reanimation, gholdakos retain many of the quirks of living cyclopes, including their ceaseless hunger, volatile temper, single-mindedness, and great strength.</p>",
-            "source": {
-                "value": "Pathfinder Book of the Dead"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Book of the Dead"
             }
         },
         "resources": {},
@@ -673,7 +686,9 @@
                 "value": "huge"
             },
             "value": [
-                "undead"
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

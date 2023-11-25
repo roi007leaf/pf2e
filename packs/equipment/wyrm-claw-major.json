@@ -1,6 +1,6 @@
 {
     "_id": "orChmPy2wJ6DWwHU",
-    "img": "systems/pf2e/icons/default-icons/equipment.svg",
+    "img": "icons/creatures/claws/claw-hooked-purple.webp",
     "name": "Wyrm Claw (Major)",
     "system": {
         "baseItem": null,
@@ -19,31 +19,27 @@
         "level": {
             "value": 19
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 40000
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
-                "conjuration",
                 "magical",
                 "spellheart"
             ]

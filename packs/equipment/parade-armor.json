@@ -1,6 +1,6 @@
 {
     "_id": "hHOi8jV85CN8WRJT",
-    "img": "systems/pf2e/icons/equipment/other/attached-items/parade-armor.webp",
+    "img": "icons/equipment/chest/breastplate-layered-leather-brown-silver.webp",
     "name": "Parade Armor",
     "system": {
         "baseItem": null,
@@ -19,19 +19,19 @@
         "level": {
             "value": 2
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 10
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Knights of Lastwall"
         },
         "quantity": 1,
         "rules": [
@@ -50,9 +50,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Knights of Lastwall"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",

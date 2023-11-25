@@ -13,9 +13,6 @@
             "name": "Rapier",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "rapier",
                 "bonus": {
                     "value": 0
@@ -50,16 +47,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "tiny",
                 "slug": "rapier",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -138,11 +132,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "deadly-d8",
@@ -181,11 +177,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "fire",
@@ -215,6 +213,11 @@
                 "category": "interaction",
                 "description": {
                     "value": "<p>An ether sprite sheds light as a torch. The sprite can suppress this glow by spending a single action with the concentrate trait.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
@@ -248,9 +251,6 @@
                     }
                 ],
                 "slug": "natural-glow",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "light",
@@ -279,14 +279,16 @@
                 "description": {
                     "value": "<p>The ether sprite taunts a creature within 30 feet and rolls @Check[type:performance|defense:will] against the target's Will DC. On a success, the target is @UUID[Compendium.pf2e.conditionitems.Item.Confused] until the end of their next turn.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "auditory",
@@ -316,11 +318,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -339,11 +343,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -362,11 +368,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -385,11 +393,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -408,11 +418,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -477,18 +489,16 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": -1
             },
             "privateNotes": "",
             "publicNotes": "<h4>Sprite</h4>\n<p>The fey of the Ether Court in the Darklands have evolved somewhat differently from the First World kin that exiled them, becoming more cruel and less mischievous than is typical for their kind.</p>\n<h4>Ether Sprite</h4>\n<p>The excitable sprites of the Ether Court prefer to frolic, drink, insult each other, and perform improv comedy.</p>\n<h4>Sprite Collections</h4>\n<p>Ether sprites have a reputation for being thieves. In truth, they’re generally curious about the world and simply have a tendency to walk away with objects that don’t belong to them, not understanding the concept of ownership. As a result, ether sprites tend to have small interesting objects in their possession, such as talismans or gemstones.</p>",
-            "source": {
-                "value": "Pathfinder #194: Cult of the Cave Worm"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #194: Cult of the Cave Worm"
             }
         },
         "resources": {},

@@ -6,7 +6,7 @@
 
     <div class="form-group">
         <label>{{localize "PF2E.BulkLabel"}}</label>
-        <select name="system.weight.value">
+        <select data-property="system.weight.value" data-value-base="{{item._source.system.weight.value}}">
             {{#select data.weight.value}}
                 <option value="-">{{localize "PF2E.NegligibleOption"}}</option>
                 {{#each bulkTypes as |name type|}}
@@ -18,7 +18,11 @@
 
     <div class="form-group">
         <label>{{localize "PF2E.EquippedBulkLabel"}}</label>
-        <select name="system.equippedBulk.value" {{disabled bulkDisabled}}>
+        <select
+            data-property="system.equippedBulk.value"
+            data-value-base="{{item._source.system.equippedBulk.value}}"
+            {{disabled bulkDisabled}}
+        >
             {{#select data.equippedBulk.value}}
                 <option value="">{{localize "PF2E.EquippedSameBulkValue"}}</option>
                 <option value="0">{{localize "PF2E.NegligibleOption"}}</option>
@@ -29,8 +33,8 @@
         </select>
     </div>
     <div class="form-group">
-        <label>{{localize "PF2E.Size"}}</label>
-        <select name="system.size">
+        <label for="{{item.uuid}}-size">{{localize "PF2E.Size"}}</label>
+        <select name="system.size" id="{{item.uuid}}-size">
             {{#select data.size}}
                 {{#each sizes as |name value|}}
                     <option value="{{value}}">{{localize name}}</option>
@@ -40,20 +44,18 @@
     </div>
 
     <div class="form-group">
-        <label>{{localize "PF2E.PriceLabel"}}</label>
+        <label for="{{item.uuid}}-price">
+            {{localize "PF2E.PriceLabel"}}
+            {{#if adjustedPriceHint}}<i class="fa-solid fa-info-circle" data-tooltip="{{adjustedPriceHint}}"></i>{{/if}}
+        </label>
         <input
             type="text"
             {{#if (eq priceAdjustment "higher")}}class="adjusted-higher"{{else if (eq priceAdjustment "lower")}}class="adjusted-lower"{{/if}}
+            id="{{item.uuid}}-price"
+            value="{{item.price.value}}"
             data-property="system.price.value"
             data-value-base="{{basePrice}}"
-            value="{{item.price.value}}"
             spellcheck="false"
         />
     </div>
-
-    <ol class="item-tags tags">
-        {{#each traits as |trait|}}
-            <li class="tag tag_transparent">{{trait.label}}</li>
-        {{/each}}
-    </ol>
 </div>

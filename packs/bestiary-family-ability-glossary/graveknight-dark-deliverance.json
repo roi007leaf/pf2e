@@ -11,15 +11,23 @@
         },
         "category": "defensive",
         "description": {
-            "value": "<p>The graveknight has positive resistance equal to its level.</p>"
+            "value": "<p>The graveknight has vitality resistance equal to its level.</p>"
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary"
         },
         "requirements": {
             "value": ""
         },
-        "rules": [],
-        "source": {
-            "value": "Pathfinder Bestiary"
-        },
+        "rules": [
+            {
+                "key": "Resistance",
+                "type": "vitality",
+                "value": "@actor.level"
+            }
+        ],
         "traits": {
             "rarity": "common",
             "value": []

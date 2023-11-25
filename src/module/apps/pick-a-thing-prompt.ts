@@ -1,11 +1,11 @@
-import { ActorPF2e } from "@actor";
-import { ItemPF2e } from "@item";
+import type { ActorPF2e } from "@actor";
+import type { ItemPF2e } from "@item";
 import { PredicatePF2e } from "@system/predication.ts";
 import { ErrorPF2e, htmlQuery, htmlQueryAll, sluggify } from "@util";
 import Tagify from "@yaireo/tagify";
 
 /** Prompt the user to pick from a number of options */
-abstract class PickAThingPrompt<T> extends Application {
+abstract class PickAThingPrompt<T extends string | number | object> extends Application {
     protected item: ItemPF2e<ActorPF2e>;
 
     #resolve?: (value: PickableThing<T> | null) => void;
@@ -54,7 +54,9 @@ abstract class PickAThingPrompt<T> extends Application {
         }
 
         const valueElement =
-            event.currentTarget.closest(".content")?.querySelector<HTMLElement>("tag") ?? event.currentTarget;
+            event.currentTarget.closest(".choice")?.querySelector<HTMLElement>("button[data-action=pick]") ??
+            event.currentTarget.closest(".content")?.querySelector<HTMLElement>("tag") ??
+            event.currentTarget;
         const selectedIndex = valueElement.getAttribute("value");
 
         return ["", null].includes(selectedIndex) || !Number.isInteger(Number(selectedIndex))
@@ -84,7 +86,7 @@ abstract class PickAThingPrompt<T> extends Application {
     override activateListeners($html: JQuery): void {
         const html = $html[0];
 
-        for (const element of htmlQueryAll(html, "a[data-choice], button[type=button]")) {
+        for (const element of htmlQueryAll(html, "a[data-choice], button[data-action=pick]")) {
             element.addEventListener("click", (event) => {
                 this.selection = this.getSelection(event) ?? null;
                 this.close();
@@ -124,11 +126,11 @@ abstract class PickAThingPrompt<T> extends Application {
                 game.i18n.format("PF2E.UI.RuleElements.Prompt.NoValidOptions", {
                     actor: this.actor.name,
                     item: this.item.name,
-                })
+                }),
             );
         } else if (!this.selection && !this.allowNoSelection) {
             ui.notifications.warn(
-                game.i18n.format("PF2E.UI.RuleElements.Prompt.NoSelectionMade", { item: this.item.name })
+                game.i18n.format("PF2E.UI.RuleElements.Prompt.NoSelectionMade", { item: this.item.name }),
             );
         }
 
@@ -138,7 +140,7 @@ abstract class PickAThingPrompt<T> extends Application {
     }
 }
 
-interface PickAThingConstructorArgs<T> {
+interface PickAThingConstructorArgs<T extends string | number | object> {
     title?: string;
     prompt?: string;
     choices?: PickableThing<T>[];
@@ -147,7 +149,7 @@ interface PickAThingConstructorArgs<T> {
     allowNoSelection?: boolean;
 }
 
-interface PickableThing<T = string | number | object> {
+interface PickableThing<T extends string | number | object = string | number | object> {
     value: T;
     label: string;
     img?: string;
@@ -161,4 +163,5 @@ interface PromptTemplateData {
     selectMenu: boolean;
 }
 
-export { PickAThingConstructorArgs, PickAThingPrompt, PickableThing, PromptTemplateData };
+export { PickAThingPrompt };
+export type { PickAThingConstructorArgs, PickableThing, PromptTemplateData };

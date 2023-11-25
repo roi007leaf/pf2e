@@ -27,11 +27,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -71,11 +73,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -120,11 +124,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -159,14 +165,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -201,6 +209,11 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -213,9 +226,6 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -245,14 +255,16 @@
                 "description": {
                     "value": "<p>The Blood-Pear Tree takes 15 additional damage from axes.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -279,14 +291,16 @@
                 "description": {
                     "value": "<p>When it isn't in danger, the corpseroot spends 1 minute rooting to the earth, becoming planted in place. While the corpseroot is planted and immobile, creatures must actively @UUID[Compendium.pf2e.actionspf2e.Item.Seek] and succeed at a @Check[type:perception|dc:36] check (@Check[type:perception|dc:40] in forests) to detect the corpseroot's true nature.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -311,25 +325,26 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The Blood-Pear Tree has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] or @UUID[Compendium.pf2e.conditionitems.Item.Restrained]</p>\n<hr />\n<p><strong>Effect</strong> The Blood-Pear Tree buries its roots into the creature, dealing [[/r (2d6+17)[piercing]] damage (@Check[type:fortitude|dc:38|basic:true] save). On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (or increases the value by 1 if already enfeebled), and the corpseroot regains @Damage[15[healing]]] HP. If this would make a creature @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 5}, the creature dies.</p>"
+                    "value": "<p><strong>Frequency</strong> once per round</p>\n<p><strong>Requirements</strong> The Blood-Pear Tree has a creature @UUID[Compendium.pf2e.conditionitems.Item.Grabbed] or @UUID[Compendium.pf2e.conditionitems.Item.Restrained]</p>\n<hr />\n<p><strong>Effect</strong> The Blood-Pear Tree buries its roots into the creature, dealing @Damage[(2d6+17)[piercing]] damage (@Check[type:fortitude|dc:38|basic:true] save). On a failure, the creature is @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 1} (or increases the value by 1 if already enfeebled), and the corpseroot regains [[/r 15[healing]]] HP. If this would make a creature @UUID[Compendium.pf2e.conditionitems.Item.Enfeebled]{Enfeebled 5}, the creature dies.</p>"
                 },
                 "frequency": {
                     "max": 1,
                     "per": "round",
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "necromancy",
                         "primal"
                     ]
                 },
@@ -360,14 +375,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -396,11 +413,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -419,11 +438,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -459,7 +480,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 350,
                 "temp": 0,
                 "value": 350
@@ -520,18 +541,16 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "Variant corpseroot",
-            "creatureType": "",
             "level": {
                 "value": 17
             },
             "privateNotes": "",
             "publicNotes": "<p>Corpseroots are rotten, undead trees that grow bright-red poisonous fruit and spread blight to surrounding plants, transforming healthy trees into new corpseroots. These cunning killers drain the life from creatures through their root systems, posing as dead trees until their victims come within reach.</p>\n<p>Corpseroots most commonly form from rotten husks of trees that died from supernatural blights, making them common threats in the Fangwood and Fierani forests. The most powerful are ancient trees used as shrines and sacrificial altars, their roots absorbing the blood, flesh, and terror of those condemned under their boughs. Some of these ancient corpseroots still command the respect and devotion of the cults that inadvertently created them.</p>",
-            "source": {
-                "value": "Pathfinder #191: The Destiny War"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #191: The Destiny War"
             }
         },
         "resources": {},
@@ -567,7 +586,9 @@
                 "value": "huge"
             },
             "value": [
-                "undead"
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

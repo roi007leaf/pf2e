@@ -1,6 +1,6 @@
 {
     "_id": "wXaz41gwqNtTn6tf",
-    "img": "systems/pf2e/icons/features/classes/archwizards-spellcraft.webp",
+    "img": "icons/sundries/books/book-eye-purple.webp",
     "name": "Arcane Spellcasting (Magus)",
     "system": {
         "actionType": {
@@ -19,10 +19,12 @@
         "prerequisites": {
             "value": []
         },
-        "rules": [],
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
         },
+        "rules": [],
         "traits": {
             "rarity": "common",
             "selected": {},

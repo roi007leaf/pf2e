@@ -1,6 +1,6 @@
 {
     "_id": "AFX1V0Go9DqPWBlN",
-    "img": "systems/pf2e/icons/equipment/snares/alarm-snare.webp",
+    "img": "icons/tools/instruments/bell-silver.webp",
     "name": "Alarm Snare",
     "system": {
         "autoDestroy": {
@@ -8,8 +8,8 @@
         },
         "baseItem": null,
         "charges": {
-            "max": "1",
-            "value": "1"
+            "max": 1,
+            "value": 1
         },
         "consumableType": {
             "value": "snare"
@@ -32,26 +32,23 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 3
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",

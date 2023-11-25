@@ -1,6 +1,6 @@
 {
     "_id": "wx7WY6YGvgMphDL1",
-    "img": "systems/pf2e/icons/default-icons/armor.svg",
+    "img": "icons/equipment/chest/breastplate-scale-leather.webp",
     "name": "Leather Lamellar",
     "system": {
         "acBonus": 1,
@@ -9,7 +9,7 @@
         "checkPenalty": -1,
         "containerId": null,
         "description": {
-            "value": "<p>Leather lamellar is a composite armor made of small rectangular pieces of lacquered leather laced together with high‑quality cord. It's typically worn with an undershirt.</p>"
+            "value": "<p>Leather lamellar is a composite armor made of small rectangular pieces of lacquered leather laced together with high-quality cord. It's typically worn with an undershirt.</p>"
         },
         "dexCap": 4,
         "equippedBulk": {
@@ -24,16 +24,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -53,18 +48,20 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": null
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
-        "speedPenalty": null,
+        "speedPenalty": 0,
         "stackGroup": null,
-        "strength": 0,
+        "strength": null,
         "traits": {
             "rarity": "common",
             "value": [

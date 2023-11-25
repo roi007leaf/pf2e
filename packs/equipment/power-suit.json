@@ -4,7 +4,7 @@
     "name": "Power Suit",
     "system": {
         "acBonus": 4,
-        "baseItem": null,
+        "baseItem": "power-suit",
         "category": "medium",
         "checkPenalty": -2,
         "containerId": null,
@@ -24,16 +24,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -50,6 +45,11 @@
         },
         "propertyRune4": {
             "value": null
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Guns & Gears"
         },
         "quantity": 1,
         "resiliencyRune": {
@@ -71,9 +71,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Guns & Gears"
-        },
         "speedPenalty": -5,
         "stackGroup": null,
         "strength": 3,

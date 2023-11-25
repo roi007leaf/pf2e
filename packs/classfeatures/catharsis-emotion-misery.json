@@ -1,6 +1,6 @@
 {
     "_id": "jklanV9AbZDnZHaD",
-    "img": "systems/pf2e/icons/spells/befuddle.webp",
+    "img": "icons/magic/control/fear-fright-white.webp",
     "name": "Catharsis Emotion (Misery)",
     "system": {
         "actionType": {
@@ -19,10 +19,12 @@
         "prerequisites": {
             "value": []
         },
-        "rules": [],
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
         },
+        "rules": [],
         "traits": {
             "rarity": "uncommon",
             "value": []

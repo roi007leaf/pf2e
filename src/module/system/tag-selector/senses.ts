@@ -1,10 +1,10 @@
-import { ActorPF2e } from "@actor";
+import type { ActorPF2e } from "@actor";
 import { SENSES_WITH_MANDATORY_ACUITIES } from "@actor/creature/values.ts";
 import { ErrorPF2e, htmlClosest, htmlQuery, htmlQueryAll, objectHasKey } from "@util";
 import { BaseTagSelector, TagSelectorData, TagSelectorOptions } from "./base.ts";
 import { SelectableTagField } from "./index.ts";
 
-export class SenseSelector<TActor extends ActorPF2e> extends BaseTagSelector<TActor> {
+class SenseSelector<TActor extends ActorPF2e> extends BaseTagSelector<TActor> {
     protected objectProperty = "system.traits.senses";
 
     static override get defaultOptions(): TagSelectorOptions {
@@ -68,8 +68,8 @@ export class SenseSelector<TActor extends ActorPF2e> extends BaseTagSelector<TAc
     /** Clear checkboxes with empty range inputs */
     protected override _onSubmit(
         event: Event,
-        options?: OnSubmitFormOptions | undefined
-    ): Promise<Record<string, unknown>> {
+        options?: OnSubmitFormOptions | undefined,
+    ): Promise<Record<string, unknown> | false> {
         for (const input of htmlQueryAll<HTMLInputElement>(this.element[0], "input[type=number]")) {
             const checkbox = htmlQuery<HTMLInputElement>(htmlClosest(input, "tr"), "input[type=checkbox]");
             if (checkbox && !Number(input.value)) {
@@ -84,7 +84,7 @@ export class SenseSelector<TActor extends ActorPF2e> extends BaseTagSelector<TAc
         const update = Object.entries(formData)
             .filter(
                 (e): e is [string, [true, string, string | null] | true] =>
-                    e[1] === true || (Array.isArray(e[1]) && e[1][0])
+                    e[1] === true || (Array.isArray(e[1]) && e[1][0]),
             )
             .map(([type, values]) => {
                 if (values === true) {
@@ -119,3 +119,5 @@ interface SenseChoiceData {
 }
 
 type SenseFormData = Record<string, [boolean, string, string | null] | boolean>;
+
+export { SenseSelector };

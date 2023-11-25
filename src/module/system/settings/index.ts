@@ -1,6 +1,6 @@
 import { resetActors } from "@actor/helpers.ts";
 import { ActorSheetPF2e } from "@actor/sheet/base.ts";
-import { ItemPF2e, ItemSheetPF2e } from "@item";
+import { ItemSheetPF2e, type ItemPF2e } from "@item";
 import { StatusEffects } from "@module/canvas/status-effects.ts";
 import { MigrationRunner } from "@module/migration/runner/index.ts";
 import { isImageOrVideoPath } from "@util";
@@ -95,7 +95,7 @@ export function registerSettings(): void {
         type: Boolean,
         onChange: () => {
             const itemSheets = Object.values(ui.windows).filter(
-                (w): w is ItemSheetPF2e<ItemPF2e> => w instanceof ItemSheetPF2e
+                (w): w is ItemSheetPF2e<ItemPF2e> => w instanceof ItemSheetPF2e,
             );
             for (const sheet of itemSheets) {
                 sheet.render();
@@ -168,20 +168,6 @@ export function registerSettings(): void {
         },
     });
 
-    game.settings.register("pf2e", "dataTools", {
-        name: "PF2E.SETTINGS.DataTools.Name",
-        hint: "PF2E.SETTINGS.DataTools.Hint",
-        scope: "world",
-        config: false,
-        default: BUILD_MODE === "development",
-        type: Boolean,
-        onChange: () => {
-            for (const app of Object.values(ui.windows).filter((a) => a instanceof DocumentSheet)) {
-                app.render();
-            }
-        },
-    });
-
     // Don't tell Nath
     game.settings.register("pf2e", "nathMode", {
         name: "PF2E.SETTINGS.NathMode.Name",
@@ -213,7 +199,12 @@ export function registerSettings(): void {
         name: CONFIG.PF2E.SETTINGS.automation.actorsDeadAtZero.name,
         scope: "world",
         config: false,
-        default: "npcsOnly",
+        choices: {
+            neither: "PF2E.SETTINGS.Automation.ActorsDeadAtZero.Neither",
+            npcsOnly: "PF2E.SETTINGS.Automation.ActorsDeadAtZero.NPCsOnly",
+            both: "PF2E.SETTINGS.Automation.ActorsDeadAtZero.Both",
+        },
+        default: "both",
         type: String,
     });
     AutomationSettings.registerSettings();
@@ -315,6 +306,14 @@ export function registerSettings(): void {
         },
     });
 
+    game.settings.register("pf2e", "seenLastStopMessage", {
+        name: "Seen Last Stop Before Remaster Message",
+        scope: "world",
+        config: false,
+        type: Boolean,
+        default: false,
+    });
+
     registerTrackingSettings();
 
     if (BUILD_MODE === "production") {
@@ -335,10 +334,22 @@ function registerTrackingSettings(): void {
 
     game.settings.register("pf2e", "activeParty", {
         name: "Active Party",
+        scope: "world",
         config: false,
         type: String,
         default: "",
-        onChange: () => ui.actors.render(true),
+        onChange: () => {
+            ui.actors.render(true);
+        },
+    });
+
+    // Tracks the last party folder state for next launch. Defaults to true so that "No Members" shows on initial creation.
+    game.settings.register("pf2e", "activePartyFolderState", {
+        name: "Active Party Opened or closed",
+        scope: "client",
+        config: false,
+        type: Boolean,
+        default: true,
     });
 
     game.settings.register("pf2e", "worldSystemVersion", {

@@ -1,6 +1,6 @@
 {
     "_id": "OGKI8NS8Er3qumJS",
-    "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/berserkers-cloak.webp",
+    "img": "icons/equipment/back/cloak-brown-accent-brown-layered-collared-fur.webp",
     "name": "Berserker's Cloak (Greater)",
     "system": {
         "baseItem": null,
@@ -19,33 +19,29 @@
         "level": {
             "value": 19
         },
-        "negateBulk": {
-            "value": ""
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 40000
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
                 "invested",
-                "primal",
-                "transmutation"
+                "primal"
             ]
         },
         "usage": {

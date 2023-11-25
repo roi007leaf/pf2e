@@ -1,12 +1,12 @@
 {
     "_id": "yiU4osCo6ql28r6M",
-    "img": "systems/pf2e/icons/default-icons/armor.svg",
+    "img": "icons/equipment/chest/shirt-simple-white.webp",
     "name": "Gi",
     "system": {
         "acBonus": 0,
         "baseItem": "gi",
         "category": "unarmored",
-        "checkPenalty": null,
+        "checkPenalty": 0,
         "containerId": null,
         "description": {
             "value": "<p>Also called martial arts suits or practice clothes, gi are outfits of tough cloth built for comfort and unrestricted movement—ideal for practicing martial arts. They have reinforced stitching resistant to strenuous use.</p>"
@@ -24,16 +24,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -53,16 +48,18 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": null
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
-        "speedPenalty": null,
+        "speedPenalty": 0,
         "stackGroup": null,
         "strength": null,
         "traits": {

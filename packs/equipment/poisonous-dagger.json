@@ -1,11 +1,8 @@
 {
     "_id": "hK5xPjOFd2hb81mi",
-    "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/poisonous-dagger.webp",
+    "img": "icons/weapons/daggers/dagger-bone-engraved-black.webp",
     "name": "Poisonous Dagger",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "dagger",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 5
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Beginner Box"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -81,9 +78,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Beginner Box"
-        },
         "specific": {
             "material": null,
             "runes": {
@@ -105,7 +99,6 @@
                 "agile",
                 "finesse",
                 "magical",
-                "necromancy",
                 "poison",
                 "thrown-10",
                 "versatile-s"

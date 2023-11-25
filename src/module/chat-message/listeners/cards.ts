@@ -19,7 +19,7 @@ import {
     sluggify,
     tupleHasValue,
 } from "@util";
-import { ChatMessagePF2e } from "../index.ts";
+import { ChatMessagePF2e, CheckRollContextFlag } from "../index.ts";
 
 class ChatCards {
     static #lastClick = 0;
@@ -39,7 +39,7 @@ class ChatCards {
         this.#lastClick = currentTime;
 
         // Extract card data
-        const action = button.dataset.action;
+        const action = button.dataset.action ?? "";
 
         // Get the actor and item from the chat message
         const item = message.item;
@@ -47,17 +47,23 @@ class ChatCards {
         if (!actor) return;
 
         // Confirm roll permission
-        if (!game.user.isGM && !actor.isOwner && action !== "spell-save") return;
+        if (!game.user.isGM && !actor.isOwner && !["spell-save", "expand-description"].includes(action)) {
+            return;
+        }
 
         // Handle strikes
         const strikeAction = message._strike;
         if (strikeAction && action?.startsWith("strike-")) {
-            const context = message.flags.pf2e.context;
-            const mapIncreases = context && "mapIncreases" in context ? context.mapIncreases : null;
+            const context = (
+                message.rolls.some((r) => r instanceof CheckRoll) ? message.flags.pf2e.context ?? null : null
+            ) as CheckRollContextFlag | null;
+            const mapIncreases =
+                context && "mapIncreases" in context && tupleHasValue([0, 1, 2], context.mapIncreases)
+                    ? context.mapIncreases
+                    : null;
             const altUsage = context && "altUsage" in context ? context.altUsage : null;
-            const options = actor.getRollOptions(["all", "attack-roll"]);
             const target = message.target?.token?.object ?? null;
-            const rollArgs = { event, altUsage, mapIncreases, options, target };
+            const rollArgs = { event, altUsage, mapIncreases, checkContext: context, target };
 
             switch (sluggify(action ?? "")) {
                 case "strike-attack":
@@ -69,12 +75,11 @@ class ChatCards {
                 case "strike-attack3":
                     strikeAction.variants[2].roll(rollArgs);
                     return;
-                case "strike-damage":
-                    strikeAction.damage?.(rollArgs);
+                case "strike-damage": {
+                    const method = button.dataset.outcome === "success" ? "damage" : "critical";
+                    strikeAction[method]?.(rollArgs);
                     return;
-                case "strike-critical":
-                    strikeAction.critical?.(rollArgs);
-                    return;
+                }
             }
         }
 
@@ -155,7 +160,7 @@ class ChatCards {
                             const currentQuant = oldQuant === 1 ? 0 : consumable.quantity;
                             let flavor = message.flavor.replace(
                                 toReplace,
-                                `${consumable.name} - ${consumableString} (${currentQuant})`
+                                `${consumable.name} - ${consumableString} (${currentQuant})`,
                             );
                             if (currentQuant === 0) {
                                 const buttonStr = `>${game.i18n.localize("PF2E.ConsumableUseLabel")}</button>`;
@@ -211,8 +216,11 @@ class ChatCards {
                 case "elemental-blast-damage": {
                     if (!actor.isOfType("character")) return;
                     const roll = message.rolls.find(
-                        (r): r is Rolled<CheckRoll> => r instanceof CheckRoll && r.action === "elemental-blast"
+                        (r): r is Rolled<CheckRoll> => r instanceof CheckRoll && r.options.action === "elemental-blast",
                     );
+                    const checkContext = (
+                        roll ? message.flags.pf2e.context ?? null : null
+                    ) as CheckRollContextFlag | null;
                     const outcome = button.dataset.outcome === "success" ? "success" : "criticalSuccess";
                     const [element, damageType, meleeOrRanged, actionCost]: (string | undefined)[] =
                         roll?.options.identifier?.split(".") ?? [];
@@ -222,6 +230,7 @@ class ChatCards {
                             damageType,
                             melee: meleeOrRanged === "melee",
                             actionCost: Number(actionCost) || 1,
+                            checkContext,
                             outcome,
                             event,
                         });
@@ -244,7 +253,8 @@ class ChatCards {
                 const craftingCost = CoinsPF2e.fromPrice(physicalItem.price, quantity);
                 const coinsToRemove = button.classList.contains("full") ? craftingCost : craftingCost.scale(0.5);
                 if (!(await actor.inventory.removeCoins(coinsToRemove))) {
-                    return ui.notifications.warn(game.i18n.localize("PF2E.Actions.Craft.Warning.InsufficientCoins"));
+                    ui.notifications.warn(game.i18n.localize("PF2E.Actions.Craft.Warning.InsufficientCoins"));
+                    return;
                 }
 
                 if (isSpellConsumable(physicalItem.id) && physicalItem.isOfType("consumable")) {
@@ -267,7 +277,8 @@ class ChatCards {
 
                 const result = await actor.addToInventory(itemObject, undefined);
                 if (!result) {
-                    return ui.notifications.warn(game.i18n.localize("PF2E.Actions.Craft.Warning.CantAddItem"));
+                    ui.notifications.warn(game.i18n.localize("PF2E.Actions.Craft.Warning.CantAddItem"));
+                    return;
                 }
 
                 ChatMessagePF2e.create({
@@ -311,26 +322,27 @@ class ChatCards {
      * This allows for damage to be scaled by a multiplier to account for healing, critical hits, or resistance
      */
     static async #rollActorSaves({ event, button, actor, item }: RollActorSavesParams): Promise<void> {
-        if (canvas.tokens.controlled.length > 0) {
-            const saveType = button.dataset.save;
-            if (!tupleHasValue(SAVE_TYPES, saveType)) {
-                throw ErrorPF2e(`"${saveType}" is not a recognized save type`);
-            }
+        const tokens = game.user.getActiveTokens();
+        if (tokens.length === 0) {
+            ui.notifications.error("PF2E.ErrorMessage.NoTokenSelected", { localize: true });
+            return;
+        }
+        const saveType = button.dataset.save;
+        if (!tupleHasValue(SAVE_TYPES, saveType)) {
+            throw ErrorPF2e(`"${saveType}" is not a recognized save type`);
+        }
 
-            const dc = Number(button.dataset.dc ?? "NaN");
-            for (const token of canvas.tokens.controlled) {
-                const save = token.actor?.saves?.[saveType];
-                if (!save) return;
+        const dc = Number(button.dataset.dc ?? "NaN");
+        for (const token of tokens) {
+            const save = token.actor?.saves?.[saveType];
+            if (!save) return;
 
-                save.check.roll({
-                    ...eventToRollParams(event),
-                    dc: Number.isInteger(dc) ? { value: Number(dc) } : null,
-                    item,
-                    origin: actor,
-                });
-            }
-        } else {
-            ui.notifications.error(game.i18n.localize("PF2E.UI.errorTargetToken"));
+            save.check.roll({
+                ...eventToRollParams(event, { type: "check" }),
+                dc: Number.isInteger(dc) ? { value: Number(dc) } : null,
+                item,
+                origin: actor,
+            });
         }
     }
 }

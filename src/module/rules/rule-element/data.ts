@@ -1,20 +1,19 @@
 import { PredicateField, SlugField } from "@system/schema-data-fields.ts";
 import { isObject } from "@util";
+import * as R from "remeda";
 import type { BooleanField, NumberField, StringField } from "types/foundry/common/data/fields.d.ts";
 
 type RuleElementSource = {
-    key?: unknown;
-    data?: unknown;
-    value?: unknown;
-    label?: unknown;
-    slug?: unknown;
-    predicate?: unknown;
-    /** The place in order of application (ascending), among an actor's list of rule elements */
-    priority?: number;
-    ignored?: unknown;
-    requiresInvestment?: unknown;
-    requiresEquipped?: unknown;
-    removeUponCreate?: unknown;
+    key?: JSONValue;
+    value?: JSONValue;
+    label?: JSONValue;
+    slug?: JSONValue;
+    predicate?: JSONValue;
+    priority?: JSONValue;
+    ignored?: JSONValue;
+    requiresInvestment?: JSONValue;
+    requiresEquipped?: JSONValue;
+    removeUponCreate?: JSONValue;
 };
 
 type RuleValue = string | number | boolean | object | BracketedValue | null;
@@ -37,7 +36,7 @@ type RuleElementSchema = {
     /** A label for use by any rule element for display in an interface */
     label: StringField<string, string, true, false, false>;
     /** The place in order of application (ascending), among an actor's list of rule elements */
-    priority: NumberField<number, number, false, false, true>;
+    priority: NumberField<number, number, true, false, true>;
     /** A test of whether the rules element is to be applied */
     predicate: PredicateField;
     /** Whether the rule element is ignored and deactivated */
@@ -51,7 +50,7 @@ type RuleElementSchema = {
 class ResolvableValueField<
     TRequired extends boolean,
     TNullable extends boolean,
-    THasInitial extends boolean = false
+    THasInitial extends boolean = false,
 > extends foundry.data.fields.DataField<RuleValue, RuleValue, TRequired, TNullable, THasInitial> {
     protected override _validateType(value: unknown): boolean {
         return value !== null && ["string", "number", "object", "boolean"].includes(typeof value);
@@ -62,14 +61,30 @@ class ResolvableValueField<
         return value;
     }
 
+    /** Coerce a string value that looks like a number into a number. */
+    #coerceNumber(value: string): number | string {
+        const trimmed = value.trim();
+        return /^-?\d+(?:\.\d+)?$/.test(trimmed) ? Number(trimmed) : trimmed || 0;
+    }
+
     protected override _cleanType(value: RuleValue): RuleValue {
-        if (typeof value === "string") return value.trim();
-        if (isObject<BracketedValue>(value) && Array.isArray(value.brackets)) {
-            value.field ??= "actor|level";
+        if (typeof value === "string") {
+            return this.#coerceNumber(value);
+        }
+
+        if (isObject<BracketedValue>(value) && "brackets" in value) {
+            value.field ||= "actor|level";
+            const brackets = (value.brackets = R.compact(Object.values(value.brackets ?? {})));
+            for (const bracket of brackets) {
+                if (bracket.start === null) delete bracket.start;
+                if (bracket.end === null) delete bracket.end;
+                bracket.value = typeof bracket.value === "string" ? this.#coerceNumber(bracket.value) : bracket.value;
+            }
         }
 
         return value;
     }
 }
 
-export { Bracket, BracketedValue, ResolvableValueField, RuleElementSchema, RuleElementSource, RuleValue };
+export { ResolvableValueField };
+export type { Bracket, BracketedValue, RuleElementSchema, RuleElementSource, RuleValue };

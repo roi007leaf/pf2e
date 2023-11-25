@@ -13,12 +13,17 @@
         "description": {
             "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.PowerAttack]</p>"
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": ""
+        },
         "requirements": {
             "value": ""
         },
         "rules": [
             {
-                "domain": "damage-roll",
+                "domain": "damage",
                 "key": "RollOption",
                 "option": "power-attack",
                 "toggleable": true
@@ -33,9 +38,6 @@
                 "selector": "strike-damage"
             }
         ],
-        "source": {
-            "value": ""
-        },
         "traits": {
             "rarity": "common",
             "value": []

@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/staves/staff-of-transmutation.webp",
     "name": "Staff of Transmutation",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "staff",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": ""
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -74,8 +71,7 @@
                 "key": "FlatModifier",
                 "label": "Staff of Transmutation (identify transmutation magic)",
                 "predicate": [
-                    "action:identify-magic",
-                    "transmutation"
+                    "action:identify-magic"
                 ],
                 "selector": "skill-check",
                 "type": "circumstance",
@@ -83,9 +79,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "splashDamage": {
             "value": 0
         },
@@ -98,7 +91,6 @@
             "value": [
                 "magical",
                 "staff",
-                "transmutation",
                 "two-hand-d8"
             ]
         },

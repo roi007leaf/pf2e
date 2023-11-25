@@ -2,7 +2,7 @@
     "_id": "WBMeO6BPqEzc6Yv8",
     "img": "systems/pf2e/icons/default-icons/vehicle.svg",
     "items": [],
-    "name": "Chariot, Light",
+    "name": "Chariot (Light)",
     "prototypeToken": {
         "name": "Light Chariot"
     },
@@ -47,7 +47,13 @@
             },
             "passengers": "0",
             "pilotingCheck": "Driving Lore (DC 14) or Nature (DC 16 to DC 24, depending on pulling creature)",
-            "price": "10",
+            "price": 10,
+            "publication": {
+                "authors": "",
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Gamemastery Guide"
+            },
             "space": {
                 "high": 4,
                 "long": 5,
@@ -62,9 +68,6 @@
                 "saveDetail": "",
                 "value": 6
             }
-        },
-        "source": {
-            "value": "Pathfinder Gamemastery Guide"
         },
         "traits": {
             "rarity": "common",

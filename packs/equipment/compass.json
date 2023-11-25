@@ -19,19 +19,19 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": ""
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 1
             }
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
         },
         "quantity": 1,
         "rules": [
@@ -43,9 +43,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
@@ -55,7 +52,7 @@
             "value": "held-in-one-hand"
         },
         "weight": {
-            "value": "L"
+            "value": "-"
         }
     },
     "type": "equipment"

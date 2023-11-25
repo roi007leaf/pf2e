@@ -1,6 +1,6 @@
 {
     "_id": "eGZzifQWCf5gSq2y",
-    "img": "systems/pf2e/icons/default-icons/feats.webp",
+    "img": "icons/sundries/books/book-red-exclamation.webp",
     "name": "Unshakable Grit",
     "system": {
         "actionType": {
@@ -22,6 +22,11 @@
                     "value": "Grit and Tenacity"
                 }
             ]
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Guns & Gears"
         },
         "rules": [
             {
@@ -47,9 +52,6 @@
                 "selector": "will"
             }
         ],
-        "source": {
-            "value": "Pathfinder Guns & Gears"
-        },
         "traits": {
             "rarity": "common",
             "value": [

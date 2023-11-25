@@ -13,9 +13,6 @@
             "name": "Spiked Gauntlet",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "spiked-gauntlet",
                 "bonus": {
                     "value": 0
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "spiked-gauntlet",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -120,13 +114,10 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.PIzBQehx975vMsvZ"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/weapons/throwing-knife.webp",
+            "img": "icons/weapons/thrown/dagger-ringed-steel.webp",
             "name": "Throwing Knife",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "throwing-knife",
                 "bonus": {
                     "value": 0
@@ -161,17 +152,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -190,6 +176,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Lost Omens: The Grand Bazaar"
+                },
                 "quantity": 4,
                 "range": null,
                 "reload": {
@@ -198,9 +189,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "throwing-knife",
-                "source": {
-                    "value": "Pathfinder Lost Omens: The Grand Bazaar"
-                },
                 "splashDamage": {
                     "value": null
                 },
@@ -232,7 +220,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/leather-armor.webp",
+            "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp",
             "name": "Leather Armor",
             "sort": 300000,
             "system": {
@@ -261,18 +249,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
@@ -291,6 +273,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": ""
@@ -298,12 +285,9 @@
                 "rules": [],
                 "size": "med",
                 "slug": "leather-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "speedPenalty": null,
+                "speedPenalty": 0,
                 "stackGroup": null,
-                "strength": 0,
+                "strength": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -344,11 +328,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "agile",
@@ -387,11 +373,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "agile",
@@ -426,14 +414,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "greater-darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -463,14 +453,16 @@
                 "description": {
                     "value": "<p>Caligni assassins are @UUID[Compendium.pf2e.conditionitems.Item.Concealed] in dim light or darkness even to creatures that can see clearly in those light levels.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
                 },
@@ -496,14 +488,16 @@
                 "description": {
                     "value": "<p>The assassin can move their full speed while Sneaking.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
                 },
@@ -529,14 +523,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature within 60 feet casts a light spell</p>\n<hr />\n<p><strong>Effect</strong> The caligni assassin attempts to counteract the triggering spell. Caligni assassins automatically recognize light spells.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "darkness",
@@ -566,14 +562,16 @@
                 "description": {
                     "value": "<p>When a caligni assassin dies, their body disintegrates into a veil of supernatural darkness for 1 round. A 4th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.Darkness]</em> spell appears, centered on the assassin's location, with a counteract DC of 23.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "darkness",
@@ -602,6 +600,11 @@
                 "description": {
                     "value": "<p>The assassin isn't @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] to creatures of 8th level or lower that are @UUID[Compendium.pf2e.conditionitems.Item.Hidden], undetected, flanking, or using surprise attack.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -614,9 +617,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
                 },
@@ -647,14 +647,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LightBlindness]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "light-blindness",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -684,14 +686,16 @@
                 "description": {
                     "value": "<p>You draw your weapon and attack with the same motion. You Interact to draw a weapon, then Strike with that weapon.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
                 },
@@ -717,14 +721,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The assassin is in dim light or darkness</p>\n<hr />\n<p><strong>Effect</strong> The assassin vanishes into shadow, appearing in a square of dim light or darkness within 60 feet. If the assassin appears adjacent to a creature, they can Strike that creature, otherwise the assassin can Hide.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "darkness",
@@ -759,6 +765,11 @@
                 "description": {
                     "value": "<p>The assassin deals an additional 2d6 precision damage to @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creatures.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -769,21 +780,7 @@
                         "dieSize": "d6",
                         "key": "DamageDice",
                         "predicate": [
-                            "target:condition:off-guard",
-                            {
-                                "or": [
-                                    "item:trait:agile",
-                                    "item:trait:finesse",
-                                    {
-                                        "and": [
-                                            "item:ranged",
-                                            {
-                                                "not": "item:thrown-melee"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
+                            "target:condition:off-guard"
                         ],
                         "selector": "strike-damage"
                     },
@@ -796,9 +793,6 @@
                     }
                 ],
                 "slug": "sneak-attack",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -828,14 +822,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The assassin's last action was a successful melee Strike</p>\n<hr />\n<p><strong>Effect</strong> The assassin extends a tendril of shadow to obscure the target's vision, @UUID[Compendium.pf2e.conditionitems.Item.Blinded]{blinding} them for 1 round (@Check[type:will|dc:23] negates). On a critical failure, they're blind for 1 minute. Creatures with greater darkvision are immune to this ability.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "darkness"
@@ -862,11 +858,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -885,11 +883,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -908,11 +908,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -931,11 +933,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -954,11 +958,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -977,11 +983,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1034,18 +1042,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "NE"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 8
             },
             "privateNotes": "",
             "publicNotes": "<p>Lauded and shunned, caligni assassins often become unwitting pawns in clashes between caligni settlements or between rival factions of caligni society.</p>\n<hr />\n<p>Calignis often get stereotyped as murderers, but the title of assassin is one of the rarest in their society. Caligni settlements go decades without having offspring born with enough potential. However, once a child shows they have \"the gift\"; the settlements leaders might give the babe to the owb, who mold and shape the child into an instrument of shadows and death.</p>\n<h2>Shadowfade</h2>\n<p>Caligni assassins gain their power from an infusion of planar essence directly from the Netherworld, which the owb help them develop into powerful abilities. This comes at a cost: all caligni assassins eventually succumb to an affliction known as shadowfade. This magical malady causes the caligni's body to painfully warp when concealed in shadows, as the plane's ability to create twisted reflections of reality changes their physical form directly.</p>\n<p>Sometimes a caligni assassin will flee home and strike out on their own to avoid becoming a twisted tool for their greedy leaders. Such freelancers are in high demand for those seeking a fatal solution to their own political problems.</p>",
-            "source": {
-                "value": "Pathfinder #194: Cult of the Cave Worm"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #194: Cult of the Cave Worm"
             }
         },
         "resources": {},
@@ -1082,6 +1088,7 @@
             },
             "value": [
                 "caligni",
+                "evil",
                 "humanoid",
                 "shadow"
             ]

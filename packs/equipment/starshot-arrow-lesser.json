@@ -32,31 +32,27 @@
         "level": {
             "value": 7
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 55
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Legends"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Legends"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "rare",
             "value": [
-                "conjuration",
                 "consumable",
                 "magical"
             ]

@@ -1,6 +1,6 @@
 {
     "_id": "aDOL3OAEWf3ka9oT",
-    "img": "systems/pf2e/icons/spells/blood-ward.webp",
+    "img": "icons/skills/wounds/blood-cells-vessel-red-orange.webp",
     "name": "Spell Effect: Blood Ward",
     "system": {
         "description": {
@@ -14,6 +14,11 @@
         },
         "level": {
             "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Advanced Player's Guide"
         },
         "rules": [
             {
@@ -49,9 +54,6 @@
                 }
             }
         ],
-        "source": {
-            "value": "Pathfinder Advanced Player's Guide"
-        },
         "start": {
             "initiative": null,
             "value": 0

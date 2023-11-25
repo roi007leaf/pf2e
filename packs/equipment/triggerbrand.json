@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/default-icons/weapon.svg",
     "name": "Triggerbrand",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "triggerbrand",
         "bonus": {
             "value": 0
@@ -35,6 +32,10 @@
         "level": {
             "value": 0
         },
+        "material": {
+            "grade": null,
+            "type": null
+        },
         "meleeUsage": {
             "damage": {
                 "die": "d6",
@@ -47,16 +48,7 @@
                 "versatile-s"
             ]
         },
-        "negateBulk": {
-            "value": "0"
-        },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -76,6 +68,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Impossible Lands"
+        },
         "quantity": 1,
         "range": 30,
         "reload": {
@@ -83,9 +80,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Impossible Lands"
-        },
         "splashDamage": {
             "value": 0
         },

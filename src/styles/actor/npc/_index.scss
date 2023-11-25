@@ -1,24 +1,13 @@
 $faded-color: #7a7971;
-$color-disabled: $light-gray-color;
-$attack-button-color: $secondary-color;
-$damage-button-color: $primary-color;
-$primary-accent: $primary-color;
-$secondary-accent: $secondary-color;
-$light-text: #f5efe0;
 
-@import "forms";
-@import "data-entry";
+@import "skills-editor";
 
-.npc-sheet {
-    @import "inventory";
-    @import "spells";
-    @import "effects";
-    @import "../red-action-boxes";
-
+.actor.npc.sheet form {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    color: var(--color-rarity-common);
+
+    @import "../spell-collection";
 
     .npc-sheet-header {
         display: flex;
@@ -34,13 +23,13 @@ $light-text: #f5efe0;
 
             input {
                 font-weight: inherit;
-                height: 32px;
+                height: 2rem;
             }
 
             .name-value {
                 font-variant: small-caps;
                 margin-left: 6px;
-                margin-right: 18px;
+                margin-right: 1.125rem;
             }
 
             .level-label {
@@ -51,16 +40,15 @@ $light-text: #f5efe0;
             }
 
             input.level {
-                flex: 0 0 40px;
+                flex: 0 0 2.5rem;
                 text-align: center;
             }
         }
 
-        .paizo-style {
-            border: none;
-            margin-top: 2px;
-            padding-left: 0;
-            padding-right: 0;
+        .rarity-size {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 
@@ -68,15 +56,20 @@ $light-text: #f5efe0;
         margin: 10px 6px 10px 0;
     }
 
-    .side-bar {
-        flex: 160px 0 0;
+    select {
+        background: none;
+    }
+
+    .sidebar {
+        flex: 10rem 0 0;
         height: 100%;
-        @include scrollbar;
+        overflow: hidden scroll;
+        padding-right: 0.25rem;
 
         .image-container {
             img.actor-image {
                 border: none;
-                border-radius: 8px
+                border-radius: 8px;
             }
         }
 
@@ -89,8 +82,8 @@ $light-text: #f5efe0;
             }
         }
 
-        .health-section, .shield-section {
-
+        .health-section,
+        .shield-section {
             .hit-points {
                 display: flex;
                 flex-direction: row;
@@ -103,7 +96,8 @@ $light-text: #f5efe0;
                     padding-right: 3px;
                 }
 
-                .slash, .max {
+                .slash,
+                .max {
                     align-items: center;
                     display: flex;
                 }
@@ -242,8 +236,9 @@ $light-text: #f5efe0;
                     margin-right: 0.2em;
                 }
             }
+
             select {
-                background: none;
+                font-size: var(--font-size-11);
                 text-transform: unset;
             }
         }
@@ -287,7 +282,8 @@ $light-text: #f5efe0;
                 font-size: 0.8rem;
             }
 
-            h4, label {
+            h4,
+            label {
                 font-size: 0.8rem;
                 margin-bottom: 0px;
                 padding-left: 2px;
@@ -298,11 +294,11 @@ $light-text: #f5efe0;
         }
     }
 
-
     .sheet-body {
         flex: auto;
+
         .tab {
-            @include scrollbar;
+            overflow: hidden scroll;
 
             .identification-skills {
                 ul {
@@ -319,9 +315,16 @@ $light-text: #f5efe0;
                 }
             }
         }
+
+        @import "inventory";
+        @import "spells";
+        @import "effects";
+        @import "../red-action-boxes";
     }
 
-    input.adjustable:not(:focus), span.adjustable, div.adjustable {
+    input.adjustable:not(:focus),
+    span.adjustable,
+    div.adjustable {
         display: inline;
         text-align: right;
 
@@ -334,13 +337,16 @@ $light-text: #f5efe0;
         }
     }
 
-    .disabled {
-        color: $color-disabled;
-        border-color: $color-disabled;
+    .empty {
+        border-color: var(--color-text-dark-inactive);
+        color: var(--color-text-dark-inactive);
+    }
 
-        &:hover, &.active {
-            color: var(--color-rarity-common);
+    a.empty {
+        &:hover,
+        &:active {
             border-color: $faded-color;
+            color: var(--text-dark);
         }
     }
 
@@ -386,7 +392,7 @@ $light-text: #f5efe0;
             }
 
             .item-image:hover {
-                border: 1px solid $light-text;
+                border: 1px solid var(--text-light);
                 border-radius: 3px;
             }
         }
@@ -435,7 +441,8 @@ $light-text: #f5efe0;
         flex-direction: row;
         align-items: baseline;
 
-        label, .rollable {
+        label,
+        .rollable {
             flex: 1;
             font-weight: 600;
         }
@@ -499,10 +506,10 @@ $light-text: #f5efe0;
     }
 
     .section-container {
-        padding: 4px 6px 0;
+        padding: 0.25rem 0.25rem 0 0;
 
         .section-body {
-            padding: 4px;
+            padding: 0.25rem;
         }
 
         &.headerless .section-body {
@@ -525,10 +532,12 @@ $light-text: #f5efe0;
                     width: auto;
                     cursor: pointer;
                     font-size: var(--font-size-9);
-                    line-height: 15px;
-                    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 0 2px rgba(255, 255, 255, 0.2);
-                    background: $secondary-color;
-                    color: $light-text;
+                    line-height: var(--font-size-15);
+                    box-shadow:
+                        inset 0 0 0 1px rgba(0, 0, 0, 0.3),
+                        inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+                    background: var(--secondary);
+                    color: var(--text-light);
                     font-family: var(--sans-serif);
                     text-transform: uppercase;
                     border-radius: 3px;
@@ -548,17 +557,11 @@ $light-text: #f5efe0;
         }
     }
 
-    .tag {
-        line-height: 0.8rem;
-    }
-
     select {
         flex: auto 0 0;
-        padding: 4px !important;
-        height: auto !important;
-        font-family: var(--sans-serif);
+        padding: 4px;
+        height: auto;
         font-weight: 500;
-        text-transform: uppercase;
 
         option {
             color: var(--text-light);
@@ -566,16 +569,20 @@ $light-text: #f5efe0;
         }
     }
 
-    .adjustment-select {
+    .adjustments {
+        align-items: center;
+        display: flex;
+        justify-content: end;
+
         .adjustment {
             &.active {
-                background-color: $primary-accent;
-                color: $light-text;
+                background-color: var(--primary);
+                color: var(--text-light);
             }
 
             &:not(.active) {
-                background-color: $faded-color;
-                color: $light-text;
+                background-color: var(--color-disabled);
+                color: var(--color-text-trait);
             }
         }
     }
@@ -591,75 +598,69 @@ $light-text: #f5efe0;
     }
 
     .notes {
-
         &.active {
             display: flex;
             flex-direction: column;
-            padding-right: 15px;
-        }
-
-        .details-label {
-            padding: 4px;
-            font-family: var(--sans-serif);
-            font-size: var(--font-size-10);
-            font-weight: 800;
-            line-height: 1;
-            text-transform: uppercase;
-            color: var(--primary);
-            margin-right: 2px;
-            white-space: nowrap;
+            gap: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-right: 0.75rem;
         }
 
         .notes-section {
-            flex: 1 0 auto;
             display: flex;
             flex-direction: column;
-        }
 
-        .notes-text {
-            padding: 4px;
-            color: #333;
-            flex-grow: 1;
-
-            .editor {
-                height: 100%;
-                .editor-edit {
-                    background: var(--primary);
-                    color: white;
-                }
-
-                .editor-content {
-                    text-indent: 8px;
-                    min-height: 75px;
-                    height: 100%;
-                }
-
-                a.editor-edit {
-                    padding: 2px 2px 2px 4px;
-                }
-            }
-        }
-
-        .source {
-            flex-shrink: 0;
-
-            .section-body {
-                border-width: 2px;
-            }
-
-            label {
-                margin-right: 4px;
-                flex: 0;
+            > h4 {
+                color: var(--primary);
+                font-family: var(--sans-serif);
+                font-size: var(--font-size-11);
                 font-weight: 700;
+                line-height: 1;
+                margin: 0 2px 0 0;
+                padding: 4px;
+                text-transform: uppercase;
+                white-space: nowrap;
             }
 
-            input::placeholder {
-                color: var(--color-text-dark-6);
+            > .notes-text {
+                padding: 0 4px 4px;
+                color: var(--text-dark);
+                flex-grow: 1;
+
+                .editor {
+                    height: 100%;
+
+                    .editor-content {
+                        min-height: 75px;
+                    }
+
+                    .editor-edit {
+                        background: var(--primary);
+                        color: var(--text-light);
+                    }
+
+                    a.editor-edit {
+                        padding: 2px 2px 2px 4px;
+                    }
+                }
             }
 
-            .source-input {
-                flex: 2;
+            &.publication {
+                margin-top: auto;
+
+                .notes-text {
+                    @include publication-data;
+
+                    input[type="text"] {
+                        background: rgba(black, 0.05);
+                        padding: 1px 3px;
+                    }
+                }
             }
+        }
+
+        .tox {
+            min-height: 20em;
         }
     }
 
@@ -676,6 +677,7 @@ $light-text: #f5efe0;
                 opacity: 0.33;
             }
         }
+
         h2.name {
             margin-top: 3px;
             text-align: center;
@@ -686,4 +688,8 @@ $light-text: #f5efe0;
     &.simple .sheet-body {
         overflow-y: auto;
     }
+}
+
+.actor.npc.sheet.simple {
+    min-height: 500px;
 }

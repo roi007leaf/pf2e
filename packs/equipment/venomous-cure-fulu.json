@@ -19,7 +19,7 @@
         },
         "containerId": "null",
         "description": {
-            "value": "<p><strong>Usage</strong> affixed to armor</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">f</span> envision</p>\n<p><strong>Trigger</strong> You attempt a saving throw against an injected poison.</p>\n<hr />\n<p>This green fulu depicts venomous creatures and vermin. When activated, the venom from the fulu fights against the venom in your system, granting you a +2 status bonus to the triggering saving throw.</p>"
+            "value": "<p><strong>Usage</strong> affixed to armor</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> envision</p>\n<p><strong>Trigger</strong> You attempt a saving throw against an injected poison.</p>\n<hr />\n<p>This green fulu depicts venomous creatures and vermin. When activated, the venom from the fulu fights against the venom in your system, granting you a +2 status bonus to the triggering saving throw.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -32,26 +32,23 @@
         "level": {
             "value": 3
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 10
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
@@ -59,7 +56,6 @@
                 "consumable",
                 "fulu",
                 "magical",
-                "necromancy",
                 "talisman"
             ]
         },

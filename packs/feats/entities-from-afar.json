@@ -1,6 +1,6 @@
 {
     "_id": "8nCxI2SZ64UmMuRZ",
-    "img": "systems/pf2e/icons/default-icons/feats.webp",
+    "img": "icons/sundries/books/book-red-exclamation.webp",
     "name": "Entities From Afar",
     "system": {
         "actionType": {
@@ -19,14 +19,16 @@
         "prerequisites": {
             "value": [
                 {
-                    "value": "Eldritch Researcher Archetype"
+                    "value": "Eldritch Researcher Dedication"
                 }
             ]
         },
-        "rules": [],
-        "source": {
-            "value": "Pathfinder #164: Hands of the Devil"
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #164: Hands of the Devil"
         },
+        "rules": [],
         "traits": {
             "rarity": "common",
             "value": [

@@ -13,9 +13,6 @@
             "name": "Javelin",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "javelin",
                 "bonus": {
                     "value": 0
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 6,
                 "range": 30,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "lg",
                 "slug": "javelin",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -123,9 +117,6 @@
             "name": "Ogre Hook",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "ogre-hook",
                 "bonus": {
                     "value": 0
@@ -160,17 +151,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -189,6 +175,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -197,9 +188,6 @@
                 "rules": [],
                 "size": "lg",
                 "slug": "ogre-hook",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "splashDamage": {
                     "value": null
                 },
@@ -230,7 +218,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/hide.webp",
+            "img": "icons/equipment/chest/vest-leather-tattered-white.webp",
             "name": "Hide Armor",
             "sort": 300000,
             "system": {
@@ -260,18 +248,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -290,6 +272,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": ""
@@ -297,9 +284,6 @@
                 "rules": [],
                 "size": "lg",
                 "slug": "hide-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "speedPenalty": -5,
                 "stackGroup": null,
                 "strength": 2,
@@ -346,11 +330,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -395,11 +381,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -433,14 +421,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -469,11 +459,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -492,11 +484,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -549,18 +543,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "Giant",
             "level": {
                 "value": 3
             },
             "privateNotes": "",
             "publicNotes": "<p>The simplest of ogres are slabs of muscle with hatefully beady eyes, misshapen visages, and malformed bodies. Always eager for mayhem and murder, ogre warriors are quick to turn on their kin when there's a shortage of smaller folk to torment, so those who lead ogres do their best to keep them constantly distracted with new opportunities for raids and ruin.</p>\n<hr />\n<p>Ogres embody brutish, amoral violence and cruelty. Standing 10 feet tall and densely muscled, ogres are as strong as they are cruel. Ogres are sadists that enjoy remorseless murder, torture, degradation, and mutilation in all of its forms. Although they prefer to vent their violent urges on smaller humanoids-the smaller and more beautiful, the better-ogres promise a horrifying fate for anyone unlucky enough to fall within their meaty grasp. But for all their creativity in developing methods of violence, ogres often remain too dim-witted to realize that their playthings lack an ogre's robust fortitude and high pain tolerance, so most captives die far sooner than the ogres might prefer. Such a fate is perhaps preferable however, as those who survive too long as ogres' playthings suffer lasting mental scars from the horrifying abuse. A captive able to keep their wits can sometimes trick the brutes by promising treasure, meatier captives, or other crude amusements, taking advantage of an ogre's limited intellect to engineer opportunities to escape.</p>\n<p>Ogres are social creatures only in the most debased sense. They gather together in groups called families, though members are not always related by blood. Ogres practice incest regularly, believing that it makes for stronger familial bonds, and most ogres are misshapen or mutated from generations of inbreeding. The most powerful ogre in any family is the \"boss\"-usually the family's patriarch or matriarch-while other ogres in the family learn to obey or risk being brutalized by the boss's loyal kin. Ogres lair in caves, crumbling ruins, or dilapidated shacks close enough to humanoid settlements or animal trails to make raiding easy. These lairs are filthy and frequently contain all-too-recognizable evidence of their depravity.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary"
             }
         },
         "resources": {},
@@ -594,6 +586,8 @@
                 "value": "lg"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "giant",
                 "humanoid"
             ]

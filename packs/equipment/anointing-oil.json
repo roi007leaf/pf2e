@@ -32,33 +32,29 @@
         "level": {
             "value": 4
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 18
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Knights of Lastwall"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Knights of Lastwall"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
                 "consumable",
                 "magical",
-                "necromancy",
                 "oil"
             ]
         },

@@ -1,4 +1,4 @@
-import { ProficiencyRank } from "@item/data/index.ts";
+import { ProficiencyRank } from "@item/base/data/index.ts";
 import { Rarity } from "./data.ts";
 
 /**
@@ -104,14 +104,9 @@ interface DCOptions {
     rarity?: Rarity;
 }
 
-/**
- * Normal Level Based DCs
- * @param level
- * @param proficiencyWithoutLevel
- */
+/** Level-based DCs */
 function calculateDC(level: number, { proficiencyWithoutLevel, rarity = "common" }: DCOptions = {}): number {
-    const pwlSetting = game.settings.get("pf2e", "proficiencyVariant");
-    proficiencyWithoutLevel ??= pwlSetting === "ProficiencyWithoutLevel";
+    proficiencyWithoutLevel ??= game.settings.get("pf2e", "proficiencyVariant");
 
     // assume level 0 if garbage comes in. We cast level to number because the backing data may actually have it
     // stored as a string, which we can't catch at compile time
@@ -165,10 +160,6 @@ function createDifficultyScale(dc: number, startAt: DCAdjustment): number[] {
 }
 
 export {
-    DCAdjustment,
-    DCOptions,
-    NegativeDCAdjustment,
-    PositiveDCAdjustment,
     adjustDC,
     adjustDCByRarity,
     calculateDC,
@@ -178,3 +169,4 @@ export {
     createDifficultyScale,
     rarityToDCAdjustment,
 };
+export type { DCAdjustment, DCOptions, NegativeDCAdjustment, PositiveDCAdjustment };

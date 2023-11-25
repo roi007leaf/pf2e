@@ -1,11 +1,8 @@
 {
     "_id": "6TC4FywUTzVAK97v",
-    "img": "systems/pf2e/icons/equipment/weapons/staff.webp",
+    "img": "icons/weapons/staves/staff-simple.webp",
     "name": "Composer Staff",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "staff",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 4
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -63,6 +55,11 @@
         },
         "propertyRune4": {
             "value": null
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
         },
         "quantity": 1,
         "range": null,
@@ -86,9 +83,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "splashDamage": {
             "value": 0
         },
@@ -99,7 +93,6 @@
         "traits": {
             "rarity": "common",
             "value": [
-                "enchantment",
                 "magical",
                 "staff",
                 "two-hand-d8"

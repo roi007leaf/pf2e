@@ -1,4 +1,5 @@
-import { ActionCost } from "@item/data/base.ts";
+import { ActionCost } from "@item/base/data/system.ts";
+import Sortable from "sortablejs";
 
 /**
  * Given an array and a key function, create a map where the key is the value that
@@ -46,12 +47,15 @@ function padArray<T>(array: T[], requiredLength: number, padWith: T): T[] {
 /** Given an object, returns a new object with the same keys, but with each value converted by a function. */
 function mapValues<K extends string | number | symbol, V, R>(
     object: Record<K, V>,
-    mapping: (value: V, key: K) => R
+    mapping: (value: V, key: K) => R,
 ): Record<K, R> {
-    return Object.entries<V>(object).reduce((result, [key, value]) => {
-        result[key as K] = mapping(value, key as K);
-        return result;
-    }, {} as Record<K, R>);
+    return Object.entries<V>(object).reduce(
+        (result, [key, value]) => {
+            result[key as K] = mapping(value, key as K);
+            return result;
+        },
+        {} as Record<K, R>,
+    );
 }
 
 /**
@@ -133,12 +137,15 @@ function setHasElement<T extends Set<unknown>>(set: T, value: unknown): value is
 
 /** Returns a subset of an object with explicitly defined keys */
 function pick<T extends object, K extends keyof T>(obj: T, keys: Iterable<K>): Pick<T, K> {
-    return [...keys].reduce((result, key) => {
-        if (key in obj) {
-            result[key] = obj[key];
-        }
-        return result;
-    }, {} as Pick<T, K>);
+    return [...keys].reduce(
+        (result, key) => {
+            if (key in obj) {
+                result[key] = obj[key];
+            }
+            return result;
+        },
+        {} as Pick<T, K>,
+    );
 }
 
 let intlNumberFormat: Intl.NumberFormat;
@@ -203,7 +210,7 @@ function sluggify(text: string, { camel = null }: { camel?: SlugCamel } = {}): s
                 .replace(nonWordCharacterHyphenOrSpaceRE, "")
                 .replace(/[-_]+/g, " ")
                 .replace(upperOrWordBoundariedLowerRE, (part, index) =>
-                    index === 0 ? part.toLowerCase() : part.toUpperCase()
+                    index === 0 ? part.toLowerCase() : part.toUpperCase(),
                 )
                 .replace(/\s+/g, "");
         default:
@@ -225,7 +232,7 @@ function parseHTML(unparsed: string): HTMLElement {
 
 function getActionTypeLabel(
     type: Maybe<"action" | "free" | "reaction" | "passive">,
-    cost: Maybe<number>
+    cost: Maybe<number>,
 ): string | null {
     switch (type) {
         case "action":
@@ -257,7 +264,7 @@ function getActionIcon(actionType: string | ActionCost | null, fallback: ImageFi
 function getActionIcon(actionType: string | ActionCost | null): ImageFilePath;
 function getActionIcon(
     action: string | ActionCost | null,
-    fallback: ImageFilePath | null = "systems/pf2e/icons/actions/Empty.webp"
+    fallback: ImageFilePath | null = "systems/pf2e/icons/actions/Empty.webp",
 ): ImageFilePath | null {
     if (action === null) return actionImgMap["passive"];
     const value = typeof action !== "object" ? action : action.type === "action" ? action.value : action.type;
@@ -270,12 +277,13 @@ function getActionIcon(
 const actionGlyphMap: Record<string, string> = {
     0: "F",
     free: "F",
-    1: "A",
-    2: "D",
-    3: "T",
-    "1 or 2": "A/D",
-    "1 to 3": "A - T",
-    "2 or 3": "D/T",
+    1: "1",
+    2: "2",
+    3: "3",
+    "1 or 2": "1/2",
+    "1 to 3": "1 - 3",
+    "2 or 3": "2/3",
+    "2 rounds": "3,3",
     reaction: "R",
 };
 
@@ -291,15 +299,15 @@ function getActionGlyph(action: string | number | null | ActionCost): string {
         .toLowerCase()
         .trim();
 
-    return actionGlyphMap[sanitized] ?? "";
+    return actionGlyphMap[sanitized]?.replace("-", "–") ?? "";
 }
 
 function ErrorPF2e(message: string): Error {
     return Error(`PF2e System | ${message}`);
 }
 
-/** Returns the number in an ordinal format, like 1st, 2nd, 3rd, 4th, etc */
-function ordinal(value: number): string {
+/** Returns the number in an ordinal format, like 1st, 2nd, 3rd, 4th, etc. */
+function ordinalString(value: number): string {
     const pluralRules = new Intl.PluralRules(game.i18n.lang, { type: "ordinal" });
     const suffix = game.i18n.localize(`PF2E.OrdinalSuffixes.${pluralRules.select(value)}`);
     return game.i18n.format("PF2E.OrdinalNumber", { value, suffix });
@@ -335,7 +343,7 @@ type FontAwesomeStyle = "solid" | "regular" | "duotone";
 
 function fontAwesomeIcon(
     glyph: string,
-    { style = "solid", fixedWidth = false }: { style?: FontAwesomeStyle; fixedWidth?: boolean } = {}
+    { style = "solid", fixedWidth = false }: { style?: FontAwesomeStyle; fixedWidth?: boolean } = {},
 ): HTMLElement {
     const styleClass = `fa-${style}`;
     const glyphClass = glyph.startsWith("fa-") ? glyph : `fa-${glyph}`;
@@ -369,7 +377,7 @@ function sortStringRecord(record: Record<string, string>): Record<string, string
                 entry[1] = game.i18n.localize(entry[1]);
                 return entry;
             })
-            .sort((a, b) => a[1].localeCompare(b[1], game.i18n.lang))
+            .sort((a, b) => a[1].localeCompare(b[1], game.i18n.lang)),
     );
 }
 
@@ -386,10 +394,6 @@ function sortObjByKey(value: unknown): unknown {
                       return o;
                   }, {})
         : value;
-}
-
-function sortedStringify(obj: object): string {
-    return JSON.stringify(sortObjByKey(obj));
 }
 
 /** Walk an object tree and replace any string values found according to a provided function */
@@ -418,15 +422,13 @@ function localizer(prefix: string): (...args: Parameters<Localization["format"]>
 /** Walk a localization object and recursively map the keys as localization strings starting with a given prefix */
 function configFromLocalization<T extends Record<string, TranslationDictionaryValue>>(
     localization: T,
-    prefix: string
+    prefix: string,
 ): T {
-    return Object.entries(localization).reduce(
-        (map, [key, value]) => ({
-            ...map,
-            [key]: typeof value === "string" ? `${prefix}.${key}` : configFromLocalization(value, `${prefix}.${key}`),
-        }),
-        {} as T
-    );
+    return Object.entries(localization).reduce((result: Record<string, unknown>, [key, value]) => {
+        result[key] =
+            typeof value === "string" ? `${prefix}.${key}` : configFromLocalization(value, `${prefix}.${key}`);
+        return result;
+    }, {}) as T;
 }
 
 /** Does the parameter look like an image file path? */
@@ -443,10 +445,24 @@ function isImageOrVideoPath(path: unknown): path is ImageFilePath | VideoFilePat
     return isImageFilePath(path) || isVideoFilePath(path);
 }
 
+const SORTABLE_DEFAULTS: Sortable.Options = {
+    animation: 200,
+    direction: "vertical",
+    dragClass: "drag-preview",
+    dragoverBubble: true,
+    easing: "cubic-bezier(1, 0, 0, 1)",
+    ghostClass: "drag-gap",
+
+    // These options are from the Autoscroll plugin and serve as a fallback on mobile/safari/ie/edge
+    // Other browsers use the native implementation
+    scroll: true,
+    scrollSensitivity: 30,
+    scrollSpeed: 15,
+};
+
 export {
     ErrorPF2e,
-    Fraction,
-    SlugCamel,
+    SORTABLE_DEFAULTS,
     addSign,
     applyNTimes,
     configFromLocalization,
@@ -464,7 +480,7 @@ export {
     localizer,
     mapValues,
     objectHasKey,
-    ordinal,
+    ordinalString,
     padArray,
     parseHTML,
     pick,
@@ -476,8 +492,9 @@ export {
     sortLabeledRecord,
     sortObjByKey,
     sortStringRecord,
-    sortedStringify,
     sum,
     tupleHasValue,
     zip,
+    type Fraction,
+    type SlugCamel,
 };

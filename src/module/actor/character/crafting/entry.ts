@@ -1,5 +1,5 @@
-import { ActorPF2e, CharacterPF2e } from "@actor";
-import { ItemPF2e } from "@item";
+import type { ActorPF2e, CharacterPF2e } from "@actor";
+import type { ItemPF2e } from "@item";
 import { CraftingEntryRuleData, CraftingEntryRuleSource } from "@module/rules/rule-element/crafting/entry.ts";
 import { PredicatePF2e, RawPredicate } from "@system/predication.ts";
 import { CraftingFormula } from "./formula.ts";
@@ -222,7 +222,7 @@ class CraftingEntry implements Omit<CraftingEntryData, "parentItem"> {
         const rules = this.parentItem.toObject().system.rules;
         const thisRule = rules.find(
             (r: CraftingEntryRuleSource): r is CraftingEntryRuleData =>
-                r.key === "CraftingEntry" && r.selector === this.selector
+                r.key === "CraftingEntry" && r.selector === this.selector,
         );
         if (thisRule) {
             thisRule.preparedFormulas = this.preparedFormulaData;
@@ -271,4 +271,5 @@ interface PreparedFormulaSheetData {
     isSignatureItem: boolean;
 }
 
-export { CraftingEntry, CraftingEntryData, PreparedFormulaData };
+export { CraftingEntry };
+export type { CraftingEntryData, PreparedFormulaData };

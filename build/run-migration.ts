@@ -1,34 +1,33 @@
 import { ActorSourcePF2e } from "@actor/data/index.ts";
-import { ItemSourcePF2e } from "@item/data/index.ts";
+import { ItemSourcePF2e } from "@item/base/data/index.ts";
 import { sluggify } from "@util";
 import fs from "fs-extra";
 import { JSDOM } from "jsdom";
 import path from "path";
 import { populateFoundryUtilFunctions } from "../tests/fixtures/foundryshim.ts";
+import "./lib/core-helpers.ts";
 import { getFilesRecursively } from "./lib/helpers.ts";
 
 import { MigrationBase } from "@module/migration/base.ts";
 import { MigrationRunnerBase } from "@module/migration/runner/base.ts";
 
-import { Migration836EnergizingConsolidation } from "@module/migration/migrations/836-energizing-consolidation.ts";
-import { Migration837MoveHazardBookSources } from "@module/migration/migrations/837-move-hazard-book-source.ts";
-import { Migration838StrikeAttackRollSelector } from "@module/migration/migrations/838-strike-attack-roll-selector.ts";
-import { Migration839ActionCategories } from "@module/migration/migrations/839-action-categories.ts";
-import { Migration841V11UUIDFormat } from "@module/migration/migrations/841-v11-uuid-format.ts";
-import { Migration844DeityDomainUUIDs } from "@module/migration/migrations/844-deity-domains-uuids.ts";
-import { Migration846SpellSchoolOptional } from "@module/migration/migrations/846-spell-school-optional.ts";
-import { Migration847TempHPRuleEvents } from "@module/migration/migrations/847-temp-hp-rule-events.ts";
-import { Migration848NumericArmorProperties } from "@module/migration/migrations/848-numeric-armor-properties.ts";
-import { Migration849DeleteBrokenThreshold } from "@module/migration/migrations/849-delete-broken-threshold.ts";
-import { Migration850FlatFootedToOffGuard } from "@module/migration/migrations/850-flat-footed-to-off-guard.ts";
-import { Migration851JustInnovationId } from "@module/migration/migrations/851-just-innovation-id.ts";
-import { Migration852AbilityScoresToModifiers } from "@module/migration/migrations/852-ability-scores-to-modifiers.ts";
-import { Migration853RemasterLanguages } from "@module/migration/migrations/853-remaster-languages.ts";
-import { Migration854BracketedAbilityScoresToModifiers } from "@module/migration/migrations/854-bracketed-ability-scores-to-modifiers.ts";
-import { Migration855ApexEquipmentSystemData } from "@module/migration/migrations/855-apex-equipment-system-data.ts";
-import { Migration856NoSystemDotCustom } from "@module/migration/migrations/856-no-system-dot-custom.ts";
-import { Migration857WeaponSpecializationRE } from "@module/migration/migrations/857-weapon-spec-re.ts";
-
+import { Migration876FeatLevelTaken } from "@module/migration/migrations/876-feat-level-taken.ts";
+import { Migration877PublicationData } from "@module/migration/migrations/877-publication-data.ts";
+import { Migration878TakeABreather } from "@module/migration/migrations/878-take-a-breather.ts";
+import { Migration879DeviseAStratagemAndFriends } from "@module/migration/migrations/879-devise-a-stratagem-and-friends.ts";
+import { Migration882SpellDataReorganization } from "@module/migration/migrations/882-spell-data-reorganization.ts";
+import { Migration884UnifiedSpellcasting } from "@module/migration/migrations/884-unified-spellcasting.ts";
+import { Migration886CrossbowGroup } from "@module/migration/migrations/886-crossbow-group.ts";
+import { Migration887RedirectSpellLinks } from "@module/migration/migrations/887-redirect-spell-links.ts";
+import { Migration888RemasterLanguagesHeritages } from "@module/migration/migrations/888-remaster-languages-heritages.ts";
+import { Migration889RemoveFocusMaxIncreases } from "@module/migration/migrations/889-remove-focus-max-increases.ts";
+import { Migration890RMClassItemClassDC } from "@module/migration/migrations/890-rm-class-item-class-dc.ts";
+import { Migration891DruidicToWildsong } from "@module/migration/migrations/891-druidic-to-wildsong.ts";
+import { Migration894NoLayOnHandsVsUndead } from "@module/migration/migrations/894-no-lay-on-hands-vs-undead.ts";
+import { Migration895FixVariantSpellTraits } from "@module/migration/migrations/895-fix-variant-spell-traits.ts";
+import { Migration896HealingDomains } from "@module/migration/migrations/896-healing-domains.ts";
+import { Migration897ClearLayOnHandsDamage } from "@module/migration/migrations/897-clear-lay-on-hands-damage.ts";
+import { Migration899ArmorShieldToShieldShield } from "@module/migration/migrations/899-armor-shields-to-shield-shields.ts";
 // ^^^ don't let your IDE use the index in these imports. you need to specify the full path ^^^
 
 const { window } = new JSDOM();
@@ -38,53 +37,24 @@ globalThis.HTMLParagraphElement = window.HTMLParagraphElement;
 globalThis.Text = window.Text;
 
 const migrations: MigrationBase[] = [
-    new Migration836EnergizingConsolidation(),
-    new Migration837MoveHazardBookSources(),
-    new Migration838StrikeAttackRollSelector(),
-    new Migration839ActionCategories(),
-    new Migration841V11UUIDFormat(),
-    new Migration844DeityDomainUUIDs(),
-    new Migration846SpellSchoolOptional(),
-    new Migration847TempHPRuleEvents(),
-    new Migration848NumericArmorProperties(),
-    new Migration849DeleteBrokenThreshold(),
-    new Migration850FlatFootedToOffGuard(),
-    new Migration851JustInnovationId(),
-    new Migration852AbilityScoresToModifiers(),
-    new Migration853RemasterLanguages(),
-    new Migration854BracketedAbilityScoresToModifiers(),
-    new Migration855ApexEquipmentSystemData(),
-    new Migration856NoSystemDotCustom(),
-    new Migration857WeaponSpecializationRE(),
+    new Migration876FeatLevelTaken(),
+    new Migration877PublicationData(),
+    new Migration878TakeABreather(),
+    new Migration879DeviseAStratagemAndFriends(),
+    new Migration882SpellDataReorganization(),
+    new Migration884UnifiedSpellcasting(),
+    new Migration886CrossbowGroup(),
+    new Migration887RedirectSpellLinks(),
+    new Migration888RemasterLanguagesHeritages(),
+    new Migration889RemoveFocusMaxIncreases(),
+    new Migration890RMClassItemClassDC(),
+    new Migration891DruidicToWildsong(),
+    new Migration894NoLayOnHandsVsUndead(),
+    new Migration895FixVariantSpellTraits(),
+    new Migration896HealingDomains(),
+    new Migration897ClearLayOnHandsDamage(),
+    new Migration899ArmorShieldToShieldShield(),
 ];
-
-global.deepClone = <T>(original: T): T => {
-    // Simple types
-    if (typeof original !== "object" || original === null) return original;
-
-    // Arrays
-    if (Array.isArray(original)) return original.map(deepClone) as unknown as T;
-
-    // Dates
-    if (original instanceof Date) return new Date(original) as T & Date;
-
-    // Unsupported advanced objects
-    if ("constructor" in original && (original as { constructor?: unknown })["constructor"] !== Object) return original;
-
-    // Other objects
-    const clone: Record<string, unknown> = {};
-    for (const k of Object.keys(original)) {
-        clone[k] = deepClone((original as Record<string, unknown>)[k]);
-    }
-    return clone as T;
-};
-
-global.randomID = function randomID(length = 16): string {
-    const rnd = () => Math.random().toString(36).substring(2);
-    let id = "";
-    while (id.length < length) id += rnd();
-    return id.substring(0, length);
-};
 
 const packsDataPath = path.resolve(process.cwd(), "packs");
 
@@ -206,51 +176,53 @@ async function migrate() {
                         embedded.flags ??= {};
                     }
 
-                    const updatedActor = await migrationRunner.getUpdatedActor(source, migrationRunner.migrations);
-                    delete (updatedActor.system as { schema?: unknown }).schema;
+                    const update = await migrationRunner.getUpdatedActor(source, migrationRunner.migrations);
+                    delete (update.system as { _migrations?: object })._migrations;
                     pruneFlags(source);
-                    pruneFlags(updatedActor);
+                    pruneFlags(update);
                     for (const item of source.items) {
                         pruneFlags(item);
                     }
 
-                    for (const updatedItem of updatedActor.items) {
-                        delete (updatedItem.system as { schema?: unknown }).schema;
+                    update.items = update.items.map((i) => mergeObject({}, i, { performDeletions: true }));
+                    for (const updatedItem of update.items) {
+                        delete (updatedItem.system as { _migrations?: object })._migrations;
                         if (updatedItem.type === "consumable" && !updatedItem.system.spell) {
-                            delete (updatedItem.system as { spell?: unknown }).spell;
+                            delete (updatedItem.system as { spell?: object }).spell;
                         }
                         pruneFlags(updatedItem);
                     }
 
-                    return updatedActor;
+                    return mergeObject(source, update, { inplace: false, performDeletions: true });
                 } else if (isItemData(source)) {
                     source.system.slug = sluggify(source.name);
-                    const updatedItem = await migrationRunner.getUpdatedItem(source, migrationRunner.migrations);
-                    delete (source.system as { slug?: unknown }).slug;
-                    delete (updatedItem.system as { schema?: unknown }).schema;
-                    delete (updatedItem.system as { slug?: unknown }).slug;
-                    if (updatedItem.type === "consumable" && !updatedItem.system.spell) {
-                        delete (updatedItem.system as { spell?: unknown }).spell;
+                    const update = await migrationRunner.getUpdatedItem(source, migrationRunner.migrations);
+
+                    delete (source.system as { slug?: string }).slug;
+                    delete (update.system as { _migrations?: object })._migrations;
+                    delete (update.system as { slug?: string }).slug;
+                    if (update.type === "consumable" && !update.system.spell) {
+                        delete (update.system as { spell?: null }).spell;
                     }
                     pruneFlags(source);
-                    pruneFlags(updatedItem);
+                    pruneFlags(update);
 
-                    return updatedItem;
+                    return mergeObject(source, update, { inplace: false, performDeletions: true });
                 } else if (isJournalEntryData(source)) {
-                    const updated = await migrationRunner.getUpdatedJournalEntry(source, migrationRunner.migrations);
+                    const update = await migrationRunner.getUpdatedJournalEntry(source, migrationRunner.migrations);
                     pruneFlags(source);
-                    pruneFlags(updated);
-                    return updated;
+                    pruneFlags(update);
+                    return mergeObject(source, update, { inplace: false, performDeletions: true });
                 } else if (isMacroData(source)) {
-                    const updated = await migrationRunner.getUpdatedMacro(source, migrationRunner.migrations);
+                    const update = await migrationRunner.getUpdatedMacro(source, migrationRunner.migrations);
                     pruneFlags(source);
-                    pruneFlags(updated);
-                    return updated;
+                    pruneFlags(update);
+                    return mergeObject(source, update, { inplace: false, performDeletions: true });
                 } else if (isTableData(source)) {
-                    const updated = await migrationRunner.getUpdatedTable(source, migrationRunner.migrations);
+                    const update = await migrationRunner.getUpdatedTable(source, migrationRunner.migrations);
                     pruneFlags(source);
-                    pruneFlags(updated);
-                    return updated;
+                    pruneFlags(update);
+                    return mergeObject(source, update, { inplace: false, performDeletions: true });
                 } else {
                     pruneFlags(source);
                     return source;

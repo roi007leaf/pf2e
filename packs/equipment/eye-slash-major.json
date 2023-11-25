@@ -1,6 +1,6 @@
 {
     "_id": "ySZgsSBBVf3uv8Nx",
-    "img": "systems/pf2e/icons/default-icons/equipment.svg",
+    "img": "icons/magic/perception/eye-slit-orange.webp",
     "name": "Eye Slash (Major)",
     "system": {
         "baseItem": null,
@@ -19,19 +19,19 @@
         "level": {
             "value": 9
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 700
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
         },
         "quantity": 1,
         "rules": [
@@ -46,14 +46,10 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
-                "divination",
                 "invested",
                 "magical",
                 "tattoo"

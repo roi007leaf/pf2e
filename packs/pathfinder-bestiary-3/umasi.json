@@ -13,9 +13,6 @@
             "name": "Blowgun",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "blowgun",
                 "bonus": {
                     "value": "0"
@@ -50,16 +47,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": 20,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "blowgun",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -124,9 +118,6 @@
             "name": "Shield Spikes",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "shield-spikes",
                 "bonus": {
                     "value": "0"
@@ -161,16 +152,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -190,6 +176,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -198,9 +189,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "shield-spikes",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -230,19 +218,16 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.ezVp13Uw8cWW08Da"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/shields/wooden-shield.webp",
+            "img": "icons/equipment/shield/round-wooden-boss-steel-yellow-blue.webp",
             "name": "Wooden Shield",
             "sort": 300000,
             "system": {
                 "acBonus": 2,
-                "baseItem": null,
-                "category": "shield",
-                "checkPenalty": null,
+                "baseItem": "wooden-shield",
                 "containerId": null,
                 "description": {
                     "value": "<p>Though they come in a variety of shapes and sizes, the protection offered by wooden shields comes from the stoutness of their materials. While wooden shields are less expensive than steel shields, they break more easily.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Hardness</th>\n<th>HP</th>\n<th>BT</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>3</td>\n<td>12</td>\n<td>6</td>\n</tr>\n</tbody>\n</table>"
                 },
-                "dexCap": 0,
                 "equipped": {
                     "carryType": "held",
                     "handsHeld": 1,
@@ -251,7 +236,6 @@
                 "equippedBulk": {
                     "value": ""
                 },
-                "group": null,
                 "hardness": 3,
                 "hp": {
                     "max": 12,
@@ -260,50 +244,31 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "potency": {},
-                "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 1
                     }
                 },
-                "propertyRune1": {
-                    "value": null
-                },
-                "propertyRune2": {
-                    "value": null
-                },
-                "propertyRune3": {
-                    "value": null
-                },
-                "propertyRune4": {
-                    "value": null
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
-                "resiliencyRune": {
-                    "value": null
-                },
                 "rules": [],
+                "runes": {
+                    "reinforcing": 0
+                },
                 "size": "med",
                 "slug": "wooden-shield",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "speedPenalty": null,
+                "speedPenalty": 0,
                 "stackGroup": null,
-                "strength": null,
                 "traits": {
+                    "integrated": null,
                     "rarity": "common",
                     "value": []
                 },
@@ -314,7 +279,7 @@
                     "value": "1"
                 }
             },
-            "type": "armor"
+            "type": "shield"
         },
         {
             "_id": "2tww80yq8tBSw5KT",
@@ -360,14 +325,9 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -375,13 +335,15 @@
                         "cp": 5
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 10,
                 "rules": [],
                 "size": "med",
                 "slug": "blowgun-darts",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": "blowgunDarts",
                 "traits": {
                     "rarity": "common",
@@ -421,11 +383,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -468,11 +432,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -515,11 +481,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -555,14 +523,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -597,6 +567,11 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -612,9 +587,6 @@
                     }
                 ],
                 "slug": "1-status-to-all-saves-vs-magic",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -644,14 +616,16 @@
                 "description": {
                     "value": "<p>An umasi can spend 10 minutes grafting the flesh of other living or recently dead humanoids onto their body, attempting a @Check[type:medicine|dc:20] check with the effects of @UUID[Compendium.pf2e.actionspf2e.Item.Treat Wounds]. This process is the only way an umasi can recover Hit Points.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -676,16 +650,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>Umasi can't heal or recover HP in any way except their Flesh Grafting techniques. However, despite being living creatures, they don't take damage from either positive or negative damage.</p>"
+                    "value": "<p>Umasi can't heal or recover HP in any way except their Flesh Grafting techniques. However, despite being living creatures, they don't take damage from either vitality or void damage.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -720,14 +696,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ShieldBlock]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "shield-block",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -757,14 +735,16 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The umasi is adjacent to the corpse of a Small or larger creature that died within the last minute</p>\n<hr />\n<p><strong>Effect</strong> The umasi harvests and consumes a vital organ from the corpse, gaining [[/r 15 #Temporary Hit Points]]{15 temporary Hit Points} and a +1 status bonus to attack and damage rolls for 10 minutes. They can gain this benefit only once from any given corpse.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Consume Organ]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -796,14 +776,16 @@
                 "description": {
                     "value": "<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:24]</p>\n<hr />\n<p><strong>Maximum Duration</strong> 4 rounds</p>\n<p><strong>Stage 1</strong> @Damage[2d6[poison]] damage (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[3d6[poison]] damage (1 round)</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "harvester-poison",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -835,11 +817,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -858,11 +842,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -881,11 +867,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -904,11 +892,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -927,11 +917,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -989,18 +981,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CN"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 6
             },
             "privateNotes": "",
-            "publicNotes": "<p>Tales tell of strange humanoids who harvest appendages and organs from other creatures to graft onto their own perpetually decaying bodies. These stories are encountered more often than their subject, however. A reclusive people, umasi live deep in remote jungles, largely isolated from other societies.</p>\n<p>Despite not being undead, umasi can't heal naturally or via magic. Instead, they must harvest appendages and organs from the living to perpetuate their own lives. These modifications require special techniques, obscure rituals, and often the assistance of other umasi. Shorter rituals make quick repairs to wounded flesh-even consuming a nutrient-rich organ of a recently slain creature can provide quick rejuvenation-while more extensive changes require a full day's work.</p>\n<p>Because of the nature of their existences, no one single form remains common to umasi. Many graft any number of arms or legs of various sizes on their bodies, while others are conglomerations of exotic beasts, other humanoids, and whatever creatures they've hunted or scavenged. However, all umasi remain vaguely humanoid in shape. An umasi with additional arms can hold or wield more items at once, while additional legs or other limbs might grant increased Speed or new types of Speed. Concepts such as gender, ethnicity, and even recognizing someone based on their appearance are irrelevant to umasi. Instead, they value age and experience and identify themselves with iconic adornments or speech patterns.</p>\n<p>Despite their morbid nature, umasi are rarely at odds with living creatures. These opportunistic hunters value their self-preservation, but use fast‑acting nonlethal poisons to subdue their targets for safe and minimally destructive harvesting. Few umasi harbor malice toward the living, but some possess a streak of self-loathing and search for powerful magics that might break whatever curse binds them to their current state. Rarely, an umasi finds some strange form of acceptance on the fringes of a remote community where their skills at medicine carry more weight than fear of their strange appearances.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publicNotes": "<p>Tales tell of strange humanoids who harvest appendages and organs from other creatures to graft onto their own perpetually decaying bodies. These stories are encountered more often than their subject, however. A reclusive people, umasi live deep in remote jungles, largely isolated from other societies.</p>\n<p>Despite not being undead, umasi can't heal naturally or via magic. Instead, they must harvest appendages and organs from the living to perpetuate their own lives. These modifications require special techniques, obscure rituals, and often the assistance of other umasi. Shorter rituals make quick repairs to wounded flesh-even consuming a nutrient-rich organ of a recently slain creature can provide quick rejuvenation-while more extensive changes require a full day's work.</p>\n<p>Because of the nature of their existences, no one single form remains common to umasi. Many graft any number of arms or legs of various sizes on their bodies, while others are conglomerations of exotic beasts, other humanoids, and whatever creatures they've hunted or scavenged. However, all umasi remain vaguely humanoid in shape. An umasi with additional arms can hold or wield more items at once, while additional legs or other limbs might grant increased Speed or new types of Speed. Concepts such as gender, ethnicity, and even recognizing someone based on their appearance are irrelevant to umasi. Instead, they value age and experience and identify themselves with iconic adornments or speech patterns.</p>\n<p>Despite their morbid nature, umasi are rarely at odds with living creatures. These opportunistic hunters value their self-preservation, but use fast-acting nonlethal poisons to subdue their targets for safe and minimally destructive harvesting. Few umasi harbor malice toward the living, but some possess a streak of self-loathing and search for powerful magics that might break whatever curse binds them to their current state. Rarely, an umasi finds some strange form of acceptance on the fringes of a remote community where their skills at medicine carry more weight than fear of their strange appearances.</p>",
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
         },
         "resources": {},
@@ -1038,6 +1028,7 @@
             },
             "value": [
                 "aberration",
+                "chaotic",
                 "humanoid"
             ]
         }

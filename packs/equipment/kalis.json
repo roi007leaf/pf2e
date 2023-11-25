@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/default-icons/weapon.svg",
     "name": "Kalis",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "kalis",
         "bonus": {
             "value": 0
@@ -21,7 +18,7 @@
             "die": "d8"
         },
         "description": {
-            "value": "<p>A larger version of the asymmetrical, wavy‑bladed kris, this double‑edged sword is effective at creating grievous injuries.</p>"
+            "value": "<p>A larger version of the asymmetrical, wavy-bladed kris, this double-edged sword is effective at creating grievous injuries.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -35,16 +32,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Impossible Lands"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Impossible Lands"
-        },
         "splashDamage": {
             "value": 0
         },

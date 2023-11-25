@@ -11,7 +11,7 @@
         "description": {
             "value": "<p>This cumbersome and sturdy plate armor has fluting and additional protection built into the cuirass, helm, pauldrons, and vambraces. Bastion plate was invented for protection in combat tournaments meant to be sporting rather than lethal.</p>"
         },
-        "dexCap": 0,
+        "dexCap": null,
         "equippedBulk": {
             "value": "5"
         },
@@ -24,16 +24,11 @@
         "level": {
             "value": 2
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -53,14 +48,19 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": null
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
+        "specific": {
+            "value": false
         },
         "speedPenalty": -10,
         "stackGroup": null,

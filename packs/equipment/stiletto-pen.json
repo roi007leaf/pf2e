@@ -1,11 +1,8 @@
 {
     "_id": "Hh3F4DEP6aVulwQN",
-    "img": "systems/pf2e/icons/equipment/weapons/stiletto-pen.webp",
+    "img": "icons/tools/scribal/pen-steel-grey-brown.webp",
     "name": "Stiletto Pen",
     "system": {
-        "MAP": {
-            "value": null
-        },
         "baseItem": "stiletto-pen",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -53,16 +45,21 @@
             }
         },
         "propertyRune1": {
-            "value": ""
+            "value": null
         },
         "propertyRune2": {
-            "value": ""
+            "value": null
         },
         "propertyRune3": {
-            "value": ""
+            "value": null
         },
         "propertyRune4": {
-            "value": ""
+            "value": null
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Pathfinder Society Guide"
         },
         "quantity": 1,
         "range": null,
@@ -71,15 +68,12 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Pathfinder Society Guide"
-        },
         "splashDamage": {
             "value": 0
         },
         "stackGroup": null,
         "strikingRune": {
-            "value": ""
+            "value": null
         },
         "traits": {
             "rarity": "uncommon",
@@ -91,6 +85,7 @@
             ]
         },
         "usage": {
+            "canBeAmmo": false,
             "value": "held-in-one-hand"
         },
         "weight": {

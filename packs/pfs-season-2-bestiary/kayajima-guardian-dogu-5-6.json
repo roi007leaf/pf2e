@@ -26,11 +26,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -69,11 +71,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -109,14 +113,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -145,6 +151,11 @@
                 "category": "defensive",
                 "description": {
                     "value": "<p>Like normal objects, the guardian dogu has Hardness. This Hardness reduces any damage it takes by an amount equal to the Hardness. Once the guardian is reduced to less than half its Hit Points, or immediately upon being damaged by a critical hit, its construct armor breaks and its Armor Class is reduced to 22.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
@@ -197,9 +208,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -227,27 +235,28 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><span class=\"pf2-icon\">A</span> to <span class=\"pf2-icon\">T</span></p>n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The Kayajima guardian pulses with mystical energies that emit a pale blue glow before it emits a wave of force. If the Kayajima guardian uses 1 action to use , it unleashes a powerful blast that deals @Damage[4d6[force]] damage to all creatures in a @Template[type:cone|distance:15]. If the Kayajima guardian uses 2 actions to use Ley Line Surge, increase the size of the cone to @Template[type:cone|distance:30] and the damage to @Damage[6d6[force]] damage. If the Kayajima guardian uses 3 actions to use Ley Line Surge, increase the size of the cone to @Template[type:cone|distance:60] and the damage to @Damage[8d6[force]] damage.</p>\n<p>Each creature in the area must attempt a @Check[type:fortitude|dc:22|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed 5 feet.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is pushed 10 feet.</p>"
+                    "value": "<p><span class=\"action-glyph\">A</span> to <span class=\"action-glyph\">T</span></p>n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> The Kayajima guardian pulses with mystical energies that emit a pale blue glow before it emits a wave of force. If the Kayajima guardian uses 1 action to use , it unleashes a powerful blast that deals @Damage[4d6[force]] damage to all creatures in a @Template[type:cone|distance:15]. If the Kayajima guardian uses 2 actions to use Ley Line Surge, increase the size of the cone to @Template[type:cone|distance:30] and the damage to @Damage[6d6[force]] damage. If the Kayajima guardian uses 3 actions to use Ley Line Surge, increase the size of the cone to @Template[type:cone|distance:60] and the damage to @Damage[8d6[force]] damage.</p>\n<p>Each creature in the area must attempt a @Check[type:fortitude|dc:22|traits:damaging-effect] save.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected.</p>\n<p><strong>Success</strong> The creature takes half damage.</p>\n<p><strong>Failure</strong> The creature takes full damage and is pushed 5 feet.</p>\n<p><strong>Critical Failure</strong> The creature takes double damage and is pushed 10 feet.</p>"
                 },
                 "frequency": {
                     "max": 1,
                     "per": "day",
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "evocation",
-                        "primal",
-                        "force"
+                        "force",
+                        "primal"
                     ]
                 },
                 "trigger": {
@@ -275,14 +284,16 @@
                 "description": {
                     "value": "<p>The Kayajima guardian propels itself with jets of blue energy from its feet, dashing up to a foe and swinging its fist. It Strides twice. If it ends its movement within melee range of at least one enemy, it can make an energized fist Strike against that enemy.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -311,11 +322,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -375,18 +388,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 7
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Society Scenario #2-02: Mountain of Sea and Sky"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Society Scenario #2-02: Mountain of Sea and Sky"
             }
         },
         "resources": {},

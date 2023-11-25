@@ -10,7 +10,7 @@ global.game = Object.freeze({
             switch (settingKey) {
                 /* Proficiency Modifiers */
                 case "proficiencyUntrainedModifier":
-                    return 0;
+                    return -2;
                 case "proficiencyTrainedModifier":
                     return 2;
                 case "proficiencyExpertModifier":
@@ -22,9 +22,9 @@ global.game = Object.freeze({
 
                 /* Variant rules */
                 case "proficiencyVariant":
-                    return "ProficiencyWithLevel";
+                    return false;
                 case "automaticBonusVariant":
-                    return "automaticBonusVariant";
+                    return "noABP";
                 default:
                     throw new Error("Undefined setting.");
             }
@@ -138,7 +138,7 @@ function mergeObject(
         inplace = true,
         enforceTypes = false,
     } = {},
-    _d = 0
+    _d = 0,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
 ): any {
     other = other || {};
@@ -193,7 +193,7 @@ function mergeObject(
                         inplace: true,
                         enforceTypes: enforceTypes,
                     },
-                    depth
+                    depth,
                 );
             }
 

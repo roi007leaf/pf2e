@@ -1,6 +1,6 @@
 {
     "_id": "5KHp3903LnOcHp8k",
-    "img": "systems/pf2e/icons/equipment/held-items/hoax-hunters-kit.webp",
+    "img": "icons/containers/chest/chest-simple-box-red.webp",
     "name": "Hoax-Hunter's Kit",
     "system": {
         "baseItem": null,
@@ -19,19 +19,19 @@
         "level": {
             "value": 3
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 50
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Dark Archive"
         },
         "quantity": 1,
         "rules": [
@@ -63,9 +63,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Dark Archive"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",

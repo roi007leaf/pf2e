@@ -1,11 +1,8 @@
 {
     "_id": "oTQKyZ8Vd2RPzaWK",
-    "img": "systems/pf2e/icons/default-icons/weapon.svg",
+    "img": "icons/weapons/polearms/spear-simple-barbed.webp",
     "name": "Harpoon",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "harpoon",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "range": 30,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "splashDamage": {
             "value": 0
         },
@@ -89,6 +83,7 @@
             ]
         },
         "usage": {
+            "canBeAmmo": false,
             "value": "held-in-two-hands"
         },
         "weight": {

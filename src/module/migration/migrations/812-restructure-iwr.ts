@@ -3,7 +3,7 @@ import { ActorTraitsSource } from "@actor/data/base.ts";
 import { ImmunitySource, ResistanceSource, WeaknessSource } from "@actor/data/iwr.ts";
 import { ImmunityType, ResistanceType, WeaknessType } from "@actor/types.ts";
 import { IMMUNITY_TYPES, RESISTANCE_TYPES, WEAKNESS_TYPES } from "@actor/values.ts";
-import { ItemSourcePF2e } from "@item/data/index.ts";
+import { ItemSourcePF2e } from "@item/base/data/index.ts";
 import { isObject, pick, setHasElement, sluggify } from "@util";
 import { MigrationBase } from "../base.ts";
 
@@ -49,7 +49,7 @@ export class Migration812RestructureIWR extends MigrationBase {
                     const parsed = this.#parseExceptions(String(data.exceptions ?? ""));
 
                     const exceptions = parsed.exceptions.filter((e): e is WeaknessType =>
-                        setHasElement(WEAKNESS_TYPES, e)
+                        setHasElement(WEAKNESS_TYPES, e),
                     );
                     if (exceptions.length > 0) weakness.exceptions = exceptions;
 
@@ -73,12 +73,12 @@ export class Migration812RestructureIWR extends MigrationBase {
                     const parsed = this.#parseExceptions(String(data.exceptions ?? ""));
 
                     const exceptions = parsed.exceptions.filter((e): e is ResistanceType =>
-                        setHasElement(RESISTANCE_TYPES, e)
+                        setHasElement(RESISTANCE_TYPES, e),
                     );
                     if (exceptions.length > 0) resistance.exceptions = exceptions;
 
                     const doubleVs = parsed.doubleVs.filter((e): e is ResistanceType =>
-                        setHasElement(RESISTANCE_TYPES, e)
+                        setHasElement(RESISTANCE_TYPES, e),
                     );
                     if (doubleVs.length > 0) resistance.doubleVs = doubleVs;
 
@@ -91,11 +91,11 @@ export class Migration812RestructureIWR extends MigrationBase {
     }
 
     /** Sluggify precious material types, normalize precious material grades */
-    override async updateItem(source: ItemSourcePF2e): Promise<void> {
+    override async updateItem(source: MaybeWithOldMaterialData): Promise<void> {
         if (source.type === "weapon") {
-            const material: { value: string | null } = source.system.preciousMaterial;
-            material.value = material.value ? sluggify(material.value) : null;
-            source.system.preciousMaterialGrade.value ||= null;
+            const material = source.system.preciousMaterial ?? {};
+            material.value = typeof material.value === "string" ? sluggify(material.value) : null;
+            if (source.system.preciousMaterialGrade) source.system.preciousMaterialGrade.value ||= null;
         }
 
         // Rule elements with old cold-iron data
@@ -104,7 +104,7 @@ export class Migration812RestructureIWR extends MigrationBase {
                 typeof r.key === "string" &&
                 ["Immunity", "Weakness", "Resistance"].includes(r.key) &&
                 "type" in r &&
-                typeof r.type === "string"
+                typeof r.type === "string",
         );
         for (const rule of iwrREs) {
             rule.type = rule.type.startsWith("{") ? rule.type : this.#normalizeType(rule.type);
@@ -125,7 +125,7 @@ export class Migration812RestructureIWR extends MigrationBase {
 
         const adjustStrikeREs = source.system.rules.filter(
             (r): r is { key: string; property: string; value: string } =>
-                r.key === "AdjustStrike" && typeof r.value === "string"
+                r.key === "AdjustStrike" && typeof r.value === "string",
         );
         for (const rule of adjustStrikeREs) {
             rule.value =
@@ -138,14 +138,14 @@ export class Migration812RestructureIWR extends MigrationBase {
     /** Get objects that may or may not be a weakness or resistance */
     #getWR<TType extends string>(
         maybeWR: unknown[],
-        typeSet: Set<TType>
+        typeSet: Set<TType>,
     ): { type: TType; value: number; exceptions?: unknown }[] {
         return maybeWR
             .filter(
                 (r: unknown): r is { type: string; value: number; exceptions?: string } =>
                     isObject<{ type: unknown; value: unknown }>(r) &&
                     typeof r.type === "string" &&
-                    typeof r.value === "number"
+                    typeof r.value === "number",
             )
             .map((wr) => {
                 wr.type = this.#normalizeType(wr.type);
@@ -231,3 +231,10 @@ interface MaybeWithOldIWRData extends ActorTraitsSource<string> {
     "-=dv"?: null;
     "-=dr"?: null;
 }
+
+type MaybeWithOldMaterialData = ItemSourcePF2e & {
+    system: {
+        preciousMaterial?: { value?: unknown };
+        preciousMaterialGrade?: { value?: unknown };
+    };
+};

@@ -1,11 +1,8 @@
 {
     "_id": "K291ECjrRssmH93Q",
-    "img": "systems/pf2e/icons/default-icons/weapon.svg",
+    "img": "icons/commodities/materials/pottery-jug.webp",
     "name": "Junk Bomb (Major)",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "alchemical-bomb",
         "bonus": {
             "value": 3
@@ -26,7 +23,7 @@
             }
         },
         "description": {
-            "value": "<p>This volatile-looking bomb is cobbled together from jagged metal scrap, broken glass, and other bits of razor-sharp fragments, lashed around a core of explosive alchemical slag. A junk bomb deals @Damage[4d8[slashing]] damage, @Damage[4[bleed]] damage, and [[/r (4[splash])[slashing]]]{4 slashing splash damage}.</p>\n<p>You gain a +3 item bonus to attack rolls.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Strike</p>\n<hr />\n<p>This volatile-looking bomb is cobbled together from jagged metal scrap, broken glass, and other bits of razor-sharp fragments, lashed around a core of explosive alchemical slag. A junk bomb deals @Damage[4d8[slashing]] damage, @Damage[4[bleed]] damage, and [[/r (4[splash])[slashing]]]{4 slashing splash damage}.</p>\n<p>You gain a +3 item bonus to attack rolls.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -40,16 +37,11 @@
         "level": {
             "value": 17
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -69,6 +61,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Special: Fumbus!"
+        },
         "quantity": 1,
         "range": 20,
         "reload": {
@@ -76,9 +73,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Special: Fumbus!"
-        },
         "splashDamage": {
             "value": 4
         },

@@ -19,31 +19,27 @@
         "level": {
             "value": 4
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 75
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #182: Graveclaw"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder #182: Graveclaw"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "rare",
             "value": [
-                "divination",
                 "invested",
                 "occult",
                 "scrying"

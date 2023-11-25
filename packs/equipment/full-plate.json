@@ -1,6 +1,6 @@
 {
     "_id": "Gq1cZWSKOtJhKd2p",
-    "img": "systems/pf2e/icons/equipment//armor/fullplate.webp",
+    "img": "icons/equipment/chest/breastplate-layered-steel-green.webp",
     "name": "Full Plate",
     "system": {
         "acBonus": 6,
@@ -9,9 +9,9 @@
         "checkPenalty": -3,
         "containerId": null,
         "description": {
-            "value": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of padded armor and a pair of gauntlets.</p>"
+            "value": "<p>Plate mail consists of interlocking plates that encase nearly the entire body in a carapace of steel. It is costly and heavy, and the wearer often requires help to don it correctly, but it provides some of the best defense armor can supply. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor]{padded armor} and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>"
         },
-        "dexCap": 0,
+        "dexCap": null,
         "equippedBulk": {
             "value": "4"
         },
@@ -24,18 +24,12 @@
         "level": {
             "value": 2
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
-        "potency": {},
         "potencyRune": {
-            "value": 0
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+            "value": null
         },
         "price": {
             "value": {
@@ -43,25 +37,30 @@
             }
         },
         "propertyRune1": {
-            "value": ""
+            "value": null
         },
         "propertyRune2": {
-            "value": ""
+            "value": null
         },
         "propertyRune3": {
-            "value": ""
+            "value": null
         },
         "propertyRune4": {
-            "value": ""
+            "value": null
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
         },
         "quantity": 1,
         "resiliencyRune": {
-            "value": ""
+            "value": null
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
+        "specific": {
+            "value": false
         },
         "speedPenalty": -10,
         "stackGroup": null,

@@ -1,5 +1,5 @@
 import { BaseWeaponProficiencyKey, WeaponGroupProficiencyKey } from "@actor/character/data.ts";
-import { CharacterPF2e } from "@actor/character/document.ts";
+import type { CharacterPF2e } from "@actor/character/document.ts";
 import { BaseWeaponType } from "@item/weapon/types.ts";
 import { fontAwesomeIcon, htmlClosest, localizer, objectHasKey } from "@util";
 
@@ -20,7 +20,7 @@ async function add(actor: CharacterPF2e, event: MouseEvent): Promise<void> {
                 icon: fontAwesomeIcon("check").outerHTML,
                 label: game.i18n.localize("PF2E.AddShortLabel"),
                 callback: async ($dialog) => {
-                    const selection = $dialog.find('select[name="proficiency"]').val();
+                    const selection = $dialog.find("select[name=proficiency]").val();
                     if (typeof selection === "string" && selection) {
                         const proficiencyKey =
                             selection in weaponGroups
@@ -48,7 +48,7 @@ async function add(actor: CharacterPF2e, event: MouseEvent): Promise<void> {
 function remove(actor: CharacterPF2e, event: MouseEvent): void {
     const weaponGroups = CONFIG.PF2E.weaponGroups;
     const baseWeapons = CONFIG.PF2E.baseWeaponTypes;
-    const key = htmlClosest(event.currentTarget, "li.skill.custom")?.dataset.skill ?? "";
+    const key = htmlClosest(event.currentTarget, "li.skill.custom")?.dataset.slug ?? "";
     const translationKey = key?.replace(/^weapon-(?:base|group)-/, "") ?? "";
     const name = objectHasKey(weaponGroups, translationKey)
         ? game.i18n.localize(weaponGroups[translationKey])
@@ -61,8 +61,8 @@ function remove(actor: CharacterPF2e, event: MouseEvent): void {
         content: `<p>${message}</p>`,
         defaultYes: false,
         yes: () => {
-            if (!(key in (actor._source.system.martial ?? {}))) return;
-            actor.update({ [`system.martial.-=${key}`]: null });
+            if (!(key in (actor._source.system.proficiencies?.attacks ?? {}))) return;
+            actor.update({ [`system.proficiencies.attacks.-=${key}`]: null });
         },
     });
 }

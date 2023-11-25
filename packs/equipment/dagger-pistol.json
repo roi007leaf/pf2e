@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/dagger-pistol.webp",
     "name": "Dagger Pistol",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "dagger-pistol",
         "bonus": {
             "value": 0
@@ -35,6 +32,10 @@
         "level": {
             "value": 0
         },
+        "material": {
+            "grade": null,
+            "type": null
+        },
         "meleeUsage": {
             "damage": {
                 "die": "d4",
@@ -49,17 +50,8 @@
                 "versatile-s"
             ]
         },
-        "negateBulk": {
-            "value": "0"
-        },
         "potencyRune": {
             "value": 0
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -78,6 +70,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Guns & Gears"
+        },
         "quantity": 1,
         "range": 30,
         "reload": {
@@ -85,9 +82,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Guns & Gears"
-        },
         "splashDamage": {
             "value": 0
         },

@@ -1,6 +1,6 @@
 {
     "_id": "Ru4xaA4kjdZ4IFS5",
-    "img": "systems/pf2e/icons/equipment/consumables/oils/oil-of-weightlessness.webp",
+    "img": "icons/tools/laboratory/bowl-mixing.webp",
     "name": "Oil of Weightlessness (Greater)",
     "system": {
         "autoDestroy": {
@@ -19,7 +19,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p>You can spread this shimmering oil on an item of 2 Bulk or less to make it feel weightless. It has negligible Bulk for 8 hours.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (manipulate)</p>\n<hr />\n<p>You can spread this shimmering oil on an item of 2 Bulk or less to make it feel weightless. It has negligible Bulk for 8 hours.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -32,34 +32,30 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 36
             }
         },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder GM Core"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
                 "consumable",
                 "magical",
-                "oil",
-                "transmutation"
+                "oil"
             ]
         },
         "usage": {

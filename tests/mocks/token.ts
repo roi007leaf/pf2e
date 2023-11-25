@@ -1,4 +1,5 @@
-import type { ActorPF2e, ScenePF2e, TokenDocumentPF2e } from "@module/documents.js";
+import type { ActorPF2e } from "@actor";
+import type { ScenePF2e } from "@scene";
 
 export class MockToken {
     actor: ActorPF2e | null;
@@ -7,7 +8,7 @@ export class MockToken {
 
     constructor(
         data: foundry.documents.TokenSource,
-        context: { parent?: ScenePF2e | null; actor?: ActorPF2e | null } = {}
+        context: { parent?: ScenePF2e | null; actor?: ActorPF2e | null } = {},
     ) {
         this._source = duplicate(data);
         this.parent = context.parent ?? null;
@@ -27,8 +28,8 @@ export class MockToken {
     }
 
     update(
-        changes: EmbeddedDocumentUpdateData<TokenDocumentPF2e<this["parent"]>>,
-        context: SceneEmbeddedModificationContext<NonNullable<this["parent"]>> = {}
+        changes: EmbeddedDocumentUpdateData,
+        context: SceneEmbeddedModificationContext<NonNullable<this["parent"]>> = {},
     ): void {
         changes["_id"] = this.id;
         this.scene?.updateEmbeddedDocuments("Token", [changes], context);

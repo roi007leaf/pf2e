@@ -1,8 +1,7 @@
 import type { ActorSourcePF2e } from "@actor/data/index.ts";
 import type { NPCAttributesSource, NPCSystemSource } from "@actor/npc/data.ts";
-import { isPhysicalData } from "@item/data/helpers.ts";
-import { ItemSourcePF2e, MeleeSource, SpellSource } from "@item/data/index.ts";
-import { itemIsOfType } from "@item/helpers.ts";
+import { ItemSourcePF2e, MeleeSource, SpellSource, isPhysicalData } from "@item/base/data/index.ts";
+import { PublicationData } from "@module/data.ts";
 import { RuleElementSource } from "@module/rules/index.ts";
 import { isObject, sluggify } from "@util/index.ts";
 import fs from "fs";
@@ -26,7 +25,6 @@ declare global {
 const { window } = new JSDOM();
 global.document = window.document;
 global.window = global.document.defaultView!;
-const $ = (await import("jquery")).default;
 
 interface ExtractArgs {
     packDb: string;
@@ -125,7 +123,7 @@ class PackExtractor {
 
                     console.log(`Finished extracting ${sourceCount} documents from pack ${dbDirectory}`);
                     return sourceCount;
-                })
+                }),
             )
         ).reduce((runningTotal, count) => runningTotal + count, 0);
     }
@@ -142,7 +140,7 @@ class PackExtractor {
             const getFolderPath = (folder: DBFolder, parts: string[] = []): string => {
                 if (parts.length > 3) {
                     throw PackError(
-                        `Error: Maximum folder depth exceeded for "${folder.name}" in pack: ${packDirectory}`
+                        `Error: Maximum folder depth exceeded for "${folder.name}" in pack: ${packDirectory}`,
                     );
                 }
                 parts.unshift(sluggify(folder.name));
@@ -231,7 +229,7 @@ class PackExtractor {
             if (oldSource._id !== newSource._id) {
                 throw PackError(
                     `The ID of doc "${newSource.name}" (${newSource._id}) does not match the current ID ` +
-                        `(${oldSource._id}). Documents that are already in the system must keep their current ID.`
+                        `(${oldSource._id}). Documents that are already in the system must keep their current ID.`,
                 );
             }
         }
@@ -316,7 +314,7 @@ class PackExtractor {
                 if (typeof slug === "string" && slug !== sluggify(docSource.name)) {
                     console.warn(
                         `Warning: Name change detected on ${docSource.name}. ` +
-                            "Please remember to create a slug migration before next release."
+                            "Please remember to create a slug migration before next release.",
                     );
                 }
 
@@ -338,50 +336,60 @@ class PackExtractor {
                 return "";
             }
 
-            const $description = ((): JQuery => {
+            const container = (() => {
                 try {
-                    return $(
+                    const div = document.createElement("div");
+                    div.innerHTML =
                         description.startsWith("<p>") && /<\/(?:p|ol|ul|table)>$/.test(description)
                             ? description
-                            : `<p>${description}</p>`
-                    );
+                            : `<p>${description}</p>`;
+                    return div;
                 } catch (error) {
                     console.error(error);
                     throw PackError(
-                        `Failed to parse description of ${docSource.name} (${docSource._id}):\n${description}`
+                        `Failed to parse description of ${docSource.name} (${docSource._id}):\n${description}`,
                     );
                 }
             })();
 
-            // Strip out span tags from AoN copypasta
-            const selectors = ["span#ctl00_MainContent_DetailedOutput", "span.fontstyle0"];
-            for (const selector of selectors) {
-                $description.find(selector).each((_i, span) => {
-                    $(span)
-                        .contents()
-                        .unwrap(selector)
-                        .each((_j, node) => {
-                            if (node.nodeName === "#text") {
-                                node.textContent = node.textContent!.trim();
-                            }
-                        });
+            const textNodes: Text[] = [];
+            function pushTextNode(node: Node | null): void {
+                if (!node) return;
+                if (node.nodeName === "#text" && node.nodeValue && node.nodeValue !== "\n") {
+                    textNodes.push(node as Text);
+                }
+                node.childNodes.forEach((n) => {
+                    pushTextNode(n);
                 });
             }
 
-            return $("<div>")
-                .append($description)
-                .html()
+            pushTextNode(container);
+
+            // Strip out span tags from AoN copypasta
+            const selectors = ["span#ctl00_MainContent_DetailedOutput", "span.fontstyle0"];
+            for (const selector of selectors) {
+                container.querySelectorAll(selector).forEach((span) => {
+                    span.replaceWith(span.innerHTML);
+                });
+            }
+
+            return container.innerHTML
                 .replace(/<([hb]r)>/g, "<$1 />") // Prefer self-closing tags
-                .replace(/&nbsp;/g, " ")
-                .replace(/ {2,}/g, " ")
-                .replace(/<p> ?<\/p>/g, "")
                 .replace(/<\/p> ?<p>/g, "</p>\n<p>")
                 .replace(/<p>[ \r\n]+/g, "<p>")
                 .replace(/[ \r\n]+<\/p>/g, "</p>")
                 .replace(/<(?:b|strong)>\s*/g, "<strong>")
                 .replace(/\s*<\/(?:b|strong)>/g, "</strong>")
                 .replace(/(<\/strong>)(\w)/g, "$1 $2")
-                .replace(/(<p><\/p>)/g, "")
+                .replace(/\bpf2-icon\b/g, "action-glyph")
+                .replace(/<p> *<\/p>/g, "")
+                .replace(/<div> *<\/div>/g, "")
+                .replace(/&nbsp;/g, " ")
+                .replace(/\u2011/g, "-")
+                .replace(/\s*\u2014\s*/g, "\u2014") // em dash
+                .replace(/ {2,}/g, " ")
+                .trim()
+                .replace(/^<hr \/>/, "")
                 .trim();
         };
 
@@ -391,7 +399,7 @@ class PackExtractor {
             } else if ("details" in docSource.system && "publicNotes" in docSource.system.details) {
                 docSource.system.details.publicNotes = cleanDescription(docSource.system.details.publicNotes);
             }
-        } else if ("content" in docSource) {
+        } else if ("content" in docSource && typeof docSource.content === "string") {
             docSource.content = cleanDescription(docSource.content);
         }
 
@@ -406,14 +414,16 @@ class PackExtractor {
             if (key === "_id") {
                 topLevel = docSource;
                 if (docSource.folder === null) {
-                    delete docSource.folder;
+                    delete (docSource as { folder?: null }).folder;
                 }
                 delete (docSource as { _stats?: unknown })._stats;
 
-                docSource.img &&= docSource.img.replace(
-                    "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/",
-                    "systems/pf2e/"
-                ) as ImageFilePath;
+                if ("img" in docSource && typeof docSource.img === "string") {
+                    docSource.img = docSource.img.replace(
+                        "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/",
+                        "systems/pf2e/",
+                    ) as ImageFilePath;
+                }
 
                 if (isObject(docSource.flags?.pf2e) && Object.keys(docSource.flags.pf2e).length === 0) {
                     delete docSource.flags.pf2e;
@@ -425,16 +435,16 @@ class PackExtractor {
                 if ("type" in docSource) {
                     if (isActorSource(docSource) || isItemSource(docSource)) {
                         docSource.name = docSource.name.trim();
-                        delete (docSource as { ownership?: unknown }).ownership;
-                        delete (docSource as { effects?: unknown }).effects;
-                        delete (docSource.system as { schema?: unknown }).schema;
+                        delete (docSource as { ownership?: object }).ownership;
+                        delete (docSource as { effects?: object[] }).effects;
+                        delete (docSource.system as { _migration?: object })._migration;
                     }
 
                     if (isActorSource(docSource)) {
                         this.#lastActor = docSource;
 
                         if (docSource.prototypeToken?.name === docSource.name) {
-                            delete (docSource as { prototypeToken?: unknown }).prototypeToken;
+                            delete (docSource as { prototypeToken?: object }).prototypeToken;
                         } else if (docSource.prototypeToken) {
                             const withToken: {
                                 img: ImageFilePath;
@@ -449,10 +459,11 @@ class PackExtractor {
                             }
                         }
 
-                        if (docSource.type === "npc") {
-                            const source: Partial<NPCSystemSource["details"]["source"]> =
-                                docSource.system.details.source;
-                            if (!source.author?.trim()) delete source.author;
+                        if (docSource.type === "character") {
+                            delete (docSource.system.details.biography as { visibility?: unknown }).visibility;
+                        } else if (docSource.type === "npc") {
+                            const publication: Partial<PublicationData> = docSource.system.details.publication;
+                            if (!publication.authors?.trim()) delete publication.authors;
 
                             const speed: Partial<NPCAttributesSource["speed"]> = docSource.system.attributes.speed;
                             if (!speed.details?.trim()) delete speed.details;
@@ -490,11 +501,15 @@ class PackExtractor {
             delete (source.system.description as { gm?: unknown }).gm;
         }
 
+        if (source.system.traits?.otherTags?.length === 0) {
+            delete (source.system.traits as { otherTags?: unknown }).otherTags;
+        }
+
+        const publication: Partial<PublicationData> = source.system.publication;
+        if (!publication.authors?.trim()) delete publication.authors;
+
         if (isPhysicalData(source)) {
             delete (source.system as { identification?: unknown }).identification;
-            if (source.system.traits.otherTags?.length === 0) {
-                delete (source.system.traits as { otherTags?: unknown }).otherTags;
-            }
 
             if (source.type === "consumable" && !source.system.spell) {
                 delete (source.system as { spell?: unknown }).spell;
@@ -528,7 +543,7 @@ class PackExtractor {
             }
         } else if (source.type === "feat") {
             const isFeat = !["ancestryfeature", "classfeature", "pfsboon", "deityboon", "curse"].includes(
-                source.system.category
+                source.system.category,
             );
             if (isFeat && source.img === "systems/pf2e/icons/default-icons/feat.svg") {
                 source.img = "systems/pf2e/icons/features/feats/feats.webp";
@@ -636,7 +651,7 @@ class PackExtractor {
             if (!itemTypeList.includes(key)) {
                 if (this.emitWarnings) {
                     console.log(
-                        `Warning in ${docSource.name}: Item type '${key}' is currently unhandled in sortDataItems. Consider adding.`
+                        `Warning in ${docSource.name}: Item type '${key}' is currently unhandled in sortDataItems. Consider adding.`,
                     );
                 }
                 for (const item of itemSet) {
@@ -707,7 +722,7 @@ class PackExtractor {
             [
                 new RegExp(
                     "(\\+|\\-)\\d+ (Status|Circumstance) (Bonus )?(to|on) ((All|Fortitude|Reflex|Will) )?Saves",
-                    "i"
+                    "i",
                 ),
                 "top",
             ],
@@ -752,10 +767,11 @@ class PackExtractor {
             const notAbilityMatch = notAbilities.find((naName) => ability.name.match(naName[0]));
             if (notAbilityMatch) {
                 console.log(
-                    `Error in ${docName}: ${notAbilityMatch[0]} has type action but should be type ${notAbilityMatch[1]}!`
+                    `Error in ${docName}: ${notAbilityMatch[0]} has type action but should be type ${notAbilityMatch[1]}!`,
                 );
             }
-            if (!itemIsOfType(ability, "action")) continue;
+
+            if (ability.type !== "action") continue;
 
             if (!ability.system.category) {
                 if (this.emitWarnings) {
@@ -799,7 +815,7 @@ class PackExtractor {
     #sortItemsWithOverrides(
         docName: string,
         actions: ItemSourcePF2e[],
-        overrides: Map<RegExp, "top" | "bottom">
+        overrides: Map<RegExp, "top" | "bottom">,
     ): ItemSourcePF2e[] {
         const topActions: ItemSourcePF2e[] = [];
         const middleActions: ItemSourcePF2e[] = [];
@@ -815,7 +831,7 @@ class PackExtractor {
                 } else {
                     if (this.emitWarnings) {
                         console.log(
-                            `Warning in ${docName}: Override item '${regexp}' has undefined override section '${position}', should be top or bottom!`
+                            `Warning in ${docName}: Override item '${regexp}' has undefined override section '${position}', should be top or bottom!`,
                         );
                     }
                 }
@@ -861,4 +877,4 @@ class PackExtractor {
     }
 }
 
-export { ExtractArgs, PackExtractor };
+export { PackExtractor, type ExtractArgs };

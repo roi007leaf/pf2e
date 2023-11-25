@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/dagger.webp",
     "name": "Undead Scourge",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "dagger",
         "bonus": {
             "value": 0
@@ -21,7 +18,7 @@
             "die": "d4"
         },
         "description": {
-            "value": "<p>An <em>undead scourge</em> is a <em>+1 striking disrupting dagger</em> with a bluish-white metal blade that emits a faint glow. These used to be weapons of Pharasmin undead slayers only, but the slayers have since shared these daggers with the Knights of Lastwall.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">F</span> Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You damage an undead creature with the undead scourge</p>\n<hr />\n<p><strong>Effect</strong> You disrupt the undead's connection to negative energy. For 1 minute, the undead damaged with the dagger can't be healed by negative energy unless the effect attempting to heal the undead first counteracts the undead scourge's effect, with a counteract level of 4 and DC of 25. Positive energy still has the usual effects on the undead.</p>"
+            "value": "<p>An <em>undead scourge</em> is a <em>+1 striking disrupting dagger</em> with a bluish-white metal blade that emits a faint glow. These used to be weapons of Pharasmin undead slayers only, but the slayers have since shared these daggers with the Knights of Lastwall.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span> Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<p><strong>Trigger</strong> You damage an undead creature with the undead scourge</p>\n<hr />\n<p><strong>Effect</strong> You disrupt the undead's connection to void energy. For 1 minute, the undead damaged with the dagger can't be healed by void energy unless the effect attempting to heal the undead first counteracts the undead scourge's effect, with a counteract level of 4 and DC of 25. Vitality energy still has the usual effects on the undead.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -35,17 +32,12 @@
         "level": {
             "value": 7
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Knights of Lastwall"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Knights of Lastwall"
-        },
         "specific": {
             "material": {
                 "base": [
@@ -109,7 +103,6 @@
                 "agile",
                 "finesse",
                 "magical",
-                "necromancy",
                 "thrown-10",
                 "versatile-s"
             ]

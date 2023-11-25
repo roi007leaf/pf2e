@@ -1,6 +1,6 @@
 {
     "_id": "GvAGrcl14Ywcgm2I",
-    "img": "systems/pf2e/icons/default-icons/armor.svg",
+    "img": "icons/equipment/back/cape-layered-red.webp",
     "name": "Armored Cloak",
     "system": {
         "acBonus": 1,
@@ -24,16 +24,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -53,16 +48,21 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Firebrands"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": null
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Firebrands"
+        "specific": {
+            "value": false
         },
-        "speedPenalty": null,
+        "speedPenalty": 0,
         "stackGroup": null,
         "strength": 1,
         "traits": {

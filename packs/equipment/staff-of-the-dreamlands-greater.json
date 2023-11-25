@@ -1,11 +1,8 @@
 {
     "_id": "eHs1vJMXGLIPues8",
-    "img": "systems/pf2e/icons/equipment/weapons/staff.webp",
+    "img": "icons/weapons/staves/staff-simple.webp",
     "name": "Staff of the Dreamlands (Greater)",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "staff",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 12
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -63,6 +55,11 @@
         },
         "propertyRune4": {
             "value": null
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: The Grand Bazaar"
         },
         "quantity": 1,
         "range": null,
@@ -88,9 +85,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: The Grand Bazaar"
-        },
         "specific": {
             "material": null,
             "price": "0 gp",
@@ -110,7 +104,6 @@
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "enchantment",
                 "magical",
                 "staff",
                 "two-hand-d8"

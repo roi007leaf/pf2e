@@ -19,16 +19,17 @@
         "prerequisites": {
             "value": []
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Advanced Player's Guide"
+        },
         "rules": [
             {
                 "key": "FlatModifier",
                 "predicate": [
-                    "self:effect:panache",
-                    {
-                        "or": [
-                            "action:bon-mot"
-                        ]
-                    }
+                    "action:bon-mot",
+                    "self:effect:panache"
                 ],
                 "selector": "diplomacy",
                 "type": "circumstance",
@@ -81,10 +82,10 @@
                 "title": "PF2E.SpecificRule.ExemplaryFinisher.Name"
             }
         ],
-        "source": {
-            "value": "Pathfinder Advanced Player's Guide"
-        },
         "traits": {
+            "otherTags": [
+                "swashbuckler-style"
+            ],
             "rarity": "common",
             "value": [
                 "swashbuckler"

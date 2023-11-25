@@ -1,6 +1,6 @@
 {
     "_id": "pRoikbRo5HFW6YUB",
-    "img": "systems/pf2e/icons/equipment/armor/halfplate.webp",
+    "img": "icons/equipment/chest/breastplate-gorget-steel-white.webp",
     "name": "Half Plate",
     "system": {
         "acBonus": 5,
@@ -9,7 +9,7 @@
         "checkPenalty": -3,
         "containerId": null,
         "description": {
-            "value": "<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of padded armor and a pair of gauntlets.</p>"
+            "value": "<p>Half plate consists of most of the upper body plates used in full plate, with lighter or sparser steel plate protection for the arms and legs. This provides some of the protection of full plate with greater flexibility and speed. A suit of this armor comes with an undercoat of @UUID[Compendium.pf2e.equipment-srd.Item.Padded Armor]{padded armor} and a pair of @UUID[Compendium.pf2e.equipment-srd.Item.Gauntlet]{gauntlets}.</p>"
         },
         "dexCap": 1,
         "equippedBulk": {
@@ -24,18 +24,12 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
-        "potency": {},
         "potencyRune": {
-            "value": 0
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+            "value": null
         },
         "price": {
             "value": {
@@ -43,25 +37,30 @@
             }
         },
         "propertyRune1": {
-            "value": ""
+            "value": null
         },
         "propertyRune2": {
-            "value": ""
+            "value": null
         },
         "propertyRune3": {
-            "value": ""
+            "value": null
         },
         "propertyRune4": {
-            "value": ""
+            "value": null
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
         },
         "quantity": 1,
         "resiliencyRune": {
-            "value": ""
+            "value": null
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
+        "specific": {
+            "value": false
         },
         "speedPenalty": -10,
         "stackGroup": null,

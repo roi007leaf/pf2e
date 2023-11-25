@@ -19,19 +19,19 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": ""
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 200
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Character Guide"
         },
         "quantity": 1,
         "rules": [
@@ -43,14 +43,10 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Character Guide"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "evocation",
                 "illusion",
                 "invested",
                 "magical"

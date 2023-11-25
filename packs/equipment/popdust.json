@@ -19,7 +19,7 @@
         },
         "containerId": "null",
         "description": {
-            "value": "<p><strong>Activate</strong><span class=\"pf2-icon\">1</span><strong></strong> Interact</p>\n<hr />\n<p>You can sprinkle popdust in an empty square adjacent to you. The first creature that applies pressure to the popdust, such as by moving into that square, causes it to emit a series of thunderous cracks.</p>"
+            "value": "<p><strong>Activate</strong><span class=\"action-glyph\">1</span><strong></strong> Interact</p>\n<hr />\n<p>You can sprinkle popdust in an empty square adjacent to you. The first creature that applies pressure to the popdust, such as by moving into that square, causes it to emit a series of thunderous cracks.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -32,26 +32,23 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 1
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: The Grand Bazaar"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: The Grand Bazaar"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",

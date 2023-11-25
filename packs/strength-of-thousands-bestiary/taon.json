@@ -13,9 +13,6 @@
             "name": "Spellcutter",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": null,
                 "bonus": {
                     "value": 0
@@ -31,7 +28,7 @@
                     "die": "d6"
                 },
                 "description": {
-                    "value": "<p>The blade of this <em>+2 greater striking adamantine longsword</em> seems to absorb light from the air around it, giving the impression the wielder is standing in the shadow of a much larger creature.</p>\n<p>While <em>Spellcutter</em> is a potent weapon for battling undead and constructs, an ancient restriction on the blade prevents it from harming living creatures; attacks against living beings deal no damage. This restriction doesn't apply to dhampirs or creatures with the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Negative Healing] ability who are otherwise living; the magic of the blade can't distinguish between such beings and undead.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">R</span> envision</p>\n<p><strong>Trigger</strong> You're targeted by a spell while wielding <em>Spellcutter</em></p>\n<hr />\n<p><strong>Effect</strong> <em>Spellcutter</em> attempts to absorb the magic of the triggering spell, giving you a +4 status bonus to your AC and saves against the effect.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> Touching <em>Spellcutter</em> to any light source of 12th level or lower (including 6th-level spells with the light trait) instantly extinguishes the effect. If the source of the light is a large flame, such as a forest fire or bonfire, it only extinguishes the light source in a 5-foot radius burst from the point of contact.</p>"
+                    "value": "<p>The blade of this <em>+2 greater striking adamantine longsword</em> seems to absorb light from the air around it, giving the impression the wielder is standing in the shadow of a much larger creature.</p>\n<p>While <em>Spellcutter</em> is a potent weapon for battling undead and constructs, an ancient restriction on the blade prevents it from harming living creatures; attacks against living beings deal no damage. This restriction doesn't apply to dhampirs or creatures with the @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Negative Healing] ability who are otherwise living; the magic of the blade can't distinguish between such beings and undead.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">R</span> envision</p>\n<p><strong>Trigger</strong> You're targeted by a spell while wielding <em>Spellcutter</em></p>\n<hr />\n<p><strong>Effect</strong> <em>Spellcutter</em> attempts to absorb the magic of the triggering spell, giving you a +4 status bonus to your AC and saves against the effect.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> Touching <em>Spellcutter</em> to any light source of 12th level or lower (including 6th-level spells with the light trait) instantly extinguishes the effect. If the source of the light is a large flame, such as a forest fire or bonfire, it only extinguishes the light source in a 5-foot radius burst from the point of contact.</p>"
                 },
                 "equipped": {
                     "carryType": "held",
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 17
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -78,6 +70,11 @@
                 },
                 "propertyRune4": {
                     "value": null
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #173: Doorway to the Red Star"
                 },
                 "quantity": 1,
                 "range": null,
@@ -113,9 +110,6 @@
                 ],
                 "size": "med",
                 "slug": "spellcutter",
-                "source": {
-                    "value": "Pathfinder #173: Doorway to the Red Star"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -162,11 +156,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -199,11 +195,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -246,11 +244,13 @@
                 "description": {
                     "value": "<p><em>@UUID[Compendium.pf2e.equipment-srd.Item.Spellcutter]</em> cannot damage living creatures</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -285,14 +285,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -327,6 +329,11 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -339,9 +346,6 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -376,14 +380,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AttackOfOpportunity]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -413,19 +419,20 @@
                 "description": {
                     "value": "<p>A living creature slain by a mohrg that had a lower level than the mohrg rises as a mohrg spawn after [[/br 1d4 #rounds]]{1d4 rounds}, on its turn. This mohrg spawn is under the command of the mohrg that created it.</p>\n<p>If the creator of the mohrg spawn is destroyed, the mohrg spawn is destroyed as well, immediately collapsing into a pile of decayed flesh and bones.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "occult",
-                        "necromancy"
+                        "occult"
                     ]
                 },
                 "trigger": {
@@ -453,14 +460,16 @@
                 "description": {
                     "value": "<p>Taon gains an extra reaction each round that can be used only to make an Attack of Opportunity.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -487,20 +496,21 @@
                 "description": {
                     "value": "<p>A living creature hit by a mohrg's tongue Strike must succeed at a @Check[type:fortitude|dc:30] save or become @UUID[Compendium.pf2e.conditionitems.Item.Paralyzed]. The creature can attempt a new save at the end of each of its turns, and the DC cumulatively decreases by 1 on each attempt.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "occult",
                         "incapacitation",
-                        "necromancy"
+                        "occult"
                     ]
                 },
                 "trigger": {
@@ -533,14 +543,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "grab",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -569,11 +581,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -592,11 +606,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -615,11 +631,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -638,11 +656,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -661,11 +681,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -701,7 +723,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 230,
                 "temp": 0,
                 "value": 230
@@ -747,18 +769,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "Male variant mohrg",
-            "creatureType": "",
             "level": {
                 "value": 15
             },
             "privateNotes": "",
             "publicNotes": "<p>The weight of murder wears heavy on the soul. With souls marked by a lifetime of dealing death, these killers, whether mass murderers, bloodthirsty soldiers, or sadistic executioners, sometimes do not let judgment and lawful execution stanch their slaying sprees. When such individuals are brought to justice, they may rise after death as mohrgs to continue their ruinous work.</p>\n<p>Drawn to others of their kind, mohrgs prefer to hunt in small groups, occasionally in partnership with weaker free-willed undead such as shadows and wights. They seek out weak prey and revel in causing drawn-out suffering. Some mohrgs haunt locations they favored in life, reenacting old crimes on new victims. They may even skulk about in public, wearing rags, cloaks, or freshly harvested skins to hide their nature. The most dangerous mohrgs are those who grow powerful enough to no longer fear being struck down again and openly assault settlements in an attempt to turn living towns into mass graves.</p>\n<p>Since those slain by a mohrg rise soon thereafter as mohrg spawn, the murders of a mohrg rarely go unnoticed for long, even when they take extra care to prey only on a society's dregs. Since mohrg spawn remain under a mohrg's control, a canny mohrg might order its spawn to remain in hiding to keep its presence secret until a point where it feels confident unleashing its undead army upon a doomed settlement.</p>\n<p>Mohrgs retain a twisted sentimentality for the crimes of their mortal life, seeking out trinkets that remind them of favorite murders. When not out hunting, mohrgs arrange their mementos into disturbing shrines. Often, these trinkets are valuable objects, and might even provide important clues to ongoing mysteries.</p>",
-            "source": {
-                "value": "Pathfinder #173: Doorway to the Red Star"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #173: Doorway to the Red Star"
             }
         },
         "resources": {},
@@ -796,7 +816,10 @@
                 "value": "med"
             },
             "value": [
-                "undead"
+                "chaotic",
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

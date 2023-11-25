@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/buzzsaw-axe.webp",
     "name": "Buzzsaw Axe (Major)",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "battle-axe",
         "bonus": {
             "value": 0
@@ -21,7 +18,7 @@
             "die": "d8"
         },
         "description": {
-            "value": "<p>With an aerodynamic cutting edge and a curved handle, this <em>+3 major striking battle axe</em> is perfectly suited to whirling motions, and in fact seems like it wants to whirl free from your grip. A Strike with this axe that benefits from the sweep trait's circumstance bonus on attack rolls also gains a +4 circumstance bonus to the damage roll.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> command, Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You hurl the axe, which spins at great speed as it flies to a distant point and returns to you, leaving a trail of carnage. Each creature in a @Template[type:line|distance:120] must succeed at a @Check[type:reflex|dc:43|basic:true|name:Thrown Buzzsaw Axe|traits:axe|showDC:all] save or take damage equal to the weapon's melee damage, including your Strength modifier.</p>"
+            "value": "<p>With an aerodynamic cutting edge and a curved handle, this <em>+3 major striking battle axe</em> is perfectly suited to whirling motions, and in fact seems like it wants to whirl free from your grip. A Strike with this axe that benefits from the sweep trait's circumstance bonus on attack rolls also gains a +4 circumstance bonus to the damage roll.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You hurl the axe, which spins at great speed as it flies to a distant point and returns to you, leaving a trail of carnage. Each creature in a @Template[type:line|distance:120] must succeed at a @Check[type:reflex|dc:43|basic:true|name:Thrown Buzzsaw Axe|traits:axe|showDC:all] save or take damage equal to the weapon's melee damage, including your Strength modifier.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -35,17 +32,12 @@
         "level": {
             "value": 20
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 3
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "specific": {
             "material": null,
             "runes": {
@@ -92,7 +86,6 @@
         "traits": {
             "rarity": "common",
             "value": [
-                "evocation",
                 "magical",
                 "sweep"
             ]

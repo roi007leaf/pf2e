@@ -1,6 +1,7 @@
 // Note: tags html element is tagify, and .tags is paizo tag/traits styling. They are not mutually exclusive.
 
 .tags {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 2px;
@@ -15,118 +16,88 @@
         background-color: var(--primary);
         border-radius: 2px;
         box-shadow: inset 0 0 0 1px rgba(black, 0.5);
-        color: var(--text-light);
-        display: flex;
+        color: var(--color-text-trait);
+        display: inline-flex;
         font-weight: 500;
-        min-height: 1.5em;
-        padding: 0 0.33em;
-
-        &.edit-btn {
-            align-items: center;
-            background-color: var(--color-bg-option);
-            border-radius: 0;
-            color: var(--primary);
-            display: flex;
-            justify-content: center;
-
-            a {
-                display: inline-flex;
-                svg {
-                    height: 9px;
-                    width: auto;
-                }
-            }
-        }
+        padding: 0.3em;
 
         &.tag_secondary {
             background-color: var(--secondary);
-            color: var(--text-light);
         }
 
         &.tag_tertiary {
             background-color: var(--tertiary);
-            color: var(--text-light);
         }
 
         &.tag_alt {
             background-color: var(--alt);
-            color: var(--text-light);
+        }
+
+        &.ghost-touch {
+            background-color: #516178;
         }
 
         &.tag_material {
             background-color: var(--alt-dark);
-            color: var(--text-light);
         }
 
         &.tag_transparent {
             background-color: transparent;
-            color: var(--text-color-dark-2);
-            text-transform: none;
-            font-family: var(--font-primary);
-            font-size: var(--font-size-10);
-            box-shadow: inset 0 0 0 1px rgb(0 0 0 / 30%);
             border-radius: 4px;
+            box-shadow: inset 0 0 0 1px rgb(0 0 0 / 30%);
+            color: var(--color-text-dark-secondary);
+            font-family: var(--font-primary);
+            line-height: 1.6em;
+            padding: 0 0.5em;
+            text-transform: none;
+        }
+
+        &.rarity {
+            &.common,
+            &[value="common"],
+            > option[value="common"] {
+                background-color: var(--color-rarity-common);
+            }
+
+            &.uncommon,
+            &[value="uncommon"],
+            > option[value="uncommon"] {
+                background-color: var(--color-rarity-uncommon);
+            }
+
+            &.rare,
+            &[value="rare"],
+            > option[value="rare"] {
+                background-color: var(--color-rarity-rare);
+            }
+
+            &.unique,
+            &[value="unique"],
+            > option[value="unique"] {
+                background-color: var(--color-rarity-unique);
+            }
         }
 
         &.mystified {
             opacity: 0.7;
         }
-
-        &.common,
-        &[value="common"] {
-            border-color: var(--color-rarity-common);
-            background-color: var(--color-rarity-common);
-        }
-
-        &.uncommon,
-        &[value="uncommon"] {
-            border-color: var(--color-rarity-uncommon);
-            background-color: var(--color-rarity-uncommon);
-        }
-
-        &.rare,
-        &[value="rare"] {
-            border-color: var(--color-rarity-rare);
-            background-color: var(--color-rarity-rare);
-        }
-
-        &.unique,
-        &[value="unique"] {
-            border-color: var(--color-rarity-unique);
-            background-color: var(--color-rarity-unique);
-        }
-    }
-}
-
-li.chat-message .tags .tag {
-    height: unset;
-    line-height: 1.7em;
-    min-height: 1em;
-
-    &_transparent {
-        line-height: 1.25em;
-        padding: 0.1em 0.25em;
     }
 }
 
 // Tagify and non-tagify paizo style main traits row
 .tags.paizo-style {
-    align-items: center;
+    border: none;
     border-radius: 3px;
-    padding: 0.05em;
     gap: 0;
-
-    select.tag {
-        height: 22px;
-    }
+    padding: 0.5em 0.05em;
 
     tag,
     .tag,
     select.tag {
-        border: 0.16em solid var(--color-border-trait);
+        background-color: var(--color-bg-trait);
+        border: solid var(--color-border-trait);
         box-shadow: none;
         margin: 0;
-        min-height: 22px;
 
         x {
             align-items: start;
@@ -138,16 +109,44 @@ li.chat-message .tags .tag {
         }
     }
 
-    tag > div {
-        padding: 0 0.09rem 0 0.25rem;
+    tag,
+    select.tag {
+        border-width: 2px 3px 2px 2px;
+
+        &:first-child {
+            border-left-width: 5px;
+        }
+
+        &:last-child {
+            border-right-width: 5px;
+        }
     }
 
-    tag > div,
-    .tag,
-    select {
+    tag:last-of-type {
+        border-right-width: 5px;
+    }
+
+    .tag {
+        border-width: 1px 2px 1px 1px;
+
+        &:first-child {
+            border-left-width: 3px;
+        }
+
+        &:last-child {
+            border-right-width: 3px;
+        }
+
+        &.size {
+            background-color: var(--color-bg-size);
+        }
+    }
+
+    tag > div {
         border-radius: 0;
         display: flex;
         font: 500 var(--font-size-10) var(--sans-serif);
+        padding: 0 0.09rem 0 0.25rem;
 
         .tagify__tag-text {
             text-transform: uppercase;
@@ -174,15 +173,21 @@ li.chat-message .tags .tag {
     }
 }
 
+.chat-message .tags {
+    line-height: normal;
+}
+
 tags.tags.paizo-style {
     background-color: rgba(0, 0, 0, 0.075);
-    --tag-bg: var(--primary);
-    --tag-hover: var(--primary);
+    padding: 0;
+
+    --tag-bg: var(--color-bg-trait);
+    --tag-hover: var(--color-bg-trait);
     --tag-remove-btn-color: var(--color-text-trait);
     --tag-text-color: var(--color-text-trait);
-    --tags-border-color: var(--color-border-light-tertiary);
-    --tags-focus-border-color: var(--color-border-light-tertiary);
-    --tags-hover-border-color: var(--color-border-light-tertiary);
+    --tags-border-color: var(--color-border-trait);
+    --tags-focus-border-color: var(--color-border-trait);
+    --tags-hover-border-color: var(--color-border-trait);
     --readonly-striped: 0;
 
     .tagify__input {
@@ -209,6 +214,35 @@ tags.tags.paizo-style {
             text-decoration: line-through;
             text-decoration-color: var(--color-text-trait);
         }
+
+        &-button {
+            order: 4;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            cursor: pointer;
+            background: var(--tag-remove-btn-bg);
+            color: var(--tag-remove-btn-color);
+
+            width: 14px;
+            height: 14px;
+            // Not needed for Firefox
+            -webkit-padding-before: 2px;
+            margin-left: 2px;
+
+            overflow: hidden;
+            transition: 0.2s ease-out;
+
+            &:hover {
+                color: white;
+                background: var(--tag-remove-btn-bg--hover);
+            }
+        }
+    }
+
+    tag {
+        height: var(--font-size-27);
     }
 
     // In lieu of remove button

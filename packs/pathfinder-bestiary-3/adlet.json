@@ -13,9 +13,6 @@
             "name": "Spear",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "spear",
                 "bonus": {
                     "value": 0
@@ -31,7 +28,7 @@
                     "die": "d6"
                 },
                 "description": {
-                    "value": "<p>A long metal shaft ending with a metal spike, a spear can be used one‑handed as a melee weapon and can be thrown.</p>"
+                    "value": "<p>A long metal shaft ending with a metal spike, a spear can be used one-handed as a melee weapon and can be thrown.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 2,
                 "range": null,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "spear",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -137,20 +131,18 @@
                     "0": {
                         "damage": "2d6+9",
                         "damageType": "piercing"
-                    },
-                    "jcu9qxtykeof117xc007": {
-                        "damage": "1d6",
-                        "damageType": "cold"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -184,7 +176,7 @@
                         "damage": "2d8+9",
                         "damageType": "slashing"
                     },
-                    "5ht1oyl6rtmo0r97xvmd": {
+                    "1": {
                         "damage": "1d6",
                         "damageType": "cold"
                     }
@@ -192,14 +184,18 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
-                    "value": []
+                    "value": [
+                        "unarmed"
+                    ]
                 },
                 "weaponType": {
                     "value": "melee"
@@ -232,20 +228,18 @@
                     "0": {
                         "damage": "2d6+9",
                         "damageType": "piercing"
-                    },
-                    "u6vizl8kai87eu9mgqau": {
-                        "damage": "1d6",
-                        "damageType": "cold"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -280,14 +274,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -322,14 +318,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "scent",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -359,14 +357,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature within reach of an adlet's jaws Strike attacks one of the adlet's allies.</p>\n<hr />\n<p><strong>Effect</strong> The adlet makes a jaws Strike against the triggering creature.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "avenging-bite",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -396,6 +396,11 @@
                 "description": {
                     "value": "<p>@Template[type:emanation|distance:60]{60 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.Aura]</p>\n<hr />\n<p>A clammy, frigid mist billows forth ahead of the adlet. Creatures within the mist become @UUID[Compendium.pf2e.conditionitems.Item.Concealed], and creatures outside the mist become concealed to creatures within it. An adlet can see through the aura without penalty.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -405,23 +410,17 @@
                         "radius": 60,
                         "slug": "wolfstorm",
                         "traits": [
-                            "aura",
                             "cold",
-                            "evocation",
                             "primal"
                         ]
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "aura",
                         "cold",
-                        "evocation",
                         "primal"
                     ]
                 },
@@ -450,30 +449,31 @@
                 "description": {
                     "value": "<p>Weapons wielded by an adlet gain the effect of the <em>@UUID[Compendium.pf2e.equipment-srd.Item.Frost]</em> property rune.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [
                     {
-                        "key": "Note",
-                        "outcome": [
-                            "criticalSuccess"
+                        "definition": [
+                            {
+                                "not": "item:category:unarmed"
+                            }
                         ],
-                        "selector": "attack",
-                        "text": "PF2E.WeaponPropertyRune.frost.Note.criticalSuccess",
-                        "title": "{item|name}",
-                        "visibility": "gm"
+                        "key": "AdjustStrike",
+                        "mode": "add",
+                        "property": "property-runes",
+                        "value": "frost"
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
-                    "value": [
-                        "evocation"
-                    ]
+                    "value": []
                 },
                 "trigger": {
                     "value": ""
@@ -498,20 +498,24 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>An adlet's Strikes deal an additional [[/r 2d6]] damage to creatures that are within the reach of at least two of the adlet's allies.</p>"
+                    "value": "<p>An adlet's Strikes deal an additional 2d6 damage to creatures that are within the reach of at least two of the adlet's allies.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [
                     {
-                        "domain": "damage-roll",
+                        "domain": "damage",
                         "key": "RollOption",
                         "option": "pack-attack",
                         "toggleable": true
                     },
                     {
-                        "damageType": "piercing",
                         "diceNumber": 2,
                         "dieSize": "d6",
                         "key": "DamageDice",
@@ -522,9 +526,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -554,20 +555,21 @@
                 "description": {
                     "value": "<p>An adlet's mist turns biting cold and coalesces into a thick rime of frost that deals @Damage[6d6[cold]] damage to creatures inside the adlet's wolfstorm aura (@Check[type:fortitude|dc:26|basic:true]), and the aura is deactivated until the start of the adlet's next turn.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "cold",
                         "concentrate",
-                        "evocation",
                         "primal"
                     ]
                 },
@@ -595,11 +597,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -618,11 +622,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -641,11 +647,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -664,11 +672,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -732,18 +742,16 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "CN"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 10
             },
             "privateNotes": "",
             "publicNotes": "<p>Adlets dwell in the farthest, harshest reaches of the Crown of the World. At first glance, these isolated people look much like their Erutaki human cousins; they typically have terra-cotta skin, straight black hair, and compact, powerful builds. However, adlets tend to be taller and more sinewy than their human kin. Up close, adlets' strangeness reveals itself-each sports a maw full of wolflike teeth. Their legs and tail resemble that of a dog.</p>\n<p>Adlets' legends say that long ago, a mighty hunter lost his way far from home and came upon a house of whalebone and ice. A woman dressed in white fox furs greeted him, fed him, and tended to his frostbite. In time, they married and had 10 children, five of whom bore the legs and tails of foxes. These children stayed with their mother, while the other five-born with the legs and tails of wolves-traveled with their father back to the human lands and became the first adlets.</p>\n<p>Adlets aren't inherently evil, but their culture is warlike, xenophobic, and noticeably lacking in humility. They see themselves as the natural rulers of the arctic wastes and view everyone else as squatters at best and invaders at worst. A typical adlet is stronger and faster than any mundane human, with the ability to walk naked in a blizzard and call up ice-cold mists. Given that, it's little wonder that adlets have developed something of a superiority complex. Still, while adlet raids are a common problem for travelers in the Crown of the World, a handful of wily and intrepid merchants have forged peaceful relations with certain adlet communities along more common routes.</p>",
-            "source": {
-                "value": "Pathfinder Bestiary 3"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bestiary 3"
             }
         },
         "resources": {},
@@ -781,6 +789,7 @@
                 "value": "med"
             },
             "value": [
+                "chaotic",
                 "cold",
                 "humanoid"
             ]

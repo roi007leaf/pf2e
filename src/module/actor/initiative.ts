@@ -1,6 +1,6 @@
+import type { ActorPF2e } from "@actor";
 import { createPonderousPenalty } from "@actor/character/helpers.ts";
 import { InitiativeData } from "@actor/data/base.ts";
-import { ActorPF2e } from "@module/documents.ts";
 import { CombatantPF2e, EncounterPF2e } from "@module/encounter/index.ts";
 import { CheckRoll } from "@system/check/index.ts";
 import { Statistic, StatisticData, StatisticRollParameters, StatisticTraceData } from "@system/statistic/index.ts";
@@ -23,28 +23,22 @@ class ActorInitiative {
     statistic: Statistic;
 
     get attribute(): AttributeString | null {
-        return this.statistic.ability;
+        return this.statistic.attribute;
     }
 
     /** @deprecated */
     get ability(): AttributeString | null {
         foundry.utils.logCompatibilityWarning(
             "`ActorInitiative#ability` is deprecated. Use `ActorInitiative#attribute` instead.",
-            { since: "5.3.0", until: "6.0.0" }
+            { since: "5.3.0", until: "6.0.0" },
         );
         return this.attribute;
     }
 
-    constructor(actor: ActorPF2e) {
+    constructor(actor: ActorPF2e, { statistic }: { statistic: string }) {
         this.actor = actor;
 
-        const initiativeSkill = actor.isOfType("hazard")
-            ? "stealth"
-            : actor.isOfType("character", "npc")
-            ? actor.attributes.initiative?.statistic || "perception"
-            : null;
-        const base = initiativeSkill ? actor.getStatistic(initiativeSkill) : null;
-
+        const base = actor.getStatistic(statistic);
         const ponderousPenalty = actor.isOfType("character") ? createPonderousPenalty(actor) : null;
         const rollLabel = game.i18n.format("PF2E.InitiativeWithSkill", { skillName: base?.label ?? "" });
 
@@ -100,4 +94,5 @@ class ActorInitiative {
 
 type InitiativeTraceData = StatisticTraceData & InitiativeData;
 
-export { ActorInitiative, InitiativeRollResult, InitiativeTraceData };
+export { ActorInitiative };
+export type { InitiativeRollResult, InitiativeTraceData };

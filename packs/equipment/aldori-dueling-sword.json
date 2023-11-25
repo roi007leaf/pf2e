@@ -1,11 +1,8 @@
 {
     "_id": "iSceAVMkVv1uKK7t",
-    "img": "systems/pf2e/icons/equipment/weapons/aldori-dueling-sword.webp",
+    "img": "icons/weapons/swords/sword-guard-gold-red.webp",
     "name": "Aldori Dueling Sword",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "aldori-dueling-sword",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: World Guide"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,15 +68,12 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: World Guide"
-        },
         "splashDamage": {
-            "value": null
+            "value": 0
         },
         "stackGroup": null,
         "strikingRune": {
-            "value": ""
+            "value": null
         },
         "traits": {
             "rarity": "uncommon",

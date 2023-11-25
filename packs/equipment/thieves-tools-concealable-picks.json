@@ -1,6 +1,6 @@
 {
     "_id": "TxMFNfkoccirCitP",
-    "img": "systems/pf2e/icons/equipment/adventuring-gear/thieves-tools.webp",
+    "img": "icons/tools/hand/lockpicks-steel-grey.webp",
     "name": "Thieves' Tools (Concealable Picks)",
     "system": {
         "baseItem": null,
@@ -19,26 +19,23 @@
         "level": {
             "value": 4
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 10
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Pathfinder Society Guide"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Pathfinder Society Guide"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",

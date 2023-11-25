@@ -1,6 +1,6 @@
 {
     "_id": "oZBafUU1tk4tgwye",
-    "img": "systems/pf2e/icons/default-icons/consumable.svg",
+    "img": "icons/consumables/food/bowl-stew-tofu-potato-red.webp",
     "name": "Mender's Soup",
     "system": {
         "autoDestroy": {
@@ -32,26 +32,23 @@
         "level": {
             "value": 2
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 5
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",

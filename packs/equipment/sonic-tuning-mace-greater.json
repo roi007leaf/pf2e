@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/sonic-tuning-mace.webp",
     "name": "Sonic Tuning Mace (Greater)",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "light-mace",
         "bonus": {
             "value": 0
@@ -21,7 +18,7 @@
             "die": "d4"
         },
         "description": {
-            "value": "<p>This <em>+2 greater striking thundering light mace</em> has twin tips, perfectly spaced to resonate when striking foes.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> command, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You tap the tuning mace against a nearby surface to cast 6th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.Sound Burst]</em> with a DC of 30.</p>"
+            "value": "<p>This <em>+2 greater striking thundering light mace</em> has twin tips, perfectly spaced to resonate when striking foes.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> command, Interact</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> You tap the tuning mace against a nearby surface to cast 6th-level <em>@UUID[Compendium.pf2e.spells-srd.Item.Noise Blast]</em> with a DC of 30.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -35,17 +32,12 @@
         "level": {
             "value": 13
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 2
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "specific": {
             "material": null,
             "runes": {
@@ -93,7 +87,6 @@
             "rarity": "common",
             "value": [
                 "agile",
-                "evocation",
                 "finesse",
                 "magical",
                 "shove",

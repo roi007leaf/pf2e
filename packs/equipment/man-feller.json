@@ -1,11 +1,8 @@
 {
     "_id": "4ADeEQGQJR0ju2Nd",
-    "img": "systems/pf2e/icons/default-icons/weapon.svg",
+    "img": "icons/weapons/axes/axe-battle-blackened.webp",
     "name": "Man-Feller",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "battle-axe",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 7
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": "low",
+            "type": "cold-iron"
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": "cold-iron"
-        },
-        "preciousMaterialGrade": {
-            "value": "low"
         },
         "price": {
             "value": {
@@ -63,6 +55,11 @@
         },
         "propertyRune4": {
             "value": null
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Adventure: Crown of the Kobold King"
         },
         "quantity": 1,
         "range": null,
@@ -83,9 +80,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Adventure: Crown of the Kobold King"
-        },
         "specific": {
             "material": {
                 "precious": {
@@ -115,8 +109,6 @@
         "traits": {
             "rarity": "unique",
             "value": [
-                "divination",
-                "evocation",
                 "magical",
                 "sweep"
             ]

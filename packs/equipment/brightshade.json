@@ -19,7 +19,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> Interact</p>\n<p>Brewed from a plant native to the First World, brightshade destroys tissue, living or dead. Victims of this poison take poison damage if they're alive and positive damage if they're undead.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] or @Damage[1d6[positive]] (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] or @Damage[2d6[positive]] (1 round)</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> Interact</p>\n<p>Brewed from a plant native to the First World, brightshade destroys tissue, living or dead. Victims of this poison take poison damage if they're alive and vitality damage if they're undead.</p>\n<p><strong>Saving Throw</strong> @Check[type:fortitude|dc:21]</p>\n<p><strong>Maximum Duration</strong> 6 rounds</p>\n<p><strong>Stage 1</strong> @Damage[1d6[poison]] or @Damage[1d6[vitality]] (1 round)</p>\n<p><strong>Stage 2</strong> @Damage[2d6[poison]] or @Damage[2d6[vitality]] (1 round)</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -32,26 +32,23 @@
         "level": {
             "value": 4
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 18
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
@@ -60,7 +57,7 @@
                 "consumable",
                 "injury",
                 "poison",
-                "positive"
+                "vitality"
             ]
         },
         "usage": {

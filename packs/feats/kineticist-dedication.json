@@ -1,6 +1,6 @@
 {
     "_id": "CbfszeYw3cf99kdv",
-    "img": "systems/pf2e/icons/default-icons/feats.webp",
+    "img": "icons/sundries/books/book-red-exclamation.webp",
     "name": "Kineticist Dedication",
     "system": {
         "actionType": {
@@ -23,6 +23,11 @@
                 }
             ]
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": true,
+            "title": "Pathfinder Rage of Elements"
+        },
         "rules": [
             {
                 "key": "ActiveEffectLike",
@@ -34,16 +39,6 @@
                     "label": "PF2E.TraitKineticist",
                     "rank": 1
                 }
-            },
-            {
-                "allowDuplicate": false,
-                "key": "GrantItem",
-                "uuid": "Compendium.pf2e.actionspf2e.Item.Channel Elements"
-            },
-            {
-                "allowDuplicate": false,
-                "key": "GrantItem",
-                "uuid": "Compendium.pf2e.actionspf2e.Item.Elemental Blast"
             },
             {
                 "adjustName": false,
@@ -77,11 +72,18 @@
                 "key": "ChoiceSet",
                 "prompt": "PF2E.SpecificRule.Kineticist.KineticGate.Prompt.Element",
                 "rollOption": "kinetic-gate"
+            },
+            {
+                "allowDuplicate": false,
+                "key": "GrantItem",
+                "uuid": "Compendium.pf2e.classfeatures.Item.Impulses"
+            },
+            {
+                "allowDuplicate": false,
+                "key": "GrantItem",
+                "uuid": "Compendium.pf2e.actionspf2e.Item.Channel Elements"
             }
         ],
-        "source": {
-            "value": "Pathfinder Rage of Elements"
-        },
         "traits": {
             "rarity": "common",
             "value": [

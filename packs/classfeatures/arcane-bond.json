@@ -19,15 +19,22 @@
         "prerequisites": {
             "value": []
         },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
         "rules": [
             {
                 "key": "GrantItem",
+                "predicate": [
+                    {
+                        "not": "feature:improved-familiar-attunement"
+                    }
+                ],
                 "uuid": "Compendium.pf2e.actionspf2e.Item.Drain Bonded Item"
             }
         ],
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "traits": {
             "rarity": "common",
             "value": [

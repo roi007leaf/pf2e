@@ -1,5 +1,5 @@
-import { ActorPF2e } from "@actor";
-import { NON_DAMAGE_WEAKNESSES, ResistanceData, WeaknessData } from "@actor/data/iwr.ts";
+import type { ActorPF2e } from "@actor";
+import { NON_DAMAGE_WEAKNESSES, Resistance, Weakness } from "@actor/data/iwr.ts";
 import { DEGREE_OF_SUCCESS } from "@system/degree-of-success.ts";
 import * as R from "remeda";
 import { DamageInstance, DamageRoll } from "./roll.ts";
@@ -24,12 +24,13 @@ function applyIWR(actor: ActorPF2e, roll: Rolled<DamageRoll>, rollOptions: Set<s
     const instances = roll.instances as Rolled<DamageInstance>[];
     const persistent: Rolled<DamageInstance>[] = []; // Persistent damage instances filtered for immunities
     const ignoredResistances = (roll.options.ignoredResistances ?? []).map(
-        (ir) => new ResistanceData({ type: ir.type, value: ir.max ?? Infinity })
+        (ir) => new Resistance({ type: ir.type, value: ir.max ?? Infinity }),
     );
 
     const nonDamageWeaknesses = weaknesses.filter(
         (w) =>
-            NON_DAMAGE_WEAKNESSES.has(w.type) && instances.some((i) => w.test([...i.formalDescription, ...rollOptions]))
+            NON_DAMAGE_WEAKNESSES.has(w.type) &&
+            instances.some((i) => w.test([...i.formalDescription, ...rollOptions])),
     );
     const damageWeaknesses = weaknesses.filter((w) => !nonDamageWeaknesses.includes(w));
 
@@ -95,7 +96,7 @@ function applyIWR(actor: ActorPF2e, roll: Rolled<DamageRoll>, rollOptions: Set<s
 
             const afterImmunities = Math.max(
                 instanceTotal + instanceApplications.reduce((sum, a) => sum + a.adjustment, 0),
-                0
+                0,
             );
 
             // Push applicable persistent damage to a separate list
@@ -113,9 +114,9 @@ function applyIWR(actor: ActorPF2e, roll: Rolled<DamageRoll>, rollOptions: Set<s
             const splashWeakness = splashDamage ? weaknesses.find((w) => w.type === "splash-damage") ?? null : null;
             const precisionWeakness = precisionDamage > 0 ? weaknesses.find((r) => r.type === "precision") : null;
             const highestWeakness = R.compact([...mainWeaknesses, precisionWeakness, splashWeakness]).reduce(
-                (highest: WeaknessData | null, w) =>
+                (highest: Weakness | null, w) =>
                     w && !highest ? w : w && highest && w.value > highest.value ? w : highest,
-                null
+                null,
             );
 
             if (highestWeakness) {
@@ -152,7 +153,7 @@ function applyIWR(actor: ActorPF2e, roll: Rolled<DamageRoll>, rollOptions: Set<s
                 .reduce(
                     (highest: { label: string; value: number } | null, r) =>
                         (r && !highest) || (r && highest && r.value > highest.value) ? r : highest,
-                    null
+                    null,
                 );
 
             // Get the highest applicable ignored resistance for display in the IWR breakdown
@@ -161,7 +162,7 @@ function applyIWR(actor: ActorPF2e, roll: Rolled<DamageRoll>, rollOptions: Set<s
                 .reduce(
                     (highest: { label: string; value: number } | null, r) =>
                         r && !highest ? r : r && highest && r.value > highest.value ? r : highest,
-                    null
+                    null,
                 );
 
             if (highestResistance?.value) {
@@ -185,8 +186,8 @@ function applyIWR(actor: ActorPF2e, roll: Rolled<DamageRoll>, rollOptions: Set<s
         })
         .concat(
             ...nonDamageWeaknesses.map(
-                (w): IWRApplication => ({ category: "weakness", type: w.typeLabel, adjustment: w.value })
-            )
+                (w): IWRApplication => ({ category: "weakness", type: w.typeLabel, adjustment: w.value }),
+            ),
         )
         .sort((a, b) => {
             if (a.category === b.category) return 0;
@@ -254,4 +255,5 @@ type IWRApplication =
     | ResistanceApplication
     | DamageReductionApplication;
 
-export { IWRApplication, IWRApplicationData, applyIWR };
+export { applyIWR };
+export type { IWRApplication, IWRApplicationData };

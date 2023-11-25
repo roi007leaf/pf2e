@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/gnome-amalgam-musket.webp",
     "name": "Gnome Amalgam Musket",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "gnome-amalgam-musket",
         "bonus": {
             "value": 0
@@ -35,6 +32,10 @@
         "level": {
             "value": 1
         },
+        "material": {
+            "grade": null,
+            "type": null
+        },
         "meleeUsage": {
             "damage": {
                 "die": "d8",
@@ -48,17 +49,8 @@
                 "versatile-p"
             ]
         },
-        "negateBulk": {
-            "value": "0"
-        },
         "potencyRune": {
             "value": 0
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -77,6 +69,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Guns & Gears"
+        },
         "quantity": 1,
         "range": 40,
         "reload": {
@@ -84,9 +81,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Guns & Gears"
-        },
         "splashDamage": {
             "value": 0
         },

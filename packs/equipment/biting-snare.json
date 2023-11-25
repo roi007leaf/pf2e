@@ -1,6 +1,6 @@
 {
     "_id": "9EZb1hmSKOGrU4Cf",
-    "img": "systems/pf2e/icons/equipment/snares/biting-snare.webp",
+    "img": "icons/environment/traps/trap-jaw-steel.webp",
     "name": "Biting Snare",
     "system": {
         "autoDestroy": {
@@ -32,26 +32,23 @@
         "level": {
             "value": 4
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 15
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",

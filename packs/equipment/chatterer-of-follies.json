@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/chatterer-of-follies.webp",
     "name": "Chatterer of Follies",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "khakkhara",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "specific": {
             "material": null,
             "runes": {
@@ -92,7 +86,6 @@
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "enchantment",
                 "illusion",
                 "magical",
                 "shove",

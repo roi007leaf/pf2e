@@ -1,4 +1,4 @@
-import { ConditionSource } from "@item/data/index.ts";
+import { ConditionSource } from "@item/base/data/index.ts";
 import { execSync } from "child_process";
 import esbuild from "esbuild";
 import fs from "fs-extra";
@@ -14,11 +14,17 @@ const CONDITION_SOURCES = ((): ConditionSource[] => {
     const output = execSync("npm run build:conditions", { encoding: "utf-8" });
     return JSON.parse(output.slice(output.indexOf("[")));
 })();
+const EN_JSON = JSON.parse(fs.readFileSync("./static/lang/en.json", { encoding: "utf-8" }));
 
 const config = Vite.defineConfig(({ command, mode }): Vite.UserConfig => {
     const buildMode = mode === "production" ? "production" : "development";
-    const rollGrammar = fs.readFileSync("roll-grammar.peggy", { encoding: "utf-8" });
     const outDir = "dist";
+
+    const rollGrammar = fs.readFileSync("roll-grammar.peggy", { encoding: "utf-8" });
+    const ROLL_PARSER = Peggy.generate(rollGrammar, { output: "source" }).replace(
+        "return {\n    SyntaxError: peg$SyntaxError,\n    parse: peg$parse\n  };",
+        "AbstractDamageRoll.parser = { SyntaxError: peg$SyntaxError, parse: peg$parse };",
+    );
 
     const plugins = [checker({ typescript: true }), tsconfigPaths()];
     // Handle minification after build to allow for tree-shaking and whitespace minification
@@ -49,25 +55,6 @@ const config = Vite.defineConfig(({ command, mode }): Vite.UserConfig => {
                     { src: "CONTRIBUTING.md", dest: "." },
                 ],
             }),
-            {
-                name: "hide-compendiums",
-                apply: "build",
-                writeBundle: {
-                    async handler() {
-                        const file = fs.openSync(path.resolve(outDir, "system.json"), "r+");
-                        const data = JSON.parse(fs.readFileSync(file, { encoding: "utf8" }));
-                        const pack = data.packs.find(
-                            (p: { name: string; ownership: object }) => p.name === "kingmaker-features"
-                        );
-                        if (pack) {
-                            pack.ownership = { GAMEMASTER: "NONE" };
-                            fs.ftruncateSync(file);
-                            fs.writeSync(file, JSON.stringify(data, null, 4), 0);
-                        }
-                        fs.closeSync(file);
-                    },
-                },
-            }
         );
     } else {
         plugins.push(
@@ -98,7 +85,7 @@ const config = Vite.defineConfig(({ command, mode }): Vite.UserConfig => {
                         });
                     }
                 },
-            }
+            },
         );
     }
 
@@ -118,7 +105,8 @@ const config = Vite.defineConfig(({ command, mode }): Vite.UserConfig => {
         define: {
             BUILD_MODE: JSON.stringify(buildMode),
             CONDITION_SOURCES: JSON.stringify(CONDITION_SOURCES),
-            ROLL_PARSER: Peggy.generate(rollGrammar, { output: "source" }),
+            EN_JSON: JSON.stringify(EN_JSON),
+            ROLL_PARSER: JSON.stringify(ROLL_PARSER),
         },
         esbuild: { keepNames: true },
         build: {
@@ -143,6 +131,7 @@ const config = Vite.defineConfig(({ command, mode }): Vite.UserConfig => {
                 },
                 watch: { buildDelay: 100 },
             },
+            target: "es2022",
         },
         server: {
             port: 30001,

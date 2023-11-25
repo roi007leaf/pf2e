@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/default-icons/weapon.svg",
     "name": "Mikazuki",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "mikazuki",
         "bonus": {
             "value": 0
@@ -35,6 +32,10 @@
         "level": {
             "value": 0
         },
+        "material": {
+            "grade": null,
+            "type": null
+        },
         "meleeUsage": {
             "damage": {
                 "die": "d6",
@@ -48,16 +49,7 @@
                 "parry"
             ]
         },
-        "negateBulk": {
-            "value": "0"
-        },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -77,6 +69,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "range": 70,
         "reload": {
@@ -84,9 +81,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "splashDamage": {
             "value": 0
         },

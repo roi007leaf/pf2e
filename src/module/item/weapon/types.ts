@@ -16,7 +16,7 @@ type WeaponGroup = SetElement<typeof WEAPON_GROUPS>;
 type BaseWeaponType = keyof ConfigPF2e["PF2E"]["baseWeaponTypes"];
 
 type WeaponTrait = keyof ConfigPF2e["PF2E"]["weaponTraits"];
-type OtherWeaponTag = "crossbow" | "improvised" | "shoddy";
+type OtherWeaponTag = "improvised" | "shoddy";
 
 type WeaponRangeIncrement = SetElement<typeof WEAPON_RANGES>;
 type WeaponReloadTime = "-" | "0" | "1" | "2" | "3" | "10";
@@ -25,7 +25,7 @@ type StrikingRuneType = "striking" | "greaterStriking" | "majorStriking";
 
 type WeaponMaterialType = Exclude<PreciousMaterialType, "dragonhide" | "grisantian-pelt">;
 
-export {
+export type {
     BaseWeaponType,
     MeleeWeaponGroup,
     OtherWeaponTag,

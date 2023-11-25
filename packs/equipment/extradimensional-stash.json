@@ -23,24 +23,24 @@
         "level": {
             "value": 20
         },
+        "material": {
+            "grade": null,
+            "type": null
+        },
         "negateBulk": {
             "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {}
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #168: King of the Mountain"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder #168: King of the Mountain"
-        },
         "stackGroup": null,
         "stowing": true,
         "traits": {

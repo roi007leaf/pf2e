@@ -1,6 +1,6 @@
 {
     "_id": "Sb3ZdFs61atILypS",
-    "img": "systems/pf2e/icons/spells/lightning-storm.webp",
+    "img": "icons/magic/lightning/bolt-strike-sparks-teal.webp",
     "name": "Effect: Ghosts in the Storm (Activation)",
     "system": {
         "description": {
@@ -14,6 +14,11 @@
         },
         "level": {
             "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": true,
+            "title": "Pathfinder Rage of Elements"
         },
         "rules": [
             {
@@ -31,9 +36,6 @@
                 "value": "shock"
             }
         ],
-        "source": {
-            "value": "Pathfinder Rage of Elements"
-        },
         "start": {
             "initiative": null,
             "value": 0

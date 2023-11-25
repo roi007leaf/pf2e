@@ -1,6 +1,6 @@
 {
     "_id": "Pb0WOuCR34FYGmuy",
-    "img": "systems/pf2e/icons/default-icons/consumable.svg",
+    "img": "systems/pf2e/icons/equipment/consumables/fulus/fulu-fancy.webp",
     "name": "Thousand-Pains Fulu (Icicle)",
     "system": {
         "autoDestroy": {
@@ -32,34 +32,30 @@
         "level": {
             "value": 14
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 630
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
                 "consumable",
                 "fulu",
-                "magical",
-                "necromancy"
+                "magical"
             ]
         },
         "usage": {

@@ -9,13 +9,10 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.ChTaE7jhvCjcS6jI"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/weapons/arquebus.webp",
+            "img": "icons/weapons/guns/gun-red.webp",
             "name": "Arquebus",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "arquebus",
                 "bonus": {
                     "value": 0
@@ -50,16 +47,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Guns & Gears"
+                },
                 "quantity": 1,
                 "range": 150,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "arquebus",
-                "source": {
-                    "value": "Pathfinder Guns & Gears"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -121,13 +115,10 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.N3nNqO5Nw2DIFhrv"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/weapons/flintlock-pistol.webp",
+            "img": "icons/weapons/guns/gun-pistol-flintlock-metal.webp",
             "name": "Flintlock Pistol",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "flintlock-pistol",
                 "bonus": {
                     "value": 0
@@ -162,16 +153,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -191,6 +177,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Guns & Gears"
+                },
                 "quantity": 1,
                 "range": 40,
                 "reload": {
@@ -199,9 +190,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "flintlock-pistol",
-                "source": {
-                    "value": "Pathfinder Guns & Gears"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -268,14 +256,9 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -283,13 +266,15 @@
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Guns & Gears"
+                },
                 "quantity": 10,
                 "rules": [],
                 "size": "med",
                 "slug": "rounds-arquebus",
-                "source": {
-                    "value": "Pathfinder Guns & Gears"
-                },
                 "stackGroup": "rounds10",
                 "traits": {
                     "rarity": "common",
@@ -350,14 +335,9 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -365,13 +345,15 @@
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Guns & Gears"
+                },
                 "quantity": 20,
                 "rules": [],
                 "size": "med",
                 "slug": "rounds-flintlock-pistol",
-                "source": {
-                    "value": "Pathfinder Guns & Gears"
-                },
                 "stackGroup": "rounds10",
                 "traits": {
                     "rarity": "common",
@@ -415,11 +397,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -465,11 +449,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -519,11 +505,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -561,14 +549,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -598,14 +588,16 @@
                 "description": {
                     "value": "<p>A rust hag adds <em>@UUID[Compendium.pf2e.spells-srd.Item.Curse Of Lost Time]</em>, <em>@UUID[Compendium.pf2e.spells-srd.Item.Rusting Grasp]</em>, and <em>@UUID[Compendium.pf2e.spells-srd.Item.Summon Construct]</em> to her coven's spells.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -637,6 +629,11 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -660,9 +657,6 @@
                     }
                 ],
                 "slug": "1-status-to-all-saves-vs-magic",
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -697,21 +691,22 @@
                 "description": {
                     "value": "<p>The rust hag can take on the appearance of any Medium female humanoid. This doesn't change her Speed or her Strikes, but might change the damage type her Strikes deal (typically to bludgeoning).</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "change-shape",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "concentrate",
                         "occult",
-                        "polymorph",
-                        "transmutation"
+                        "polymorph"
                     ]
                 },
                 "trigger": {
@@ -737,16 +732,28 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Any firearm wielded by a rust hag gains the benefits of +1 striking and ghost touch runes, and it functions properly no matter how rusty it gets. In addition, when a rust hag critically hits a target with a firearm, the target must succeed at a @Check[type:fortitude|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>"
+                    "value": "<p>Any firearm wielded by a rust hag gains the benefits of <em>+1 striking</em> and <em>@UUID[Compendium.pf2e.equipment-srd.Item.Ghost Touch]</em> runes, and it functions properly no matter how rusty it gets. In addition, when a rust hag critically hits a target with a firearm, the target must succeed at a @Check[type:fortitude|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "definition": [
+                            "item:group:firearm"
+                        ],
+                        "key": "AdjustStrike",
+                        "mode": "add",
+                        "property": "property-runes",
+                        "value": "ghost-touch"
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -773,14 +780,16 @@
                 "description": {
                     "value": "<p>A rust hag's touch causes metal to rapidly rust and corrode. If the hag succeeds at a Strike with her claw, she deals [[/r 2d6 #Rusting Touch Damage]] damage (doubled on a critical hit) to a metal item the target is wearing or holding, ignoring its Hardness. If the hag hits an unattended metal item, the item takes this damage automatically. If a creature uses the Shield Block reaction with a metal shield against the hag's claw attack, the shield is automatically broken, but no other item is rusted on that attack. Objects made of skymetal, such as adamantine and orichalcum, are immune to rusting touch.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -806,11 +815,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -829,11 +840,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -852,11 +865,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -875,11 +890,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -898,11 +915,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -961,18 +980,16 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 8
             },
             "privateNotes": "",
             "publicNotes": "<p>Rust hags have a knack for technology. They make their homes in hollowed-out factories, abandoned tenements, and other sites of urban decay.</p>\n<hr />\n<p>Hags are surprisingly diverse, both in abilities and in their terrain.</p>",
-            "source": {
-                "value": "Pathfinder #182: Graveclaw"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #182: Graveclaw"
             }
         },
         "resources": {},
@@ -1009,6 +1026,8 @@
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "hag",
                 "humanoid"
             ]

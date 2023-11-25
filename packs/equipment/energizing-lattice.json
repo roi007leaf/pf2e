@@ -1,6 +1,6 @@
 {
     "_id": "AqVJOBjXbeao5An7",
-    "img": "systems/pf2e/icons/default-icons/armor.svg",
+    "img": "systems/pf2e/icons/equipment/armor/lattice-armor.webp",
     "name": "Energizing Lattice",
     "system": {
         "acBonus": 4,
@@ -9,7 +9,7 @@
         "checkPenalty": -2,
         "containerId": null,
         "description": {
-            "value": "<p>This suit of <em>+2 resilient fortification lattice armor</em> has latticework of fine golden wire. After negating a critical hit with its <em>fortification</em> rune, the latticework glows for 1 minute, shedding bright light in a 20-foot radius (and dim light for the next 20 feet). You can Dismiss this light.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Energizing Lattice]</p>\n<p><strong>Activate</strong> <span class=\"pf2-icon\">2</span> envision (force)</p>\n<p><strong>Requirements</strong> The <em>energizing lattice</em> is glowing because it negated an enemy's critical hit</p>\n<hr />\n<p><strong>Effect</strong> You release the lattice's energy and make a weapon or unarmed attack Strike that deals @Damage[6d6[force]]{6d6 additional force damage}. If your Strike fails, but doesn't critically fail, the target still takes half the force damage. The latticework ceases glowing after the Strike.</p>"
+            "value": "<p>This suit of <em>+2 resilient fortification lattice armor</em> has latticework of fine golden wire. After negating a critical hit with its <em>fortification</em> rune, the latticework glows for 1 minute, shedding bright light in a 20-foot radius (and dim light for the next 20 feet). You can Dismiss this light.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Energizing Lattice]</p>\n<p><strong>Activate</strong> <span class=\"action-glyph\">2</span> envision (force)</p>\n<p><strong>Requirements</strong> The <em>energizing lattice</em> is glowing because it negated an enemy's critical hit</p>\n<hr />\n<p><strong>Effect</strong> You release the lattice's energy and make a weapon or unarmed attack Strike that deals @Damage[6d6[force]]{6d6 additional force damage}. If your Strike fails, but doesn't critically fail, the target still takes half the force damage. The latticework ceases glowing after the Strike.</p>"
         },
         "dexCap": 1,
         "equippedBulk": {
@@ -24,17 +24,12 @@
         "level": {
             "value": 13
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 2
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -53,14 +48,27 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": "resilient"
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
+        "specific": {
+            "material": {
+                "grade": null,
+                "type": null
+            },
+            "runes": {
+                "potency": 2,
+                "resilient": 1
+            },
+            "value": true
         },
         "speedPenalty": -5,
         "stackGroup": null,
@@ -68,7 +76,6 @@
         "traits": {
             "rarity": "common",
             "value": [
-                "evocation",
                 "light"
             ]
         },

@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/dueling-pistol.webp",
     "name": "Pact-Bound Pistol",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "dueling-pistol",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 10
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Guns & Gears"
+        },
         "quantity": 1,
         "range": 60,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Guns & Gears"
-        },
         "specific": {
             "material": null,
             "price": "260 gp",
@@ -96,11 +90,11 @@
                 "concealable",
                 "concussive",
                 "cursed",
-                "enchantment",
                 "evil",
                 "fatal-d10",
                 "fire",
-                "magical"
+                "magical",
+                "unholy"
             ]
         },
         "usage": {

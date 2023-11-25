@@ -1,6 +1,6 @@
 {
     "_id": "3O1Iv7ztIPKhKWwe",
-    "img": "systems/pf2e/icons/default-icons/armor.svg",
+    "img": "systems/pf2e/icons/equipment/armor/sankeit.webp",
     "name": "Sankeit",
     "system": {
         "acBonus": 2,
@@ -24,16 +24,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -53,16 +48,21 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": null
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
+        "specific": {
+            "value": false
         },
-        "speedPenalty": null,
+        "speedPenalty": 0,
         "stackGroup": null,
         "strength": 1,
         "traits": {

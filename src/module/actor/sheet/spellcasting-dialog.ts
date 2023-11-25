@@ -17,7 +17,7 @@ function createEmptySpellcastingEntry(actor: ActorPF2e): SpellcastingEntryPF2e<A
                 prepared: { value: "innate" },
             },
         },
-        { actor }
+        { actor },
     ) as SpellcastingEntryPF2e<ActorPF2e>;
 }
 
@@ -28,7 +28,7 @@ class SpellcastingCreateAndEditDialog extends FormApplication<SpellcastingEntryP
     constructor(object: ActorPF2e | SpellcastingEntryPF2e<ActorPF2e>, options: Partial<FormApplicationOptions>) {
         super(
             object instanceof ActorPF2e ? createEmptySpellcastingEntry(object) : object.clone({}, { keepId: true }),
-            options
+            options,
         );
         this.actor = object instanceof ActorPF2e ? object : object.actor;
     }
@@ -69,16 +69,16 @@ class SpellcastingCreateAndEditDialog extends FormApplication<SpellcastingEntryP
             magicTraditions: CONFIG.PF2E.magicTraditions,
             spellcastingTypes: R.omit(CONFIG.PF2E.preparationType, ["ritual"]),
             attributes: CONFIG.PF2E.abilities,
-            isAttributeConfigurable: this.#canSetAbility(),
-            selectedAttribute: selectedStatistic?.ability ?? this.object.attribute,
+            isAttributeConfigurable: this.#canSetAttribute(),
+            selectedAttribute: selectedStatistic?.attribute ?? this.object.attribute,
         };
     }
 
     /** Returns whether or not the spellcasting data can include an ability */
-    #canSetAbility(): boolean {
+    #canSetAttribute(): boolean {
         const slug = this.object._source.system.proficiency.slug;
         const baseStat = this.actor.isOfType("character") ? this.actor.getStatistic(slug) : null;
-        return !slug || (!!baseStat && !baseStat.ability);
+        return !slug || (!!baseStat && !baseStat.attribute);
     }
 
     protected override async _updateObject(event: Event, formData: Record<string, unknown>): Promise<void> {
@@ -96,7 +96,7 @@ class SpellcastingCreateAndEditDialog extends FormApplication<SpellcastingEntryP
                 },
                 ability: { value: "cha" },
             },
-            { overwrite: false }
+            { overwrite: false },
         );
 
         inputData.system = system;
@@ -184,7 +184,7 @@ interface SpellcastingCreateAndEditDialogSheetData extends FormApplicationData<S
 
 export async function createSpellcastingDialog(
     event: MouseEvent,
-    object: ActorPF2e | SpellcastingEntryPF2e<ActorPF2e>
+    object: ActorPF2e | SpellcastingEntryPF2e<ActorPF2e>,
 ): Promise<SpellcastingCreateAndEditDialog> {
     const dialog = new SpellcastingCreateAndEditDialog(object, {
         top: event.clientY - 80,

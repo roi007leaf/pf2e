@@ -1,6 +1,6 @@
 {
     "_id": "4PtxcrCPnBhhYmg4",
-    "img": "systems/pf2e/icons/default-icons/equipment.svg",
+    "img": "systems/pf2e/icons/equipment/other/spellhearts/judgment-thurible.webp",
     "name": "Judgment Thurible (Major)",
     "system": {
         "baseItem": null,
@@ -19,31 +19,27 @@
         "level": {
             "value": 20
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 65000
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
-                "evocation",
                 "magical",
                 "spellheart"
             ]

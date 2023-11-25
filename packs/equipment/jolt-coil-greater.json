@@ -1,6 +1,6 @@
 {
     "_id": "auEm7vmpG9V8xpAJ",
-    "img": "systems/pf2e/icons/default-icons/equipment.svg",
+    "img": "icons/commodities/tech/tube-chamber-lightning.webp",
     "name": "Jolt Coil (Greater)",
     "system": {
         "baseItem": null,
@@ -19,32 +19,28 @@
         "level": {
             "value": 8
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 475
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
                 "electricity",
-                "evocation",
                 "magical",
                 "spellheart"
             ]

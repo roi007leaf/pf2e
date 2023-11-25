@@ -13,20 +13,21 @@
         "description": {
             "value": "<p>The mutant takes on the specific appearance of any Small or Medium humanoid they can currently see. This doesn't alter their statistics, but it might change the damage type of their Strikes.</p>"
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Impossible Lands"
+        },
         "requirements": {
             "value": ""
         },
         "rules": [],
-        "source": {
-            "value": "Pathfinder Lost Omens: Impossible Lands"
-        },
         "traits": {
             "rarity": "common",
             "value": [
                 "arcane",
                 "concentrate",
-                "polymorph",
-                "transmutation"
+                "polymorph"
             ]
         },
         "trigger": {

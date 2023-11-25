@@ -27,6 +27,7 @@ import {
     Graphics as LegacyGraphics,
     MIPMAP_MODES,
     MSAA_QUALITY,
+    Matrix,
     Mesh,
     ParticleContainer,
     ParticleRenderer,
@@ -41,6 +42,7 @@ import {
     SCALE_MODES,
     Shader,
     Sprite,
+    Spritesheet,
     Text,
     TextStyle,
     Texture,
@@ -49,7 +51,7 @@ import {
     UniformGroup,
     utils,
 } from "pixi.js";
-import "./canvas.d.ts";
+import "./board.d.ts";
 import "./core/index.d.ts";
 import "./groups/index.d.ts";
 import "./layers/controls/ruler.d.ts";
@@ -87,6 +89,7 @@ declare global {
             IDestroyOptions,
             ITextStyle,
             LegacyGraphics,
+            Matrix,
             Mesh,
             MIPMAP_MODES,
             MSAA_QUALITY,
@@ -103,6 +106,7 @@ declare global {
             SCALE_MODES,
             Shader,
             Sprite,
+            Spritesheet,
             Text,
             TextStyle,
             Texture,

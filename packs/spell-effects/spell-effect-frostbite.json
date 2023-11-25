@@ -1,6 +1,6 @@
 {
     "_id": "DdqWMj7cuf4S1bgr",
-    "img": "systems/pf2e/icons/spells/ray-of-frost.webp",
+    "img": "icons/magic/movement/trail-streak-impact-blue.webp",
     "name": "Spell Effect: Frostbite",
     "system": {
         "description": {
@@ -15,6 +15,11 @@
         "level": {
             "value": 1
         },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
         "rules": [
             {
                 "key": "Weakness",
@@ -22,9 +27,6 @@
                 "value": "@item.level"
             }
         ],
-        "source": {
-            "value": "Pathfinder Player Core"
-        },
         "start": {
             "initiative": null,
             "value": 0

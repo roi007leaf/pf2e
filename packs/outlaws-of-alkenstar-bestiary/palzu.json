@@ -6,16 +6,13 @@
             "_id": "zyo1tEI1ErNEoww4",
             "flags": {
                 "core": {
-                    "sourceId": "Compendium.pf2e.equipment-srd.Item.4lO2uNA70HqTuSAD"
+                    "sourceId": "Compendium.pf2e.equipment-srd.Item.BdNRM9VTxs5BYq0C"
                 }
             },
             "img": "systems/pf2e/icons/equipment/weapons/piercing-wind.webp",
             "name": "Jax",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "piercing-wind",
                 "bonus": {
                     "value": 0
@@ -31,7 +28,7 @@
                     "die": "d6"
                 },
                 "description": {
-                    "value": "<p><strong>Perception</strong> +13; precise vision 30 feet, imprecise hearing 30 feet</p>\n<p><strong>Communication</strong> empathy</p>\n<p><strong>Skills</strong> Diplomacy +14, Survival +16</p>\n<p><strong>Int</strong> +1, <strong>Wis</strong> +5, <strong>Cha</strong> +3</p>\n<p><strong>Will</strong> +18</p>\n<hr />\n<p><em>Jax</em> was a caravan guard who died defending her charges from a pack of Lamashtan cultists in the Spellscar Desert. Her spirit of fury and hopelessness infused her weapon upon her death, imbuing the firearm with a fragment of her soul and intelligence. The rifle, upon awakening, remembered just enough of <em>Jax</em>'s former life to think of her former wielder's name as her own.</p>\n<p><em>Jax</em> is a <em>+1 striking fearsome piercing wind</em> whose driving purpose is to protect innocent travelers in the Spellscar Desert from raiders, bandits, and cultists. <em>Jax</em> allows any creature to wield her, but she doesn't reveal her intelligence or powers until she detects an innocent in danger or if her wielder has proven themselves a worthy champion of justice. If she deems a wielder to be unworthy, <em>Jax</em> uses her dominate ability to control the wielder until she can find a new one.</p>\n<p>If ever used to attack an innocent traveler, or if, in <em>Jax</em>'s opinion, the attack could be considered banditry, the weapon automatically misfires. If <em>Jax</em> witnesses an innocent harmed or killed, she empathically urges her wielder to avenge the victim. If the wielder doesn't comply, <em>Jax</em> attempts to cast dominate (below). Even if the dominate spell fails, <em>Jax</em> withholds all magical abilities, including the +1 weapon potency rune and striking rune, until her wielder redeems themself.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> (command)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> <em>Jax</em> casts <em>@UUID[Compendium.pf2e.spells-srd.Item.Heroism]</em> on you.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> (command)</p>\n<p><strong>Frequency</strong> once per day</p>\n<hr />\n<p><strong>Effect</strong> <em>Jax</em> deems you an unworthy agent of justice. She casts<em> <em>@UUID[Compendium.pf2e.spells-srd.Item.Dominate]</em></em> on you (@Check[type:will|dc:24|name:Dominate|traits:mental,incapacitation,divine,spell,enchantment|overrideTraits:true]). If you're chaotic or a worshipper of Lamashtu, you take a -2 penalty to your Will save, and the result of your save is one degree of success worse than the result you rolled. <em>Jax</em> orders you to fight banditry and protect innocent travelers in the Spellscar Desert, renewing the spell as often as necessary until you cease your lawless ways.</p>"
+                    "value": "<p><strong>Perception</strong> +13; precise vision 30 feet, imprecise hearing 30 feet</p>\n<p><strong>Communication</strong> empathy</p>\n<p><strong>Skills</strong> Diplomacy +14, Survival +16</p>\n<p><strong>Int</strong> +1, <strong>Wis</strong> +5, <strong>Cha</strong> +3</p>\n<p><strong>Will</strong> +18</p>\n<hr />\n<p><em>Jax</em> was a caravan guard who died defending her charges from a pack of Lamashtan cultists in the Spellscar Desert. Her spirit of fury and hopelessness infused her weapon upon her death, imbuing the firearm with a fragment of her soul and intelligence. The rifle, upon awakening, remembered just enough of <em>Jax</em>'s former life to think of her former wielder's name as her own.</p>\n<p><em>Jax</em> is a <em>+1 striking fearsome piercing wind</em> whose driving purpose is to protect innocent travelers in the Spellscar Desert from raiders, bandits, and cultists. <em>Jax</em> allows any creature to wield her, but she doesn't reveal her intelligence or powers until she detects an innocent in danger or if her wielder has proven themselves a worthy champion of justice. If she deems a wielder to be unworthy, <em>Jax</em> uses her dominate ability to control the wielder until she can find a new one.</p>\n<p>If ever used to attack an innocent traveler, or if, in <em>Jax</em>'s opinion, the attack could be considered banditry, the weapon automatically misfires. If <em>Jax</em> witnesses an innocent harmed or killed, she empathically urges her wielder to avenge the victim. If the wielder doesn't comply, <em>Jax</em> attempts to cast dominate (below). Even if the dominate spell fails, <em>Jax</em> withholds all magical abilities, including the +1 weapon potency rune and striking rune, until her wielder redeems themself.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (command)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> <em>Jax</em> casts @UUID[Compendium.pf2e.spells-srd.Item.Heroism] on you.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> (command)</p>\n<p><strong>Frequency</strong> once per day</p>\n<p><strong>Effect</strong> <em>Jax</em> deems you an unworthy agent of justice. She casts @UUID[Compendium.pf2e.spells-srd.Item.Dominate] on you (@Check[type:will|dc:24|name:Dominate|traits:mental,incapacitation,divine,spell,enchantment|overrideTraits:true]). If you're chaotic or a worshipper of Lamashtu, you take a -2 penalty to your Will save, and the result of your save is one degree of success worse than the result you rolled. <em>Jax</em> orders you to fight banditry and protect innocent travelers in the Spellscar Desert, renewing the spell as often as necessary until you cease your lawless ways.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -50,6 +47,10 @@
                 "level": {
                     "value": 8
                 },
+                "material": {
+                    "grade": null,
+                    "type": null
+                },
                 "meleeUsage": {
                     "damage": {
                         "die": "d4",
@@ -63,17 +64,8 @@
                         "sweep"
                     ]
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {}
@@ -90,6 +82,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder #179: Cradle of Quartz"
+                },
                 "quantity": 1,
                 "range": 40,
                 "reload": {
@@ -97,10 +94,7 @@
                 },
                 "rules": [],
                 "size": "med",
-                "slug": "piercing-wind",
-                "source": {
-                    "value": "Pathfinder #179: Cradle of Quartz"
-                },
+                "slug": "jax",
                 "specific": {
                     "material": null,
                     "runes": {
@@ -123,7 +117,6 @@
                         "concussive",
                         "cursed",
                         "divine",
-                        "evocation",
                         "fatal-aim-d10",
                         "intelligent"
                     ]
@@ -144,7 +137,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/hide.webp",
+            "img": "icons/equipment/chest/vest-leather-tattered-white.webp",
             "name": "Hide Armor",
             "sort": 200000,
             "system": {
@@ -174,18 +167,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
@@ -204,6 +191,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": ""
@@ -211,9 +203,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "hide-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "speedPenalty": -5,
                 "stackGroup": null,
                 "strength": 2,
@@ -257,25 +246,22 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -333,14 +319,9 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -348,13 +329,15 @@
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Guns & Gears"
+                },
                 "quantity": 10,
                 "rules": [],
                 "size": "med",
                 "slug": "rounds-piercing-wind",
-                "source": {
-                    "value": "Pathfinder Guns & Gears"
-                },
                 "stackGroup": "rounds10",
                 "traits": {
                     "rarity": "common",
@@ -400,11 +383,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -445,11 +430,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -494,11 +481,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -536,14 +525,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "darkvision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -573,14 +564,16 @@
                 "description": {
                     "value": "<p>When Palzu critically hits a creature with a ranged Strike, the target must succeed at a @Check[type:fortitude|dc:26] save or be @UUID[Compendium.pf2e.conditionitems.Item.Stunned]{Stunned 1}.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -605,16 +598,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> Palzu has rolled initiative but hasn't acted yet in combat</p>\n<hr />\n<p><strong>Effect</strong> Palzu lets loose a blood‑curdling howl while firing his rifle, making the report sound unearthly and disturbing. Palzu makes a Jax Strike against a foe within 40 feet. On a hit, creatures in a @Template[type:emanation|distance:10] centered on the target hit must attempt a @Check[type:will|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>"
+                    "value": "<p><strong>Requirements</strong> Palzu has rolled initiative but hasn't acted yet in combat</p>\n<hr />\n<p><strong>Effect</strong> Palzu lets loose a blood-curdling howl while firing his rifle, making the report sound unearthly and disturbing. Palzu makes a Jax Strike against a foe within 40 feet. On a hit, creatures in a @Template[type:emanation|distance:10] centered on the target hit must attempt a @Check[type:will|dc:26] save or become @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 1}.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -643,14 +638,16 @@
                 "description": {
                     "value": "<p>Palzu ignores the first square of difficult terrain he moves into each time he Steps or Strides.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -676,11 +673,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -699,11 +698,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -722,11 +723,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -745,11 +748,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -768,11 +773,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -825,18 +832,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CN"
-            },
             "blurb": "Male dominated gnoll sharpshooter",
-            "creatureType": "",
             "level": {
                 "value": 8
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder #179: Cradle of Quartz"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #179: Cradle of Quartz"
             }
         },
         "resources": {},
@@ -859,7 +864,7 @@
                 "custom": "",
                 "selected": [],
                 "value": [
-                    "gnoll"
+                    "kholo"
                 ]
             },
             "rarity": "unique",
@@ -870,6 +875,7 @@
                 "value": "med"
             },
             "value": [
+                "chaotic",
                 "gnoll",
                 "humanoid"
             ]

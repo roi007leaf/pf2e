@@ -13,9 +13,6 @@
             "name": "Scythe",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "scythe",
                 "bonus": {
                     "value": 0
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "scythe",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -140,25 +134,22 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -175,7 +166,7 @@
         },
         {
             "_id": "2v06lo2mvQjFP52q",
-            "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/hat-of-the-magi.webp",
+            "img": "icons/equipment/head/hat-belted-simple-grey.webp",
             "name": "Red Cap",
             "sort": 300000,
             "system": {
@@ -200,25 +191,22 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -257,11 +245,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "deadly-d10",
@@ -298,11 +288,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "agile",
@@ -336,14 +328,16 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.LowLightVision]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": "low-light-vision",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -373,14 +367,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> Their bloodseeker mount fails their blood-crazed flat check</p>\n<p><strong>Requirements</strong> the redcap is mounted on a giant bloodseeker</p>\n<hr />\n<p><strong>Effect</strong> The bloodseeker may reroll the flat check.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "auditory"
@@ -408,17 +404,18 @@
                 "description": {
                     "value": "<p>A redcap's woolen hat is dyed with the blood of its victims. If the redcap loses its cap, it no longer benefits from fast healing and takes a –4 status penalty to its damage rolls. It can create a new cap in 10 minutes, but that cap doesn't grant its powers until the redcap has turned it red with Blood Soak. A cap has no benefit for creatures other than the redcap who made it.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Lost Red Cap]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
-                        "necromancy",
                         "primal"
                     ]
                 },
@@ -449,6 +446,11 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.FastHealing]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -466,9 +468,6 @@
                     }
                 ],
                 "slug": "fast-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -498,14 +497,16 @@
                 "description": {
                     "value": "<p>If a redcap sees a creature brandish a religious symbol of a good deity (which requires an interact action by that creature) or use one to cast a divine spell, the redcap must attempt a @Check[type:will|dc:19] save. It then becomes temporarily immune to all brandished religious symbols for 10 minutes.</p>\n<hr />\n<p><strong>Critical Success</strong> The redcap is unaffected</p>\n<p><strong>Success</strong> The redcap is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 2}</p>\n<p><strong>Failure</strong> The redcap gains the @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] condition for 1 round and is @UUID[Compendium.pf2e.conditionitems.Item.Frightened]{Frightened 4}</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "emotion",
@@ -535,14 +536,16 @@
                 "description": {
                     "value": "<p>The redcap dips its cap in the blood of a slain foe. The foe must have died in the last minute, and the redcap must have helped kill it. The redcap gains a +4 status bonus to damage rolls for 1 minute.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Blood Soak]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "manipulate"
@@ -570,14 +573,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> The recap's bloodseeker mount moves away from a creature within the redcap's reach</p>\n<p><strong>Requirements</strong> The redcap is mounted on a giant bloodseeker</p>\n<hr />\n<p><strong>Effect</strong> The redcap Strikes the creature with their scythe.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
                 },
@@ -602,11 +607,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -625,11 +632,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -648,11 +657,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -671,11 +682,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -694,11 +707,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -758,18 +773,16 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 6
             },
             "privateNotes": "",
-            "publicNotes": "<p>Whomever first imagined putting a fey with a bloodsoaked hat on a giant blood‑crazed insect certainly had a sense of humor, but that didn't stop the redcaps from trying to domesticate and train giant bloodseekers. Although a flying cavalry was Queen Frilogarma's goal, her court ended up accidentally inventing redcap racing. In this sport, one redcap with a freshly soaked cap is swung around a racetrack by a giant arm while several other redcaps on giant bloodseekers fly after them. The \"bait\" redcap doesn't usually survive, but they are the center of attention for about two minutes.</p>\n<hr />\n<p>In the Ether Court, redcaps train to ride giant bloodseeker specially bred to be mounts. While their fey cousins outside the court see this as folly, redcap courtiers consider riding bloodseekers a noble sport.</p>\n<h2>That Bloody Hat</h2>\n<p>Even when a redcap isn't taking persistent bleed damage, their red caps drip crimson, soaked in the blood of their enemies. This is more than enough to provoke creatures who react strongly to the scent of blood. Creatures with scent treat a redcap as a creature taking persistent bleed damage.</p>",
-            "source": {
-                "value": "Pathfinder #194: Cult of the Cave Worm"
+            "publicNotes": "<p>Whomever first imagined putting a fey with a bloodsoaked hat on a giant blood-crazed insect certainly had a sense of humor, but that didn't stop the redcaps from trying to domesticate and train giant bloodseekers. Although a flying cavalry was Queen Frilogarma's goal, her court ended up accidentally inventing redcap racing. In this sport, one redcap with a freshly soaked cap is swung around a racetrack by a giant arm while several other redcaps on giant bloodseekers fly after them. The \"bait\" redcap doesn't usually survive, but they are the center of attention for about two minutes.</p>\n<hr />\n<p>In the Ether Court, redcaps train to ride giant bloodseeker specially bred to be mounts. While their fey cousins outside the court see this as folly, redcap courtiers consider riding bloodseekers a noble sport.</p>\n<h2>That Bloody Hat</h2>\n<p>Even when a redcap isn't taking persistent bleed damage, their red caps drip crimson, soaked in the blood of their enemies. This is more than enough to provoke creatures who react strongly to the scent of blood. Creatures with scent treat a redcap as a creature taking persistent bleed damage.</p>",
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder #194: Cult of the Cave Worm"
             }
         },
         "resources": {},
@@ -804,6 +817,8 @@
                 "value": "sm"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "fey"
             ]
         }

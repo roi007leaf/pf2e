@@ -1,6 +1,6 @@
 {
     "_id": "8aIe57gXJ94mPpW4",
-    "img": "systems/pf2e/icons/spells/extract-poison.webp",
+    "img": "icons/skills/melee/blade-tip-energy-green.webp",
     "name": "Anadi Venom",
     "system": {
         "actionType": {
@@ -16,6 +16,11 @@
         "frequency": {
             "max": 1,
             "per": "day"
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: The Mwangi Expanse"
         },
         "requirements": {
             "value": ""
@@ -35,9 +40,6 @@
         "selfEffect": {
             "name": "Effect: Anadi Venom",
             "uuid": "Compendium.pf2e.feat-effects.Item.Effect: Anadi Venom"
-        },
-        "source": {
-            "value": "Pathfinder Lost Omens: The Mwangi Expanse"
         },
         "traits": {
             "rarity": "common",

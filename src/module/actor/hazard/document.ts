@@ -1,19 +1,18 @@
 import { ActorPF2e } from "@actor";
 import { InitiativeData } from "@actor/data/base.ts";
-import { ImmunityData } from "@actor/data/iwr.ts";
+import { Immunity } from "@actor/data/iwr.ts";
 import { setHitPointsRollOptions, strikeFromMeleeItem } from "@actor/helpers.ts";
 import { ActorInitiative } from "@actor/initiative.ts";
 import { ModifierPF2e } from "@actor/modifiers.ts";
 import { SaveType } from "@actor/types.ts";
 import { SAVE_TYPES } from "@actor/values.ts";
 import { ConditionPF2e } from "@item";
-import { ItemType } from "@item/data/index.ts";
+import { ItemType } from "@item/base/data/index.ts";
 import { Rarity } from "@module/data.ts";
 import { extractModifiers } from "@module/rules/helpers.ts";
 import { TokenDocumentPF2e } from "@scene/index.ts";
 import { DamageType } from "@system/damage/index.ts";
-import { ArmorStatistic } from "@system/statistic/armor-class.ts";
-import { Statistic } from "@system/statistic/index.ts";
+import { ArmorStatistic, Statistic } from "@system/statistic/index.ts";
 import { isObject, objectHasKey } from "@util";
 import { HazardSource, HazardSystemData } from "./data.ts";
 
@@ -52,16 +51,23 @@ class HazardPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e | 
             : !!game.combats.active?.started && game.combats.active.combatants.some((c) => c.actor === this);
     }
 
-    /** Hazards without hit points are unaffected by damage */
     override isAffectedBy(effect: DamageType | ConditionPF2e): boolean {
+        // Hazards without hit points are unaffected by damage
         const damageType = objectHasKey(CONFIG.PF2E.damageTypes, effect)
             ? effect
             : isObject(effect)
-            ? effect.system.persistent?.damageType ?? null
-            : null;
+              ? effect.system.persistent?.damageType ?? null
+              : null;
 
         if (!this.system.attributes.hasHealth && damageType) {
             return false;
+        }
+
+        // Some hazard are implicitly subject to vitality or void damage despite being neither living nor undead:
+        // use a weakness or resistance as an indication
+        const { weaknesses, resistances } = this.system.attributes;
+        if (damageType && ["vitality", "void"].includes(damageType)) {
+            return weaknesses.some((w) => w.type === damageType) || resistances.some((r) => r.type === damageType);
         }
 
         return super.isAffectedBy(effect);
@@ -76,9 +82,7 @@ class HazardPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e | 
         attributes.hasHealth = attributes.hp.max > 0;
         // Hazards have object immunities (CRB p. 273): can be overridden by Immunity rule element
         if (!attributes.immunities.some((i) => i.type === "object-immunities")) {
-            attributes.immunities.unshift(
-                new ImmunityData({ type: "object-immunities", source: "TYPES.Actor.hazard" })
-            );
+            attributes.immunities.unshift(new Immunity({ type: "object-immunities", source: "TYPES.Actor.hazard" }));
         }
 
         if (this.isComplex) {
@@ -124,7 +128,7 @@ class HazardPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e | 
 
         // Initiative
         if (system.attributes.initiative) {
-            this.initiative = new ActorInitiative(this);
+            this.initiative = new ActorInitiative(this, { statistic: "stealth" });
             system.attributes.initiative = this.initiative.getTraceData();
         }
 
@@ -144,6 +148,27 @@ class HazardPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e | 
         this.system.actions = this.itemTypes.melee.map((m) => strikeFromMeleeItem(m));
     }
 
+    /**
+     * Some hazards have an implicit immunity exception to certain damage types despite having object immunities: use a
+     * weakness or resistance as indication.
+     */
+    override prepareData(): void {
+        super.prepareData();
+
+        const weaknessesAndResistances = new Set(
+            [
+                this.system.attributes.weaknesses.map((w) => w.type),
+                this.system.attributes.resistances.map((r) => r.type),
+            ].flat(),
+        );
+        const objectImmunities = this.system.attributes.immunities.find((i) => i.type === "object-immunities");
+        for (const wrType of ["bleed", "mental", "poison", "spirit"] as const) {
+            if (weaknessesAndResistances.has(wrType)) {
+                objectImmunities?.exceptions.push(wrType);
+            }
+        }
+    }
+
     protected prepareSaves(): { [K in SaveType]?: Statistic } {
         const { system } = this;
 
@@ -152,7 +177,7 @@ class HazardPF2e<TParent extends TokenDocumentPF2e | null = TokenDocumentPF2e | 
             const save = system.saves[saveType];
             const saveName = game.i18n.localize(CONFIG.PF2E.saves[saveType]);
             const base = save.value;
-            const ability = CONFIG.PF2E.savingThrowDefaultAbilities[saveType];
+            const ability = CONFIG.PF2E.savingThrowDefaultAttributes[saveType];
 
             // Saving Throws with a value of 0 are not usable by the hazard
             // Later on we'll need to explicitly check for null, since 0 is supposed to be valid

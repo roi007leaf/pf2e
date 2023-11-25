@@ -11,22 +11,24 @@
             "name ctrl" min-content
             "content content" min-content
             / 1fr min-content;
-            align-items: center;
+        align-items: center;
         padding: 2px 0;
 
         &:nth-child(odd) {
             background-color: rgba($alt-color, 0.1);
         }
 
-        .item-name, .item-controls {
+        .item-name,
+        .item-controls {
             margin: 0;
         }
 
         .item-name {
-            grid-area: name;
+            align-items: center;
             display: flex;
             flex: 1;
-            align-items: center;
+            grid-area: name;
+            height: calc(1.5rem + 2px);
             width: 100%;
 
             .feat-slot-title {
@@ -47,9 +49,8 @@
 
             h4 {
                 cursor: pointer;
-                display: flex;
-                align-items: center;
                 font-family: var(--serif);
+
                 &:hover {
                     color: var(--primary);
                     text-shadow: 0 0 3px var(--tertiary);

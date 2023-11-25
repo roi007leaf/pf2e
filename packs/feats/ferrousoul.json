@@ -1,6 +1,6 @@
 {
     "_id": "y48ig9zN5ZvPbB9o",
-    "img": "systems/pf2e/icons/default-icons/feats.webp",
+    "img": "icons/sundries/books/book-red-exclamation.webp",
     "name": "Ferrousoul",
     "system": {
         "actionType": {
@@ -19,6 +19,11 @@
         "prerequisites": {
             "value": []
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": true,
+            "title": "Pathfinder Rage of Elements"
+        },
         "rules": [
             {
                 "baseType": "fist",
@@ -31,7 +36,7 @@
                     }
                 },
                 "group": "brawling",
-                "img": "systems/pf2e/icons/features/classes/powerful-fist.webp",
+                "img": "icons/skills/melee/unarmed-punch-fist.webp",
                 "key": "Strike",
                 "label": "PF2E.Strike.Fist.Label",
                 "range": null,
@@ -44,9 +49,6 @@
                 ]
             }
         ],
-        "source": {
-            "value": "Pathfinder Rage of Elements"
-        },
         "traits": {
             "rarity": "common",
             "value": [

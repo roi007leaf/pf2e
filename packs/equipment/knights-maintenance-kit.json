@@ -1,6 +1,6 @@
 {
     "_id": "Dc2DRXybi5dCxmqP",
-    "img": "systems/pf2e/icons/equipment/adventuring-gear/detectives-kit.webp",
+    "img": "icons/containers/bags/pack-leather-embossed-brown.webp",
     "name": "Knight's Maintenance Kit",
     "system": {
         "baseItem": null,
@@ -19,19 +19,19 @@
         "level": {
             "value": 5
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 50
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Knights of Lastwall"
         },
         "quantity": 1,
         "rules": [
@@ -46,9 +46,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Knights of Lastwall"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",

@@ -29,7 +29,7 @@ export class IdentifyItemPopup extends FormApplication<PhysicalItemPF2e> {
     override async getData(): Promise<IdentifyPopupData> {
         const item = this.object;
         const notMatchingTraditionModifier = game.settings.get("pf2e", "identifyMagicNotMatchingTraditionModifier");
-        const proficiencyWithoutLevel = game.settings.get("pf2e", "proficiencyVariant") === "ProficiencyWithoutLevel";
+        const proficiencyWithoutLevel = game.settings.get("pf2e", "proficiencyVariant");
         const dcs = getItemIdentificationDCs(item, { proficiencyWithoutLevel, notMatchingTraditionModifier });
 
         return {
@@ -68,8 +68,8 @@ export class IdentifyItemPopup extends FormApplication<PhysicalItemPF2e> {
             const actionOption = item.isMagical
                 ? "action:identify-magic"
                 : item.isAlchemical
-                ? "action:identify-alchemy"
-                : null;
+                  ? "action:identify-alchemy"
+                  : null;
 
             const content = await renderTemplate("systems/pf2e/templates/actors/identify-item-chat-skill-checks.hbs", {
                 itemImg,

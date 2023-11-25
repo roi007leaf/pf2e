@@ -1,6 +1,6 @@
 {
     "_id": "GhGoZdAZtzZTYCzj",
-    "img": "systems/pf2e/icons/spells/animal-feature.webp",
+    "img": "icons/commodities/biological/eye-lizard-orange.webp",
     "name": "Spell Effect: Animal Feature (Jaws)",
     "system": {
         "description": {
@@ -14,6 +14,11 @@
         },
         "level": {
             "value": 2
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Advanced Player's Guide"
         },
         "rules": [
             {
@@ -33,9 +38,6 @@
                 ]
             }
         ],
-        "source": {
-            "value": "Pathfinder Advanced Player's Guide"
-        },
         "start": {
             "initiative": null,
             "value": 0

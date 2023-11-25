@@ -1,6 +1,6 @@
 {
     "_id": "cFe6vFb3gSDyNeS9",
-    "img": "systems/pf2e/icons/equipment/adventuring-gear/spellbook.webp",
+    "img": "icons/sundries/books/book-symbol-spiral-silver-blue.webp",
     "name": "Spell Repertoire (Oracle)",
     "system": {
         "actionType": {
@@ -19,10 +19,12 @@
         "prerequisites": {
             "value": []
         },
-        "rules": [],
-        "source": {
-            "value": "Pathfinder Advanced Player's Guide"
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Advanced Player's Guide"
         },
+        "rules": [],
         "traits": {
             "rarity": "common",
             "value": [

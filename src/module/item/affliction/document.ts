@@ -1,6 +1,7 @@
 import { ActorPF2e } from "@actor";
 import { ConditionPF2e, ItemPF2e } from "@item";
-import { AbstractEffectPF2e, EffectBadge } from "@item/abstract-effect/index.ts";
+import { calculateRemainingDuration } from "@item/abstract-effect/helpers.ts";
+import { AbstractEffectPF2e, EffectBadgeCounter } from "@item/abstract-effect/index.ts";
 import { DURATION_UNITS } from "@item/abstract-effect/values.ts";
 import { ConditionSlug } from "@item/condition/types.ts";
 import { UserPF2e } from "@module/user/index.ts";
@@ -11,7 +12,7 @@ import { DamageRoll } from "@system/damage/roll.ts";
 import { DegreeOfSuccess } from "@system/degree-of-success.ts";
 import { ErrorPF2e } from "@util";
 import * as R from "remeda";
-import { AfflictionFlags, AfflictionSource, AfflictionSystemData } from "./data.ts";
+import { AfflictionFlags, AfflictionSource, AfflictionStageData, AfflictionSystemData } from "./data.ts";
 
 /** Condition types that don't need a duration to eventually disappear. These remain even when the affliction ends */
 const EXPIRING_CONDITIONS: Set<ConditionSlug> = new Set([
@@ -31,18 +32,25 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
         }
     }
 
-    override get badge(): EffectBadge {
-        const label = game.i18n.format("PF2E.Item.Affliction.Stage", { stage: this.stage });
+    override get badge(): EffectBadgeCounter {
         return {
             type: "counter",
             value: this.stage,
+            min: this.onsetDuration ? 0 : 1,
             max: this.maxStage,
-            label,
+            label:
+                this.stage === 0
+                    ? game.i18n.localize("PF2E.Item.Affliction.OnsetLabel")
+                    : game.i18n.format("PF2E.Item.Affliction.Stage", { stage: this.stage }),
         };
     }
 
     get stage(): number {
         return this.system.stage;
+    }
+
+    get stageData(): AfflictionStageData | null {
+        return Object.values(this.system.stages).at(this.stage - 1) ?? null;
     }
 
     get maxStage(): number {
@@ -56,6 +64,7 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
         await this.update({ system: { stage } });
     }
 
+    /** Decreases the affliction stage, deleting if reduced to 0 even if an onset exists */
     override async decrease(): Promise<void> {
         const stage = this.system.stage - 1;
         if (stage === 0) {
@@ -73,9 +82,14 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
         return this.system.onset.value * (DURATION_UNITS[this.system.onset.unit] ?? 0);
     }
 
+    get remainingStageDuration(): { expired: boolean; remaining: number } {
+        const stageDuration = this.stageData?.duration ?? { unit: "unlimited" };
+        return calculateRemainingDuration(this, { ...stageDuration, expiry: "turn-end" });
+    }
+
     override prepareBaseData(): void {
         super.prepareBaseData();
-        this.system.stage = Math.clamped(this.system.stage, 1, this.maxStage);
+        this.system.stage = Math.clamped(this.system.stage, this.badge.min, this.maxStage);
 
         // Set certain defaults
         for (const stage of Object.values(this.system.stages)) {
@@ -111,9 +125,7 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
             const template: AfflictionDamageTemplate = {
                 name: `${this.name} - ${stageLabel}`,
                 damage: { roll, breakdown },
-                notes: [],
                 materials: [],
-                traits: this.system.traits.value,
                 modifiers: [],
             };
 
@@ -125,6 +137,7 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
                 domains: [],
                 options: new Set(),
                 self: null,
+                traits: this.system.traits.value,
             };
 
             return { template, context };
@@ -144,7 +157,7 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
         const itemsToDelete = this.getLinkedItems().map((i) => i.id);
         await actor.deleteEmbeddedDocuments("Item", itemsToDelete);
 
-        const currentStage = Object.values(this.system.stages).at(this.stage - 1);
+        const currentStage = this.stageData;
         if (!currentStage) return;
 
         // Get all conditions we need to add or update
@@ -162,7 +175,7 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
                 if (!data.linked) {
                     return R.maxBy(
                         allExisting.filter((i) => !i.appliedBy && !i.isLocked),
-                        (c) => (c.active ? Infinity : c.value ?? 0)
+                        (c) => (c.active ? Infinity : c.value ?? 0),
                     );
                 }
 
@@ -201,7 +214,7 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
                 "system.value.value": data.value,
                 "flags.pf2e.grantedBy.id": this.id,
                 ...(data.linked ? { "system.references.parent.id": this.id } : {}),
-            }))
+            })),
         );
 
         // Show message if there is no onset
@@ -217,16 +230,13 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
                 i.isOfType("condition") &&
                 !EXPIRING_CONDITIONS.has(i.slug) &&
                 i.flags.pf2e.grantedBy?.id === this.id &&
-                i.system.references.parent?.id === this.id
+                i.system.references.parent?.id === this.id,
         );
     }
 
     async createStageMessage(): Promise<void> {
         const actor = this.actor;
         if (!actor) return;
-
-        const currentStage = Object.values(this.system.stages).at(this.stage - 1);
-        if (!currentStage) return;
 
         const damage = this.getStageDamage(this.stage);
         if (damage) {
@@ -237,26 +247,37 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
 
     /** Set the start time and initiative roll of a newly created effect */
     protected override async _preCreate(
-        data: PreDocumentId<this["_source"]>,
+        data: this["_source"],
         options: DocumentModificationContext<TParent>,
-        user: UserPF2e
+        user: UserPF2e,
     ): Promise<boolean | void> {
         if (this.isOwned) {
             const initiative = this.origin?.combatant?.initiative ?? game.combat?.combatant?.initiative ?? null;
             this._source.system.start = { value: game.time.worldTime + this.onsetDuration, initiative };
+        } else {
+            // Force minimum stage if there is no actor
+            data.system.stage = data.system.onset ? 0 : 1;
         }
 
         return super._preCreate(data, options, user);
     }
 
     protected override async _preUpdate(
-        changed: DeepPartial<this["_source"]>,
+        changed: DeepPartial<AfflictionSource>,
         options: DocumentModificationContext<TParent>,
-        user: UserPF2e
+        user: UserPF2e,
     ): Promise<boolean | void> {
         const duration = changed.system?.duration;
         if (typeof duration?.unit === "string" && !["unlimited", "encounter"].includes(duration.unit)) {
             if (duration.value === -1) duration.value = 1;
+        }
+
+        // Force minimum stage if there is no actor
+        if (!this.actor) {
+            const hasOnset =
+                changed.system && "-=onset" in changed.system ? false : !!(changed.system?.onset ?? this.system.onset);
+            changed.system ??= {};
+            changed.system.stage = hasOnset ? 0 : 1;
         }
 
         return super._preUpdate(changed, options, user);
@@ -265,7 +286,7 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
     protected override _onCreate(
         data: AfflictionSource,
         options: DocumentModificationContext<TParent>,
-        userId: string
+        userId: string,
     ): void {
         super._onCreate(data, options, userId);
         if (game.user === this.actor?.primaryUpdater) {
@@ -276,7 +297,7 @@ class AfflictionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extend
     override _onUpdate(
         changed: DeepPartial<this["_source"]>,
         options: DocumentModificationContext<TParent>,
-        userId: string
+        userId: string,
     ): void {
         super._onUpdate(changed, options, userId);
 

@@ -1,6 +1,6 @@
 {
     "_id": "14AFzcwkN019dzcl",
-    "img": "systems/pf2e/icons/spells/shifting-form.webp",
+    "img": "icons/creatures/claws/claw-bear-paw-swipe-red.webp",
     "name": "Spell Effect: Shifting Form (Claws)",
     "system": {
         "description": {
@@ -14,6 +14,11 @@
         },
         "level": {
             "value": 4
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
         },
         "rules": [
             {
@@ -35,9 +40,6 @@
                 ]
             }
         ],
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "start": {
             "initiative": null,
             "value": 0

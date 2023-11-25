@@ -1,9 +1,10 @@
-import { ActorPF2e } from "@actor/base.ts";
+import type { ActorPF2e } from "@actor/base.ts";
 import {
     Abilities,
     BaseCreatureSource,
     CreatureAttributes,
     CreatureDetails,
+    CreatureDetailsSource,
     CreatureInitiativeSource,
     CreatureResources,
     CreatureResourcesSource,
@@ -23,18 +24,17 @@ import {
     PerceptionData,
     StrikeData,
 } from "@actor/data/base.ts";
-import { ActorSizePF2e } from "@actor/data/size.ts";
+import type { ActorSizePF2e } from "@actor/data/size.ts";
 import { InitiativeTraceData } from "@actor/initiative.ts";
-import { ModifierPF2e, StatisticModifier } from "@actor/modifiers.ts";
+import type { ModifierPF2e, StatisticModifier } from "@actor/modifiers.ts";
 import { ActorAlliance, AttributeString, SaveType } from "@actor/types.ts";
-import { MeleePF2e } from "@item";
-import { Rarity, Size } from "@module/data.ts";
-import { ArmorClassTraceData } from "@system/statistic/armor-class.ts";
-import { StatisticTraceData } from "@system/statistic/data.ts";
+import type { MeleePF2e } from "@item";
+import { PublicationData, Rarity, Size } from "@module/data.ts";
+import type { ArmorClassTraceData, StatisticTraceData } from "@system/statistic/index.ts";
 
-interface NPCSource extends BaseCreatureSource<"npc", NPCSystemSource> {
+type NPCSource = BaseCreatureSource<"npc", NPCSystemSource> & {
     flags: DeepPartial<NPCFlags>;
-}
+};
 
 type NPCFlags = ActorFlagsPF2e & {
     pf2e: { lootable: boolean };
@@ -91,25 +91,18 @@ interface NPCAttributesSource extends Required<ActorAttributesSource> {
     };
 }
 
-interface NPCDetailsSource extends Omit<CreatureDetails, "creature"> {
+interface NPCDetailsSource extends CreatureDetailsSource {
     level: {
         value: number;
     };
-
-    /** Which sourcebook this creature comes from. */
-    source: {
-        value: string;
-        author: string;
-    };
-
-    /** The type of this creature (such as 'undead') */
-    creatureType: string;
     /** A very brief description */
     blurb: string;
-    /** The in depth descripton and any other public notes */
+    /** The in-depth description and any other public notes */
     publicNotes: string;
     /** The private GM notes */
     privateNotes: string;
+    /** Information concerning the publication from which this actor originates */
+    publication: PublicationData;
 }
 
 type NPCSavesSource = Record<SaveType, { value: number; saveDetail: string }>;
@@ -181,13 +174,9 @@ interface NPCAttributes
     spellDC: { value: number } | null;
     /** And a fake class-or-spell DC to go along with it */
     classOrSpellDC: { value: number };
-
-    /** Rarely needed for an NPC but always available! */
-    bonusEncumbranceBulk: number;
-    bonusLimitBulk: number;
 }
 
-interface NPCDetails extends NPCDetailsSource {
+interface NPCDetails extends NPCDetailsSource, CreatureDetails {
     level: {
         value: number;
         /** The presence of a `base` that is different from the `value` indicates the level was adjusted. */
@@ -230,7 +219,6 @@ interface NPCHitPoints extends HitPointsStatistic {
 /** Perception data with an additional "base" value */
 interface NPCPerception extends PerceptionData {
     rank?: number;
-    base?: number;
 }
 
 /** Skill data with a "base" value and whether the skill should be rendered (visible) */
@@ -247,7 +235,7 @@ interface NPCSpeeds extends CreatureSpeeds {
     details: string;
 }
 
-export {
+export type {
     NPCAttributes,
     NPCAttributesSource,
     NPCFlags,

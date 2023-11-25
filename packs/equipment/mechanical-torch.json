@@ -19,19 +19,19 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 10
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Guns & Gears"
         },
         "quantity": 1,
         "rules": [
@@ -42,11 +42,11 @@
                 "option": "lit-mechanical-torch",
                 "suboptions": [
                     {
-                        "label": "PF2E.SpecificRule.MechanicalTorch.LitCone",
+                        "label": "PF2E.AreaTypeCone",
                         "value": "cone"
                     },
                     {
-                        "label": "PF2E.SpecificRule.MechanicalTorch.LitRadius",
+                        "label": "PF2E.AreaTypeEmanation",
                         "value": "radius"
                     }
                 ],
@@ -102,9 +102,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Guns & Gears"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",

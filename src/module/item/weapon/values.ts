@@ -17,17 +17,15 @@ const MELEE_WEAPON_GROUPS = new Set([
 ] as const);
 
 /** Groups that will be forced as ranged weapons */
-const MANDATORY_RANGED_GROUPS = new Set(["bomb", "bow", "firearm", "sling"] as const);
+const MANDATORY_RANGED_GROUPS = new Set(["bomb", "bow", "crossbow", "firearm", "sling"] as const);
 
 const WEAPON_GROUPS = new Set([...MELEE_WEAPON_GROUPS, ...MANDATORY_RANGED_GROUPS] as const);
 
 const WEAPON_PROPERTY_RUNE_TYPES = new Set([
-    "anarchic",
     "ancestralEchoing",
     "anchoring",
     "ashen",
     "authorized",
-    "axiomatic",
     "bane",
     "bloodbane",
     "bloodthirsty",
@@ -51,6 +49,8 @@ const WEAPON_PROPERTY_RUNE_TYPES = new Set([
     "flurrying",
     "frost",
     "ghostTouch",
+    "giantKilling",
+    "greaterGiantKilling",
     "greaterAnchoring",
     "greaterAshen",
     "greaterBloodbane",
@@ -65,20 +65,24 @@ const WEAPON_PROPERTY_RUNE_TYPES = new Set([
     "greaterFrost",
     "greaterHauling",
     "greaterImpactful",
+    "greaterRooting",
     "greaterShock",
     "greaterThundering",
     "grievous",
     "hauling",
     "holy",
     "hopeful",
+    "hooked",
     "impactful",
     "impossible",
     "keen",
     "kinWarding",
     "majorFanged",
+    "majorRooting",
     "merciful",
     "pacifying",
     "returning",
+    "rooting",
     "serrating",
     "shifting",
     "shock",
@@ -86,6 +90,7 @@ const WEAPON_PROPERTY_RUNE_TYPES = new Set([
     "spellStoring",
     "swarming",
     "thundering",
+    "trueRooting",
     "underwater",
     "unholy",
     "vorpal",
@@ -93,24 +98,11 @@ const WEAPON_PROPERTY_RUNE_TYPES = new Set([
 ] as const);
 
 const THROWN_RANGES = new Set([10, 15, 20, 30, 40, 60, 80, 100] as const);
-const WEAPON_RANGES = new Set([...THROWN_RANGES, 50, 70, 90, 120, 140, 150, 180, 200, 240, 300] as const);
-
-// Crossbow isn't a weapon group, so we need to assign it when one of these is a base weapon
-const CROSSBOW_WEAPONS = new Set([
-    "alchemical-crossbow",
-    "crossbow",
-    "hand-crossbow",
-    "heavy-crossbow",
-    "repeating-crossbow",
-    "repeating-hand-crossbow",
-    "repeating-heavy-crossbow",
-    "taw-launcher",
-] as const);
+const WEAPON_RANGES = new Set([...THROWN_RANGES, 50, 70, 90, 110, 120, 140, 150, 180, 200, 240, 300] as const);
 
 export {
-    CROSSBOW_WEAPONS,
-    MELEE_WEAPON_GROUPS,
     MANDATORY_RANGED_GROUPS,
+    MELEE_WEAPON_GROUPS,
     THROWN_RANGES,
     WEAPON_CATEGORIES,
     WEAPON_GROUPS,

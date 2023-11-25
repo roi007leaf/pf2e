@@ -19,33 +19,29 @@
         "level": {
             "value": 12
         },
-        "negateBulk": {
-            "value": ""
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 1600
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Bestiary"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "rare",
             "value": [
                 "arcane",
-                "necromancy",
-                "negative"
+                "void"
             ]
         },
         "usage": {

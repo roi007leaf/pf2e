@@ -1,11 +1,8 @@
 {
     "_id": "pX3rpVDBLqClcL9M",
-    "img": "systems/pf2e/icons/equipment/weapons/staff.webp",
+    "img": "icons/weapons/staves/staff-simple.webp",
     "name": "Staff of Earth",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "staff",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 3
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -81,9 +78,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "splashDamage": {
             "value": 0
         },
@@ -94,7 +88,6 @@
         "traits": {
             "rarity": "common",
             "value": [
-                "evocation",
                 "magical",
                 "staff",
                 "two-hand-d8"

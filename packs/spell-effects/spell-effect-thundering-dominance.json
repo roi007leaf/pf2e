@@ -1,6 +1,6 @@
 {
     "_id": "81TfqzTfIqkQA4Dy",
-    "img": "systems/pf2e/icons/spells/thundering-dominance.webp",
+    "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
     "name": "Spell Effect: Thundering Dominance",
     "system": {
         "description": {
@@ -14,6 +14,11 @@
         },
         "level": {
             "value": 2
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
         },
         "rules": [
             {
@@ -46,9 +51,6 @@
                 }
             }
         ],
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "start": {
             "initiative": null,
             "value": 0

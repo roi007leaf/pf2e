@@ -1,6 +1,6 @@
 {
     "_id": "kLschzVZFoe3U63C",
-    "img": "systems/pf2e/icons/features/classes/weapon-expertise.webp",
+    "img": "icons/skills/melee/hand-grip-staff-yellow-brown.webp",
     "name": "Psychic Weapon Expertise",
     "system": {
         "actionType": {
@@ -19,23 +19,25 @@
         "prerequisites": {
             "value": []
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Dark Archive"
+        },
         "rules": [
             {
                 "key": "ActiveEffectLike",
                 "mode": "upgrade",
-                "path": "system.martial.simple.rank",
+                "path": "system.proficiencies.attacks.simple.rank",
                 "value": 2
             },
             {
                 "key": "ActiveEffectLike",
                 "mode": "upgrade",
-                "path": "system.martial.unarmed.rank",
+                "path": "system.proficiencies.attacks.unarmed.rank",
                 "value": 2
             }
         ],
-        "source": {
-            "value": "Pathfinder Dark Archive"
-        },
         "traits": {
             "rarity": "common",
             "value": [

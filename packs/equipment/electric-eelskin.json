@@ -6,10 +6,10 @@
         "acBonus": 1,
         "baseItem": "leather-armor",
         "category": "light",
-        "checkPenalty": null,
+        "checkPenalty": 0,
         "containerId": null,
         "description": {
-            "value": "<p>Shining, slippery eelskin covers the plates of this +1 resilient greater slick leather armor. The armor gives you the ability to breathe water and grants you a +2 item bonus to Athletics checks to Swim and Stealth checks you attempt in the water.</p>\n<hr />\n<p><strong>Activate</strong><span class=\"pf2-icon\">D</span>Command, Interact</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You cast a 2nd-level <em>@UUID[Compendium.pf2e.spells-srd.Item.Shocking Grasp]</em> with a spell attack modifier of [[/r 1d20+19]]{+19}.</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply one casting of <em>shocking grasp</em>.</p>"
+            "value": "<p>Shining, slippery eelskin covers the plates of this +1 <em>resilient greater slick leather armor</em>. The armor gives you the ability to breathe water and grants you a +2 item bonus to Athletics checks to Swim and Stealth checks you attempt in the water.</p>\n<hr />\n<p><strong>Activate—Unleash Charge</strong> <span class=\"action-glyph\">2</span> (manipulate)</p>\n<p><strong>Frequency</strong> once per hour</p>\n<hr />\n<p><strong>Effect</strong> You cast a 2nd-rank <em>@UUID[Compendium.pf2e.spells-srd.Item.Thunderstrike]</em> with a @Check[type:reflex|dc:29|basic:true|traits:electricity,sonic,spell].</p>\n<hr />\n<p><strong>Craft Requirements</strong> Supply one casting of <em>thunderstrike</em>.</p>"
         },
         "dexCap": 4,
         "equippedBulk": {
@@ -24,18 +24,12 @@
         "level": {
             "value": 10
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
-        "potency": {},
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -46,13 +40,18 @@
             "value": "greaterSlick"
         },
         "propertyRune2": {
-            "value": ""
+            "value": null
         },
         "propertyRune3": {
-            "value": ""
+            "value": null
         },
         "propertyRune4": {
-            "value": ""
+            "value": null
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder GM Core"
         },
         "quantity": 1,
         "resiliencyRune": {
@@ -81,18 +80,25 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
+        "specific": {
+            "material": {
+                "grade": null,
+                "type": null
+            },
+            "runes": {
+                "potency": 1,
+                "resilient": 1
+            },
+            "value": true
         },
-        "speedPenalty": null,
+        "speedPenalty": 0,
         "stackGroup": null,
         "strength": null,
         "traits": {
             "rarity": "common",
             "value": [
                 "invested",
-                "magical",
-                "transmutation"
+                "magical"
             ]
         },
         "usage": {

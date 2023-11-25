@@ -1,6 +1,6 @@
 {
     "_id": "POKglmR5IdpEEefR",
-    "img": "systems/pf2e/icons/default-icons/equipment.svg",
+    "img": "systems/pf2e/icons/equipment/other/spellhearts/radiant-prism.webp",
     "name": "Radiant Prism (Greater)",
     "system": {
         "baseItem": null,
@@ -19,31 +19,27 @@
         "level": {
             "value": 18
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 20500
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
-                "abjuration",
                 "magical",
                 "spellheart"
             ]

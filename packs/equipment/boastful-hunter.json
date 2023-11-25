@@ -1,11 +1,8 @@
 {
     "_id": "7irlzyZA50KqTwce",
-    "img": "systems/pf2e/icons/equipment/weapons/jezail.webp",
+    "img": "icons/weapons/guns/rifle-brown.webp",
     "name": "Boastful Hunter",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "jezail",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 3
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -63,6 +55,11 @@
         },
         "propertyRune4": {
             "value": null
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Guns & Gears"
         },
         "quantity": 1,
         "range": 90,
@@ -142,9 +139,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Guns & Gears"
-        },
         "specific": {
             "material": null,
             "price": "35 gp",

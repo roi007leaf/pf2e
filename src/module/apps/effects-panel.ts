@@ -1,6 +1,8 @@
+import { ActorPF2e } from "@actor";
 import { AbstractEffectPF2e, AfflictionPF2e, ConditionPF2e, EffectPF2e } from "@item";
-import { EffectExpiryType } from "@item/effect/data.ts";
-import { ActorPF2e, TokenDocumentPF2e } from "@module/documents.ts";
+import type { EffectExpiryType } from "@item/abstract-effect/index.ts";
+import { PersistentDialog } from "@item/condition/persistent-damage-dialog.ts";
+import type { TokenDocumentPF2e } from "@scene/token-document/document.ts";
 import { InlineRollLinks } from "@scripts/ui/inline-roll-links.ts";
 import { htmlQuery, htmlQueryAll } from "@util";
 
@@ -60,7 +62,7 @@ export class EffectsPanel extends Application {
                         : this.#getRemainingDurationLabel(
                               duration.remaining,
                               system.start.initiative ?? 0,
-                              system.duration.expiry
+                              system.duration.expiry,
                           );
                 }
                 return effect;
@@ -94,15 +96,15 @@ export class EffectsPanel extends Application {
         InlineRollLinks.listen(html, this.actor);
 
         for (const effectEl of htmlQueryAll(html, ".effect-item[data-item-id]")) {
-            const itemId = effectEl.dataset.itemId;
-            if (!itemId) continue;
+            const { actor } = this;
+            const itemId = effectEl.dataset.itemId ?? "";
+            const effect = actor?.conditions.get(itemId) ?? actor?.items.get(itemId);
+            if (!actor || !effect) continue;
 
             const iconElem = effectEl.querySelector(":scope > .icon");
             // Increase or render persistent-damage dialog on left click
             iconElem?.addEventListener("click", async () => {
-                const { actor } = this;
-                const effect = actor?.items.get(itemId);
-                if (actor && effect?.isOfType("condition") && effect.slug === "persistent-damage") {
+                if (actor && effect.isOfType("condition") && effect.slug === "persistent-damage") {
                     await effect.onEndTurn({ token: this.token });
                 } else if (effect instanceof AbstractEffectPF2e) {
                     await effect.increase();
@@ -111,8 +113,6 @@ export class EffectsPanel extends Application {
 
             // Remove effect or decrease its badge value on right-click
             iconElem?.addEventListener("contextmenu", async () => {
-                const { actor } = this;
-                const effect = actor?.items.get(itemId);
                 if (effect instanceof AbstractEffectPF2e) {
                     await effect.decrease();
                 } else {
@@ -122,17 +122,22 @@ export class EffectsPanel extends Application {
             });
 
             effectEl.querySelector("[data-action=recover-persistent-damage]")?.addEventListener("click", () => {
-                const item = this.actor?.items.get(itemId);
-                if (item?.isOfType("condition")) {
-                    item.rollRecovery();
+                if (effect.isOfType("condition")) {
+                    effect.rollRecovery();
+                }
+            });
+
+            effectEl.querySelector("[data-action=edit]")?.addEventListener("click", () => {
+                if (effect.isOfType("condition") && effect.slug === "persistent-damage") {
+                    new PersistentDialog(actor, { editing: effect.id }).render(true);
+                } else {
+                    effect.sheet.render(true);
                 }
             });
 
             // Send effect to chat
             effectEl.querySelector("[data-action=send-to-chat]")?.addEventListener("click", () => {
-                const { actor } = this;
-                const effect = actor?.conditions.get(itemId) ?? actor?.items.get(itemId);
-                effect?.toMessage();
+                effect.toMessage();
             });
 
             // Uses a scale transform to fit the text within the box
@@ -222,7 +227,7 @@ export class EffectsPanel extends Application {
                 const actor = "actor" in effect ? effect.actor : null;
                 const rollData = { actor, item: effect };
                 return await TextEditor.enrichHTML(effect.description, { async: true, rollData });
-            })
+            }),
         );
     }
 }

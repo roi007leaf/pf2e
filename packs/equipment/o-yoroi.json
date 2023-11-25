@@ -1,6 +1,6 @@
 {
     "_id": "U2liOd8kJasy0Ghd",
-    "img": "systems/pf2e/icons/default-icons/armor.svg",
+    "img": "systems/pf2e/icons/equipment/armor/o-yoroi.webp",
     "name": "O-Yoroi",
     "system": {
         "acBonus": 6,
@@ -9,9 +9,9 @@
         "checkPenalty": -3,
         "containerId": null,
         "description": {
-            "value": "<p>Larger plates coupled with lamellar pieces to make up a suit of heavy lamellar. The custom‑fitted and often highly decorative suit covers most of the body. Rounding out the suit are a tiered helmet and fearsome mask, often depicting a fiendish or monstrous creature.</p>"
+            "value": "<p>Larger plates coupled with lamellar pieces to make up a suit of heavy lamellar. The custom-fitted and often highly decorative suit covers most of the body. Rounding out the suit are a tiered helmet and fearsome mask, often depicting a fiendish or monstrous creature.</p>"
         },
-        "dexCap": 0,
+        "dexCap": null,
         "equippedBulk": {
             "value": "5"
         },
@@ -24,16 +24,11 @@
         "level": {
             "value": 2
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -53,14 +48,19 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": null
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
+        "specific": {
+            "value": false
         },
         "speedPenalty": -10,
         "stackGroup": null,

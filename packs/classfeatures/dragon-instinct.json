@@ -1,6 +1,6 @@
 {
     "_id": "VDot7CDcXElxmkkz",
-    "img": "systems/pf2e/icons/features/classes/dragon-instinct.webp",
+    "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
     "name": "Dragon Instinct",
     "system": {
         "actionType": {
@@ -18,6 +18,11 @@
         },
         "prerequisites": {
             "value": []
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
         },
         "rules": [
             {
@@ -258,10 +263,10 @@
                 "value": "@actor.abilities.con.mod+3"
             }
         ],
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "traits": {
+            "otherTags": [
+                "barbarian-instinct"
+            ],
             "rarity": "common",
             "value": [
                 "barbarian"

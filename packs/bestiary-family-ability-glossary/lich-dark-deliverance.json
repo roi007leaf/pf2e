@@ -11,15 +11,23 @@
         },
         "category": "defensive",
         "description": {
-            "value": "<p>The lich has resistance to positive equal to its level.</p>"
+            "value": "<p>The lich has resistance to vitality equal to its level.</p>"
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary"
         },
         "requirements": {
             "value": ""
         },
-        "rules": [],
-        "source": {
-            "value": "Pathfinder Bestiary"
-        },
+        "rules": [
+            {
+                "key": "Resistance",
+                "type": "vitality",
+                "value": "@actor.level"
+            }
+        ],
         "traits": {
             "rarity": "common",
             "value": []

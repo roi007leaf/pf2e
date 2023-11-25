@@ -13,6 +13,11 @@
         "description": {
             "value": "<p>It gains darkvision.</p>"
         },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
         "requirements": {
             "value": ""
         },
@@ -22,9 +27,6 @@
                 "selector": "darkvision"
             }
         ],
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "traits": {
             "rarity": "common",
             "value": []

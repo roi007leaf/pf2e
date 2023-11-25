@@ -15,6 +15,11 @@
         "level": {
             "value": 3
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
+        },
         "rules": [
             {
                 "key": "FlatModifier",
@@ -109,16 +114,13 @@
                 }
             },
             {
-                "domain": "damage-roll",
+                "domain": "damage",
                 "key": "RollOption",
                 "label": "Successful Medicine Check (Organsight)",
                 "option": "organsight-med-check",
                 "toggleable": true
             }
         ],
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "start": {
             "initiative": null,
             "value": 0

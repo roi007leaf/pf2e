@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/injection-spear.webp",
     "name": "Grounding Spike",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "dancers-spear",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 10
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "specific": {
             "material": {
                 "precious": null
@@ -101,7 +95,6 @@
             "rarity": "uncommon",
             "value": [
                 "backswing",
-                "evocation",
                 "finesse",
                 "reach",
                 "sweep",

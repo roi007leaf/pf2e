@@ -23,26 +23,26 @@
         "level": {
             "value": 2
         },
+        "material": {
+            "grade": null,
+            "type": null
+        },
         "negateBulk": {
             "value": "2"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
                 "gp": 30
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Pathfinder Society Guide"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Pathfinder Society Guide"
-        },
         "stackGroup": null,
         "stowing": true,
         "traits": {

@@ -1,5 +1,11 @@
 import { isObject, tupleHasValue } from "@util";
-import { isSystemDamageTerm, markAsCrit, renderComponentDamage, simplifyTerm } from "./helpers.ts";
+import {
+    isFlavoredArithmetic,
+    isSystemDamageTerm,
+    markAsCrit,
+    renderComponentDamage,
+    simplifyTerm,
+} from "./helpers.ts";
 import { DamageInstance } from "./roll.ts";
 
 class ArithmeticExpression extends RollTerm<ArithmeticExpressionData> {
@@ -40,12 +46,12 @@ class ArithmeticExpression extends RollTerm<ArithmeticExpressionData> {
     static totalOf(
         operator: ArithmeticOperator,
         left: number | undefined,
-        right: number | undefined
+        right: number | undefined,
     ): number | undefined;
     static totalOf(
         operator: ArithmeticOperator,
         left: number | undefined,
-        right: number | undefined
+        right: number | undefined,
     ): number | undefined {
         if (left === undefined || right === undefined) return undefined;
 
@@ -68,8 +74,8 @@ class ArithmeticExpression extends RollTerm<ArithmeticExpressionData> {
             o instanceof DiceTerm
                 ? o
                 : o instanceof Grouping || o instanceof ArithmeticExpression || o instanceof IntermediateDie
-                ? o.dice
-                : []
+                  ? o.dice
+                  : [],
         );
     }
 
@@ -78,8 +84,13 @@ class ArithmeticExpression extends RollTerm<ArithmeticExpressionData> {
      * Multiplication is almost always going to be critical-hit doubling, which must be preserved for IWR analysis.
      */
     get expression(): string {
-        // If this expression is deterministic, return the total as the expression
-        if (this.isDeterministic && typeof this.total === "number" && !Number.isNaN(this.total)) {
+        // If this expression is deterministic and neither operand has its own flavor, return the stringified total
+        if (
+            this.isDeterministic &&
+            typeof this.total === "number" &&
+            !Number.isNaN(this.total) &&
+            !isFlavoredArithmetic(this)
+        ) {
             return this.total.toString();
         }
         const { operator, operands } = this;
@@ -159,8 +170,8 @@ class ArithmeticExpression extends RollTerm<ArithmeticExpressionData> {
             ["precision", "splash"].includes(o.flavor)
                 ? renderComponentDamage(o)
                 : isSystemDamageTerm(o)
-                ? o.render()
-                : o.expression
+                  ? o.render()
+                  : o.expression,
         );
 
         fragment.append(left, ` ${this.operator} `, right);
@@ -169,7 +180,7 @@ class ArithmeticExpression extends RollTerm<ArithmeticExpressionData> {
     }
 
     protected override async _evaluate(
-        options: { minimize?: boolean; maximize?: boolean } = {}
+        options: { minimize?: boolean; maximize?: boolean } = {},
     ): Promise<Evaluated<this>> {
         for (const operand of this.operands) {
             if (!operand._evaluated) {
@@ -245,9 +256,15 @@ class Grouping extends RollTerm<GroupingData> {
 
     /** Show a simplified expression if it is known that order of operations won't be lost */
     get expression(): string {
-        return this.isDeterministic && typeof this.total === "number" && !Number.isNaN(this.total)
-            ? this.total.toString()
-            : this.term instanceof DiceTerm || this.term instanceof MathTerm
+        if (
+            this.isDeterministic &&
+            typeof this.total === "number" &&
+            !Number.isNaN(this.total) &&
+            !isFlavoredArithmetic(this.term)
+        ) {
+            return this.total.toString();
+        }
+        return this.term instanceof DiceTerm || this.term instanceof MathTerm
             ? this.term.expression
             : `(${this.term.expression})`;
     }
@@ -286,7 +303,7 @@ class Grouping extends RollTerm<GroupingData> {
     }
 
     protected override async _evaluate(
-        options: { minimize?: boolean; maximize?: boolean } = {}
+        options: { minimize?: boolean; maximize?: boolean } = {},
     ): Promise<Evaluated<this>> {
         if (!this.term._evaluated) {
             await this.term.evaluate({ async: true, ...options });
@@ -308,8 +325,8 @@ class Grouping extends RollTerm<GroupingData> {
         const expression = ["precision", "splash"].includes(this.flavor)
             ? renderComponentDamage(this.term)
             : isSystemDamageTerm(this.term)
-            ? this.term.render()
-            : this.expression;
+              ? this.term.render()
+              : this.expression;
 
         const fragment = new DocumentFragment();
         // Don't render unnecessary parentheses
@@ -341,7 +358,7 @@ class IntermediateDie extends RollTerm<IntermediateDieData> {
         super(data);
 
         const setTerm = (
-            termData: number | NumericTermData | MathTermData | GroupingData
+            termData: number | NumericTermData | MathTermData | GroupingData,
         ): number | MathTerm | Grouping => {
             if (typeof termData === "number") return termData;
 
@@ -403,7 +420,7 @@ class IntermediateDie extends RollTerm<IntermediateDieData> {
     get minimumValue(): number {
         return DamageInstance.getValue(
             this.die ?? new Die({ number: Number(this.number), faces: Number(this.faces) }),
-            "minimum"
+            "minimum",
         );
     }
 
@@ -415,7 +432,7 @@ class IntermediateDie extends RollTerm<IntermediateDieData> {
     get maximumValue(): number {
         return DamageInstance.getValue(
             this.die ?? new Die({ number: Number(this.number), faces: Number(this.faces) }),
-            "maximum"
+            "maximum",
         );
     }
 
@@ -488,4 +505,5 @@ interface InstancePool extends PoolTerm {
     rolls: DamageInstance[];
 }
 
-export { ArithmeticExpression, Grouping, GroupingData, InstancePool, IntermediateDie };
+export { ArithmeticExpression, Grouping, InstancePool, IntermediateDie };
+export type { GroupingData };

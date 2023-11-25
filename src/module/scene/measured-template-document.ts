@@ -1,13 +1,13 @@
-import { ActorPF2e } from "@actor";
+import type { ActorPF2e } from "@actor";
 import { ItemPF2e } from "@item";
-import { MeasuredTemplatePF2e } from "@module/canvas/measured-template.ts";
+import type { MeasuredTemplatePF2e } from "@module/canvas/measured-template.ts";
 import { ItemOriginFlag } from "@module/chat-message/data.ts";
+import type { ChatMessagePF2e } from "@module/chat-message/document.ts";
 import { toggleClearTemplatesButton } from "@module/chat-message/helpers.ts";
-import { ChatMessagePF2e } from "@module/documents.ts";
 import { ScenePF2e } from "./document.ts";
 
 export class MeasuredTemplateDocumentPF2e<
-    TParent extends ScenePF2e | null = ScenePF2e | null
+    TParent extends ScenePF2e | null = ScenePF2e | null,
 > extends MeasuredTemplateDocument<TParent> {
     get item(): ItemPF2e<ActorPF2e> | null {
         const origin = this.flags.pf2e?.origin;
@@ -35,7 +35,7 @@ export class MeasuredTemplateDocumentPF2e<
     protected override _onCreate(
         data: this["_source"],
         options: DocumentModificationContext<TParent>,
-        userId: string
+        userId: string,
     ): void {
         super._onCreate(data, options, userId);
         toggleClearTemplatesButton(this.message);

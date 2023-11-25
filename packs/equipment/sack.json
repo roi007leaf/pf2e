@@ -1,6 +1,6 @@
 {
     "_id": "DujblC14ytJEZMaz",
-    "img": "systems/pf2e/icons/equipment/adventuring-gear/sack.webp",
+    "img": "icons/containers/bags/sack-simple-leather-brown.webp",
     "name": "Sack",
     "system": {
         "baseItem": null,
@@ -23,26 +23,26 @@
         "level": {
             "value": 0
         },
+        "material": {
+            "grade": null,
+            "type": null
+        },
         "negateBulk": {
             "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
         },
         "price": {
             "value": {
                 "cp": 1
             }
         },
-        "quantity": 1,
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
+        "quantity": 5,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "stackGroup": "sacks",
         "stowing": false,
         "traits": {

@@ -19,29 +19,34 @@
         "prerequisites": {
             "value": []
         },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
         "rules": [
             {
                 "key": "ActiveEffectLike",
                 "mode": "upgrade",
-                "path": "system.martial.simple.rank",
+                "path": "system.proficiencies.attacks.simple.rank",
                 "value": 4
             },
             {
                 "key": "ActiveEffectLike",
                 "mode": "upgrade",
-                "path": "system.martial.unarmed.rank",
+                "path": "system.proficiencies.attacks.unarmed.rank",
                 "value": 4
             },
             {
                 "key": "ActiveEffectLike",
                 "mode": "upgrade",
-                "path": "system.martial.martial.rank",
+                "path": "system.proficiencies.attacks.martial.rank",
                 "value": 4
             },
             {
                 "key": "ActiveEffectLike",
                 "mode": "upgrade",
-                "path": "system.martial.advanced.rank",
+                "path": "system.proficiencies.attacks.advanced.rank",
                 "value": 3
             },
             {
@@ -51,9 +56,6 @@
                 "value": 3
             }
         ],
-        "source": {
-            "value": "Pathfinder Core Rulebook"
-        },
         "traits": {
             "rarity": "common",
             "value": [

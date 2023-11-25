@@ -1,11 +1,8 @@
 {
     "_id": "xu3azdMCIa53Oe1f",
-    "img": "systems/pf2e/icons/equipment/weapons/meteor-hammer.webp",
+    "img": "icons/weapons/thrown/bolas-steel.webp",
     "name": "Meteor Hammer",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "meteor-hammer",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": ""
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Gods & Magic"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Gods & Magic"
-        },
         "splashDamage": {
             "value": 0
         },

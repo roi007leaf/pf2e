@@ -19,29 +19,40 @@
         "level": {
             "value": 11
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {}
         },
-        "quantity": 1,
-        "rules": [],
-        "size": "med",
-        "source": {
-            "value": "Pathfinder #164: Hands of the Devil"
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #164: Hands of the Devil"
         },
+        "quantity": 1,
+        "rules": [
+            {
+                "key": "FlatModifier",
+                "predicate": [
+                    "mental"
+                ],
+                "selector": "saving-throw",
+                "type": "status",
+                "value": 1
+            },
+            {
+                "key": "Resistance",
+                "type": "cold",
+                "value": "@actor.level"
+            }
+        ],
+        "size": "med",
         "stackGroup": null,
         "traits": {
             "rarity": "rare",
             "value": [
-                "abjuration",
                 "contract",
                 "invested",
                 "magical"

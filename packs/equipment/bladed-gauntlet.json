@@ -1,11 +1,8 @@
 {
     "_id": "PJboj72eI9JXjtbn",
-    "img": "systems/pf2e/icons/equipment/weapons/gauntlet.webp",
+    "img": "icons/equipment/hand/gauntlet-tooled-steel.webp",
     "name": "Bladed Gauntlet",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "bladed-gauntlet",
         "bonus": {
             "value": 0
@@ -35,16 +32,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Knights of Lastwall"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Knights of Lastwall"
-        },
         "splashDamage": {
             "value": 0
         },

@@ -1,6 +1,6 @@
 {
     "_id": "r0ifJfoz8aqf0mwk",
-    "img": "systems/pf2e/icons/equipment/armor/breastplate.webp",
+    "img": "icons/equipment/chest/breastplate-collared-steel.webp",
     "name": "Breastplate",
     "system": {
         "acBonus": 4,
@@ -9,7 +9,7 @@
         "checkPenalty": -2,
         "containerId": null,
         "description": {
-            "value": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or half‑plate armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
+            "value": "<p>Though referred to as a breastplate, this type of armor consists of several pieces of plate or @UUID[Compendium.pf2e.equipment-srd.Item.Half Plate] armor that protect the torso, chest, neck, and sometimes the hips and lower legs. It strategically grants some of the protection of plate while allowing greater flexibility and speed.</p>"
         },
         "dexCap": 1,
         "equippedBulk": {
@@ -24,17 +24,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
-        "potency": {},
         "potencyRune": {
-            "value": 0
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -43,25 +37,30 @@
             }
         },
         "propertyRune1": {
-            "value": ""
+            "value": null
         },
         "propertyRune2": {
-            "value": ""
+            "value": null
         },
         "propertyRune3": {
-            "value": ""
+            "value": null
         },
         "propertyRune4": {
-            "value": ""
+            "value": null
+        },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
         },
         "quantity": 1,
         "resiliencyRune": {
-            "value": ""
+            "value": null
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
+        "specific": {
+            "value": false
         },
         "speedPenalty": -5,
         "stackGroup": null,

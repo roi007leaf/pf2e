@@ -1,6 +1,6 @@
 {
     "_id": "zdiHlKtd4Fy1aIPC",
-    "img": "systems/pf2e/icons/equipment/treasure/art-objects/moderate-art-object/life-size-sculpture-by-an-expert.webp",
+    "img": "icons/commodities/treasure/bust-carved-stone.webp",
     "name": "Life‑size sculpture by an expert",
     "system": {
         "baseItem": null,
@@ -19,26 +19,23 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 25
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Gamemastery Guide"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Gamemastery Guide"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",

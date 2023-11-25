@@ -1,6 +1,6 @@
 {
     "_id": "D7ARQDAr9tO61UqY",
-    "img": "systems/pf2e/icons/default-icons/equipment.svg",
+    "img": "icons/tools/instruments/pipe-flute-brown.webp",
     "name": "Seer's Flute (Greater)",
     "system": {
         "baseItem": null,
@@ -19,19 +19,19 @@
         "level": {
             "value": 8
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 460
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
         },
         "quantity": 1,
         "rules": [
@@ -46,15 +46,11 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
                 "coda",
-                "divination",
                 "occult",
                 "staff"
             ]

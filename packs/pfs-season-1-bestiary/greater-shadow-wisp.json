@@ -20,17 +20,19 @@
                 "damageRolls": {
                     "kigtbgim787026bu17me": {
                         "damage": "2d8",
-                        "damageType": "negative"
+                        "damageType": "void"
                     }
                 },
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -65,6 +67,11 @@
                 "description": {
                     "value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary 2"
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -77,9 +84,6 @@
                     }
                 ],
                 "slug": "negative-healing",
-                "source": {
-                    "value": "Pathfinder Bestiary 2"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -109,14 +113,16 @@
                 "description": {
                     "value": "<p>An object shedding magical light (such as from the light spell) deals additional damage to the shadow wisp.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -146,19 +152,20 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> The shadow wisp's previous action was a hit against an adjacent creature with its shadow tendril Strike.</p>\n<hr />\n<p><strong>Effect</strong> The shadow wisp Steps into the creature's space and attempts an @Check[type:acrobatics|defense:reflex] check against the target's Reflex DC to attach itself to the target's shadow. As long as it remains attached, it moves with the target and is @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] to attacks from the target. The target can spend a move action on its turn to attempt a Reflex save against the wisp's Acrobatics DC to escape the shroud.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
                 },
                 "trigger": {
@@ -184,21 +191,22 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p><strong>Requirements</strong> The shadow wisp is attached to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The shadow wisp slips into the attached creature's shadow, dealing it @Damage[1d6[negative]] damage. It can use the attached creature's shadow to make a shadow tendril Strike against another target up to 10 feet away</p>"
+                    "value": "<p><strong>Requirements</strong> The shadow wisp is attached to a living creature.</p>\n<hr />\n<p><strong>Effect</strong> The shadow wisp slips into the attached creature's shadow, dealing it @Damage[1d6[void]] damage. It can use the attached creature's shadow to make a shadow tendril Strike against another target up to 10 feet away</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divine",
-                        "necromancy"
+                        "divine"
                     ]
                 },
                 "trigger": {
@@ -225,11 +233,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -248,11 +258,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -288,7 +300,7 @@
                 "value": ""
             },
             "hp": {
-                "details": "negative healing",
+                "details": "void healing",
                 "max": 60,
                 "temp": 0,
                 "value": 60
@@ -337,18 +349,16 @@
             ]
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 3
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Society Scenario #1-01: The Absalom Initiation"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Society Scenario #1-01: The Absalom Initiation"
             }
         },
         "resources": {},
@@ -385,7 +395,10 @@
                 "value": "tiny"
             },
             "value": [
-                "undead"
+                "chaotic",
+                "evil",
+                "undead",
+                "unholy"
             ]
         }
     },

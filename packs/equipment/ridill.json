@@ -1,11 +1,8 @@
 {
     "_id": "VJbZuJFTooFckp26",
-    "img": "systems/pf2e/icons/equipment/weapons/greatsword.webp",
+    "img": "icons/weapons/swords/greatsword-crossguard-silver.webp",
     "name": "Ridill",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "greatsword",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 20
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": "high",
+            "type": "adamantine"
         },
         "potencyRune": {
             "value": 3
-        },
-        "preciousMaterial": {
-            "value": "adamantine"
-        },
-        "preciousMaterialGrade": {
-            "value": "high"
         },
         "price": {
             "value": {}
@@ -61,6 +53,11 @@
         },
         "propertyRune4": {
             "value": null
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Monsters of Myth"
         },
         "quantity": 1,
         "range": null,
@@ -91,9 +88,6 @@
             }
         ],
         "size": "lg",
-        "source": {
-            "value": "Pathfinder Lost Omens: Monsters of Myth"
-        },
         "specific": {
             "material": {
                 "precious": {

@@ -1,4 +1,3 @@
-// Base inventory stylings
 .inventory {
     --border-color: var(--alt);
 
@@ -14,30 +13,49 @@
     }
 
     .item-name {
-        display: flex;
         align-items: center;
-        font-weight: 500;
+        display: flex;
         flex: 2;
-        gap: 4px;
-        padding-right: 4px;
+        font-weight: 500;
+        gap: 0.25rem;
+        padding-right: 0.25rem;
 
         h3,
         h4 {
-            margin: auto auto auto 0;
+            cursor: pointer;
+            font-weight: 500;
             line-height: var(--font-size-12);
+            margin: auto auto auto 0;
             padding: 2px;
             word-break: break-word;
-            cursor: pointer;
 
             &:hover {
                 color: var(--primary);
             }
+
+            i.fa-info-circle {
+                color: var(--text-dark);
+
+                &:hover {
+                    color: var(--text-dark);
+                }
+            }
         }
 
-        .item-image {
-            box-shadow: inset 0 0 0 1px var(--tertiary);
-            img {
-                border-radius: 0;
+        h4:not(:hover) {
+            &.rarity-uncommon {
+                border-color: var(--color-rarity-uncommon);
+                color: var(--color-rarity-uncommon);
+            }
+
+            &.rarity-rare {
+                border-color: var(--color-rarity-rare);
+                color: var(--color-rarity-rare);
+            }
+
+            &.rarity-unique {
+                border-color: var(--color-rarity-unique);
+                color: var(--color-rarity-unique);
             }
         }
 
@@ -52,11 +70,10 @@
         }
     }
 
-    .inventory-list, .inventory-items {
+    .inventory-list,
+    .inventory-items {
         flex-direction: column;
         list-style-type: none;
-        margin: 0;
-        padding: 0;
         position: relative;
         width: 100%;
 
@@ -78,29 +95,30 @@
     }
 
     .inventory-list {
-        @include scrollbar;
+        overflow: hidden scroll;
+        display: flex;
         height: calc(100% - 60px);
         padding-right: 0.15rem;
     }
 
-    .item-quantity,
-    .item-weight,
+    .quantity,
+    .bulk,
     .item-controls,
-    .item-sell-value {
+    .sell-value {
         @include flex-center;
         flex: 0 0 68px;
     }
 
-    .item-sell-value {
-        justify-content: flex-end;
+    .sell-value {
+        justify-content: end;
         padding-right: 3px;
     }
 
-    .item-quantity {
+    .quantity {
         justify-content: space-around;
 
-        .item-decrease-quantity,
-        .item-increase-quantity {
+        .decrease,
+        .increase {
             @include flex-center;
             font-family: var(--sans-serif-monospace);
             height: 100%;
@@ -109,53 +127,51 @@
         }
     }
 
-    .item-weight {
+    .bulk {
         flex: 0 0 36px;
-        font-weight: 500;
     }
 
     .item-controls {
         flex: 0 0 90px;
         font-size: var(--font-size-12);
         gap: 1px;
-        justify-content: flex-end;
+        justify-content: end;
     }
 
     .inventory-header {
+        @include button;
         align-items: center;
         background-color: var(--alt);
-        color: white;
+        color: var(--color-text-light-0);
         display: flex;
         font-family: var(--sans-serif);
         font-size: var(--font-size-10);
-        justify-content: flex-end;
-        letter-spacing: .05em;
+        justify-content: end;
+        letter-spacing: 0.05em;
         line-height: 1;
-        padding: 4px 0;
+        margin-top: 6px;
+        padding: 0.25rem;
         text-rendering: optimizeLegibility;
         text-transform: uppercase;
         width: 100%;
 
+        &:first-child {
+            margin-top: 0;
+        }
+
         h3 {
             font-size: var(--font-size-14);
-            text-transform: capitalize;
+            margin: 2px 0;
             text-shadow: 0 0 2px rgba(black, 0.75);
-            margin: 2px;
-            margin-left: 4px;
-            cursor: default;
+            text-transform: capitalize;
+
             &:hover {
-                color: white;
+                color: var(--color-text-light-0);
             }
         }
 
         .item-name {
             padding-left: 4px;
-        }
-
-        .item-sell-value,
-        .item-quantity,
-        .item-weight {
-            @include flex-center;
         }
 
         .item-invested-total {
@@ -164,11 +180,11 @@
         }
 
         .item-controls {
-            padding-right: 0.4em;
+            gap: 0.25rem;
         }
 
         .overinvested {
-            color:orange;
+            color: orange;
             text-shadow: 1px 1px 0px black;
         }
     }
@@ -176,11 +192,6 @@
     .inventory-items {
         border: 1px solid var(--border-color);
         border-top: none;
-        border-bottom: none;
-
-        &:last-child {
-            border-bottom: 1px solid var(--border-color);
-        }
     }
 
     .item {
@@ -189,22 +200,25 @@
         font-size: var(--font-size-12);
         justify-content: flex-start;
         width: 100%;
-        .item-quantity,
-        .item-weight,
+
+        .quantity,
+        .bulk,
         .item-controls,
-        .item-sell-value {
+        .sell-value {
             border-left: 1px solid var(--alt);
         }
     }
 
     .list-row {
         width: 100%;
+
         .item-controls {
-            color: var(--body);
+            color: var(--text-dark);
             font-size: var(--font-size-13);
 
             .item-control {
-                &.toggle-invested, &.item-carry-type {
+                &.toggle-invested,
+                &.item-carry-type {
                     color: rgba(black, 0.5);
 
                     &.active {
@@ -220,7 +234,8 @@
                 .fa-stack {
                     margin: -3px -2px 0;
 
-                    .fa-1, .fa-2 {
+                    .fa-1,
+                    .fa-2 {
                         left: 1px;
                         position: relative;
                     }
@@ -244,16 +259,19 @@
             position: relative;
             background-color: rgba(black, 0.75);
             box-shadow: inset 0 0 4px black;
-            color: white;
+            color: var(--color-text-light-0);
             display: flex;
             width: 100%;
+
             .container-capacity-bar {
                 background-color: var(--secondary);
                 border-radius: 0 2px 2px 0;
-                box-shadow: inset 0 0 0 1px rgba(black, 0.5),
+                box-shadow:
+                    inset 0 0 0 1px rgba(black, 0.5),
                     inset 0 0 0 2px rgba(white, 0.1);
                 padding: 8px 0;
             }
+
             .container-capacity-label {
                 position: absolute;
                 height: 100%;
@@ -291,7 +309,7 @@
                     height: 50%;
                     left: -5px;
                     width: 5px;
-                    content: '';
+                    content: "";
                 }
 
                 &::before {
@@ -318,13 +336,14 @@
                     height: 100%;
                     left: -5px;
                     width: 0px;
-                    content: '';
+                    content: "";
                 }
             }
 
             // Ensure the final item's bracket ends in an L shape
             li:last-of-type {
-                .item::after, .container-metadata::before {
+                .item::after,
+                .container-metadata::before {
                     border: none;
                 }
             }
@@ -336,6 +355,111 @@
         padding: 4px 8px 8px;
         border-top: 1px solid var(--alt);
         border-bottom: 1px solid var(--alt);
-        background: var(--bg);
+        background: rgba(white, 0.333);
+    }
+
+    // Used in creature sheets
+    .encumbrance {
+        align-items: center;
+        display: grid;
+        grid: "img bar overflow" min-content / 24px 1fr;
+        margin-top: auto;
+
+        img {
+            @include frame-icon;
+            border-radius: 0;
+            grid-area: img;
+            position: relative;
+            z-index: 4;
+        }
+
+        .encumbrance-bar {
+            position: relative;
+            z-index: 2;
+            grid-area: bar;
+            height: 16px;
+            width: 100%;
+            background-color: var(--secondary);
+            box-shadow:
+                inset 0 0 0 1px rgba(black, 0.5),
+                inset 0 0 0 2px rgba(white, 0.2);
+        }
+        .encumbrance-label {
+            position: relative;
+            z-index: 3;
+            grid-area: bar;
+            color: var(--text-light);
+            font-family: var(--serif);
+            font-size: var(--font-size-12);
+            font-weight: 500;
+            padding: 0 8px;
+            padding-top: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            text-shadow: 0 0 2px black;
+        }
+        .encumbrance-light-bulk-overflow {
+            position: relative;
+            z-index: 3;
+            grid-area: overflow;
+            color: var(--text-dark);
+            font-family: var(--serif);
+            font-size: var(--font-size-12);
+            font-weight: 500;
+            padding: 0 8px;
+            padding-top: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            text-shadow: 0 0 2px white;
+        }
+        .bar-bg {
+            position: relative;
+            z-index: 1;
+            grid-area: bar;
+            width: 100%;
+            height: 16px;
+            background-color: rgba(black, 0.5);
+            border-radius: 0 2px 2px 0;
+            box-shadow: inset 0 0 4px rgba(black, 0.75);
+        }
+
+        &.over-limit {
+            .encumbrance-bar {
+                background-color: var(--primary) !important;
+            }
+        }
+    }
+
+    // Used in party and loot sheets
+    .total-bulk {
+        align-items: center;
+        display: flex;
+        font-weight: 500;
+        gap: 0.25rem;
+        height: 1.5rem;
+        justify-content: start;
+        margin-bottom: 0.7rem;
+
+        img {
+            @include frame-icon;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 0;
+            z-index: 1;
+        }
+
+        .bar {
+            justify-content: start;
+            margin-top: 0;
+            position: relative;
+            height: 1.25rem;
+            padding-left: 0.5rem;
+            left: -0.35rem;
+            z-index: 0;
+        }
     }
 }

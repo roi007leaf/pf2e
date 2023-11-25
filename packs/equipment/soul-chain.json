@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/spiked-chain.webp",
     "name": "Soul Chain",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "spiked-chain",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {}
@@ -62,6 +54,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Adventure: Crown of the Kobold King"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -69,9 +66,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Adventure: Crown of the Kobold King"
-        },
         "specific": {
             "material": {
                 "precious": null

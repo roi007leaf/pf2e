@@ -1,6 +1,6 @@
 {
     "_id": "fiA3rfqPcCKFCI83",
-    "img": "systems/pf2e/icons/default-icons/feats.webp",
+    "img": "icons/sundries/books/book-red-exclamation.webp",
     "name": "Towering Growth",
     "system": {
         "actionType": {
@@ -23,13 +23,17 @@
                 }
             ]
         },
-        "rules": [],
-        "source": {
-            "value": "Pathfinder #176: Lost Mammoth Valley"
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #176: Lost Mammoth Valley"
         },
+        "rules": [],
         "traits": {
             "rarity": "uncommon",
-            "value": []
+            "value": [
+                "leshy"
+            ]
         }
     },
     "type": "feat"

@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/torags-silver-anvil.webp",
     "name": "Torag's Silver Anvil",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "meteor-hammer",
         "bonus": {
             "value": 3
@@ -35,17 +32,12 @@
         "level": {
             "value": 18
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": "high",
+            "type": "silver"
         },
         "potencyRune": {
             "value": 3
-        },
-        "preciousMaterial": {
-            "value": "silver"
-        },
-        "preciousMaterialGrade": {
-            "value": "high"
         },
         "price": {
             "value": {
@@ -63,6 +55,11 @@
         },
         "propertyRune4": {
             "value": null
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Gods & Magic"
         },
         "quantity": 1,
         "range": null,
@@ -82,9 +79,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Gods & Magic"
-        },
         "specific": {
             "material": {
                 "precious": {
@@ -113,7 +107,6 @@
                 "divine",
                 "magical",
                 "reach",
-                "transmutation",
                 "trip"
             ]
         },

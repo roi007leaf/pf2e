@@ -49,6 +49,25 @@
                     "Title": "Meteor Shot"
                 }
             },
+            "OozeAmmunition": {
+                "CriticalHitText": "On a critical hit, the creature is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} for 1 round in addition to the other effects.",
+                "Greater": {
+                    "Text": "The creature takes a -10-foot penalty to Speed and @Damage[3d4[persistent,acid]] damage until it ends the effects. The target can end the effects by @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escaping} (DC 29) the sticky foam. Other creatures can provide the actions, although doing so deals half the ammunition's persistent acid damage to the assisting creature. A creature that ends the effect still takes the persistent damage that turn. @UUID[Compendium.pf2e.equipment-effects.Item.6Pwdim01PH447CeS]{Effect: Ooze Ammunition (Greater)}",
+                    "Title": "Ooze Ammunition (Greater)"
+                },
+                "Lesser": {
+                    "Text": "The creature takes a -5-foot penalty to Speed and @Damage[1d4[persistent,acid]] damage until it ends the effects. The target can end the effects by @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escaping} (DC 16) the sticky foam. Other creatures can provide the actions, although doing so deals half the ammunition's persistent acid damage to the assisting creature. A creature that ends the effect still takes the persistent damage that turn. @UUID[Compendium.pf2e.equipment-effects.Item.FPvMbKX8sXM9fGJT]{Effect: Ooze Ammunition (Lesser)}",
+                    "Title": "Ooze Ammunition (Lesser)"
+                },
+                "Major": {
+                    "Text": "The creature takes a -15-foot penalty to Speed and @Damage[4d4[persistent,acid]] damage until it ends the effects. The target can end the effects by @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escaping} (DC 38) the sticky foam. Other creatures can provide the actions, although doing so deals half the ammunition's persistent acid damage to the assisting creature. A creature that ends the effect still takes the persistent damage that turn. @UUID[Compendium.pf2e.equipment-effects.Item.UjAJUFMfH0OWWwQS]{Effect: Ooze Ammunition (Major)}",
+                    "Title": "Ooze Ammunition (Major)"
+                },
+                "Moderate": {
+                    "Text": "The creature takes a -10-foot penalty to Speed and @Damage[2d4[persistent,acid]] damage until it ends the effects. The target can end the effects by @UUID[Compendium.pf2e.actionspf2e.Item.SkZAQRkLLkmBQNB9]{Escaping} (DC 20) the sticky foam. Other creatures can provide the actions, although doing so deals half the ammunition's persistent acid damage to the assisting creature. A creature that ends the effect still takes the persistent damage that turn. @UUID[Compendium.pf2e.equipment-effects.Item.6c4o7ypWWnZKPy5b]{Effect: Ooze Ammunition (Moderate)}",
+                    "Title": "Ooze Ammunition (Moderate)"
+                }
+            },
             "ShiningAmmunition": {
                 "Text": "The ammunition sheds bright light in a 20-foot radius (and dim light to the next 20 feet) for 10 minutes. If it hits a target, it sticks, causing the target to shed light in the same radius. @UUID[Compendium.pf2e.equipment-effects.Item.Sf6UO6vgCeicggOK]{Effect: Shining Ammunition}",
                 "Title": "Shining Ammunition"
@@ -77,9 +96,13 @@
                 "Beak": "Beak",
                 "Beard": "Beard",
                 "Bite": "Bite",
+                "Blade": "Blade",
                 "Body": "Body",
+                "BoneDart": "Bone Dart",
                 "BoneShard": "Bone Shard",
+                "BoneSpike": "Bone Spike",
                 "Boot": "Boot",
+                "Boulder": "Boulder",
                 "Branch": "Branch",
                 "Claw": "Claw",
                 "CubeFace": "Cube Face",
@@ -97,14 +120,18 @@
                 "Leg": "Leg",
                 "LightningLash": "Lightning Lash",
                 "Mandibles": "Mandibles",
+                "MetalShard": "Metal Shard",
                 "Moonbeam": "Moonbeam",
                 "PiercingHymn": "Piercing Hymn",
                 "Pincer": "Pincer",
                 "Pseudopod": "Pseudopod",
+                "Quill": "Quill",
                 "Rock": "Rock",
+                "Seed": "Seed",
                 "Spikes": "Spikes",
                 "Spine": "Spine",
                 "Stinger": "Stinger",
+                "StoneBall": "Stone Ball",
                 "Sunbeam": "Sunbeam",
                 "Tail": "Tail",
                 "Talon": "Talon",
@@ -271,16 +298,16 @@
             },
             "GhostCharge": {
                 "Greater": {
-                    "success": "<strong>Effect</strong> The bomb also deals [[/r (3[splash])[positive]]]{3 positive splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of my next turn."
+                    "success": "<strong>Effect</strong> The bomb also deals [[/r (3[splash])[vitality]]]{3 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of my next turn."
                 },
                 "Lesser": {
-                    "success": "<strong>Effect</strong> The bomb also deals [[/r (1[splash])[positive]]]{1 positive splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of my next turn."
+                    "success": "<strong>Effect</strong> The bomb also deals [[/r (1[splash])[vitality]]]{1 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of my next turn."
                 },
                 "Major": {
-                    "success": "<strong>Effect</strong> The bomb also deals [[/r (4[splash])[positive]]]{4 positive splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of my next turn."
+                    "success": "<strong>Effect</strong> The bomb also deals [[/r (4[splash])[vitality]]]{4 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the start of my next turn."
                 },
                 "Moderate": {
-                    "success": "<strong>Effect</strong> The bomb also deals [[/r (2[splash])[positive]]]{2 positive splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of my next turn."
+                    "success": "<strong>Effect</strong> The bomb also deals [[/r (2[splash])[vitality]]]{2 vitality splash damage} and the target that takes damage becomes @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the start of my next turn."
                 }
             },
             "GooGrenade": {
@@ -329,20 +356,20 @@
             },
             "NecroticBomb": {
                 "Greater": {
-                    "criticalSuccess": "<strong>Effect</strong> The bomb also deals [[/r (3[splash])[negative]]]{3 negative splash damage} and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.",
-                    "success": "<strong>Effect</strong> The bomb also deals [[/r (3[splash])[negative]]]{3 negative splash damage}."
+                    "criticalSuccess": "<strong>Effect</strong> The bomb also deals [[/r (3[splash])[void]]]{3 void splash damage} and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 3}.",
+                    "success": "<strong>Effect</strong> The bomb also deals [[/r (3[splash])[void]]]{3 void splash damage}."
                 },
                 "Lesser": {
-                    "criticalSuccess": "<strong>Effect</strong> The bomb also deals [[/r (1[splash])[negative]]]{1 negative splash damage} and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.",
-                    "success": "<strong>Effect</strong> The bomb also deals [[/r (1[splash])[negative]]]{1 negative splash damage}."
+                    "criticalSuccess": "<strong>Effect</strong> The bomb also deals [[/r (1[splash])[void]]]{1 void splash damage} and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.",
+                    "success": "<strong>Effect</strong> The bomb also deals [[/r (1[splash])[void]]]{1 void splash damage}."
                 },
                 "Major": {
-                    "criticalSuccess": "<strong>Effect</strong> The bomb also deals [[/r (4[splash])[negative]]]{4 negative splash damage} and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 4}.",
-                    "success": "<strong>Effect</strong> The bomb also deals [[/r (4[splash])[negative]]]{4 negative splash damage}."
+                    "criticalSuccess": "<strong>Effect</strong> The bomb also deals [[/r (4[splash])[void]]]{4 void splash damage} and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 4}.",
+                    "success": "<strong>Effect</strong> The bomb also deals [[/r (4[splash])[void]]]{4 void splash damage}."
                 },
                 "Moderate": {
-                    "criticalSuccess": "<strong>Effect</strong> The bomb also deals [[/r (2[splash])[negative]]]{2 negative splash damage} and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.",
-                    "success": "<strong>Effect</strong> The bomb also deals [[/r (2[splash])[negative]]]{2 negative splash damage}."
+                    "criticalSuccess": "<strong>Effect</strong> The bomb also deals [[/r (2[splash])[void]]]{2 void splash damage} and the target is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.",
+                    "success": "<strong>Effect</strong> The bomb also deals [[/r (2[splash])[void]]]{2 void splash damage}."
                 }
             },
             "PerniciousSporeBomb": {
@@ -533,16 +560,45 @@
                 }
             }
         },
+        "IWR": {
+            "Custom": {
+                "AdamantineBludgeoning": "adamantine bludgeoning",
+                "AllDamageFromUndead": "all damage from undead",
+                "AllMagicalDamage": "all magical damage",
+                "AllNonMagicalDamage": "all non-magical damage",
+                "AttacksWaterCreatures": "attacks by water creatures",
+                "ColdIronBludgeoning": "cold iron bludgeoning",
+                "ImpulseFireFrom": "impulse fire from {origin}",
+                "MagicalBludgeoning": "magical bludgeoning",
+                "MagicalColdIron": "magical cold iron",
+                "MagicalDarkwood": "magical darkwood",
+                "MagicalSilver": "magical silver",
+                "MagicalSilverWeapons": "magical silver weapons",
+                "MagicalWeaponsBrightLight": "magical weapons shedding bright light",
+                "NonWeapons": "non-weapons",
+                "PersistentPoison": "persistent poison",
+                "PhysicalRangedAttacks": "physical ranged attacks",
+                "RangedWeaponAttacks": "ranged weapon attacks"
+            }
+        },
         "Mutagens": {
             "BestialMutagen": {
                 "FeralPrompt": "Increase penalty to AC to increase damage dice size?"
             }
         },
         "NPCAbility": {
+            "AlchemicalGolem": {
+                "Sickness": "Sickness"
+            },
             "AncientWisp": {
                 "PinpointLight": "Pinpoint Light"
             },
             "BarghestFeed": "How many times has the Barghest fed?",
+            "BladeMagus": {
+                "ArcaneCascade": {
+                    "Note": "While in this stance, the Blade magi's melee Strikes deal @Damage[(4[splash])[force]]{4 splash force} damage to foes adjacent to the target."
+                }
+            },
             "Bunyip": {
                 "CrocodileLegs": "Crocodile Legs",
                 "SnakeTail": "Snake Tail"
@@ -551,6 +607,14 @@
                 "SixfoldFlurry": "Strikes not taken?",
                 "SuspendedAnimationEnter": "Enter Suspended Animation",
                 "SuspendedAnimationExit": "Exit Suspended Animation"
+            },
+            "Capritellix": {
+                "ShiftMood": {
+                    "Angry": "Angry",
+                    "Gregarious": "Gregarious",
+                    "Serene": "Serene",
+                    "Sly": "Sly"
+                }
             },
             "Charge": {
                 "AtLeastTen": "Moved at Least 10 feet"
@@ -572,6 +636,9 @@
             "CyclopsBully": {
                 "TerrorizingSwing": "If the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} and takes damage, it takes an additional 2d10 damage and is knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
             },
+            "DeadFaine": {
+                "TargetFeintOrTraitorousBetrayal": "Target off-guard due to Feint or Traitorous Betrayal"
+            },
             "DemonInfuseWeapons": "Deal chaotic instead of evil damage",
             "DisplacedRobot": {
                 "DivertPower": {
@@ -589,8 +656,14 @@
                 "AC": "Designated Prey attacks the Duskwalker",
                 "Checks": "Duskwalker rolls checks against his Designated Prey"
             },
+            "FacetboundCascader": {
+                "EnergyCharge": "Energy Charge"
+            },
             "Falrok": {
                 "LazuriteTerrainSwitch": "In lazurite infused terrain"
+            },
+            "GangUp": {
+                "TwoAllies": "Two allies are within reach of the target"
             },
             "GiantAnimatedStatueBrazier": "Brazier is alight",
             "HellboundAttorney": {
@@ -603,6 +676,11 @@
                     "SaveWear": "Save against Target wearing Fulvia's Ring",
                     "TargetPossess": "Target possesses Fulvia's Ring",
                     "TargetWear": "Target is wearing Fulvia's Ring"
+                }
+            },
+            "Ivarsa": {
+                "ArcaneCascade": {
+                    "Note": "While in this stance, Ivarsa's melee Strikes deal @Damage[(4[splash])[fire]]{4 splash fire} damage to foes adjacent to her target."
                 }
             },
             "KallasDevil": {
@@ -638,6 +716,16 @@
             "Necrohulk": {
                 "AlchemicalCartridgeRuptured": "Alchemical Cartridge Ruptured"
             },
+            "Nindoru": {
+                "Meokdan": {
+                    "BoneClub": {
+                        "Label": "Manifest Bone Club",
+                        "New": "New",
+                        "Shattered": "Shattered",
+                        "ShatteredLabel": "Shattered Bone Club"
+                    }
+                }
+            },
             "PaleStranger": {
                 "TargetMurderedPaleStranger": "Target Murdered Pale Stranger",
                 "TargetNeverKilled": "Target has Never Killed"
@@ -658,9 +746,13 @@
             "Seugathi": {
                 "MindfogSuppression": "Suppress Mindfog Aura"
             },
+            "Shell": {
+                "BrokenShell": "Broken Shell",
+                "CriticalHit": "Shell Broken by a Critical Hit"
+            },
             "SkyDragon": {
                 "DivineLightningGood": "Divine Lightning - Good Damage",
-                "DivineLightningPositive": "Divine Lightning - Positive Damage"
+                "DivineLightningPositive": "Divine Lightning - Vitality Damage"
             },
             "SoulfiredPot": {
                 "CriticalHit": "Soulfired Pot Broken by a Critical Hit"
@@ -673,6 +765,9 @@
                 "InspireEnvoyEffectAttack": "Bonus to Attack",
                 "InspireEnvoyEffectChoice": "Granted Effect",
                 "InspireEnvoyEffectPercWillCha": "Bonus to Will, Perception and Charisma-based skill checks"
+            },
+            "StoneSpider": {
+                "StoneFangs": "Stone Fangs"
             },
             "Surgeon": {
                 "MedicalMalpracticeCriticalSuccess": "Medical Malpractice (Critical Success)"
@@ -730,7 +825,7 @@
                 "NonTrivialEncounter": "In a non-trivial encounter"
             },
             "Bones": {
-                "MajorUpgrade": " When you roll a critical failure at a saving throw against a disease, poison or death effect, you get a failure instead.",
+                "MajorUpgrade": "When you roll a critical failure at a saving throw against a disease, poison or death effect, you get a failure instead.",
                 "ModerateUpgrade": "When you roll a success at a saving throw against a disease, poison or death effect, you get a critical success instead."
             },
             "Label": {
@@ -936,20 +1031,20 @@
                 "success": "[[/r 3d6[persistent,mental]]]"
             },
             "Negative1d10": {
-                "criticalSuccess": "[[/r (2*1d10)[persistent,negative]]]",
-                "success": "[[/r 1d10[persistent,negative]]]"
+                "criticalSuccess": "[[/r (2*1d10)[persistent,void]]]",
+                "success": "[[/r 1d10[persistent,void]]]"
             },
             "Negative1d6": {
-                "criticalSuccess": "[[/r (2*1d6)[persistent,negative]]]",
-                "success": "[[/r 1d6[persistent,negative]]]"
+                "criticalSuccess": "[[/r (2*1d6)[persistent,void]]]",
+                "success": "[[/r 1d6[persistent,void]]]"
             },
             "Negative1d8": {
-                "criticalSuccess": "[[/r (2*1d8)[persistent,negative]]]",
-                "success": "[[/r 1d8[persistent,negative]]]"
+                "criticalSuccess": "[[/r (2*1d8)[persistent,void]]]",
+                "success": "[[/r 1d8[persistent,void]]]"
             },
             "Negative2d10": {
-                "criticalSuccess": "[[/r (2*2d10)[persistent,negative]]]",
-                "success": "[[/r 2d10[persistent,negative]]]"
+                "criticalSuccess": "[[/r (2*2d10)[persistent,void]]]",
+                "success": "[[/r 2d10[persistent,void]]]"
             },
             "Piercing2d8+8": {
                 "criticalSuccess": "[[/r (2*2d8+16)[persistent,piercing]]]",
@@ -997,6 +1092,63 @@
             }
         },
         "RuleEditor": {
+            "Aura": {
+                "Appearance": {
+                    "Border": "Border",
+                    "Color": "Color",
+                    "Highlight": "Highlight",
+                    "Label": "Appearance",
+                    "Loop": {
+                        "Hint": "If the File is a video, whether to loop it",
+                        "Label": "Loop"
+                    },
+                    "NotApplicable": "Not Applicable",
+                    "PlaybackRate": {
+                        "Hint": "If the File is a video, the playback rate of the resulting <em>HTMLVideoElement</em>",
+                        "Label": "Playback Rate"
+                    },
+                    "Texture": "Texture",
+                    "Translation": {
+                        "Hint": "A manual x/y translation of the texture resource",
+                        "Label": "Translation",
+                        "X": "x",
+                        "Y": "y"
+                    }
+                },
+                "Basic": {
+                    "Label": "Basic",
+                    "Level": {
+                        "Hint": "An optional level for the aura, to be used to set the level of the effects it transmits",
+                        "Label": "Level"
+                    },
+                    "MergeExisting": {
+                        "Hint": "If another aura with the same slug is already being emitted, merge this aura's data in with the other's, combining traits and effects as well as merging <em>colors</em> data.",
+                        "Label": "Merge Existing"
+                    },
+                    "Radius": "Radius"
+                },
+                "Effects": {
+                    "Affects": "Affects",
+                    "DropText": "Drop Effect",
+                    "DropTooltip": "An Effect to include in this aura",
+                    "Events": "Events",
+                    "EventsOptions": {
+                        "Enter": "Enter",
+                        "TurnStart": "Turn Start",
+                        "TurnEnd": "Turn End"
+                    },
+                    "IncludesSelf": "Includes Self",
+                    "Label": "Effects",
+                    "AffectsOptions": {
+                        "All": "All",
+                        "Allies": "Allies",
+                        "Enemies": "Enemies"
+                    },
+                    "RemoveEffect": "Remove Effect",
+                    "RemoveOnExit": "Remove on Exit",
+                    "Type": "Type"
+                }
+            },
             "FastHealing": {
                 "DeactivatedBy": "Deactivated By"
             },
@@ -1012,10 +1164,13 @@
                 },
                 "DamageType": "Damage Type",
                 "Label": "Label",
+                "Opacity": "Opacity",
                 "Predicate": "Predicate",
                 "Primitive": "Primitive",
+                "PriorityHint": "Priority determines the order in which rule elements are executed. Rule elements with lower priority values are executed first.",
                 "Range": "Range",
                 "Selector": "Selector",
+                "Slug": "Slug",
                 "Value": "Value"
             },
             "GrantItem": {
@@ -1054,7 +1209,6 @@
             "Immunity": "Immunity",
             "ItemAlteration": "Item Alteration",
             "LoseHitPoints": "Lose Hit Points",
-            "MarkToken": "Mark Token",
             "MartialProficiency": "Martial Proficiency",
             "MultipleAttackPenalty": "Multiple Attack Penalty",
             "Note": "Note",
@@ -1071,6 +1225,7 @@
             "TokenEffectIcon": "Token Effect Icon",
             "TokenImage": "Token Image",
             "TokenLight": "Token Light",
+            "TokenMark": "Token Mark",
             "TokenName": "Token Name",
             "Unrecognized": "Unrecognized Rule Element",
             "Weakness": "Weakness",
@@ -1151,6 +1306,7 @@
             "ImpersonateStumpOrLog": "To Impersonate a Stump or Log",
             "ImpersonateMound": "To Impersonate a Mound",
             "ImpersonatePastSelf": "To Impersonate a Past Self",
+            "Jar": "Inside a Jar",
             "JumpOrClimb": "To Jump or Climb",
             "JumpOrSwim": "To Jump or Swim",
             "Jungles": "In Jungles",
@@ -1210,6 +1366,7 @@
             "TrackHalfHealth": "To Track a Creature at Half its Hit Points or Fewer",
             "Traps": "Traps",
             "TrashAndRubbish": "In Trash and Rubbish",
+            "Treasure": "In Treasure",
             "Trip": "To Trip",
             "TripTangle": "To Trip and Tangle",
             "TumbleThrough": "To Tumble Through",
@@ -1239,6 +1396,8 @@
         },
         "SpecificRule": {
             "Actions": {
+                "OneAction": "One Action",
+                "Prompt": "Select the number of actions",
                 "ThreeActions": "Three Actions",
                 "TwoActions": "Two Actions"
             },
@@ -1328,7 +1487,7 @@
                 },
                 "CoreCannon": {
                     "AttackNote": "You need to manually apply your highest Potency rune to this attack roll.",
-                    "CriticalHit": "On a critical hit, the target takes [[/r 10[persistent,fire]]] @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent Fire Damage}. Your core cannon does not add critical specialization effects.</p>"
+                    "CriticalHit": "On a critical hit, the target takes [[/r 10[persistent,fire]]] damage. Your core cannon does not add critical specialization effects.</p>"
                 },
                 "EnergyBeam": {
                     "CriticalHit": "On a critical hit, the target takes persistent fire damage equal to the number of weapon damage dice. Your eye beam does not add critical specialization effects."
@@ -1405,8 +1564,8 @@
                     "SuccessVirulent": "Each of your successful saving throws against a virulent alchemical poison, a drug, or an addiction reduces the stage by 1"
                 },
                 "Spirit": {
-                    "NegativeDamage": "Negative Damage",
-                    "PositiveDamage": "Positive Damage",
+                    "NegativeDamage": "Void Damage",
+                    "PositiveDamage": "Vitality Damage",
                     "ToggleLabel": "Spirit Rage"
                 },
                 "Superstition": {
@@ -1462,6 +1621,9 @@
                 "Prompt": "Select a Brevic lineage.",
                 "Surtova": "Surtova"
             },
+            "CapeOfJustice": {
+                "Toggle": "Target is your designated offender"
+            },
             "CatharticMage": {
                 "EmotionalState": {
                     "Prompt": "Select a catharsis emotion."
@@ -1474,12 +1636,16 @@
                 "Prompt": "Select a type of energy associated with your bloodline."
             },
             "Champion": {
+                "AuraOfFaith": {
+                    "Toggle": "First Stike against an unholy creature this round"
+                },
                 "BladeAllyRune": "Select a property rune for your blade ally.",
                 "DivineSmite": {
                     "Label": "Divine Smite"
                 },
-                "EvilDamage": "Evil Damage",
-                "NegativeDamage": "Negative Damage",
+                "EvilDamage": "Spirit Damage",
+                "NegativeDamage": "Void Damage",
+                "RetributiveStrike": "Retributive Strike",
                 "TargetReaction": "Target triggered your champion reaction"
             },
             "ChromaticArmor": {
@@ -1503,6 +1669,9 @@
                 "Prompt": "Select a clan weapon."
             },
             "Cleric": {
+                "DivineRebuttal": {
+                    "Note": "If your Strike hits, all your allies gain a +2 circumstance bonus to the triggering saving throw (or a +3 circumstance bonus on a critical hit). @UUID[Compendium.pf2e.feat-effects.Item.jMQi2kDirzGgddti]{Effect: Divine Rebuttal}"
+                },
                 "Doctrine": {
                     "AllowedDrops": "1st-level cleric class feature",
                     "Prompt": "Select a doctrine."
@@ -1744,6 +1913,17 @@
                         "FearLabel": "Moderate Bravo's Brew (Vs. Fear)"
                     }
                 },
+                "BroadleafShield": {
+                    "Void": "Pink (Void)",
+                    "Fire": "Green (Fire)",
+                    "Poison": "Orange (Poison)",
+                    "Cold": "Brown (Cold)"
+                },
+                "ChannelProtectionAmuletLabel": "Channel Protection",
+                "ChaplainsCudgel": {
+                    "BowToAHigherPowerLabel": "Chaplain's Cudgel — Bow to a Higher Power",
+                    "CastTwoActionSpellLabel": "Cast a divine spell that takes two or more actions"
+                },
                 "DeckOfDestiny": {
                     "MatchingSuitPrompt": "Is the drawn card's suit related the check?",
                     "WealOrWoePrompt": "Select Weal or Woe."
@@ -1762,6 +1942,15 @@
                         "SecretLabel": "Moderate Eagle Eye Elixir (To Find Secret Doors or Traps)"
                     }
                 },
+                "FightersFork": {
+                    "FluidLengthLabel": "Fighter's Fork — Fluid Length"
+                },
+                "HolyWater": {
+                    "Note": "Can damage only creatures with the unholy trait."
+                },
+                "HumbugPocket": {
+                    "ConcealAnObjectLabel": "Humbug Pocket (Conceal an Object in the Pocket)"
+                },
                 "NosoiCharm": {
                     "PerformanceLabel": "Nosoi Charm (Play an instrument, orate or sing)",
                     "RequestLabel": "Nosoi Charm (Request)"
@@ -1772,6 +1961,16 @@
                 "ScapularOfShields": {
                     "CriticalImmunityLabel": "Activate Scapular of Shields to gain critical immunity.",
                     "ResistAllLabel": "Activate Scapular of Shields to gain resistance to all damage."
+                },
+                "Sparkler": {
+                    "CriticalHitNote": "On a critical hit, you cause the target to become @UUID[Compendium.pf2e.conditionitems.Item.TkIyaNPgTZFBCCuh]{Dazzled} for 1 round.",
+                    "StrikeLabel": "Sparkler"
+                },
+                "TacticiansHelm": {
+                    "ReactiveStrikeNote": "On a successful @UUID[Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT]{Reactive Strike}, add one charge: @UUID[Compendium.pf2e.equipment-effects.Item.nLwtvyLZZTZgFmKq]{Effect: Tactician's Helm Charges}"
+                },
+                "UnholyWater": {
+                    "Note": "Can damage only creatures with the holy trait."
                 }
             },
             "ExemplaryFinisher": {
@@ -1780,6 +1979,9 @@
                 "Fencer": "The foe is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until your next turn.",
                 "Name": "Exemplary Finisher",
                 "Wit": "The foe takes a -2 circumstance penalty to attack rolls against you until the start of your next turn."
+            },
+            "ExorcistDedication": {
+                "SpiritDwelling": "Your Spirit Dwelling contains a spirit"
             },
             "FanesFourberie": {
                 "Prompt": "Treat Cards as darts or daggers?"
@@ -1837,7 +2039,7 @@
             },
             "Fleshwarp": {
                 "CoatingOfSlime": {
-                    "CriticalHit": "On a critical hit, the target takes [[/r 1d4[persistent,acid]]]."
+                    "CriticalHit": "On a critical hit, the target takes [[/r 1d4[persistent,acid]]] damage."
                 },
                 "LivingWeapon": {
                     "Prompt": "Select a part of your form to use as a weapon."
@@ -1879,6 +2081,7 @@
                     "success": "You can end your satiation to make the target @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}"
                 }
             },
+            "GhostScarfLit": "Ghost Scarf is shedding light",
             "Gnome": {
                 "GrimInsight": {
                     "SaveNote": "When you roll a success on a saving throw against a fear effect, you get a critical success instead, and the source of the fear effect is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to you until the end of your next turn."
@@ -1987,7 +2190,7 @@
                     "Prompt": "Select a weapon to become trained in."
                 },
                 "WitchWarden": {
-                    "SaveNote": " If you roll a success on a saving throw against a curse or a spell cast by a witch or hag, you get a critical success instead."
+                    "SaveNote": "If you roll a success on a saving throw against a curse or a spell cast by a witch or hag, you get a critical success instead."
                 }
             },
             "HuntPrey": {
@@ -2003,6 +2206,9 @@
                     "MagmaSpikeCriticalSpecialization": "Instead of the normal critical specialization effect, the target takes [[/r 1d6[persistent,fire]]] damage; you gain a bonus on this persistent damage equal to your item bonus to attack rolls on unarmed attacks."
                 }
             },
+            "InCombat": {
+                "ToggleLabel": "In Combat"
+            },
             "Inventor": {
                 "Innovation": {
                     "Armor": {
@@ -2017,9 +2223,13 @@
                         "Prompt": "Select a weapon innovation."
                     }
                 },
+                "LockOn": {
+                    "TwoActionsLegendary": "Two Actions (Legendary)"
+                },
                 "Modification": {
                     "Breakthrough": {
                         "AllowedDrops": "7th-level or lower inventor class feature",
+                        "EnhancedResistancePrompt": "Select an initial modification to enhance.",
                         "Prompt": "Select a breakthrough modification."
                     },
                     "Initial": {
@@ -2040,6 +2250,9 @@
                     "Saws": "Saws (Slashing)",
                     "Spike": "Spike (Piercing)",
                     "Vitriol": "Vitriol (Acid)"
+                },
+                "Overdrive": {
+                    "DamageTypePrompt": "Deal fire damage with overdrive?"
                 }
             },
             "Investigator": {
@@ -2048,10 +2261,23 @@
                 },
                 "PursueALead": {
                     "Label": "Investigating a designated subject with Pursue a Lead"
+                },
+                "SharedStratagem": {
+                    "Note": "The creature you hit is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} to a designated ally on the next attack the ally makes against the creature before the start of your next turn."
                 }
             },
             "Kineticist": {
+                "GateAttenuator": "Gate Attenuator",
                 "Impulse": {
+                    "CriticalBlast": {
+                        "Air": "Push the target up to 10 feet.",
+                        "Earth": "If the target is on the ground, it's knocked @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}; if it isn't on the ground, it descends up to 20 feet (you choose the distance).",
+                        "Fire": "The target takes 1d6 persistent fire damage. You gain an item bonus to this persistent damage equal to your item bonus to impulse attack rolls, such as from a gate attenuator.",
+                        "Label": "Critical Blast",
+                        "Metal": "The target takes 1d6 persistent bleed damage; if the creature has the metal trait or is made of metal, it instead takes @Damage[1d6[persistent,untyped]] damage with no type from rust. You gain an item bonus to this persistent damage equal to your item bonus to impulse attack rolls, such as from a gate attenuator.",
+                        "Water": "The blast deals 2 splash damage per damage die of the blast, with the same damage type.",
+                        "Wood": "If the target of the critical hit is adjacent to a surface, roots entangle it. The target is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} and must spend an Interact action to attempt a @Check[type:athletics|dc:10] check to pull itself free. The target doesn't become stuck if it is incorporeal, is liquid, or could otherwise escape without effort."
+                    },
                     "ElementalBlast": {
                         "Label": {
                             "Air": "Elemental Blast (Air)",
@@ -2115,9 +2341,11 @@
                 "DamageType": "Damage Type",
                 "Enter": "Enter",
                 "Exit": "Exit",
+                "NonCantrip": "Non-Cantrip",
                 "ResistanceType": "Resistance Type",
                 "SecondAttempt": "Second Attempt",
-                "ThirdAttempt": "Third Attempt"
+                "ThirdAttempt": "Third Attempt",
+                "WeaknessType": "Weakness Type"
             },
             "Leshy": {
                 "Seedpod": {
@@ -2132,9 +2360,11 @@
                     "Note": "The creature is @UUID[Compendium.pf2e.conditionitems.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of your next turn unless it succeeds at a @Check[type:fortitude|dc:resolve(@actor.attributes.spellDC.value)] save against your spell DC."
                 }
             },
+            "LitAlicornLance": "Alicorn Lance is lit",
             "LitCandle": "Candle is lit",
             "LitCandlecap": "Candlecap is lit",
             "LitFirePoi": "Fire Poi is lit",
+            "LitFulminatingSpear": "Fulminating Spear is lit",
             "LitTorch": "Torch is lit",
             "Lizardfolk": {
                 "GuidedByTheStars": {
@@ -2159,6 +2389,13 @@
                 "SparklingTarge": {
                     "DefendingLabel": "Defending against magic"
                 }
+            },
+            "MantleOfTheUnwaveringHeart": {
+                "EvergreenVitality": "Evergreen Vitality",
+                "GraspingBranch": "Grasping Branch",
+                "OverwhelmingPerfume": "Overwhelming Perfume",
+                "ToweringTrunk": "Towering Trunk",
+                "UnyieldingWill": "Unyielding Will"
             },
             "MarkForDeath": {
                 "DeceiveMark": "To use Deception to Feint your Mark",
@@ -2269,11 +2506,8 @@
                     "ThreeActionLabel": "One Inch Punch (Three Actions)",
                     "TwoActionLabel": "One Inch Punch (Two Actions)"
                 },
-                "SacredKi": {
-                    "Prompt": "Choose your aligned damage."
-                },
                 "StunningFist": {
-                    "Note": "The target must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|traits:incapacitation|overrideTraits:true] save against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure)."
+                    "Note": "The target must succeed at a @Check[type:fortitude|dc:resolve(@actor.system.proficiencies.classDCs.monk.value)|name:Monk|traits:incapacitation|overrideTraits:true] save against your class DC or be @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 1} (or @UUID[Compendium.pf2e.conditionitems.Item.dfCMdR4wnpbYNTix]{Stunned 3} on a critical failure)."
                 },
                 "WolfDrag": {
                     "Note": "If the attack succeeds, you knock the target @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}."
@@ -2290,9 +2524,9 @@
             "Mummy": {
                 "AccursedTouch": {
                     "Note": {
-                        "Base": "The creature takes [[/r 2d6[persistent,negative]]] @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent negative Damage}. While the creature has this persistent damage, it's also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.",
-                        "FourteenthLevel": "The creature takes [[/r 3d6[persistent,negative]]] @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent negative Damage}. While the creature has this persistent damage, it's also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.",
-                        "TwentiethLevel": "The creature takes [[/r 4d6[persistent,negative]]] @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent negative Damage}. While the creature has this persistent damage, it's also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}."
+                        "Base": "The creature takes [[/r 2d6[persistent,void]]] damage. While the creature has this persistent damage, it's also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.",
+                        "FourteenthLevel": "The creature takes [[/r 3d6[persistent,void]]] damage. While the creature has this persistent damage, it's also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}.",
+                        "TwentiethLevel": "The creature takes [[/r 4d6[persistent,void]]] damage. While the creature has this persistent damage, it's also @UUID[Compendium.pf2e.conditionitems.Item.e1XGnhKNSQIm5IXg]{Stupefied 1}."
                     }
                 },
                 "Terrain": {
@@ -2325,7 +2559,11 @@
             "Orc": {
                 "HoldMark": {
                     "Axe": "Axe (Axe or Pick).",
-                    "Prompt": "Choose the shape of your hold mark.",
+                    "BurningSun": "Burning Sun",
+                    "DeathsHead": "Death's Head",
+                    "DefiledCorpse": "Defiled Corpse",
+                    "EmptyHand": "Empty Hand",
+                    "Prompt": "Choose your hold mark emblem.",
                     "Shield": "Shield (Hammer or Shield).",
                     "Torch": "Torch (Bomb or Knife)."
                 },
@@ -2359,7 +2597,7 @@
                 "AdvancedMulticlassFeat": "Select a class feat up to half your character level.",
                 "Alignment": "Select an alignment.",
                 "CantripOrNonCantrip": "Select cantrip or non-cantrip spell.",
-                "ClassDCAbilityScore": "Select the class DC's ability score.",
+                "ClassDCAbilityScore": "Select the class DC's key attribute.",
                 "ConsciousMind": "Select a conscious mind.",
                 "CreatureSize": "Select a creature size.",
                 "DamageType": "Select a damage type.",
@@ -2373,23 +2611,28 @@
                 "Feat": "Select a feat.",
                 "FirstImplement": "Select a first implement.",
                 "Lesson": "Select a lesson.",
+                "LevelOneAncestryFeat": "Select a 1st-level ancestry feat.",
                 "LevelOneClassFeat": "Select a 1st-level class feat.",
                 "LevelOneOrTwoClassFeat": "Select a 1st or 2nd-level class feat.",
                 "Material": "Select a material.",
                 "PathToPerfection": "Select a path to perfection.",
                 "Rune": "Select a Rune.",
+                "Sanctification": "Select a sanctification.",
                 "SecondImplement": "Select a second implement.",
+                "Shield": "Select a shield.",
                 "Shillelagh": "Select a club or staff.",
                 "Skill": "Select a skill.",
                 "SkillFeat": "Select a skill feat.",
                 "SubconsciousMind": "Select a subconscious mind.",
                 "ThirdImplement": "Select a third implement.",
+                "Tradition": "Select a tradition.",
+                "Trait": "Select a trait.",
                 "VersatileTrait": "Select a versatile damage type.",
                 "UnarmedAttack": "Select an unarmed attack.",
+                "UntamedForm": "Select a form effect.",
                 "Weapon": "Select a weapon.",
                 "WeaponGroup": "Select a weapon group.",
-                "WeaponOrUnarmed": "Select a weapon or unarmed strike.",
-                "WildShape": "Select a form effect."
+                "WeaponOrUnarmed": "Select a weapon or unarmed strike."
             },
             "Psychic": {
                 "UnleashPsyche": {
@@ -2445,6 +2688,29 @@
                     "ProtectionLabel": "Gain Resistance to Physical Attack"
                 },
                 "SpiritualFlurryNote": "Targets become @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the end of your current turn."
+            },
+            "SeasonOfGhosts": {
+                "Background": {
+                    "Bickering": "Bickering",
+                    "Bitter": "Bitter",
+                    "CloseKnit": "Close Knit",
+                    "Family": "Family",
+                    "FamilyPrompt": "Select your family dynamic",
+                    "Foundling": "Foundling",
+                    "FoundlingPrompt": "Select your relationship with Willowshore",
+                    "Mysterious": "Mysterious",
+                    "NoAdjustment": "No Adjustment",
+                    "Outgoing": "Outgoing",
+                    "Prompt": "Select an adjustment to your background",
+                    "Typical": "Typical"
+                }
+            },
+            "Seasons": {
+                "Fall": "Fall",
+                "Prompt": "Select the current season",
+                "Spring": "Spring",
+                "Summer": "Summer",
+                "Winter": "Winter"
             },
             "Shisk": {
                 "PiercingQuills": {
@@ -2511,8 +2777,24 @@
                 "Climb": "Climb Speed",
                 "Fly": "Fly Speed"
             },
+            "SpellEffectGluttonsJaw": {
+                "Text": "If you hit with your jaws and deal damage, you gain [[/r ceil(@item.level/2)d6 #Temporary Hit Points]] temporary Hit Points."
+            },
             "SpellEffectProtection": {
                 "Prompt": "Choose which alignment trait you are protecting against."
+            },
+            "SpellEffectSweetDream": {
+                "Glamor": "Dream of Glamor",
+                "Insight": "Dream of Insight",
+                "Prompt": "Select a dream.",
+                "Voyaging": "Dream of Voyaging"
+            },
+            "SpellEffectThermalRemedy": {
+                "BonusVsDisease": "Bonus vs. Disease",
+                "FireResistance": "Fire Resistance",
+                "Prompt": "Select a benefit.",
+                "PromptTwo": "Select a 2nd benefit.",
+                "TempHP": "Temporary Hit Points"
             },
             "Spellheart": {
                 "BeastmastersSigil": {
@@ -2550,6 +2832,7 @@
                     "ShadowGrasp": "Shadow Grasp",
                     "SkywardSlash": "Skyward Slash",
                     "StingingLash": "Stinging Lash",
+                    "Stonestrike": "Stonestrike",
                     "StumblingSwing": "Stumbling Swing",
                     "TigerClaw": "Tiger Claw",
                     "WindCrash": "Wind Crash",
@@ -2564,7 +2847,11 @@
                 "AutomaticPower": "Automatic Power Driver Dynamo",
                 "Label": "Sterling Dynamo",
                 "ManualPercussive": "Manual Percussive Striker Dynamo",
-                "ManualPower": "Manual Power Driver Dynamo"
+                "ManualPower": "Manual Power Driver Dynamo",
+                "StasianSmash": {
+                    "CriticalFailureText": "If you critically fail your dynamo Strike, you take @Damage[1d12[electricity]] damage.",
+                    "SuccessText": "On a success, the Strike deals an additional 1d12 electricity damage to the target, as well as @Damage[(ternary(gte(@actor.level,18),2,1))d4[electricity]] damage to up to two other foes within 10 feet as sparks leap across the gaps."
+                }
             },
             "SubstituteRoll": {
                 "Assurance": "Assurance",
@@ -2603,6 +2890,7 @@
                 "FirstRangeIncrement": "Enable abilities that require a target within the first range increment.",
                 "Incorporeal": "Enable abilities that require an incorporeal target",
                 "OffGuard": "Enable abilities that require an off-guard target",
+                "Prone": "Enable abilities that require a prone target",
                 "Undead": "Enable abilities that require an undead target",
                 "Vampire": "Enable abilities that require a vampire target"
             },
@@ -2610,7 +2898,8 @@
                 "AgainstDemons": "Against Demons",
                 "AgainstDevils": "Against Devils",
                 "AgainstHumanoids": "Against Humanoids",
-                "Necromancer": "Target is a necromancer"
+                "Necromancer": "Target is a necromancer",
+                "Metal": "Target is wearing metal armor or is made of metal"
             },
             "Tattoo": {
                 "WildwoodInk": {
@@ -2682,12 +2971,22 @@
                     "Note": "The target is @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round."
                 }
             },
+            "UntamedShift": {
+                "ElementalMatter": "Elemental Matter",
+                "LongVines": "Long Vines",
+                "Prompt": "Select a shift.",
+                "PromptTwo": "Select a 2nd shift.",
+                "PromptThree": "Select a 3rd shift.",
+                "UntamedClaws": "Untamed Claws",
+                "UntamedJaws": "Untamed Jaws",
+                "Wings": "Wings"
+            },
             "Vampire": {
                 "ViciousFangs": {
                     "Note": {
-                        "Base": "Your fangs Strike deals an additional [[/r 1d6[bleed]]] @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent bleed Damage}.",
-                        "FourteenthLevel": "Your fangs Strike deals an additional [[/r 2d6[bleed]]] @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent bleed Damage}.",
-                        "TwentiethLevel": "Your fangs Strike deals an additional [[/r 3d6[bleed]]] @UUID[Compendium.pf2e.conditionitems.Item.lDVqvLKA6eF3Df60]{Persistent bleed Damage}."
+                        "Base": "Your fangs Strike deals an additional [[/r 1d6[bleed]]] damage.",
+                        "FourteenthLevel": "Your fangs Strike deals an additional [[/r 2d6[bleed]]] damage.",
+                        "TwentiethLevel": "Your fangs Strike deals an additional [[/r 3d6[bleed]]] damage."
                     }
                 }
             },
@@ -2721,21 +3020,18 @@
             "WardingRune": {
                 "Prompt": "Select a school of magic other than divination."
             },
+            "Weapon": {
+                "Metal": "Using a metal weapon"
+            },
+            "WeaponInfusion": {
+                "Melee": "Melee Infusion",
+                "Ranged": "Ranged Infusion"
+            },
             "WellspringMage": {
                 "CriticalSuccess": "You temporarily recover an expended spell slot of any level of your choice. The temporary spell slot lasts for 1 minute, and if you don't use it by then, you experience an immediate @UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{Wellspring Surge}.",
                 "Failure": "You generate a @UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{Wellspring Surge}, with a spell level chosen randomly among your top three levels of spell slots (or all your levels if you have fewer than three)",
                 "Initiative": "When you roll initiative for a non-trivial combat encounter, as well as in other high-stress situations of the GM's choice, magic wells up within you. Attempt a @Check[type:flat|dc:6|traits:wellspring-magic].",
                 "Success": "You temporarily recover an expended spell slot of a spell level chosen randomly among your top three levels of spell slots (or all your levels of spell slots if you have fewer than three). The slot lasts 3 rounds instead of 1 minute, otherwise you experience a @UUID[Compendium.pf2e.rollable-tables.RollTable.N0pDFNCffTe2Du39]{Wellspring Surge}."
-            },
-            "WildMorph": {
-                "ElementalMatter": "Elemental Matter",
-                "LongVines": "Long Vines",
-                "Prompt": "Select a morph.",
-                "PromptTwo": "Select a 2nd morph.",
-                "PromptThree": "Select a 3rd morph.",
-                "WildClaws": "Wild Claws",
-                "WildJaws": "Wild Jaws",
-                "Wings": "Wings"
             },
             "Witch": {
                 "Patron": {
@@ -2749,8 +3045,11 @@
                 "ArcaneThesis": {
                     "Prompt": "Select an arcane thesis."
                 },
-                "Metamagic1": {
-                    "Prompt": "Select a 1st-level wizard metamagic feat."
+                "Spellshape1": {
+                    "Prompt": "Select a 1st-level wizard spellshape feat."
+                },
+                "UnifiedMagicalTheory": {
+                    "Prompt": "Select a 1st-level wizard feat."
                 }
             },
             "Zombie": {
@@ -2772,8 +3071,12 @@
             "RuleElements": {
                 "ChoiceSet": {
                     "Decline": "Decline",
-                    "DragHomebrewItem": "Drag a homebrew item here if using one instead of the above options",
+                    "DragHomebrewItem": "Drag a homebrew item here if using one instead of the above options.",
                     "HomebrewItem": "Homebrew Item",
+                    "ViewItem": {
+                        "Tooltip": "View Item",
+                        "Disabled": "Selected choice has no item sheet"
+                    },
                     "NoLabel": "No",
                     "Prompt": "Make a selection.",
                     "SaveLabel": "Save",
@@ -2786,13 +3089,16 @@
                 "GrantItem": {
                     "AlreadyHasItem": "{actor} already has {item}, so it has not been added again."
                 },
-                "MarkTarget": {
-                    "TargetToken": "Target a token by mouse-hovering one and pressing T. Press Escape to cancel.",
-                    "Timeout": "Effect creation cancelled due to lack of target."
+                "MultipleAttackPenalty": {
+                    "Breakdown": "MAP ({label})"
                 },
                 "Prompt": {
                     "NoSelectionMade": "No selection was made: {item} is inactive.",
                     "NoValidOptions": "{actor} has no valid options for {item}."
+                },
+                "TokenMark": {
+                    "TargetToken": "Target a token by mouse-hovering one and pressing T. Press Escape to cancel.",
+                    "Timeout": "Effect creation cancelled due to lack of target."
                 }
             }
         }

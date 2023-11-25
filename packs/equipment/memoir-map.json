@@ -1,6 +1,6 @@
 {
     "_id": "Q2MhPIDRXgD0K6C4",
-    "img": "systems/pf2e/icons/default-icons/equipment.svg",
+    "img": "systems/pf2e/icons/equipment/tattoos/memoir-map.webp",
     "name": "Memoir Map",
     "system": {
         "baseItem": null,
@@ -19,31 +19,27 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 13
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
-                "divination",
                 "invested",
                 "magical",
                 "tattoo"

@@ -1,6 +1,6 @@
 {
     "_id": "HpX3bGlOkSp1PeWg",
-    "img": "systems/pf2e/icons/spells/disrupting-weapons.webp",
+    "img": "icons/weapons/swords/sword-flanged-lightning.webp",
     "name": "Effect: Vent Energy",
     "system": {
         "description": {
@@ -14,6 +14,11 @@
         },
         "level": {
             "value": 4
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Bestiary 3"
         },
         "rules": [
             {
@@ -39,8 +44,8 @@
                         "value": "force"
                     },
                     {
-                        "label": "PF2E.TraitNegative",
-                        "value": "negative"
+                        "label": "PF2E.TraitVoid",
+                        "value": "void"
                     },
                     {
                         "label": "PF2E.TraitSonic",
@@ -58,9 +63,6 @@
                 "selector": "weapon-arm-damage"
             }
         ],
-        "source": {
-            "value": "Pathfinder Bestiary 3"
-        },
         "start": {
             "initiative": null,
             "value": 0

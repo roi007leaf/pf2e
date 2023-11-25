@@ -1,11 +1,8 @@
 {
     "_id": "YUzPv0i8d8p2J9yx",
-    "img": "systems/pf2e/icons/equipment/weapons/bola.webp",
+    "img": "icons/weapons/thrown/bolas-stone.webp",
     "name": "Bola",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "bola",
         "bonus": {
             "value": 0
@@ -21,7 +18,7 @@
             "die": "d6"
         },
         "description": {
-            "value": "<p>This throwing weapon consists of weights tied to the end of long cords, which can be used to entangle foes.</p>"
+            "value": "<p>This throwing weapon consists of weights tied to the end of long cords, which can be used to bludgeon foes or entangle their legs.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -35,16 +32,11 @@
         "level": {
             "value": 0
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
-            "value": null
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
             "value": null
         },
         "price": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "ORC",
+            "remaster": true,
+            "title": "Pathfinder Player Core"
+        },
         "quantity": 1,
         "range": 20,
         "reload": {
@@ -71,9 +68,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "splashDamage": {
             "value": 0
         },

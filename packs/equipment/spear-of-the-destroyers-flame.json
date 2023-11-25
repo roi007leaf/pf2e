@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/longspear.webp",
     "name": "Spear of the Destroyer's Flame",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "longspear",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 20
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 3
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {}
@@ -62,6 +54,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Monsters of Myth"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -69,9 +66,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Monsters of Myth"
-        },
         "specific": {
             "material": null,
             "runes": {

@@ -21,6 +21,11 @@
                 "proficiency": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "showSlotlessLevels": {
                     "value": false
@@ -91,9 +96,6 @@
                     }
                 },
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "spelldc": {
                     "dc": 14,
                     "value": 6
@@ -111,7 +113,7 @@
                     "sourceId": "Compendium.pf2e.spells-srd.Item.vJZ83ehQiM906lea"
                 }
             },
-            "img": "systems/pf2e/icons/default-icons/spell.svg",
+            "img": "icons/commodities/metal/ingot-plain-steel.webp",
             "name": "Detect Metal",
             "sort": 200000,
             "system": {
@@ -119,29 +121,18 @@
                     "type": "emanation",
                     "value": 30
                 },
-                "category": {
-                    "value": "spell"
-                },
-                "components": {
-                    "focus": false,
-                    "material": false,
-                    "somatic": true,
-                    "verbal": true
-                },
                 "cost": {
                     "value": ""
                 },
-                "damage": {
-                    "value": {}
-                },
+                "counteraction": false,
+                "damage": {},
+                "defense": null,
                 "description": {
                     "value": "<p>You attune yourself to magnetic fields, becoming aware of the presence or absence of metallic objects, veins, and deposits within the area. You can choose to ignore metal you're fully aware of, such as the gear you and your allies wear and carry.</p>\n<p>You detect metal @UUID[Compendium.pf2e.conditionitems.Item.Hidden] by illusions (such as <em>@UUID[Compendium.pf2e.spells-srd.Item.Invisibility]</em>) only if the illusion has a lower rank than your detect metal spell. Against deceptive illusions, detect metal always notices an absence of metal when a non-metallic object is disguised as metallic. However, if the deception involves disguising one metallic object as another, such as pretending a copper coin is made of gold, detect metal registers only the presence of metal, not its type, even if the rank of your detect metal spell exceeds that of the illusion effect.</p>\n<hr />\n<p><strong>Heightened (3rd)</strong> You can discern all types of metal you detected. Your spell can overcome deceptive illusory spells hiding one metal as another if the magic effect's rank is lower than that of your detect metal spell.</p>"
                 },
                 "duration": {
+                    "sustained": false,
                     "value": ""
-                },
-                "hasCounteractCheck": {
-                    "value": false
                 },
                 "level": {
                     "value": 1
@@ -149,46 +140,36 @@
                 "location": {
                     "value": "jGrxd3BiFIgWU2CJ"
                 },
-                "materials": {
-                    "value": ""
+                "publication": {
+                    "license": "OGL",
+                    "remaster": true,
+                    "title": "Pathfinder Rage of Elements"
                 },
                 "range": {
                     "value": ""
                 },
+                "requirements": "",
                 "rules": [],
-                "save": {
-                    "basic": "",
-                    "value": ""
-                },
                 "slug": "detect-metal",
-                "source": {
-                    "value": "Pathfinder Rage of Elements"
-                },
-                "spellType": {
-                    "value": "utility"
-                },
-                "sustained": {
-                    "value": false
-                },
                 "target": {
                     "value": ""
                 },
                 "time": {
                     "value": "2"
                 },
-                "traditions": {
-                    "value": [
+                "traits": {
+                    "rarity": "common",
+                    "traditions": [
                         "arcane",
                         "divine",
                         "occult",
                         "primal"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
+                    ],
                     "value": [
                         "cantrip",
+                        "concentrate",
                         "detection",
+                        "manipulate",
                         "metal"
                     ]
                 }
@@ -202,13 +183,10 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.FibwLZ12EIEwLGhw"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/weapons/light-hammer.webp",
+            "img": "icons/weapons/hammers/shorthammer-embossed-white.webp",
             "name": "Light Hammer",
             "sort": 300000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "light-hammer",
                 "bonus": {
                     "value": 0
@@ -243,16 +221,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -272,6 +245,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 3,
                 "range": null,
                 "reload": {
@@ -280,9 +258,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "light-hammer",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -313,7 +288,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.4tIVTg9wj56RrveA"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/leather-armor.webp",
+            "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp",
             "name": "Leather Armor",
             "sort": 400000,
             "system": {
@@ -342,18 +317,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
@@ -372,6 +341,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": ""
@@ -379,12 +353,9 @@
                 "rules": [],
                 "size": "med",
                 "slug": "leather-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "speedPenalty": null,
+                "speedPenalty": 0,
                 "stackGroup": null,
-                "strength": 0,
+                "strength": null,
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -429,27 +400,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 4
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "artisans-tools",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -471,7 +439,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.qCEOZ6109Yo34tRx"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/formula-book.webp",
+            "img": "icons/sundries/books/book-tooled-brass-brown.webp",
             "name": "Formula Book (Blank)",
             "sort": 600000,
             "system": {
@@ -495,27 +463,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": ""
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "formula-book-blank",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -574,27 +539,24 @@
                 "level": {
                     "value": 1
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 4
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Guns & Gears"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "ablative-shield-plating-lesser",
-                "source": {
-                    "value": "Pathfinder Guns & Gears"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "uncommon",
@@ -640,7 +602,7 @@
                 },
                 "containerId": "null",
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">1</span> Interact</p>\n<hr />\n<p>These sets of rockets come in pairs and strap onto existing footwear (or a creature's feet). Inserting them and aligning them properly takes 1 minute. When you Activate the blast boots, you can @UUID[Compendium.pf2e.actionspf2e.Item.High Jump] or @UUID[Compendium.pf2e.actionspf2e.Item.Long Jump], without the need to Stride first.</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">1</span> Interact</p>\n<hr />\n<p>These sets of rockets come in pairs and strap onto existing footwear (or a creature's feet). Inserting them and aligning them properly takes 1 minute. When you Activate the blast boots, you can @UUID[Compendium.pf2e.actionspf2e.Item.High Jump] or @UUID[Compendium.pf2e.actionspf2e.Item.Long Jump], without the need to Stride first.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -658,27 +620,24 @@
                 "level": {
                     "value": 1
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 3
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Guns & Gears"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "blast-boots-lesser",
-                "source": {
-                    "value": "Pathfinder Guns & Gears"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "uncommon",
@@ -724,7 +683,7 @@
                 },
                 "containerId": "null",
                 "description": {
-                    "value": "<p><strong>Activate</strong><span class=\"pf2-icon\">d</span> Interact</p>\n<hr />\n<p>When you Activate an explosive mine, you place it on the ground in a square within your reach, priming it to explode when a creature steps on that square. If you have time in advance to prepare, you can place the mine on the ground before activating it, and you or an ally can try to use Stealth to Conceal an Object before you Activate the mine. If you don't Conceal the mine, its position is obvious at a glance. Once activated, the mine is primed to explode when enough pressure is placed on the square where it's located. Typically, this occurs when a Small or larger creature moves onto the square, though it could happen if a creature intentionally places pressure on the square from a distance to safely trigger the mine. Once triggered, the mine explodes, dealing the listed fire damage to any creatures in the area of effect with a basic Reflex save.</p>\n<hr />\n<p>The mine deals [[/r 2d6[fire]]] damage, in a @Template[type:emanation|distance:5]{5-foot emanation}, and a @Check[type:reflex|dc:15|basic:true|name:Reflex|traits:fire].</p>"
+                    "value": "<p><strong>Activate</strong><span class=\"action-glyph\">d</span> Interact</p>\n<hr />\n<p>When you Activate an explosive mine, you place it on the ground in a square within your reach, priming it to explode when a creature steps on that square. If you have time in advance to prepare, you can place the mine on the ground before activating it, and you or an ally can try to use Stealth to Conceal an Object before you Activate the mine. If you don't Conceal the mine, its position is obvious at a glance. Once activated, the mine is primed to explode when enough pressure is placed on the square where it's located. Typically, this occurs when a Small or larger creature moves onto the square, though it could happen if a creature intentionally places pressure on the square from a distance to safely trigger the mine. Once triggered, the mine explodes, dealing the listed fire damage to any creatures in the area of effect with a basic Reflex save.</p>\n<hr />\n<p>The mine deals [[/r 2d6[fire]]] damage, in a @Template[type:emanation|distance:5]{5-foot emanation}, and a @Check[type:reflex|dc:15|basic:true|name:Reflex|traits:fire].</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -741,27 +700,24 @@
                 "level": {
                     "value": 1
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 4
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Guns & Gears"
+                },
                 "quantity": 3,
                 "rules": [],
                 "size": "med",
                 "slug": "explosive-mine-lesser",
-                "source": {
-                    "value": "Pathfinder Guns & Gears"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "uncommon",
@@ -804,11 +760,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "agile",
@@ -851,11 +809,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "agile"
@@ -896,11 +856,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": [
                         "agile",
@@ -933,14 +895,16 @@
                     "max": 1,
                     "per": "round"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "value": []
                 },
@@ -965,11 +929,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -988,11 +954,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1011,11 +979,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -1034,11 +1004,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -1099,18 +1071,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "",
-            "creatureType": "",
             "level": {
                 "value": 1
             },
             "privateNotes": "",
             "publicNotes": "<p>The geniekin called taloses descend primarily from zuhra genies, metal elementals, and other denizens of the Plane of Metal. Many taloses mold their natural talent for metalwork into careers as tinkerers, miners, or smiths, although just as many leverage the luster of precious metals in a quest for fame and fortune.</p>\n<p>Taloses are among the most metropolitan of geniekin, often born in or drawn to cities of various sizes, especially those with advanced metalworking or technology trades. Metal often needs to be worked to find its form and function, which may explain why many taloses seem to enjoy living among people, if not necessarily socializing with them. They often find themselves stumbling into jobs somewhere along the production line of technology, whether it's mining the raw ore from the earth, working it into wires and gears, or constructing the devices themselves. Some taloses resent and reject the expectations that they fill such roles, but many embrace their fascination with tech, often going on to become expert inventors. Taloses are therefore far more likely than other geniekin to make use of clockwork technology in their communities.</p>\n<p>Despite having long inhabited Golarion, albeit in small numbers, taloses have only rarely been recognized as geniekin. The largest number of them, and also the largest number whose true nature is known, inhabit Tian Xia. The traditions of metal as an element have lived much longer there. Taloses often find themselves drawn to discussions and study of elemental metal the instant they hear of the concept. Historical records speak of renowned courtiers and diplomats with skin of flawless silver or bronze. In the Ivory Port of Goka, the smiths of the family-owned Dragon's Iron Forge craft their blades and firearms with magnetic techniques handed down from their zuhra sheikha ancestor.</p>\n<p>A talos gadgeteer is a clockwork tinkerer. When confronted, their preferred tactic is to lure opponents into traps using their lesser explosive mines before attempting to engage directly.</p>",
-            "source": {
-                "value": "Pathfinder Rage of Elements"
+            "publication": {
+                "license": "OGL",
+                "remaster": true,
+                "title": "Pathfinder Rage of Elements"
             }
         },
         "resources": {},

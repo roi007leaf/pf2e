@@ -24,7 +24,7 @@ interface EquipmentSystemSource extends Investable<PhysicalSystemSource> {
 }
 
 interface EquipmentSystemData
-    extends Omit<EquipmentSystemSource, "hp" | "identification" | "price" | "temporary" | "usage">,
+    extends Omit<EquipmentSystemSource, "hp" | "identification" | "material" | "price" | "temporary" | "usage">,
         Omit<Investable<PhysicalSystemData>, "traits"> {
     apex?: {
         attribute: AttributeString;
@@ -36,4 +36,4 @@ interface EquipmentTraits extends PhysicalItemTraits<EquipmentTrait> {
     otherTags: OtherEquipmentTag[];
 }
 
-export { EquipmentSource, EquipmentSystemData, EquipmentSystemSource, EquipmentTrait };
+export type { EquipmentSource, EquipmentSystemData, EquipmentSystemSource, EquipmentTrait };

@@ -1,11 +1,11 @@
-import { ActorPF2e } from "@actor";
-import { ItemPF2e } from "@item";
+import type { ActorPF2e } from "@actor";
+import type { ItemPF2e } from "@item";
 import { AbstractEffectPF2e, EffectBadge } from "@item/abstract-effect/index.ts";
 import { reduceItemName } from "@item/helpers.ts";
 import { ChatMessagePF2e } from "@module/chat-message/index.ts";
 import { RuleElementOptions, RuleElementPF2e } from "@module/rules/index.ts";
-import { UserPF2e } from "@module/user/index.ts";
-import { TokenDocumentPF2e } from "@scene/index.ts";
+import type { UserPF2e } from "@module/user/index.ts";
+import type { TokenDocumentPF2e } from "@scene/index.ts";
 import { DamageCategorization } from "@system/damage/helpers.ts";
 import { DamageRoll } from "@system/damage/roll.ts";
 import { PERSISTENT_DAMAGE_IMAGES } from "@system/damage/values.ts";
@@ -24,9 +24,10 @@ class ConditionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends
             return { type: "formula", value: this.system.persistent.formula, label: null };
         }
 
-        return this.system.value.value
+        return typeof this.system.value.value === "number"
             ? {
                   type: "counter",
+                  min: 0,
                   max: Infinity,
                   label: null,
                   value: this.system.value.value,
@@ -81,8 +82,8 @@ class ConditionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends
                 this.actor?.conditions.bySlug(this.slug).map((condition) => {
                     const { appliedBy } = condition;
                     return !appliedBy?.isOfType("condition") || appliedBy?.active ? appliedBy : null;
-                }) ?? []
-            )
+                }) ?? [],
+            ),
         );
 
         const list = granters
@@ -134,7 +135,7 @@ class ConditionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends
                     speaker: ChatMessagePF2e.getSpeaker({ actor, token }),
                     flavor: `<strong>${this.name}</strong>`,
                 },
-                { rollMode: "roll" }
+                { rollMode: "roll" },
             );
         }
     }
@@ -168,6 +169,11 @@ class ConditionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends
 
         const systemData = this.system;
         systemData.value.value = systemData.value.isValued ? Number(systemData.value.value) || 1 : null;
+        systemData.duration = mergeObject(systemData.duration, {
+            value: -1,
+            unit: "unlimited",
+            expiry: null,
+        });
 
         // Append numeric badge value to condition name, set item image according to configured style
         if (typeof this.badge?.value === "number") {
@@ -209,7 +215,7 @@ class ConditionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends
             condition.system.references.overriddenBy.push({ id: this.id, type: "condition" as const });
         };
 
-        const conditions = this.actor.itemTypes.condition;
+        const conditions = this.actor.conditions.active;
 
         // Deactivate conditions naturally overridden by this one
         if (this.system.overrides.length > 0) {
@@ -261,7 +267,7 @@ class ConditionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends
     protected override async _preUpdate(
         changed: DeepPartial<this["_source"]>,
         options: ConditionModificationContext<TParent>,
-        user: UserPF2e
+        user: UserPF2e,
     ): Promise<boolean | void> {
         options.conditionValue = this.value;
         return super._preUpdate(changed, options, user);
@@ -270,7 +276,7 @@ class ConditionPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends
     protected override _onUpdate(
         changed: DeepPartial<this["_source"]>,
         options: ConditionModificationContext<TParent>,
-        userId: string
+        userId: string,
     ): void {
         super._onUpdate(changed, options, userId);
 
@@ -306,4 +312,5 @@ interface ConditionModificationContext<TParent extends ActorPF2e | null> extends
     conditionValue?: number | null;
 }
 
-export { ConditionModificationContext, ConditionPF2e, PersistentDamagePF2e };
+export { ConditionPF2e };
+export type { ConditionModificationContext, PersistentDamagePF2e };

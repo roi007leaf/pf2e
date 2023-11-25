@@ -9,13 +9,10 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.FVjTuBCIefAgloUU"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/weapons/staff.webp",
+            "img": "icons/weapons/staves/staff-simple.webp",
             "name": "Wax Stirring Stick",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "staff",
                 "bonus": {
                     "value": 0
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {}
@@ -77,6 +69,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -85,9 +82,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "staff",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -139,25 +133,22 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "unique",
@@ -179,8 +170,8 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.ilbLQNy6TbBPW7sQ"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/clothes-ordinary.webp",
-            "name": "Singed leather apron and Clothing",
+            "img": "icons/equipment/chest/shirt-collared-brown.webp",
+            "name": "Singed Leather Apron and Clothing",
             "sort": 300000,
             "system": {
                 "baseItem": null,
@@ -204,27 +195,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "clothing-ordinary",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -241,7 +229,7 @@
         },
         {
             "_id": "awiTMgWCM0KexLLD",
-            "img": "systems/pf2e/icons/equipment/weapons/harmona-gun.webp",
+            "img": "icons/weapons/guns/rifle-white.webp",
             "name": "Improvised Wax Sprayer",
             "sort": 400000,
             "system": {
@@ -266,25 +254,22 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -306,7 +291,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.VISk5uLPVIvNWovB"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/bestial-mutagen.webp",
+            "img": "icons/consumables/potions/bottle-round-flask-fumes-purple.webp",
             "name": "Bestial Mutagen (Moderate)",
             "sort": 500000,
             "system": {
@@ -326,7 +311,7 @@
                 },
                 "containerId": null,
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<hr />\n<p>Your features transform into something bestial and you take on muscle mass, but your lumbering form is clumsy.</p>\n<p><strong>Benefit</strong> You gain a +2 item bonus to Athletics checks and unarmed attack rolls. You gain a claw unarmed attack (@Damage[1d6[slashing]] damage) with the agile trait and a jaws unarmed attack (@Damage[1d8[piercing]] damage).</p>\n<p><strong>Drawback</strong> You take a -1 penalty to AC and a -2 penalty to Reflex saves.</p>\n<p><strong>Duration</strong> 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Bestial Mutagen (Moderate)]</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<hr />\n<p>Your features transform into something bestial and you take on muscle mass, but your lumbering form is clumsy.</p>\n<p><strong>Benefit</strong> You gain a +2 item bonus to Athletics checks and unarmed attack rolls. You gain a claw unarmed attack (@Damage[1d6[slashing]] damage) with the agile trait and a jaws unarmed attack (@Damage[1d8[piercing]] damage).</p>\n<p><strong>Drawback</strong> You take a -1 penalty to AC and a -2 penalty to Reflex saves.</p>\n<p><strong>Duration</strong> 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Bestial Mutagen (Moderate)]</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -343,27 +328,24 @@
                 "level": {
                     "value": 3
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 12
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 2,
                 "rules": [],
                 "size": "med",
                 "slug": "bestial-mutagen-moderate",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -385,6 +367,102 @@
             "type": "consumable"
         },
         {
+            "_id": "KVCx0qW7ozoFIZ5b",
+            "flags": {
+                "core": {
+                    "sourceId": "Compendium.pf2e.bestiary-effects.Item.wE4S9lwOhtaRAm9n"
+                }
+            },
+            "img": "systems/pf2e/icons/equipment/alchemical-items/alchemical-elixirs/comprehension-elixir.webp",
+            "name": "Effect: Active Mutagen",
+            "sort": 600000,
+            "system": {
+                "description": {
+                    "value": "<p>Darius has an active mutagen.</p>"
+                },
+                "duration": {
+                    "expiry": "turn-start",
+                    "sustained": false,
+                    "unit": "unlimited",
+                    "value": -1
+                },
+                "level": {
+                    "value": 1
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Adventure: A Fistful of Flowers"
+                },
+                "rules": [
+                    {
+                        "attackModifier": 12,
+                        "category": "unarmed",
+                        "damage": {
+                            "base": {
+                                "damageType": "piercing",
+                                "dice": 1,
+                                "die": "d8",
+                                "modifier": 5
+                            }
+                        },
+                        "key": "Strike",
+                        "label": "PF2E.BattleForm.Attack.Jaws",
+                        "slug": "jaws",
+                        "traits": [
+                            "agile",
+                            "unarmed"
+                        ]
+                    },
+                    {
+                        "attackModifier": 12,
+                        "category": "unarmed",
+                        "damage": {
+                            "base": {
+                                "damageType": "slashing",
+                                "dice": 1,
+                                "die": "d10",
+                                "modifier": 5
+                            }
+                        },
+                        "key": "Strike",
+                        "label": "PF2E.BattleForm.Attack.Claw",
+                        "slug": "claw",
+                        "traits": [
+                            "unarmed"
+                        ]
+                    },
+                    {
+                        "key": "FlatModifier",
+                        "selector": "athletics",
+                        "value": 2
+                    },
+                    {
+                        "key": "FlatModifier",
+                        "selector": "ac",
+                        "value": -1
+                    },
+                    {
+                        "key": "FlatModifier",
+                        "selector": "reflex",
+                        "value": -2
+                    }
+                ],
+                "slug": "effect-active-mutagen",
+                "start": {
+                    "initiative": 46,
+                    "value": 4782
+                },
+                "tokenIcon": {
+                    "show": true
+                },
+                "traits": {
+                    "value": []
+                }
+            },
+            "type": "effect"
+        },
+        {
             "_id": "L0XHKXE9uSNSy90h",
             "flags": {
                 "pf2e": {
@@ -393,7 +471,7 @@
             },
             "img": "systems/pf2e/icons/default-icons/melee.svg",
             "name": "Wax Stirring Stick",
-            "sort": 600000,
+            "sort": 700000,
             "system": {
                 "attack": {
                     "value": ""
@@ -413,11 +491,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -436,7 +516,7 @@
             "_id": "xaLR3kxqklsAogya",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Metabolize Mutagen",
-            "sort": 700000,
+            "sort": 800000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -446,111 +526,18 @@
                 },
                 "category": "defensive",
                 "description": {
-                    "value": "<p>Darius metabolizes the power of an active mutagen to regain [[/r {2d6} #hit points]] Hit Points. If he does so (or if he's confronted by a stealthy party before he's had a chance to drink a mutagen), he loses his jaws and claw unarmed attacks, his bonus on Athletics checks decreases by 2, his AC increases by 1, and his Reflex save bonus increases by 2.</p>"
+                    "value": "<p>Darius metabolizes the power of an active mutagen to regain [[/r 2d6[healing]]]{2d6 Hit Points}. If he does so (or if he's confronted by a stealthy party before he's had a chance to drink a mutagen), he loses his jaws and claw unarmed attacks, his bonus on Athletics checks decreases by 2, his AC increases by 1, and his Reflex save bonus increases by 2.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.Effect: Active Mutagen]</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
                 },
-                "rules": [
-                    {
-                        "domain": "all",
-                        "key": "RollOption",
-                        "label": "Darius has an active mutagen effect",
-                        "option": "active-mutagen",
-                        "toggleable": true
-                    },
-                    {
-                        "category": "unarmed",
-                        "damage": {
-                            "base": {
-                                "damageType": "piercing",
-                                "dice": 1,
-                                "die": "d8"
-                            }
-                        },
-                        "group": "brawling",
-                        "key": "Strike",
-                        "label": "Jaws",
-                        "predicate": [
-                            "active-mutagen"
-                        ],
-                        "traits": [
-                            "agile",
-                            "unarmed"
-                        ]
-                    },
-                    {
-                        "category": "unarmed",
-                        "damage": {
-                            "base": {
-                                "damageType": "slashing",
-                                "dice": 1,
-                                "die": "d10"
-                            }
-                        },
-                        "group": "brawling",
-                        "key": "Strike",
-                        "label": "Claw",
-                        "predicate": [
-                            "active-mutagen"
-                        ],
-                        "traits": [
-                            "unarmed"
-                        ]
-                    },
-                    {
-                        "key": "FlatModifier",
-                        "label": "Active Mutagen",
-                        "predicate": [
-                            "active-mutagen"
-                        ],
-                        "selector": "athletics",
-                        "type": "untyped",
-                        "value": 2
-                    },
-                    {
-                        "key": "FlatModifier",
-                        "label": "Active Mutagen",
-                        "predicate": [
-                            "active-mutagen"
-                        ],
-                        "selector": "ac",
-                        "type": "untyped",
-                        "value": -1
-                    },
-                    {
-                        "key": "FlatModifier",
-                        "label": "Active Mutagen",
-                        "predicate": [
-                            "active-mutagen"
-                        ],
-                        "selector": "reflex",
-                        "type": "untyped",
-                        "value": -2
-                    },
-                    {
-                        "key": "FlatModifier",
-                        "label": "Active Mutagen",
-                        "predicate": [
-                            "active-mutagen"
-                        ],
-                        "selector": "jaws-damage",
-                        "value": 5
-                    },
-                    {
-                        "key": "FlatModifier",
-                        "label": "Active Mutagen",
-                        "predicate": [
-                            "active-mutagen"
-                        ],
-                        "selector": "claw-damage",
-                        "value": 5
-                    }
-                ],
+                "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -568,7 +555,7 @@
             "_id": "1AYgyqie1Elv3mKg",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Crystaline Mutation",
-            "sort": 800000,
+            "sort": 900000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -580,14 +567,16 @@
                 "description": {
                     "value": "<p>When Darius drinks any mutagen, his teeth and fingernails grow sharp crystalline edges.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -602,7 +591,7 @@
             "_id": "2KlbsyUe3x0xTxPs",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Spray Hot Wax",
-            "sort": 900000,
+            "sort": 1000000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -612,16 +601,18 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>Darius sprays hot wax from his improvised wax sprayer in a @Template[type:cone|distance:15]. All creatures in the area must attempt a @Check[type:reflex|dc:20] save. Scented candles homonoculi in the area take no damage, instead [[/r 2d6[healing]]] damage. After using the hot wax cannon, Darius can't use it again until he takes two Interact actions while adjacent to the cauldron of bubbling wax to reload the sprayer.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[3d6[fire]] damage plus @Damage[1d6[persistent,fire]] damage.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[5d6[fire]] damage plus @Damage[2d6[persistent,fire]] damage.</p>"
+                    "value": "<p>Darius sprays hot wax from his improvised wax sprayer in a @Template[type:cone|distance:15]. All creatures in the area must attempt a @Check[type:reflex|dc:20] save. Scented candle homonoculi in the area take no damage, instead healing [[/r 2d6[healing]]] damage. After using the hot wax cannon, Darius can't use it again until he takes two Interact actions while adjacent to the cauldron of bubbling wax to reload the sprayer.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature takes no damage.</p>\n<p><strong>Success</strong> The creature takes @Damage[2d6[fire]] damage.</p>\n<p><strong>Failure</strong> The creature takes @Damage[3d6[fire],1d6[persistent,fire]]{3d6 fire damage plus 1d6 persistent fire damage}.</p>\n<p><strong>Critical Failure</strong> The creature takes @Damage[5d6[fire],2d6[persistent,fire]]{5d6 fire damage plus 2d6 persistent fire damage}.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -636,7 +627,7 @@
             "_id": "a2VQ1K3uiwYc9JIB",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Athletics",
-            "sort": 1000000,
+            "sort": 1100000,
             "system": {
                 "description": {
                     "value": ""
@@ -647,11 +638,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -659,7 +652,7 @@
             "_id": "EExVMicBa6AmOxY6",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Crafting",
-            "sort": 1100000,
+            "sort": 1200000,
             "system": {
                 "description": {
                     "value": ""
@@ -670,11 +663,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -682,29 +677,6 @@
             "_id": "a592zkGyheYN8w6S",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Deception",
-            "sort": 1200000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 8
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "3qfpZrER7Tmqz04Q",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Occultism",
             "sort": 1300000,
             "system": {
                 "description": {
@@ -716,11 +688,38 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
+                "slug": null
+            },
+            "type": "lore"
+        },
+        {
+            "_id": "3qfpZrER7Tmqz04Q",
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Occultism",
+            "sort": 1400000,
+            "system": {
+                "description": {
                     "value": ""
-                }
+                },
+                "mod": {
+                    "value": 8
+                },
+                "proficient": {
+                    "value": 0
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null
             },
             "type": "lore"
         },
@@ -728,7 +727,7 @@
             "_id": "BYOVQXPBMpQjNFII",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Society",
-            "sort": 1400000,
+            "sort": 1500000,
             "system": {
                 "description": {
                     "value": ""
@@ -739,11 +738,13 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         }
@@ -796,18 +797,16 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "N"
-            },
             "blurb": "Male human alchemist",
-            "creatureType": "",
             "level": {
                 "value": 3
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Adventure: A Fistful of Flowers"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Adventure: A Fistful of Flowers"
             }
         },
         "resources": {},

@@ -1,6 +1,6 @@
 {
     "_id": "XQBkuELucpI0c7XW",
-    "img": "systems/pf2e/icons/default-icons/equipment.svg",
+    "img": "icons/environment/settlement/tent.webp",
     "name": "Floating Tent (Four-Person)",
     "system": {
         "baseItem": null,
@@ -19,26 +19,23 @@
         "level": {
             "value": 2
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 25
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": true,
+            "title": "Pathfinder Rage of Elements"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Rage of Elements"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",

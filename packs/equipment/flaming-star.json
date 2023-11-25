@@ -1,6 +1,6 @@
 {
     "_id": "FkII0xws6an5vFSS",
-    "img": "systems/pf2e/icons/equipment/other/spellhearts/flaming-star.webp",
+    "img": "icons/equipment/neck/necklace-astrology-sun-gold.webp",
     "name": "Flaming Star",
     "system": {
         "baseItem": null,
@@ -19,31 +19,27 @@
         "level": {
             "value": 3
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 55
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Secrets of Magic"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Secrets of Magic"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
-                "evocation",
                 "fire",
                 "magical",
                 "spellheart"

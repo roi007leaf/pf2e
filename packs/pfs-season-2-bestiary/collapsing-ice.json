@@ -18,14 +18,16 @@
                 "description": {
                     "value": "<p><strong>Trigger</strong> A creature follows the false trail onto thin ice</p>\n<hr />\n<p><strong>Effect</strong> The ice collapses beneath the lead dog sled team. The dogs and sled can be rescued, but the PCs lose significant time.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -62,17 +64,19 @@
         "creatureType": "",
         "details": {
             "description": "<p>The ice here is weak and collapses under the weight of a Small or larger creature.</p>",
-            "disable": "<p><span class=\"pf2-icon\">2</span> @Check[type:crafting|dc:19|name:Create Ice Brace|traits:enviornmental] to create a makeshift device to brace the ice.</p>",
+            "disable": "<p><span class=\"pf2-icon\">2</span> @Check[type:crafting|dc:19|name:Create Ice Brace] to create a makeshift device to brace the ice.</p>",
             "isComplex": false,
             "level": {
                 "value": 0
             },
+            "publication": {
+                "authors": "",
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Bounty #1: The Whitefang Wyrm"
+            },
             "reset": "",
-            "routine": "",
-            "source": {
-                "author": "",
-                "value": "Pathfinder Bounty #1: The Whitefang Wyrm"
-            }
+            "routine": ""
         },
         "saves": {
             "fortitude": {

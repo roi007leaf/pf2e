@@ -1,6 +1,6 @@
 {
     "_id": "cgWT0BUa6b6V7zDg",
-    "img": "systems/pf2e/icons/equipment/consumables/other-consumables/feather-token.webp",
+    "img": "icons/commodities/materials/feather-blue.webp",
     "name": "Feather Token (Balloon)",
     "system": {
         "autoDestroy": {
@@ -32,31 +32,27 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 50
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Special: Fumbus!"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Special: Fumbus!"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
-                "conjuration",
                 "consumable",
                 "magical"
             ]

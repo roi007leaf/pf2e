@@ -19,19 +19,19 @@
         "level": {
             "value": 1
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 5
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Knights of Lastwall"
         },
         "quantity": 1,
         "rules": [
@@ -46,16 +46,15 @@
                 },
                 "group": "shield",
                 "key": "Strike",
-                "range": 20,
+                "range": {
+                    "increment": 20
+                },
                 "traits": [
                     "thrown"
                 ]
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Lost Omens: Knights of Lastwall"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",

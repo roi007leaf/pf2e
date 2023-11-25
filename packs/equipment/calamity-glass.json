@@ -19,30 +19,26 @@
         "level": {
             "value": 11
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {}
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Dark Archive"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Dark Archive"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
                 "cursed",
-                "divination",
                 "magical",
                 "scrying"
             ]

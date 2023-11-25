@@ -11,6 +11,7 @@ import { CheckDC } from "@system/degree-of-success.ts";
 import { Statistic, StatisticRollParameters } from "@system/statistic/index.ts";
 import { ErrorPF2e, getActionGlyph, htmlClosest, htmlQueryAll, sluggify, tupleHasValue } from "@util";
 import { getSelectedOrOwnActors } from "@util/token-actor-utils.ts";
+import * as R from "remeda";
 
 const inlineSelector = ["action", "check", "effect-area"].map((keyword) => `[data-pf2-${keyword}]`).join(",");
 
@@ -126,34 +127,36 @@ export const InlineRollLinks = {
             if (!pf2Check) return;
 
             link.addEventListener("click", async (event) => {
-                const parent = resolveActor(foundryDoc);
-                const actors = (() => {
-                    if (pf2Roller === "self") {
-                        const validActor = parent instanceof ActorPF2e && parent.canUserModify(game.user, "update");
-                        if (!validActor) {
-                            ui.notifications.warn(game.i18n.localize("PF2E.UI.warnNoActor"));
-                        }
-                        return validActor ? [parent] : [];
+                const parent = resolveActor(foundryDoc, link);
+                const actors = ((): ActorPF2e[] => {
+                    switch (pf2Roller) {
+                        case "self":
+                            return parent?.canUserModify(game.user, "update") ? [parent] : [];
+                        case "party":
+                            if (parent?.isOfType("party")) return [parent];
+                            return R.compact([game.actors.party]);
                     }
 
+                    // Use the DOM document as a fallback if it's an actor and the check isn't a saving throw
                     const actors = getSelectedOrOwnActors();
-                    if (actors.length === 0) {
-                        // Use the DOM document as a fallback if it's an actor and the check isn't a saving throw
-                        if (parent instanceof ActorPF2e && !tupleHasValue(SAVE_TYPES, pf2Check)) {
-                            return [parent];
-                        }
-                        ui.notifications.warn(game.i18n.localize("PF2E.UI.errorTargetToken"));
+                    const isSave = tupleHasValue(SAVE_TYPES, pf2Check);
+                    if (parent?.isOfType("party") || (actors.length === 0 && parent && !isSave)) {
+                        return [parent];
                     }
+
                     return actors;
                 })();
 
-                if (actors.length === 0) return;
+                if (actors.length === 0) {
+                    ui.notifications.error("PF2E.ErrorMessage.NoTokenSelected", { localize: true });
+                    return;
+                }
 
                 const extraRollOptions = [
                     ...(pf2Traits?.split(",").map((o) => o.trim()) ?? []),
                     ...(pf2RollOptions?.split(",").map((o) => o.trim()) ?? []),
                 ];
-                const eventRollParams = eventToRollParams(event);
+                const eventRollParams = eventToRollParams(event, { type: "check" });
 
                 switch (pf2Check) {
                     case "flat": {
@@ -233,10 +236,10 @@ export const InlineRollLinks = {
                                     foundryDoc instanceof ItemPF2e
                                         ? foundryDoc
                                         : foundryDoc instanceof ChatMessagePF2e
-                                        ? foundryDoc.item
-                                        : null;
+                                          ? foundryDoc.item
+                                          : null;
 
-                                return itemFromDoc?.isOfType("action", "feat") ||
+                                return itemFromDoc?.isOfType("action", "feat", "campaignFeature") ||
                                     (isSavingThrow && !itemFromDoc?.isOfType("weapon"))
                                     ? itemFromDoc
                                     : null;
@@ -259,8 +262,8 @@ export const InlineRollLinks = {
                                     pf2Check in CONFIG.PF2E.magicTraditions
                                         ? "PF2E.ActionsCheck.spell"
                                         : statistic.check.type === "attack-roll"
-                                        ? "PF2E.ActionsCheck.x-attack-roll"
-                                        : "PF2E.ActionsCheck.x";
+                                          ? "PF2E.ActionsCheck.x-attack-roll"
+                                          : "PF2E.ActionsCheck.x";
                                 args.label = await renderTemplate("systems/pf2e/templates/chat/action/header.hbs", {
                                     glyph: getActionGlyph(item.actionCost),
                                     subtitle: game.i18n.format(subtitleLocKey, { type: statistic.label }),
@@ -294,7 +297,7 @@ export const InlineRollLinks = {
                 }
 
                 const templateData: DeepPartial<foundry.documents.MeasuredTemplateSource> = JSON.parse(
-                    pf2TemplateData ?? "{}"
+                    pf2TemplateData ?? "{}",
                 );
                 templateData.distance ||= Number(pf2Distance);
                 templateData.fillColor ||= game.user.color;
@@ -345,7 +348,7 @@ export const InlineRollLinks = {
             return;
         }
 
-        const actor = resolveActor(foundryDoc);
+        const actor = resolveActor(foundryDoc, target);
         const defaultVisibility = (actor ?? foundryDoc)?.hasPlayerOwner ? "all" : "gm";
         const content = (() => {
             if (target.parentElement?.dataset?.pf2Checkgroup !== undefined) {
@@ -370,8 +373,8 @@ export const InlineRollLinks = {
             foundryDoc instanceof JournalEntry
                 ? { pf2e: { journalEntry: foundryDoc.uuid } }
                 : message?.flags.pf2e.origin
-                ? { pf2e: { origin: deepClone(message.flags.pf2e.origin) } }
-                : {};
+                  ? { pf2e: { origin: deepClone(message.flags.pf2e.origin) } }
+                  : {};
 
         ChatMessagePF2e.create({
             speaker,
@@ -401,9 +404,13 @@ function resolveDocument(html: HTMLElement, foundryDoc?: ClientDocument | null):
     return document instanceof ActorPF2e || document instanceof JournalEntry ? document : null;
 }
 
-/** Retrieves the actor for the given document, or the document itself if its already an actor */
-function resolveActor(foundryDoc: ClientDocument | null): ActorPF2e | null {
+/** Retrieve an actor via a passed document or item UUID in the dataset of a link */
+function resolveActor(foundryDoc: ClientDocument | null, anchor: HTMLElement): ActorPF2e | null {
     if (foundryDoc instanceof ActorPF2e) return foundryDoc;
     if (foundryDoc instanceof ItemPF2e || foundryDoc instanceof ChatMessagePF2e) return foundryDoc.actor;
-    return null;
+
+    // Retrieve item/actor from anywhere via UUID
+    const itemUuid = anchor.dataset.itemUuid;
+    const itemByUUID = itemUuid && !itemUuid.startsWith("Compendium.") ? fromUuidSync(itemUuid) : null;
+    return itemByUUID instanceof ItemPF2e ? itemByUUID.actor : null;
 }

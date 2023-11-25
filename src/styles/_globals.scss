@@ -13,9 +13,10 @@
 /* ----------------------------------------- */
 
 /** A vertical rule in a flexbox */
-.vr {
+hr.vr {
     border: 1px inset;
-    margin: 1px;
+    height: 1.25em;
+    margin: 1px 2px;
 }
 
 /* ----------------------------------------- */
@@ -62,7 +63,7 @@ p.compact-text {
     align-self: center;
     display: inline;
     font-family: "Pathfinder2eActions", sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     margin: 0;
     padding: 0;
 }
@@ -129,6 +130,23 @@ a.foundry-href {
         color: var(--color-text-dark-inactive);
         margin-right: 0.25em;
     }
+}
+
+a.content-link {
+    line-height: 1.6em;
+
+    // Automatically italicize spell content links
+    &:has(i.fa-sparkles) {
+        font-style: italic;
+    }
+}
+
+#tooltip a.content-link {
+    color: var(--color-text-dark-primary);
+}
+
+.inline-roll.altered {
+    color: var(--color-text-dark-improved);
 }
 
 /* ----------------------------------------- */
@@ -284,7 +302,7 @@ i[data-pf2-repost] {
     display: inline-block;
     line-height: 1em;
     outline: 1px dotted rgba(75, 74, 68, 0.5);
-    padding: 2px 1px 0px;
+    padding: 1px;
 
     /* ----------------------------------------- */
     /* GM Visibility Elements                    */
@@ -318,6 +336,23 @@ a[href]:hover {
 
 #tinymce {
     @include journal-styling;
+}
+
+// System theme Foundry tooltips
+#tooltip.pf2e {
+    @include corner-boxes;
+    background: rgba(black, 0.9);
+    font-size: var(--font-size-14);
+    padding: 0.25rem 0;
+    text-align: left;
+
+    h1,
+    h2,
+    h3 {
+        font-size: var(--font-size-12);
+        font-weight: 500;
+        text-align: left;
+    }
 }
 
 /* ----------------------------------------- */

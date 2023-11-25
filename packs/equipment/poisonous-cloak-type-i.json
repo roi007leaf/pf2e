@@ -1,6 +1,6 @@
 {
     "_id": "65ZhBT2S8bCeEIgz",
-    "img": "systems/pf2e/icons/equipment/cursed-items/poisonous-cloak.webp",
+    "img": "icons/equipment/back/cloak-plain-green.webp",
     "name": "Poisonous Cloak Type I",
     "system": {
         "baseItem": null,
@@ -19,32 +19,28 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": ""
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {}
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Gamemastery Guide"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Gamemastery Guide"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "rare",
             "value": [
                 "cursed",
                 "invested",
-                "magical",
-                "transmutation"
+                "magical"
             ]
         },
         "usage": {

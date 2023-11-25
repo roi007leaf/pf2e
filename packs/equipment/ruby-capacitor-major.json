@@ -19,7 +19,7 @@
         },
         "containerId": null,
         "description": {
-            "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">f</span> Interact</p>\n<p><strong>Requirements</strong> You prepared the staff.</p>\n<hr />\n<p>This cluster of unworked ruby is bound to the top of a staff by silver wire. When activated, it adds five temporary charges to the staff. Any spells cast from the staff before the end of the turn expend these charges first. Any unused temporary charges are lost at the end of your turn.</p>"
+            "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">f</span> Interact</p>\n<p><strong>Requirements</strong> You prepared the staff.</p>\n<hr />\n<p>This cluster of unworked ruby is bound to the top of a staff by silver wire. When activated, it adds five temporary charges to the staff. Any spells cast from the staff before the end of the turn expend these charges first. Any unused temporary charges are lost at the end of your turn.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -32,34 +32,30 @@
         "level": {
             "value": 18
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 4500
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
-                "talisman",
-                "magical",
                 "consumable",
-                "evocation"
+                "magical",
+                "talisman"
             ]
         },
         "usage": {

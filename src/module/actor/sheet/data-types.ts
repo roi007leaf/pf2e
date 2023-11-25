@@ -3,7 +3,6 @@ import { ActorSizePF2e } from "@actor/data/size.ts";
 import { InventoryBulk } from "@actor/inventory/index.ts";
 import { PhysicalItemPF2e } from "@item";
 import { Coins } from "@item/physical/data.ts";
-import { PhysicalItemType } from "@item/physical/types.ts";
 import { RollOptionToggle } from "@module/rules/synthetics.ts";
 import { SheetOptions } from "@module/sheet/helpers.ts";
 
@@ -30,12 +29,12 @@ export type CoinageSummary = { [K in keyof Coins]?: CoinDisplayData };
 
 interface SheetItemList {
     label: string;
-    type: PhysicalItemType;
+    types: string[];
     items: InventoryItem[];
 }
 
 export interface SheetInventory {
-    sections: Record<Exclude<PhysicalItemType, "book">, SheetItemList>;
+    sections: SheetItemList[];
     bulk: InventoryBulk;
     showValueAlways: boolean;
     showIndividualPricing: boolean;
@@ -52,7 +51,7 @@ export interface ActorSheetDataPF2e<TActor extends ActorPF2e> extends ActorSheet
     totalCoinageGold: string;
     totalWealth: Coins;
     totalWealthGold: string;
-    canDistributeCoins?: boolean;
+    canDistributeCoins?: { enabled: boolean } | null;
     inventory: SheetInventory;
     enrichedContent: Record<string, string>;
 }

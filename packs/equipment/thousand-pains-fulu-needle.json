@@ -1,6 +1,6 @@
 {
     "_id": "7PhPuAFP4mQz9jDr",
-    "img": "systems/pf2e/icons/default-icons/consumable.svg",
+    "img": "systems/pf2e/icons/equipment/consumables/fulus/fulu-fancy.webp",
     "name": "Thousand-Pains Fulu (Needle)",
     "system": {
         "autoDestroy": {
@@ -32,34 +32,30 @@
         "level": {
             "value": 11
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 270
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "uncommon",
             "value": [
                 "consumable",
                 "fulu",
-                "magical",
-                "necromancy"
+                "magical"
             ]
         },
         "usage": {

@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/default-icons/weapon.svg",
     "name": "Coldstar Pistols",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "dueling-pistol",
         "bonus": {
             "value": 0
@@ -21,7 +18,7 @@
             "die": "d6"
         },
         "description": {
-            "value": "<p>One dueling pistol in this paired set is etched with flames along its barrel, while the other is etched with icicles. In these separate forms, one gun comprising the <em>Coldstar Pistols</em> functions as a <em>+3 greater striking greater flaming dueling pistol</em> and the other as a <em>+3 greater striking greater frost dueling pistol</em>. When joined, the guns form a double-barreled weapon that functions as a<em> +4 major striking greater flaming greater frost dueling pistol.</em> The combined form has a range increment of 120 feet. In either form, the <em>Coldstar Pistols</em> have the agile, concealable, concussive, and fatal d10 traits. As star guns, the <em>Coldstar Pistols</em> run on magic and don't use ammunition or black powder.</p>\n<p><strong>Activate</strong><span class=\"pf2-icon\">1</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> You switch the <em>Coldstar Pistols</em> from one form to the other. Attempt a Deception check to @UUID[Compendium.pf2e.actionspf2e.Item.Feint] with a +4 circumstance bonus.</p>\n<p><strong>Activate</strong><span class=\"pf2-icon\">1</span> Interact</p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Make two Strikes against one target, taking the highest of the two attack rolls and applying it to both attacks. Your multiple attack penalty increases only after these Strikes.</p>\n<p><strong>Destruction</strong> If Deft Onki's name and deeds ever fade from mortal memory entirely, the<em> Coldstar Pistols</em> can be destroyed like a normal object.</p>"
+            "value": "<p>One dueling pistol in this paired set is etched with flames along its barrel, while the other is etched with icicles. In these separate forms, one gun comprising the <em>Coldstar Pistols</em> functions as a <em>+3 greater striking greater flaming dueling pistol</em> and the other as a <em>+3 greater striking greater frost dueling pistol</em>. When joined, the guns form a double-barreled weapon that functions as a<em> +4 major striking greater flaming greater frost dueling pistol.</em> The combined form has a range increment of 120 feet. In either form, the <em>Coldstar Pistols</em> have the agile, concealable, concussive, and fatal d10 traits. As star guns, the <em>Coldstar Pistols</em> run on magic and don't use ammunition or black powder.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">1</span> Interact</p>\n<hr />\n<p><strong>Effect</strong> You switch the <em>Coldstar Pistols</em> from one form to the other. Attempt a Deception check to @UUID[Compendium.pf2e.actionspf2e.Item.Feint] with a +4 circumstance bonus.</p>\n<p><strong>Activate</strong><span class=\"action-glyph\">1</span> Interact</p>\n<p><strong>Frequency</strong> once per round</p>\n<hr />\n<p><strong>Effect</strong> Make two Strikes against one target, taking the highest of the two attack rolls and applying it to both attacks. Your multiple attack penalty increases only after these Strikes.</p>\n<p><strong>Destruction</strong> If Deft Onki's name and deeds ever fade from mortal memory entirely, the<em> Coldstar Pistols</em> can be destroyed like a normal object.</p>"
         },
         "equippedBulk": {
             "value": ""
@@ -35,17 +32,12 @@
         "level": {
             "value": 23
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": "high",
+            "type": "siccatite"
         },
         "potencyRune": {
             "value": 4
-        },
-        "preciousMaterial": {
-            "value": "siccatite"
-        },
-        "preciousMaterialGrade": {
-            "value": "high"
         },
         "price": {
             "value": {}
@@ -62,6 +54,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "range": 120,
         "reload": {
@@ -69,9 +66,6 @@
         },
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "specific": {
             "material": {
                 "precious": null
@@ -98,8 +92,8 @@
         "traits": {
             "rarity": "unique",
             "value": [
-                "artifact",
                 "agile",
+                "artifact",
                 "concealable",
                 "concussive",
                 "fatal-d10"

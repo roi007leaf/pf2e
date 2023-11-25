@@ -19,32 +19,28 @@
         "level": {
             "value": 15
         },
-        "negateBulk": {
-            "value": ""
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 9500
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #148: Fires of the Haunted City"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder #148: Fires of the Haunted City"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "rare",
             "value": [
                 "dwarf",
-                "evocation",
                 "magical",
                 "saggorak"
             ]

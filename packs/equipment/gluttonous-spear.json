@@ -3,9 +3,6 @@
     "img": "systems/pf2e/icons/equipment/weapons/specific-magic-weapons/gluttonous-spear.webp",
     "name": "Gluttonous Spear",
     "system": {
-        "MAP": {
-            "value": ""
-        },
         "baseItem": "spear",
         "bonus": {
             "value": 0
@@ -35,17 +32,12 @@
         "level": {
             "value": 6
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
         "potencyRune": {
             "value": 1
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
         },
         "price": {
             "value": {
@@ -64,6 +56,11 @@
         "propertyRune4": {
             "value": null
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Adventure: The Slithering"
+        },
         "quantity": 1,
         "range": null,
         "reload": {
@@ -81,9 +78,6 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Adventure: The Slithering"
-        },
         "specific": {
             "material": null,
             "runes": {
@@ -103,7 +97,6 @@
             "rarity": "uncommon",
             "value": [
                 "magical",
-                "necromancy",
                 "thrown-20"
             ]
         },

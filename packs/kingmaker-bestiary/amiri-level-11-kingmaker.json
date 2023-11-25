@@ -3,318 +3,6 @@
     "img": "systems/pf2e/icons/iconics/AmiriFull.webp",
     "items": [
         {
-            "_id": "ryIgnzVnRFtnlaWn",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.ancestries.Item.IiG7DgeLWYrSNXuX"
-                }
-            },
-            "img": "systems/pf2e/icons/default-icons/alternatives/ancestries/human.svg",
-            "name": "Human",
-            "sort": 0,
-            "system": {
-                "additionalLanguages": {
-                    "count": 1,
-                    "custom": "",
-                    "value": []
-                },
-                "boosts": {
-                    "0": {
-                        "selected": "str",
-                        "value": [
-                            "cha",
-                            "con",
-                            "dex",
-                            "int",
-                            "str",
-                            "wis"
-                        ]
-                    },
-                    "1": {
-                        "value": []
-                    },
-                    "2": {
-                        "selected": "con",
-                        "value": [
-                            "str",
-                            "dex",
-                            "con",
-                            "int",
-                            "wis",
-                            "cha"
-                        ]
-                    }
-                },
-                "description": {
-                    "value": "<p><em>As unpredictable and varied as any of Golarion's peoples, humans have exceptional drive and the capacity to endure and expand. Though many civilizations thrived before humanity rose to prominence, humans have built some of the greatest and the most terrible societies throughout the course of history, and today they are the most populous people in the realms around the Inner Sea.</em></p>\n<hr />\n<p>Humans' ambition, versatility, and exceptional potential have led to their status as the world's predominant ancestry. Their empires and nations are vast, sprawling things, and their citizens carve names for themselves with the strength of their sword arms and the power of their spells. Humanity is diverse and tumultuous, running the gamut from nomadic to imperial, sinister to saintly. Many of them venture forth to explore, to map the expanse of the multiverse, to search for long-lost treasure, or to lead mighty armies to conquer their neighbors—for no better reason than because they can.</p>\n<p>If you want a character who can be just about anything, you should play a human.</p>\n<h2>You Might...</h2>\n<ul>\n<li>Strive to achieve greatness, either in your own right or on behalf of a cause.</li>\n<li>Seek to understand your purpose in the world.</li>\n<li>Cherish your relationships with family and friends.</li>\n</ul>\n<h2>Others Probably...</h2>\n<ul>\n<li>Respect your flexibility, your adaptability, and—in most cases— your open‑mindedness.</li>\n<li>Distrust your intentions, fearing you seek only power or wealth.</li>\n<li>Aren't sure what to expect from you and are hesitant to assume your intentions.</li>\n</ul>\n<h2>Physical Description</h2>\n<p>Humans' physical characteristics are as varied as the world's climes. Humans have a wide variety of skin and hair colors, body types, and facial features. Generally speaking, their skin has a darker hue the closer to the equator they or their ancestors lived.</p>\n<p>Humans reach physical adulthood around the age of 15, though mental maturity occurs a few years later. A typical human can live to be around 90 years old. Humans often intermarry with people of other ancestries, giving rise to children who bear the traits of both parents. The most notable half-humans are half-elves and half-orcs.</p>\n<h2>Society</h2>\n<p>Human variety also manifests in terms of their governments, attitudes, and social norms. Though the oldest of human cultures can trace their shared histories thousands of years into the past, when compared to the societies of the elves or dwarves, human civilizations seem in a state of constant flux as empires fragment and new kingdoms subsume the old.</p>\n<h2>Alignment and Religion</h2>\n<p>Humanity is perhaps the most heterogeneous of all the ancestries, with a capacity for great evil and boundless good. Some humans assemble into vast raging hordes, while others build sprawling cities. Considered as a whole, most humans are neutral, yet they tend to congregate into nations or communities of a shared alignment, or at least a shared tendency toward an alignment. Humans also worship a wide range of gods and practice many different religions, tending to seek favor from any divine being they encounter.</p>\n<h2>Names</h2>\n<p>Unlike many ancestral cultures, which generally cleave to specific traditions and shared histories, humanity's diversity has resulted in a near-infinite set of names. The humans of northern tribes have different names than those dwelling in southern nation-states. Humans throughout much of the world speak Common (though some continents on Golarion have their own regional common languages), yet their names are as varied as their beliefs and appearances.</p>\n<h3><span style=\"text-decoration: underline;\">Sample Names</span></h3>\n<p>A variety of human ethnic groups—many of which have origins on distant lands— populates the continents bordering Golarion's Inner Sea. Human characters can be any of these ethnicities, regardless of what lands they call home.</p>\n<hr />\n<p>Characters of human ethnicities in the Inner Sea region speak Common (also known as Taldane), and some ethnicities grant access to an uncommon language.</p>\n<h2 style=\"border-bottom: 1px solid var(--color-underline-header);\">Human Mechanics</h2>\n<p><strong>Hit Points</strong> 8</p>\n<p><strong>Size</strong> Medium</p>\n<p><strong>Speed</strong> 25 feet</p>\n<p><strong>Ability Boosts</strong> Two free ability boosts</p>\n<p><strong>Languages</strong> Common</p>\n<p><strong>Additional Languages</strong> equal to 1 + your Intelligence modifier (if it's positive). Choose from the list of common languages and any other languages to which you have access (such as the languages prevalent in your region).</p>"
-                },
-                "flaws": {
-                    "0": {
-                        "value": []
-                    }
-                },
-                "hp": 8,
-                "items": {},
-                "languages": {
-                    "custom": "",
-                    "value": [
-                        "common"
-                    ]
-                },
-                "reach": 5,
-                "rules": [],
-                "size": "med",
-                "slug": "human",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "speed": 25,
-                "traits": {
-                    "rarity": "common",
-                    "value": [
-                        "human",
-                        "humanoid"
-                    ]
-                },
-                "vision": "normal"
-            },
-            "type": "ancestry"
-        },
-        {
-            "_id": "da0P8RPQbAqIpuym",
-            "flags": {
-                "core": {
-                    "sourceId": "Compendium.pf2e.classes.Item.YDRiP7uVvr9WRhOI"
-                },
-                "pf2e": {
-                    "insertedClassFeaturesLevel": 1
-                }
-            },
-            "img": "systems/pf2e/icons/classes/barbarian.webp",
-            "name": "Barbarian",
-            "sort": 0,
-            "system": {
-                "ancestryFeatLevels": {
-                    "value": [
-                        1,
-                        5,
-                        9,
-                        13,
-                        17
-                    ]
-                },
-                "attacks": {
-                    "advanced": 0,
-                    "martial": 1,
-                    "other": {
-                        "name": "",
-                        "rank": 0
-                    },
-                    "simple": 1,
-                    "unarmed": 1
-                },
-                "classDC": 1,
-                "classFeatLevels": {
-                    "value": [
-                        1,
-                        2,
-                        4,
-                        6,
-                        8,
-                        10,
-                        12,
-                        14,
-                        16,
-                        18,
-                        20
-                    ]
-                },
-                "defenses": {
-                    "heavy": 0,
-                    "light": 1,
-                    "medium": 1,
-                    "unarmored": 1
-                },
-                "description": {
-                    "value": "<p><em>Rage consumes you in battle. You delight in wreaking havoc and using powerful weapons to carve through your enemies, relying on astonishing durability without needing complicated techniques or rigid training. Your rages draw upon a vicious instinct, which you might associate with an animal, a spirit, or some part of yourself. To many barbarians, brute force is a hammer and every problem looks like a nail, whereas others try to hold back the storm of emotions inside them and release their rage only when it matters most.</em></p>\n<p><strong>Key Ability: STRENGTH</strong></p>\n<p>At 1st level, your class gives you an ability boost to Strength.</p>\n<p><strong>Hit Points: 12 plus your Constitution modifier</strong></p>\n<p>You increase your maximum number of HP by this number at 1st level and every level thereafter.</p>\n<h1>Roleplaying the Barbarian</h1>\n<h2>During Combat Encounters...</h2>\n<p>You summon your rage and rush to the front lines to smash your way through. Offense is your best defense-you'll need to drop foes before they can exploit your relatively low defenses.</p>\n<h2>During Social Encounters...</h2>\n<p>You use intimidation to get what you need, especially when gentler persuasion can't get the job done.</p>\n<h2>While Exploring...</h2>\n<p>You look out for danger, ready to rush headfirst into battle in an instant. You climb the challenging rock wall and drop a rope for others to follow, and you wade into the risky currents to reach the hidden switch beneath the water's surface. If something needs breaking, you're up to the task!</p>\n<h2>In Downtime...</h2>\n<p>You might head to a tavern to carouse, build up the fearsome legend of your mighty deeds, or recruit followers to become a warlord in your own right.</p>\n<h2>You Might...</h2>\n<ul>\n<li>Have a deep-seated well of anger, hatred, or frustration.</li>\n<li>Prefer a straightforward approach to one requiring patience and tedium.</li>\n<li>Engage in a regimen of intense physical fitness-and punch anyone who says this conflicts with your distaste for patience and tedium.</li>\n</ul>\n<h2>Others Probably...</h2>\n<ul>\n<li>Rely on your courage and your strength, and trust that you can hold your own in a fight.</li>\n<li>See you as uncivilized or a boorish lout unfit for high society.</li>\n<li>Believe that you are loyal to your friends and allies and will never relent until the fight is done.</li>\n</ul>\n<h1>Initial Proficiencies</h1>\n<p>At 1st level, you gain the listed proficiency ranks in the following statistics. You are untrained in anything not listed unless you gain a better proficiency rank in some other way.</p>\n<h2>Perception</h2>\n<p>Expert in Perception</p>\n<h2>Saving Throws</h2>\n<p>Expert in Fortitude</p>\n<p>Trained in Reflex</p>\n<p>Expert in Will</p>\n<h2>Skills</h2>\n<p>Trained in Athletics</p>\n<p>Trained in a number of additional skills equal to 3 plus your Intelligence modifier</p>\n<h2>Attacks</h2>\n<p>Trained in simple weapons</p>\n<p>Trained in martial weapons</p>\n<p>Trained in unarmed attacks</p>\n<h2>Defenses</h2>\n<p>Trained in light armor</p>\n<p>Trained in medium armor</p>\n<p>Trained in unarmored defense</p>\n<h2>Class DC</h2>\n<p>Trained in barbarian class DC</p>\n<h1>Class Features</h1>\n<p>You gain these features as a Barbarian. Abilities gained at higher levels list the levels at which you gain them next to the features' names.</p>\n<table class=\"pf2-table\">\n<thead>\n<tr>\n<th>Your Level</th>\n<th>Class Features</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>1</td>\n<td>Ancestry and background, initial proficiencies, rage, instinct, barbarian feat</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Barbarian feat, skill feat</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Deny advantage, general feat, skill increase</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Barbarian feat, skill feat</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Ability boosts, ancestry feat, brutality, skill increase</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Barbarian feat, skill feat</td>\n</tr>\n<tr>\n<td>7</td>\n<td>General feat, juggernaut, skill increase, weapon specialization</td>\n</tr>\n<tr>\n<td>8</td>\n<td>Barbarian feat, skill feat</td>\n</tr>\n<tr>\n<td>9</td>\n<td>Ancestry feat, lightning reflexes, raging resistance, skill increase</td>\n</tr>\n<tr>\n<td>10</td>\n<td>Ability boosts, barbarian feat, skill feat</td>\n</tr>\n<tr>\n<td>11</td>\n<td>General feat, mighty rage, skill increase</td>\n</tr>\n<tr>\n<td>12</td>\n<td>Barbarian feat, skill feat</td>\n</tr>\n<tr>\n<td>13</td>\n<td>Ancestry feat, greater juggernaut, medium armor expertise, skill increase, weapon fury</td>\n</tr>\n<tr>\n<td>14</td>\n<td>Barbarian feat, skill feat</td>\n</tr>\n<tr>\n<td>15</td>\n<td>Ability boosts, general feat, greater weapon specialization, indomitable will, skill increase</td>\n</tr>\n<tr>\n<td>16</td>\n<td>Barbarian feat, skill feat</td>\n</tr>\n<tr>\n<td>17</td>\n<td>Ancestry feat, heightened senses, skill increase, quick rage</td>\n</tr>\n<tr>\n<td>18</td>\n<td>Barbarian feat, skill feat</td>\n</tr>\n<tr>\n<td>19</td>\n<td>Armor of fury, devastator, general feat, skill increase</td>\n</tr>\n<tr>\n<td>20</td>\n<td>Ability boosts, barbarian feat, skill feat</td>\n</tr>\n</tbody>\n</table>\n<h2>Ancestry and Background</h2>\n<p>In addition to the abilities provided by your class at 1st level, you have the benefits of your selected ancestry and background.</p>\n<h2>Barbarian Feats</h2>\n<p>At 1st level and every even-numbered level thereafter, you gain a barbarian class feat.</p>\n<h2>Initial Proficiencies</h2>\n<p>At 1st level you gain a number of proficiencies that represent your basic training. These proficiencies are noted in at the start of this class.</p>\n<h2>Instinct</h2>\n<p>Your rage wells up from a dominant instinct-one you learned from a tradition or that comes naturally to you. Your instinct gives you an ability, requires you to avoid certain behaviors, grants you increased damage and resistances at higher levels, and allows you to select feats tied to your instinct.</p>\n<p>Instincts can be found here: @UUID[Compendium.pf2e.classfeatures.Item.Animal Instinct], @UUID[Compendium.pf2e.classfeatures.Item.Dragon Instinct], @UUID[Compendium.pf2e.classfeatures.Item.Fury Instinct], @UUID[Compendium.pf2e.classfeatures.Item.Giant Instinct], @UUID[Compendium.pf2e.classfeatures.Item.Spirit Instinct], and @UUID[Compendium.pf2e.classfeatures.Item.Superstition Instinct].</p>\n<h2>Rage</h2>\n<p>You gain the Rage action, which lets you fly into a frenzy.</p>\n<h3>@UUID[Compendium.pf2e.actionspf2e.Item.Rage] <span class=\"pf2-icon\">A</span></h3>\n<p><strong>Requirements</strong> You aren't fatigued or raging.</p>\n<hr />\n<p>You tap into your inner fury and begin raging. You gain a number of temporary Hit Points equal to your level plus your Constitution modifier. This frenzy lasts for 1 minute, until there are no enemies you can perceive, or until you fall unconscious, whichever comes first. You can't voluntarily stop raging. While you are raging:</p>\n<ul>\n<li>You deal 2 additional damage with melee weapons and unarmed attacks. This additional damage is halved if your weapon or unarmed attack is agile.</li>\n<li>You take a -1 penalty to AC.</li>\n<li>You can't use actions with the concentrate trait unless they also have the rage trait. You can Seek while raging.</li>\n</ul>\n<p>After you stop raging, you lose any remaining temporary Hit Points from Rage, and you can't Rage again for 1 minute.</p>\n<h2>Skill Feats<span style=\"float: right;\">Level 2</span></h2>\n<p>At 2nd level and every 2 levels thereafter, you gain a skill feat. You must be trained or better in the corresponding skill to select a skill feat.</p>\n<h2>Deny Advantage<span style=\"float: right;\">Level 3</span></h2>\n<p>Your foes struggle to pass your defenses. You aren't off-guard to hidden, undetected, or flanking creatures of your level or lower, or creatures of your level or lower using surprise attack. However, they can still help their allies flank.</p>\n<h2>General Feats<span style=\"float: right;\">Level 3</span></h2>\n<p>At 3rd level and every 4 levels thereafter, you gain a general feat.</p>\n<h2>Skill Increases<span style=\"float: right;\">Level 3</span></h2>\n<p>At 3rd level and every 2 levels thereafter, you gain a skill increase. You can use this increase either to increase your proficiency rank to trained in one skill you're untrained in, or to increase your proficiency rank in one skill in which you're already trained to expert.</p>\n<p>At 7th level, you can use skill increases to increase your proficiency rank to master in a skill in which you're already an expert, and at 15th level, you can use them to increase your proficiency rank to legendary in a skill in which you're already a master.</p>\n<h2>Ability Boosts<span style=\"float: right;\">Level 5</span></h2>\n<p>At 5th level and every 5 levels thereafter, you boost four different ability scores. You can use these ability boosts to increase your ability scores above 18. Boosting an ability score increases it by 1 if it's already 18 or above, or by 2 if it starts below 18.</p>\n<h2>Ancestry Feats<span style=\"float: right;\">Level 5</span></h2>\n<p>In addition to the ancestry feat you started with, you gain an ancestry feat at 5th level and every 4 levels thereafter.</p>\n<h2>Brutality<span style=\"float: right;\">Level 5</span></h2>\n<p>Your fury makes your weapons lethal. Your proficiency ranks for simple weapons, martial weapons, and unarmed attacks increase to expert. While raging, you gain access to the critical specialization effects for melee weapons and unarmed attacks.</p>\n<h2>Juggernaut<span style=\"float: right;\">Level 7</span></h2>\n<p>Your body is accustomed to physical hardship and resistant to ailments. Your proficiency rank for Fortitude saves increases to master. When you roll a success on a Fortitude save, you get a critical success instead.</p>\n<h2>Weapon Specialization<span style=\"float: right;\">Level 7</span></h2>\n<p>Your rage helps you hit harder. You deal an additional 2 damage with weapons and unarmed attacks in which you have expert proficiency. This damage increases to 3 if you're a master, and 4 if you're legendary. You gain your instinct's specialization ability.</p>\n<p>See specific instincts for more information.</p>\n<h2>Lightning Reflexes<span style=\"float: right;\">Level 9</span></h2>\n<p>Your reflexes are lightning fast. Your proficiency rank for Reflex saves increases to expert.</p>\n<h2>Raging Resistance<span style=\"float: right;\">Level 9</span></h2>\n<p>Repeated exposure and toughened skin allow you to fend off harm. While raging, you gain resistance equal to 3 + your Constitution modifier to damage types based on your instinct.</p>\n<p>See specific instincts for more information.</p>\n<h2>Mighty Rage<span style=\"float: right;\">Level 11</span></h2>\n<p>Your rage intensifies and lets you burst into action. Your proficiency rank for your barbarian class DC increases to expert. You gain the Mighty Rage free action.</p>\n<h3>@UUID[Compendium.pf2e.actionspf2e.Item.Mighty Rage] <span class=\"pf2-icon\">F</span></h3>\n<p><strong>Trigger</strong> You use the Rage action on your turn.</p>\n<hr />\n<p>Use an action that has the rage trait. Alternatively, you can increase the actions of the triggering Rage to 2 to instead use a 2-action activity with the rage trait.</p>\n<h2>Greater Juggernaut<span style=\"float: right;\">Level 13</span></h2>\n<p>You have a stalwart physiology. Your proficiency rank for Fortitude saves increases to legendary. When you roll a critical failure on a Fortitude save, you get a failure instead. When you roll a failure on a Fortitude save against an effect that deals damage, you halve the damage you take.</p>\n<h2>Medium Armor Expertise<span style=\"float: right;\">Level 13</span></h2>\n<p>You've learned to defend yourself better against attacks. Your proficiency ranks for light armor, medium armor, and unarmored defense increase to expert.</p>\n<h2>Weapon Fury<span style=\"float: right;\">Level 13</span></h2>\n<p>Your rage makes you even more effective with the weapons you wield. Your proficiency ranks for simple weapons, martial weapons, and unarmed attacks increase to master.</p>\n<h2>Greater Weapon Specialization<span style=\"float: right;\">Level 15</span></h2>\n<p>The weapons you've mastered become truly fearsome in your hands. Your damage from weapon specialization increases to 4 with weapons and unarmed attacks in which you're an expert, 6 if you're a master, and 8 if you're legendary. You gain a greater benefit from your instinct's specialization ability.</p>\n<p>See specific instincts for more information.</p>\n<h2>Indomitable Will<span style=\"float: right;\">Level 15</span></h2>\n<p>Your rage makes it difficult to control you. Your proficiency rank for Will saves increases to master. When you roll a success on a Will save, you get a critical success instead.</p>\n<h2>Heightened Senses<span style=\"float: right;\">Level 17</span></h2>\n<p>Your instinct heightens each of your senses further. Your proficiency rank for Perception increases to master.</p>\n<h2>Quick Rage<span style=\"float: right;\">Level 17</span></h2>\n<p>You recover from your Rage quickly, and are soon ready to begin anew. After you spend a full turn without raging, you can Rage again without needing to wait 1 minute.</p>\n<h2>Armor of Fury<span style=\"float: right;\">Level 19</span></h2>\n<p>Your training and rage deepen your connection to your armor. Your proficiency ranks for light armor, medium armor, and unarmored defense increase to master.</p>\n<h2>Devastator<span style=\"float: right;\">Level 19</span></h2>\n<p>Your Strikes are so devastating that you hardly care about resistance, and your barbarian abilities are unparalleled. Your proficiency rank for your barbarian class DC increases to master. Your melee Strikes ignore 10 points of a creature's resistance to their physical damage.</p>"
-                },
-                "generalFeatLevels": {
-                    "value": [
-                        3,
-                        7,
-                        11,
-                        15,
-                        19
-                    ]
-                },
-                "hp": 12,
-                "items": {
-                    "23vme": {
-                        "img": "systems/pf2e/icons/features/classes/greater-juggernaut.webp",
-                        "level": 13,
-                        "name": "Greater Juggernaut",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Greater Juggernaut"
-                    },
-                    "3gwvw": {
-                        "img": "systems/pf2e/icons/features/classes/brutality.webp",
-                        "level": 5,
-                        "name": "Brutality",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Brutality"
-                    },
-                    "7jt77": {
-                        "img": "systems/pf2e/icons/features/classes/medium-armor-expertise.webp",
-                        "level": 13,
-                        "name": "Medium Armor Expertise",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Medium Armor Expertise"
-                    },
-                    "8ibv2": {
-                        "img": "systems/pf2e/icons/features/classes/lightning-reflexes.webp",
-                        "level": 9,
-                        "name": "Lightning Reflexes",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Lightning Reflexes"
-                    },
-                    "blnv0": {
-                        "img": "systems/pf2e/icons/features/classes/heightened-senses.webp",
-                        "level": 17,
-                        "name": "Heightened Senses",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Heightened Senses"
-                    },
-                    "e0sur": {
-                        "img": "systems/pf2e/icons/features/classes/indomitable-will.webp",
-                        "level": 15,
-                        "name": "Indomitable Will",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Indomitable Will"
-                    },
-                    "g3k30": {
-                        "img": "systems/pf2e/icons/features/classes/quick-rage.webp",
-                        "level": 17,
-                        "name": "Quick Rage",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Quick Rage"
-                    },
-                    "gfxqm": {
-                        "img": "systems/pf2e/icons/features/classes/juggerenaut.webp",
-                        "level": 7,
-                        "name": "Juggernaut",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Juggernaut"
-                    },
-                    "ihbgk": {
-                        "img": "systems/pf2e/icons/features/classes/devastator.webp",
-                        "level": 19,
-                        "name": "Devastator",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Devastator"
-                    },
-                    "njgcl": {
-                        "img": "systems/pf2e/icons/features/classes/greater-weapon-specialization.webp",
-                        "level": 15,
-                        "name": "Greater Weapon Specialization (Barbarian)",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Greater Weapon Specialization (Barbarian)"
-                    },
-                    "o4ypa": {
-                        "img": "systems/pf2e/icons/features/classes/weapon-fury.webp",
-                        "level": 13,
-                        "name": "Weapon Fury",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Weapon Fury"
-                    },
-                    "p941e": {
-                        "img": "systems/pf2e/icons/features/classes/deny-advantage.webp",
-                        "level": 3,
-                        "name": "Deny Advantage",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Deny Advantage"
-                    },
-                    "qh9xw": {
-                        "img": "systems/pf2e/icons/features/classes/mighty-rage.webp",
-                        "level": 11,
-                        "name": "Mighty Rage",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Mighty Rage"
-                    },
-                    "s5lxl": {
-                        "img": "systems/pf2e/icons/features/classes/armor-of-fury.webp",
-                        "level": 19,
-                        "name": "Armor of Fury",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Armor of Fury"
-                    },
-                    "spb04": {
-                        "img": "systems/pf2e/icons/features/classes/weapon-specialization.webp",
-                        "level": 7,
-                        "name": "Weapon Specialization",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Weapon Specialization"
-                    },
-                    "tp5pg": {
-                        "img": "systems/pf2e/icons/features/classes/raging-resistance.webp",
-                        "level": 9,
-                        "name": "Raging Resistance",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Raging Resistance"
-                    },
-                    "uhbeo": {
-                        "img": "systems/pf2e/icons/features/classes/choice-feature.webp",
-                        "level": 1,
-                        "name": "Instinct",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Instinct"
-                    },
-                    "xvavy": {
-                        "img": "systems/pf2e/icons/features/classes/rage.webp",
-                        "level": 1,
-                        "name": "Rage",
-                        "uuid": "Compendium.pf2e.classfeatures.Item.Rage"
-                    }
-                },
-                "keyAbility": {
-                    "value": [
-                        "str"
-                    ]
-                },
-                "perception": 2,
-                "rules": [],
-                "savingThrows": {
-                    "fortitude": 2,
-                    "reflex": 1,
-                    "will": 2
-                },
-                "skillFeatLevels": {
-                    "value": [
-                        2,
-                        4,
-                        6,
-                        8,
-                        10,
-                        12,
-                        14,
-                        16,
-                        18,
-                        20
-                    ]
-                },
-                "skillIncreaseLevels": {
-                    "value": [
-                        3,
-                        5,
-                        7,
-                        9,
-                        11,
-                        13,
-                        15,
-                        17,
-                        19
-                    ]
-                },
-                "slug": "barbarian",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
-                "trainedSkills": {
-                    "additional": 3,
-                    "value": [
-                        "ath"
-                    ]
-                },
-                "traits": {
-                    "rarity": "common",
-                    "value": []
-                }
-            },
-            "type": "class"
-        },
-        {
             "_id": "kDhNX4dl0dcenSpP",
             "flags": {
                 "core": {
@@ -356,11 +44,13 @@
                         "uuid": "Compendium.pf2e.feats-srd.Item.Survey Wildlife"
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [],
                 "slug": "hunter",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "trainedLore": "Tanning Lore",
                 "trainedSkills": {
                     "value": [
@@ -381,7 +71,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.tGIXuk0XeWmG04CX"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Survey Wildlife",
             "sort": 0,
             "system": {
@@ -396,6 +86,7 @@
                     "value": "<p>You can study details in the wilderness to determine the presence of nearby creatures. You can spend 10 minutes assessing the area around you to find out what creatures are nearby, based on nests, scat, and marks on vegetation. Attempt a Survival check against a DC determined by the GM based on how obvious the signs are. On a success, you can attempt a Recall Knowledge check with a -2 penalty to learn more about the creatures just from these signs. If you're a master in Survival, you don't take the penalty.</p>"
                 },
                 "level": {
+                    "taken": 1,
                     "value": 1
                 },
                 "location": "kDhNX4dl0dcenSpP",
@@ -406,11 +97,13 @@
                         }
                     ]
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [],
                 "slug": "survey-wildlife",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -447,6 +140,11 @@
                 "description": {
                     "value": "<p>Humanity's versatility and ambition have fueled its ascendance to be the most common ancestry in most nations throughout the world. Select a general feat of your choice for which you meet the prerequisites (as with your ancestry feat, you can select this general feat at any point during character creation).</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [
                     {
                         "adjustName": false,
@@ -460,7 +158,7 @@
                         "flag": "versatileHeritage",
                         "key": "ChoiceSet",
                         "prompt": "PF2E.SpecificRule.GeneralTraining.Prompt",
-                        "selection": "Compendium.pf2e.feats-srd.Item.I0BhPWqYf1bbzEYg"
+                        "selection": "Compendium.pf2e.feats-srd.Item.Diehard"
                     },
                     {
                         "key": "GrantItem",
@@ -468,9 +166,6 @@
                     }
                 ],
                 "slug": "versatile-heritage",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -491,7 +186,7 @@
                     }
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Diehard",
             "sort": 0,
             "system": {
@@ -512,6 +207,11 @@
                 "prerequisites": {
                     "value": []
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [
                     {
                         "key": "ActiveEffectLike",
@@ -521,9 +221,6 @@
                     }
                 ],
                 "slug": "diehard",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -548,11 +245,13 @@
                 "proficient": {
                     "value": 1
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "slug": null
             },
             "type": "lore"
         },
@@ -570,7 +269,7 @@
                     }
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Natural Ambition",
             "sort": 0,
             "system": {
@@ -585,11 +284,17 @@
                     "value": "<p>You were raised to be ambitious and always reach for the stars, leading you to progress quickly in your chosen field. You gain a 1st-level class feat for your class. You must meet the prerequisites, but you can select the feat later in the character creation process in order to determine which prerequisites you meet.</p>"
                 },
                 "level": {
+                    "taken": 1,
                     "value": 1
                 },
                 "location": "ancestry-1",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -620,7 +325,7 @@
                                         "item:steadying-stone",
                                         "item:storm-born",
                                         "item:versatile-performance",
-                                        "item:wild-shape"
+                                        "item:untamed-form"
                                     ]
                                 }
                             ],
@@ -629,7 +334,7 @@
                         "flag": "naturalAmbition",
                         "key": "ChoiceSet",
                         "prompt": "PF2E.SpecificRule.Prompt.LevelOneClassFeat",
-                        "selection": "Compendium.pf2e.feats-srd.Item.XseJI9XhKNtZN8pv"
+                        "selection": "Compendium.pf2e.feats-srd.Item.Raging Intimidation"
                     },
                     {
                         "key": "GrantItem",
@@ -637,9 +342,6 @@
                     }
                 ],
                 "slug": "natural-ambition",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -662,7 +364,7 @@
                     }
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Intimidating Glare",
             "sort": 0,
             "system": {
@@ -687,11 +389,13 @@
                         }
                     ]
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [],
                 "slug": "intimidating-glare",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -721,7 +425,7 @@
                     }
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Raging Intimidation",
             "sort": 0,
             "system": {
@@ -741,6 +445,11 @@
                 "location": null,
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -768,9 +477,6 @@
                     }
                 ],
                 "slug": "raging-intimidation",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -787,7 +493,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.qQt3CMrhLkUV1wCv"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Sudden Charge",
             "sort": 0,
             "system": {
@@ -802,11 +508,17 @@
                     "value": "<p>With a quick sprint, you dash up to your foe and swing. Stride twice. If you end your movement within melee reach of at least one enemy, you can make a melee Strike against that enemy. You can use Sudden Charge while Burrowing, Climbing, Flying, or Swimming instead of Striding if you have the corresponding movement type.</p>"
                 },
                 "level": {
+                    "taken": 1,
                     "value": 1
                 },
                 "location": "class-1",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -818,9 +530,6 @@
                     }
                 ],
                 "slug": "sudden-charge",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -840,7 +549,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.3lgwjrFEsQVKzhh7"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/backpack.webp",
+            "img": "icons/containers/bags/pack-leather-white-tan.webp",
             "name": "Backpack",
             "sort": 0,
             "system": {
@@ -869,27 +578,27 @@
                 "level": {
                     "value": 0
                 },
+                "material": {
+                    "grade": null,
+                    "type": null
+                },
                 "negateBulk": {
                     "value": "2"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "backpack",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "stowing": true,
                 "traits": {
@@ -912,7 +621,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.fyYnQf1NAx9fWFaS"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/rope.webp",
+            "img": "icons/sundries/survival/rope-wrapped-brown.webp",
             "name": "Rope",
             "sort": 0,
             "system": {
@@ -936,27 +645,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": ""
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 5
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "rope",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -1002,27 +708,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "cp": 5
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "waterskin",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -1080,14 +783,9 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -1095,13 +793,15 @@
                         "cp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 10,
                 "rules": [],
                 "size": "med",
                 "slug": "chalk",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -1123,14 +823,14 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.UlIxxLm71UdRgCFE"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/flint-and-steel.webp",
+            "img": "icons/commodities/stone/geode-raw-tan.webp",
             "name": "Flint and Steel",
             "sort": 0,
             "system": {
                 "baseItem": null,
                 "containerId": "1xgbuOQrdM3cq0YB",
                 "description": {
-                    "value": "<p>Flint and steel are useful in creating a fire if you have the time to catch a spark, though using them is typically too time‑consuming to be practical during an encounter. Even in ideal conditions, using flint and steel to light a flame requires using at least 3 actions, and often significantly longer.</p>"
+                    "value": "<p>Flint and steel are useful in creating a fire if you have the time to catch a spark, though using them is typically too time-consuming to be practical during an encounter. Even in ideal conditions, using flint and steel to light a flame requires using at least 3 actions, and often significantly longer.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -1147,27 +847,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "cp": 5
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "flint-and-steel",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -1225,27 +922,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 4
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 2,
                 "rules": [],
                 "size": "med",
                 "slug": "rations",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -1267,14 +961,14 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.8Jdw4yAzWYylGePS"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/torch.webp",
+            "img": "icons/sundries/lights/torch-brown.webp",
             "name": "Torch",
             "sort": 0,
             "system": {
                 "baseItem": null,
                 "containerId": "1xgbuOQrdM3cq0YB",
                 "description": {
-                    "value": "<p>A torch sheds bright light in a 20‑foot radius (and dim light to the next 20 feet). It can be used as an improvised weapon that deals 1d4 bludgeoning damage plus 1 fire damage.</p>"
+                    "value": "<p>A torch sheds bright light in a 20-foot radius (and dim light to the next 20 feet) for 1 hour. It can be used as an improvised weapon that deals 1d4 bludgeoning damage plus 1 fire damage.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -1291,19 +985,19 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "cp": 1
                     }
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 5,
                 "rules": [
@@ -1313,13 +1007,15 @@
                             "lit-torch"
                         ],
                         "value": {
+                            "alpha": 0.45,
                             "animation": {
-                                "intensity": 4,
-                                "speed": 1,
-                                "type": "torch"
+                                "intensity": 1,
+                                "speed": 2,
+                                "type": "flame"
                             },
+                            "attenuation": 0.4,
                             "bright": 20,
-                            "color": "#9b7337",
+                            "color": "#ffae3d",
                             "dim": 40,
                             "shadows": 0.2
                         }
@@ -1337,7 +1033,29 @@
                         "otherTags": [
                             "improvised"
                         ],
-                        "range": null
+                        "predicate": [
+                            {
+                                "not": "lit-torch"
+                            }
+                        ]
+                    },
+                    {
+                        "category": "simple",
+                        "damage": {
+                            "base": {
+                                "damageType": "bludgeoning",
+                                "dice": 1,
+                                "die": "d4"
+                            }
+                        },
+                        "img": "icons/sundries/lights/torch-brown-lit.webp",
+                        "key": "Strike",
+                        "otherTags": [
+                            "improvised"
+                        ],
+                        "predicate": [
+                            "lit-torch"
+                        ]
                     },
                     {
                         "damageType": "fire",
@@ -1360,14 +1078,11 @@
                         "predicate": [
                             "lit-torch"
                         ],
-                        "value": "systems/pf2e/icons/equipment/held-items/everburning-torch.webp"
+                        "value": "icons/sundries/lights/torch-brown-lit.webp"
                     }
                 ],
                 "size": "med",
                 "slug": "torch",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -1389,7 +1104,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.fagzYdmfYyMQ6J77"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/bedroll.webp",
+            "img": "icons/containers/ammunition/quiver-simple-brown.webp",
             "name": "Bedroll",
             "sort": 0,
             "system": {
@@ -1413,27 +1128,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "cp": 2
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "bedroll",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -1455,7 +1167,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.81aHsD27HFGnq1Nt"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/adventuring-gear/soap.webp",
+            "img": "icons/sundries/survival/soap.webp",
             "name": "Soap",
             "sort": 0,
             "system": {
@@ -1479,27 +1191,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "cp": 2
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": "soap",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -1544,27 +1253,24 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 80,
                 "rules": [],
                 "size": "med",
                 "slug": "silver-pieces",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": "coins",
                 "traits": {
                     "rarity": "common",
@@ -1590,9 +1296,6 @@
             "name": "Dagger",
             "sort": 0,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "dagger",
                 "bonus": {
                     "value": 0
@@ -1627,17 +1330,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -1656,6 +1354,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -1664,9 +1367,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "dagger",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -1678,7 +1378,6 @@
                     "rarity": "common",
                     "value": [
                         "agile",
-                        "evocation",
                         "finesse",
                         "magical",
                         "thrown-10",
@@ -1705,9 +1404,6 @@
             "name": "Bastard Sword",
             "sort": 0,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "bastard-sword",
                 "bonus": {
                     "value": 0
@@ -1742,17 +1438,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 2
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -1771,6 +1462,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -1779,9 +1475,6 @@
                 "rules": [],
                 "size": "lg",
                 "slug": "bastard-sword",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -1792,7 +1485,6 @@
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "evocation",
                         "magical",
                         "two-hand-d12"
                     ]
@@ -1842,25 +1534,25 @@
                 "level": {
                     "value": 0
                 },
+                "material": {
+                    "grade": null,
+                    "type": null
+                },
                 "negateBulk": {
                     "value": "0"
                 },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
-                },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 2,
                 "rules": [],
                 "size": "med",
                 "slug": "belt-pouch",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "stowing": false,
                 "traits": {
@@ -1883,7 +1575,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/hide.webp",
+            "img": "icons/equipment/chest/vest-leather-tattered-white.webp",
             "name": "+1 Resilient Hide Armor",
             "sort": 0,
             "system": {
@@ -1914,18 +1606,12 @@
                 "level": {
                     "value": 8
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -1944,6 +1630,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": "resilient"
@@ -1951,16 +1642,12 @@
                 "rules": [],
                 "size": "med",
                 "slug": "hide-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "speedPenalty": -5,
                 "stackGroup": null,
                 "strength": 2,
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "abjuration",
                         "invested",
                         "magical"
                     ]
@@ -1985,9 +1672,6 @@
             "name": "Javelin",
             "sort": 0,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "javelin",
                 "bonus": {
                     "value": 0
@@ -2022,16 +1706,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -2051,6 +1730,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 4,
                 "range": 30,
                 "reload": {
@@ -2059,9 +1743,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "javelin",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -2091,7 +1772,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.ecqz1iUGtyQEkZwy"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/worn-items/other-worn-items/boots-of-bounding.webp",
+            "img": "icons/equipment/feet/boots-leather-engraved-brown.webp",
             "name": "Boots of Bounding",
             "sort": 0,
             "system": {
@@ -2117,19 +1798,19 @@
                 "level": {
                     "value": 7
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 340
                     }
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "rules": [
@@ -2156,16 +1837,12 @@
                 ],
                 "size": "med",
                 "slug": "boots-of-bounding",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
                         "invested",
-                        "magical",
-                        "transmutation"
+                        "magical"
                     ]
                 },
                 "usage": {
@@ -2204,7 +1881,7 @@
                 },
                 "containerId": null,
                 "description": {
-                    "value": "<p><strong>Activate</strong> <span class=\"pf2-icon\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5d6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Elixir of Life (Moderate)]</p>"
+                    "value": "<p><strong>Activate</strong> <span class=\"action-glyph\">A</span> Interact</p>\n<p>Elixirs of life accelerate a living creature's natural healing processes and immune system. Upon drinking this elixir, you regain [[/r (5d6+12)[healing]]]{5d6+12 Hit Points} and gain +2 item bonus to saving throws against diseases and poisons for 10 minutes.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.Effect: Elixir of Life (Moderate)]</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -2221,27 +1898,24 @@
                 "level": {
                     "value": 9
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 150
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 3,
                 "rules": [],
                 "size": "med",
                 "slug": "elixir-of-life-moderate",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -2294,19 +1968,19 @@
                 "level": {
                     "value": 9
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 650
                     }
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "quantity": 1,
                 "rules": [
@@ -2319,14 +1993,10 @@
                 ],
                 "size": "med",
                 "slug": "coyote-cloak-greater",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
                     "value": [
-                        "divination",
                         "invested",
                         "magical"
                     ]
@@ -2354,7 +2024,7 @@
                     }
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Clever Improviser",
             "sort": 0,
             "system": {
@@ -2369,11 +2039,17 @@
                     "value": "<p>You've learned how to handle situations when you're out of your depth. You gain the @UUID[Compendium.pf2e.feats-srd.Item.Untrained Improvisation] general feat. In addition, you can attempt skill actions that normally require you to be trained, even if you are untrained.</p>"
                 },
                 "level": {
+                    "taken": 9,
                     "value": 5
                 },
                 "location": "ancestry-9",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -2382,9 +2058,6 @@
                     }
                 ],
                 "slug": "clever-improviser",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2407,7 +2080,7 @@
                     }
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Untrained Improvisation",
             "sort": 0,
             "system": {
@@ -2427,6 +2100,11 @@
                 "location": null,
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -2448,9 +2126,6 @@
                     }
                 ],
                 "slug": "untrained-improvisation",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2467,7 +2142,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.RmiMUZlae6yGUyXY"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Haughty Obstinacy",
             "sort": 0,
             "system": {
@@ -2482,17 +2157,20 @@
                     "value": "<p>Your powerful ego makes it harder for others to order you around. If you roll a success on a saving throw against a mental effect that attempts to directly control your actions, you critically succeed instead. If a creature rolls a failure on a check to Coerce you using Intimidation, it gets a critical failure instead (so it can't try to Coerce you again for 1 week).</p>"
                 },
                 "level": {
+                    "taken": 5,
                     "value": 1
                 },
                 "location": "ancestry-5",
                 "prerequisites": {
                     "value": []
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [],
                 "slug": "haughty-obstinacy",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2509,7 +2187,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.AmP0qu7c5dlBSath"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Toughness",
             "sort": 0,
             "system": {
@@ -2524,11 +2202,17 @@
                     "value": "<p>You can withstand more punishment than most before succumbing. Increase your maximum Hit Points by your level. The DC of recovery checks is equal to 9 + your dying condition value.</p>"
                 },
                 "level": {
+                    "taken": 3,
                     "value": 1
                 },
                 "location": "general-3",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -2544,9 +2228,6 @@
                     }
                 ],
                 "slug": "toughness",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2563,7 +2244,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.Ux73dmoF8KnavyUD"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Fleet",
             "sort": 0,
             "system": {
@@ -2578,11 +2259,17 @@
                     "value": "<p>You move more quickly on foot. Your Speed increases by 5 feet.</p>"
                 },
                 "level": {
+                    "taken": 7,
                     "value": 1
                 },
                 "location": "general-7",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -2592,9 +2279,6 @@
                     }
                 ],
                 "slug": "fleet",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2611,7 +2295,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.N8Xz5fuW6o7GW124"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Fast Recovery",
             "sort": 0,
             "system": {
@@ -2626,6 +2310,7 @@
                     "value": "<p>Your body quickly bounces back from afflictions. You regain twice as many Hit Points from resting. Each time you succeed at a Fortitude save against an ongoing disease or poison, you reduce its stage by 2, or by 1 against a virulent disease or poison. Each critical success you achieve against an ongoing disease or poison reduces its stage by 3, or by 2 against a virulent disease or poison. In addition, you reduce the severity of your drained condition by 2 when you rest for a night instead of by 1.</p>"
                 },
                 "level": {
+                    "taken": 11,
                     "value": 1
                 },
                 "location": "general-11",
@@ -2635,6 +2320,11 @@
                             "value": "Constitution 14"
                         }
                     ]
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -2660,9 +2350,6 @@
                     }
                 ],
                 "slug": "fast-recovery",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2679,7 +2366,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.NMWXHGWUcZGoLDKb"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Attack of Opportunity",
             "sort": 0,
             "system": {
@@ -2694,17 +2381,20 @@
                     "value": "<p><strong>Trigger</strong> A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p>You swat a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>"
                 },
                 "level": {
+                    "taken": 6,
                     "value": 6
                 },
                 "location": "class-6",
                 "prerequisites": {
                     "value": []
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Advanced Player's Guide"
+                },
                 "rules": [],
                 "slug": "attack-of-opportunity",
-                "source": {
-                    "value": "Pathfinder Advanced Player's Guide"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2724,7 +2414,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.GE96a0UGPYM74qjI"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Cleave",
             "sort": 0,
             "system": {
@@ -2739,17 +2429,20 @@
                     "value": "<p><strong>Trigger</strong> Your melee Strike kills a creature or knocks it unconscious, and another foe is adjacent to that creature.</p>\n<hr />\n<p>You swing clear through one foe and into another. Make a melee Strike against the second foe.</p>"
                 },
                 "level": {
+                    "taken": 8,
                     "value": 6
                 },
                 "location": "class-8",
                 "prerequisites": {
                     "value": []
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [],
                 "slug": "cleave",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2767,7 +2460,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.cznEQ1W61MSaXW0u"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Great Cleave",
             "sort": 0,
             "system": {
@@ -2782,6 +2475,7 @@
                     "value": "<p>Your fury carries your weapon through multiple foes. When you Cleave, if your Strike also kills or knocks the target unconscious, you can continue to make melee Strikes until you make a Strike that doesn't kill or knock a creature unconscious, or until there are no creatures adjacent to the most recent creature you attacked while Cleaving, whichever comes first.</p>"
                 },
                 "level": {
+                    "taken": 10,
                     "value": 10
                 },
                 "location": "class-10",
@@ -2792,11 +2486,13 @@
                         }
                     ]
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [],
                 "slug": "great-cleave",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2814,7 +2510,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.auv1lss6LxM0q3gz"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Shake it Off",
             "sort": 0,
             "system": {
@@ -2829,17 +2525,20 @@
                     "value": "<p>You concentrate on your rage, overcoming fear and fighting back sickness. Reduce your frightened condition value by 1, and attempt a Fortitude save to recover from the sickened condition as if you had spent an action retching; you reduce your sickened condition value by 1 on a failure (but not on a critical failure), by 2 on a success, or by 3 on a critical success.</p>"
                 },
                 "level": {
+                    "taken": 2,
                     "value": 2
                 },
                 "location": "class-2",
                 "prerequisites": {
                     "value": []
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [],
                 "slug": "shake-it-off",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2858,7 +2557,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.JbrVcOf82oFXk3mY"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Swipe",
             "sort": 0,
             "system": {
@@ -2873,17 +2572,20 @@
                     "value": "<p>You make a wide, arcing swing. Make a single melee Strike and compare the attack roll result to the ACs of up to two foes, each of whom must be within your melee reach and adjacent to the other. Roll damage only once and apply it to each creature you hit. A Swipe counts as two attacks for your multiple attack penalty. If you're using a weapon with the sweep trait, its modifier applies to all your Swipe attacks.</p>"
                 },
                 "level": {
+                    "taken": 4,
                     "value": 4
                 },
                 "location": "class-4",
                 "prerequisites": {
                     "value": []
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [],
                 "slug": "swipe",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2902,7 +2604,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.8qebBeOJsyRIchcu"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Forager",
             "sort": 0,
             "system": {
@@ -2917,6 +2619,7 @@
                     "value": "<p>While using Survival to Subsist, if you roll any result worse than a success, you get a success.</p>\n<p>On a success, you can provide subsistence living for yourself and four additional creatures, and on a critical success, you can take care of twice as many creatures as on a success.</p>\n<p>Each time your proficiency rank in Survival increases, double the number of additional creatures you can take care of on a success (to eight if you're an expert, 16 if you're a master, or 32 if you're legendary).</p>\n<p>You can choose to care for half the number of additional creatures and provide a comfortable living instead of subsistence living.</p>\n<p>Multiple smaller creatures or creatures with significantly smaller appetites than a human are counted as a single creature for this feat, and larger creatures or those with significantly greater appetites each count as multiple creatures. The GM determines how much a non-human creature needs to eat.</p>"
                 },
                 "level": {
+                    "taken": 2,
                     "value": 1
                 },
                 "location": "skill-2",
@@ -2926,6 +2629,11 @@
                             "value": "trained in Survival"
                         }
                     ]
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -2939,9 +2647,6 @@
                     }
                 ],
                 "slug": "forager",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -2959,7 +2664,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.XFJiGllNZp8Xebda"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Intimidating Prowess",
             "sort": 0,
             "system": {
@@ -2974,6 +2679,7 @@
                     "value": "<p>In situations where you can physically menace the target when you @UUID[Compendium.pf2e.actionspf2e.Item.Coerce] or @UUID[Compendium.pf2e.actionspf2e.Item.Demoralize], you gain a +1 circumstance bonus to your Intimidation check and you ignore the penalty for not sharing a language. If your Strength score is 20 or higher and you are a master in Intimidation, this bonus increases to +2.</p>"
                 },
                 "level": {
+                    "taken": 4,
                     "value": 2
                 },
                 "location": "skill-4",
@@ -2986,6 +2692,11 @@
                             "value": "expert in Intimidation"
                         }
                     ]
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -3019,9 +2730,6 @@
                     }
                 ],
                 "slug": "intimidating-prowess",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3039,7 +2747,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.HJYQlmGTdtyGWr6a"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Powerful Leap",
             "sort": 0,
             "system": {
@@ -3054,6 +2762,7 @@
                     "value": "<p>When you Leap, you can jump 5 feet up with a vertical Leap, and you increase the distance you can jump horizontally by 5 feet.</p>"
                 },
                 "level": {
+                    "taken": 6,
                     "value": 2
                 },
                 "location": "skill-6",
@@ -3064,11 +2773,13 @@
                         }
                     ]
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [],
                 "slug": "powerful-leap",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3086,7 +2797,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.dc8X2Mbtwq6kGp7F"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Terrified Retreat",
             "sort": 0,
             "system": {
@@ -3101,6 +2812,7 @@
                     "value": "<p>When you critically succeed at the Demoralize action, if the target's level is lower than yours, the target is @UUID[Compendium.pf2e.conditionitems.Item.Fleeing] for 1 round.</p>"
                 },
                 "level": {
+                    "taken": 8,
                     "value": 7
                 },
                 "location": "skill-8",
@@ -3110,6 +2822,11 @@
                             "value": "master in Intimidation"
                         }
                     ]
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -3132,9 +2849,6 @@
                     }
                 ],
                 "slug": "terrified-retreat",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3152,7 +2866,7 @@
                     "sourceId": "Compendium.pf2e.feats-srd.Item.KxaYlC50zzHysJj8"
                 }
             },
-            "img": "systems/pf2e/icons/features/feats/feats.webp",
+            "img": "icons/sundries/books/book-red-exclamation.webp",
             "name": "Titan Wrestler",
             "sort": 0,
             "system": {
@@ -3167,6 +2881,7 @@
                     "value": "<p>You can attempt to @UUID[Compendium.pf2e.actionspf2e.Item.Disarm], @UUID[Compendium.pf2e.actionspf2e.Item.Grapple], @UUID[Compendium.pf2e.actionspf2e.Item.Shove], or @UUID[Compendium.pf2e.actionspf2e.Item.Trip] creatures up to two sizes larger than you, or up to three sizes larger than you if you're legendary in Athletics.</p>"
                 },
                 "level": {
+                    "taken": 10,
                     "value": 1
                 },
                 "location": "skill-10",
@@ -3177,11 +2892,13 @@
                         }
                     ]
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "rules": [],
                 "slug": "titan-wrestler",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3193,7 +2910,239 @@
             "type": "feat"
         },
         {
-            "_id": "yRpuRJPMcL7cWV0n",
+            "_id": "68DHY8vHjipbPecJ",
+            "flags": {
+                "core": {
+                    "sourceId": "Compendium.pf2e.classes.Item.YDRiP7uVvr9WRhOI"
+                }
+            },
+            "img": "systems/pf2e/icons/classes/barbarian.webp",
+            "name": "Barbarian",
+            "sort": 0,
+            "system": {
+                "ancestryFeatLevels": {
+                    "value": [
+                        1,
+                        5,
+                        9,
+                        13,
+                        17
+                    ]
+                },
+                "attacks": {
+                    "advanced": 0,
+                    "martial": 1,
+                    "other": {
+                        "name": "",
+                        "rank": 0
+                    },
+                    "simple": 1,
+                    "unarmed": 1
+                },
+                "classFeatLevels": {
+                    "value": [
+                        1,
+                        2,
+                        4,
+                        6,
+                        8,
+                        10,
+                        12,
+                        14,
+                        16,
+                        18,
+                        20
+                    ]
+                },
+                "defenses": {
+                    "heavy": 0,
+                    "light": 1,
+                    "medium": 1,
+                    "unarmored": 1
+                },
+                "description": {
+                    "value": "<p><em>Rage consumes you in battle. You delight in wreaking havoc and using powerful weapons to carve through your enemies, relying on astonishing durability without needing complicated techniques or rigid training. Your rages draw upon a vicious instinct, which you might associate with an animal, a spirit, or some part of yourself. To many barbarians, brute force is a hammer and every problem looks like a nail, whereas others try to hold back the storm of emotions inside them and release their rage only when it matters most.</em></p>\n<p>@UUID[Compendium.pf2e.journals.JournalEntry.kzxu2dI7tFxv6Ix6.JournalEntryPage.lvuutBI9BSCU6cWe]{Barbarian}</p>"
+                },
+                "generalFeatLevels": {
+                    "value": [
+                        3,
+                        7,
+                        11,
+                        15,
+                        19
+                    ]
+                },
+                "hp": 12,
+                "items": {
+                    "23vme": {
+                        "img": "systems/pf2e/icons/features/classes/greater-juggernaut.webp",
+                        "level": 13,
+                        "name": "Greater Juggernaut",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Greater Juggernaut"
+                    },
+                    "3gwvw": {
+                        "img": "systems/pf2e/icons/features/classes/brutality.webp",
+                        "level": 5,
+                        "name": "Brutality",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Brutality"
+                    },
+                    "7jt77": {
+                        "img": "icons/equipment/chest/breastplate-quilted-brown.webp",
+                        "level": 13,
+                        "name": "Medium Armor Expertise",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Medium Armor Expertise"
+                    },
+                    "8ibv2": {
+                        "img": "systems/pf2e/icons/features/classes/lightning-reflexes.webp",
+                        "level": 9,
+                        "name": "Lightning Reflexes",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Reflex Expertise"
+                    },
+                    "blnv0": {
+                        "img": "systems/pf2e/icons/features/classes/heightened-senses.webp",
+                        "level": 17,
+                        "name": "Heightened Senses",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Heightened Senses"
+                    },
+                    "e0sur": {
+                        "img": "systems/pf2e/icons/features/classes/indomitable-will.webp",
+                        "level": 15,
+                        "name": "Indomitable Will",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Indomitable Will"
+                    },
+                    "g3k30": {
+                        "img": "systems/pf2e/icons/features/classes/quick-rage.webp",
+                        "level": 17,
+                        "name": "Quick Rage",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Quick Rage"
+                    },
+                    "gfxqm": {
+                        "img": "systems/pf2e/icons/features/classes/juggerenaut.webp",
+                        "level": 7,
+                        "name": "Juggernaut",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Juggernaut"
+                    },
+                    "ihbgk": {
+                        "img": "systems/pf2e/icons/features/classes/devastator.webp",
+                        "level": 19,
+                        "name": "Devastator",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Devastator"
+                    },
+                    "njgcl": {
+                        "img": "systems/pf2e/icons/features/classes/greater-weapon-specialization.webp",
+                        "level": 15,
+                        "name": "Greater Weapon Specialization (Barbarian)",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Greater Weapon Specialization (Barbarian)"
+                    },
+                    "o4ypa": {
+                        "img": "systems/pf2e/icons/features/classes/weapon-fury.webp",
+                        "level": 13,
+                        "name": "Weapon Fury",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Weapon Fury"
+                    },
+                    "p941e": {
+                        "img": "icons/environment/settlement/watchtower-silhouette-yellow.webp",
+                        "level": 3,
+                        "name": "Deny Advantage",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Deny Advantage"
+                    },
+                    "qh9xw": {
+                        "img": "systems/pf2e/icons/features/classes/mighty-rage.webp",
+                        "level": 11,
+                        "name": "Mighty Rage",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Mighty Rage"
+                    },
+                    "s5lxl": {
+                        "img": "systems/pf2e/icons/features/classes/armor-of-fury.webp",
+                        "level": 19,
+                        "name": "Armor of Fury",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Armor of Fury"
+                    },
+                    "spb04": {
+                        "img": "systems/pf2e/icons/features/classes/weapon-specialization.webp",
+                        "level": 7,
+                        "name": "Weapon Specialization",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Weapon Specialization"
+                    },
+                    "tp5pg": {
+                        "img": "systems/pf2e/icons/features/classes/raging-resistance.webp",
+                        "level": 9,
+                        "name": "Raging Resistance",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Raging Resistance"
+                    },
+                    "uhbeo": {
+                        "img": "icons/magic/symbols/question-stone-yellow.webp",
+                        "level": 1,
+                        "name": "Instinct",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Instinct"
+                    },
+                    "xvavy": {
+                        "img": "systems/pf2e/icons/features/classes/rage.webp",
+                        "level": 1,
+                        "name": "Rage",
+                        "uuid": "Compendium.pf2e.classfeatures.Item.Rage"
+                    }
+                },
+                "keyAbility": {
+                    "value": [
+                        "str"
+                    ]
+                },
+                "perception": 2,
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "rules": [],
+                "savingThrows": {
+                    "fortitude": 2,
+                    "reflex": 1,
+                    "will": 2
+                },
+                "skillFeatLevels": {
+                    "value": [
+                        2,
+                        4,
+                        6,
+                        8,
+                        10,
+                        12,
+                        14,
+                        16,
+                        18,
+                        20
+                    ]
+                },
+                "skillIncreaseLevels": {
+                    "value": [
+                        3,
+                        5,
+                        7,
+                        9,
+                        11,
+                        13,
+                        15,
+                        17,
+                        19
+                    ]
+                },
+                "slug": "barbarian",
+                "trainedSkills": {
+                    "additional": 3,
+                    "value": [
+                        "ath"
+                    ]
+                },
+                "traits": {
+                    "rarity": "common",
+                    "value": []
+                }
+            },
+            "type": "class"
+        },
+        {
+            "_id": "fsmvI2KRNWV6tkef",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.classfeatures.Item.dU7xRpg4kFd01hwZ"
@@ -3201,13 +3150,13 @@
                 "pf2e": {
                     "itemGrants": {
                         "giantInstinct": {
-                            "id": "OKiznvPZfln0xtdt",
+                            "id": "ZYUL2rwYNfvnChV9",
                             "onDelete": "detach"
                         }
                     }
                 }
             },
-            "img": "systems/pf2e/icons/features/classes/choice-feature.webp",
+            "img": "icons/magic/symbols/question-stone-yellow.webp",
             "name": "Instinct",
             "sort": 0,
             "system": {
@@ -3224,9 +3173,14 @@
                 "level": {
                     "value": 1
                 },
-                "location": "da0P8RPQbAqIpuym",
+                "location": "68DHY8vHjipbPecJ",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -3275,9 +3229,6 @@
                     }
                 ],
                 "slug": "instinct",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3288,7 +3239,7 @@
             "type": "feat"
         },
         {
-            "_id": "bs8I0MtFkOGW3o7w",
+            "_id": "CqBHDTIQWErnzy6g",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.classfeatures.Item.WZUCvxqbigXos1L9"
@@ -3296,7 +3247,7 @@
                 "pf2e": {
                     "itemGrants": {
                         "rage": {
-                            "id": "3FYBfnUhf31f8bUi",
+                            "id": "gUBQoLU4pZDYEbhG",
                             "onDelete": "detach"
                         }
                     }
@@ -3304,7 +3255,7 @@
             },
             "img": "icons/skills/wounds/injury-face-impact-orange.webp",
             "name": "Rage",
-            "sort": 0,
+            "sort": 100,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -3319,9 +3270,14 @@
                 "level": {
                     "value": 1
                 },
-                "location": "da0P8RPQbAqIpuym",
+                "location": "68DHY8vHjipbPecJ",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -3331,9 +3287,6 @@
                     }
                 ],
                 "slug": "rage",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3344,15 +3297,15 @@
             "type": "feat"
         },
         {
-            "_id": "WXtAZKcNNcDN7DWu",
+            "_id": "oNYlzMfLeuHF0459",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.classfeatures.Item.PNpmVmD21zViDtGC"
                 }
             },
-            "img": "systems/pf2e/icons/features/classes/deny-advantage.webp",
+            "img": "icons/environment/settlement/watchtower-silhouette-yellow.webp",
             "name": "Deny Advantage",
-            "sort": 0,
+            "sort": 600,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -3367,9 +3320,14 @@
                 "level": {
                     "value": 3
                 },
-                "location": "da0P8RPQbAqIpuym",
+                "location": "68DHY8vHjipbPecJ",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -3380,9 +3338,6 @@
                     }
                 ],
                 "slug": "deny-advantage",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3394,7 +3349,7 @@
             "type": "feat"
         },
         {
-            "_id": "na0flGm3C4UVjl12",
+            "_id": "e8C7MbOozCoXPj65",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.classfeatures.Item.EEUTd0jAyfwTLzjk"
@@ -3402,7 +3357,7 @@
             },
             "img": "systems/pf2e/icons/features/classes/brutality.webp",
             "name": "Brutality",
-            "sort": 0,
+            "sort": 1500,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -3417,27 +3372,32 @@
                 "level": {
                     "value": 5
                 },
-                "location": "da0P8RPQbAqIpuym",
+                "location": "68DHY8vHjipbPecJ",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
                         "key": "ActiveEffectLike",
                         "mode": "upgrade",
-                        "path": "system.martial.simple.rank",
+                        "path": "system.proficiencies.attacks.simple.rank",
                         "value": 2
                     },
                     {
                         "key": "ActiveEffectLike",
                         "mode": "upgrade",
-                        "path": "system.martial.martial.rank",
+                        "path": "system.proficiencies.attacks.martial.rank",
                         "value": 2
                     },
                     {
                         "key": "ActiveEffectLike",
                         "mode": "upgrade",
-                        "path": "system.martial.unarmed.rank",
+                        "path": "system.proficiencies.attacks.unarmed.rank",
                         "value": 2
                     },
                     {
@@ -3449,9 +3409,6 @@
                     }
                 ],
                 "slug": "brutality",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3462,7 +3419,7 @@
             "type": "feat"
         },
         {
-            "_id": "U99Q3drG7e4nrQG6",
+            "_id": "TgHLUguIZLwLGZLm",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.classfeatures.Item.OMZs5y16jZRW9KQK"
@@ -3470,7 +3427,7 @@
             },
             "img": "systems/pf2e/icons/features/classes/juggerenaut.webp",
             "name": "Juggernaut",
-            "sort": 0,
+            "sort": 2800,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -3485,9 +3442,14 @@
                 "level": {
                     "value": 7
                 },
-                "location": "da0P8RPQbAqIpuym",
+                "location": "68DHY8vHjipbPecJ",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -3515,9 +3477,6 @@
                     }
                 ],
                 "slug": "juggernaut",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -3526,7 +3485,7 @@
             "type": "feat"
         },
         {
-            "_id": "ioddkritlweMcS1z",
+            "_id": "DxDeVynsK7Z50QMm",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.classfeatures.Item.9EqIasqfI8YIM3Pt"
@@ -3534,7 +3493,7 @@
             },
             "img": "systems/pf2e/icons/features/classes/weapon-specialization.webp",
             "name": "Weapon Specialization",
-            "sort": 0,
+            "sort": 3500,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -3549,9 +3508,14 @@
                 "level": {
                     "value": 7
                 },
-                "location": "da0P8RPQbAqIpuym",
+                "location": "68DHY8vHjipbPecJ",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -3594,9 +3558,6 @@
                     }
                 ],
                 "slug": "weapon-specialization",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -3605,7 +3566,7 @@
             "type": "feat"
         },
         {
-            "_id": "ZXNFTXFdGi0s4pTD",
+            "_id": "p3wwOvPQrRFnWrxm",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.classfeatures.Item.TUOeATt52P43r5W0"
@@ -3613,7 +3574,7 @@
             },
             "img": "systems/pf2e/icons/features/classes/lightning-reflexes.webp",
             "name": "Lightning Reflexes",
-            "sort": 0,
+            "sort": 5400,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -3628,9 +3589,14 @@
                 "level": {
                     "value": 9
                 },
-                "location": "da0P8RPQbAqIpuym",
+                "location": "68DHY8vHjipbPecJ",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -3641,9 +3607,6 @@
                     }
                 ],
                 "slug": "lightning-reflexes",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -3652,7 +3615,7 @@
             "type": "feat"
         },
         {
-            "_id": "y5I7z1zsOH3hhCSB",
+            "_id": "3W2Wmm4nwDAqSKCY",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.classfeatures.Item.ie6xDX9GMEcA2Iuq"
@@ -3660,7 +3623,7 @@
             },
             "img": "systems/pf2e/icons/features/classes/raging-resistance.webp",
             "name": "Raging Resistance",
-            "sort": 0,
+            "sort": 6300,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -3675,15 +3638,17 @@
                 "level": {
                     "value": 9
                 },
-                "location": "da0P8RPQbAqIpuym",
+                "location": "68DHY8vHjipbPecJ",
                 "prerequisites": {
                     "value": []
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Advanced Player's Guide"
+                },
                 "rules": [],
                 "slug": "raging-resistance",
-                "source": {
-                    "value": "Pathfinder Advanced Player's Guide"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3694,7 +3659,7 @@
             "type": "feat"
         },
         {
-            "_id": "GqbDUWKgSbUoI93q",
+            "_id": "ybYvEtNt9hqwPagb",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.classfeatures.Item.88Q33X2a0iYPkbzd"
@@ -3702,7 +3667,7 @@
             },
             "img": "systems/pf2e/icons/features/classes/mighty-rage.webp",
             "name": "Mighty Rage",
-            "sort": 0,
+            "sort": 8800,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -3717,9 +3682,14 @@
                 "level": {
                     "value": 11
                 },
-                "location": "da0P8RPQbAqIpuym",
+                "location": "68DHY8vHjipbPecJ",
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -3730,9 +3700,6 @@
                     }
                 ],
                 "slug": "mighty-rage",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3743,19 +3710,19 @@
             "type": "feat"
         },
         {
-            "_id": "OKiznvPZfln0xtdt",
+            "_id": "ZYUL2rwYNfvnChV9",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.classfeatures.Item.JuKD6k7nDwfO0Ckv"
                 },
                 "pf2e": {
                     "grantedBy": {
-                        "id": "yRpuRJPMcL7cWV0n",
+                        "id": "fsmvI2KRNWV6tkef",
                         "onDelete": "cascade"
                     }
                 }
             },
-            "img": "systems/pf2e/icons/features/classes/giant-instinct.webp",
+            "img": "icons/creatures/magical/humanoid-horned-rider.webp",
             "name": "Giant Instinct",
             "sort": 0,
             "system": {
@@ -3775,6 +3742,11 @@
                 "location": null,
                 "prerequisites": {
                     "value": []
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
                 },
                 "rules": [
                     {
@@ -3800,7 +3772,7 @@
                             "class:barbarian"
                         ],
                         "prompt": "PF2E.SpecificRule.Barbarian.Giant.Prompt",
-                        "selection": "fire"
+                        "selection": "cold"
                     },
                     {
                         "key": "Resistance",
@@ -3867,9 +3839,6 @@
                     }
                 ],
                 "slug": "giant-instinct",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3880,14 +3849,14 @@
             "type": "feat"
         },
         {
-            "_id": "3FYBfnUhf31f8bUi",
+            "_id": "gUBQoLU4pZDYEbhG",
             "flags": {
                 "core": {
                     "sourceId": "Compendium.pf2e.actionspf2e.Item.Ah5g9pDwWF9b9VW9"
                 },
                 "pf2e": {
                     "grantedBy": {
-                        "id": "bs8I0MtFkOGW3o7w",
+                        "id": "CqBHDTIQWErnzy6g",
                         "onDelete": "cascade"
                     }
                 }
@@ -3906,6 +3875,11 @@
                 "description": {
                     "value": "<p><strong>Requirements</strong> You aren't @UUID[Compendium.pf2e.conditionitems.Item.Fatigued] or raging.</p>\n<hr />\n<p>You tap into your inner fury and begin raging. You gain a number of temporary Hit Points equal to your level plus your Constitution modifier. This frenzy lasts for 1 minute, until there are no enemies you can perceive, or until you fall @UUID[Compendium.pf2e.conditionitems.Item.Unconscious], whichever comes first. You can't voluntarily stop raging. While you are raging:</p>\n<ul>\n<li>You deal 2 additional damage with melee weapons and unarmed attacks. This additional damage is halved if your weapon or unarmed attack is agile.</li>\n<li>You take a -1 penalty to AC.</li>\n<li>You can't use actions with the concentrate trait unless they also have the rage trait. You can @UUID[Compendium.pf2e.actionspf2e.Item.Seek] while raging.</li>\n</ul>\n<p>After you stop raging, you lose any remaining temporary Hit Points from Rage, and you can't Rage again for 1 minute.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "requirements": {
                     "value": ""
                 },
@@ -3918,12 +3892,12 @@
                             {
                                 "or": [
                                     {
-                                        "not": "ranged"
+                                        "not": "item:ranged"
                                     },
                                     {
                                         "and": [
                                             "feat:raging-thrower",
-                                            "thrown"
+                                            "item:thrown"
                                         ]
                                     }
                                 ]
@@ -3960,9 +3934,6 @@
                     "uuid": "Compendium.pf2e.feat-effects.Item.Effect: Rage"
                 },
                 "slug": "rage",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -3980,6 +3951,86 @@
                 }
             },
             "type": "action"
+        },
+        {
+            "_id": "C2gHom1eYkm084Pl",
+            "flags": {
+                "core": {
+                    "sourceId": "Compendium.pf2e.ancestries.Item.IiG7DgeLWYrSNXuX"
+                }
+            },
+            "img": "systems/pf2e/icons/default-icons/alternatives/ancestries/human.svg",
+            "name": "Human",
+            "sort": 0,
+            "system": {
+                "additionalLanguages": {
+                    "count": 1,
+                    "custom": "",
+                    "value": []
+                },
+                "boosts": {
+                    "0": {
+                        "selected": "str",
+                        "value": [
+                            "cha",
+                            "con",
+                            "dex",
+                            "int",
+                            "str",
+                            "wis"
+                        ]
+                    },
+                    "1": {
+                        "selected": "con",
+                        "value": [
+                            "str",
+                            "dex",
+                            "con",
+                            "int",
+                            "wis",
+                            "cha"
+                        ]
+                    },
+                    "2": {
+                        "value": []
+                    }
+                },
+                "description": {
+                    "value": "<p><em>As unpredictable and varied as any of Golarion's peoples, humans have exceptional drive and the capacity to endure and expand. Though many civilizations thrived before humanity rose to prominence, humans have built some of the greatest and the most terrible societies throughout the course of history, and today they are the most populous people in the realms around the Inner Sea.</em></p>\n<p><em>@UUID[Compendium.pf2e.journals.JournalEntry.45SK8rdbbxvEHfMn.JournalEntryPage.7pU8yM7yPMw92SY3]{Human}</em></p>"
+                },
+                "flaws": {
+                    "0": {
+                        "value": []
+                    }
+                },
+                "hp": 8,
+                "items": {},
+                "languages": {
+                    "custom": "",
+                    "value": [
+                        "common"
+                    ]
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "reach": 5,
+                "rules": [],
+                "size": "med",
+                "slug": "human",
+                "speed": 25,
+                "traits": {
+                    "rarity": "common",
+                    "value": [
+                        "human",
+                        "humanoid"
+                    ]
+                },
+                "vision": "normal"
+            },
+            "type": "ancestry"
         }
     ],
     "name": "Amiri (Level 11, Kingmaker)",
@@ -3991,23 +4042,12 @@
     },
     "system": {
         "attributes": {
-            "bonusEncumbranceBulk": 0,
-            "bonusLimitBulk": 0,
             "hp": {
                 "temp": 0,
                 "value": 195
             },
             "initiative": {
                 "statistic": "perception"
-            },
-            "resolve": {
-                "max": 0,
-                "value": 0
-            },
-            "sp": {
-                "details": "",
-                "max": 0,
-                "value": 0
             },
             "speed": {
                 "otherSpeeds": [],
@@ -4046,9 +4086,6 @@
             "age": {
                 "value": ""
             },
-            "alignment": {
-                "value": "N"
-            },
             "alliance": "party",
             "biography": {
                 "allies": "",
@@ -4062,7 +4099,7 @@
                 "dislikes": "",
                 "enemies": "",
                 "likes": "",
-                "organaizations": ""
+                "organizations": ""
             },
             "ethnicity": {
                 "value": ""
@@ -4082,6 +4119,11 @@
             "nationality": {
                 "value": ""
             },
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
+            },
             "weight": {
                 "value": ""
             },
@@ -4093,7 +4135,6 @@
             }
         },
         "exploration": [],
-        "martial": {},
         "pfs": {
             "characterNumber": null,
             "currentFaction": "EA",

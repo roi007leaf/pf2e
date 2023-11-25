@@ -19,19 +19,19 @@
         "level": {
             "value": 19
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 34000
             }
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #185: A Taste of Ashes"
         },
         "quantity": 1,
         "rules": [
@@ -43,14 +43,10 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder #185: A Taste of Ashes"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "rare",
             "value": [
-                "divination",
                 "invested",
                 "magical"
             ]

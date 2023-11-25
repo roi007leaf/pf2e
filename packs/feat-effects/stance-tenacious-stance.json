@@ -1,6 +1,6 @@
 {
     "_id": "Ms6WPXRWfXb2KpG2",
-    "img": "systems/pf2e/icons/spells/meld-into-stone.webp",
+    "img": "icons/magic/earth/strike-fist-stone-light.webp",
     "name": "Stance: Tenacious Stance",
     "system": {
         "description": {
@@ -14,6 +14,11 @@
         },
         "level": {
             "value": 1
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Lost Omens: Highhelm"
         },
         "rules": [
             {
@@ -39,9 +44,6 @@
                 "value": "max(1,floor(@actor.level/2))"
             }
         ],
-        "source": {
-            "value": "Pathfinder Lost Omens: Highhelm"
-        },
         "start": {
             "initiative": null,
             "value": 0

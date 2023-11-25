@@ -13,9 +13,6 @@
             "name": "Composite Longbow",
             "sort": 100000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "composite-longbow",
                 "bonus": {
                     "value": 0
@@ -50,17 +47,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
                     "value": 1
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
                 },
                 "price": {
                     "value": {
@@ -79,6 +71,11 @@
                 "propertyRune4": {
                     "value": null
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": 100,
                 "reload": {
@@ -87,9 +84,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "composite-longbow",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -101,7 +95,6 @@
                     "rarity": "common",
                     "value": [
                         "deadly-d10",
-                        "evocation",
                         "magical",
                         "propulsive",
                         "volley-30"
@@ -127,9 +120,6 @@
             "name": "Longsword",
             "sort": 200000,
             "system": {
-                "MAP": {
-                    "value": ""
-                },
                 "baseItem": "longsword",
                 "bonus": {
                     "value": 0
@@ -145,7 +135,7 @@
                     "die": "d8"
                 },
                 "description": {
-                    "value": "<p>Longswords can be one‑edged or two‑edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
+                    "value": "<p>Longswords can be one-edged or two-edged swords. Their blades are heavy and they're between 3 and 4 feet in length.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -164,16 +154,11 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "potencyRune": {
-                    "value": null
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
                     "value": null
                 },
                 "price": {
@@ -193,6 +178,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "range": null,
                 "reload": {
@@ -201,9 +191,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "longsword",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "splashDamage": {
                     "value": 0
                 },
@@ -233,7 +220,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.AnwzlOs0njF9Jqnr"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/armor/hide.webp",
+            "img": "icons/equipment/chest/vest-leather-tattered-white.webp",
             "name": "Hide Armor",
             "sort": 300000,
             "system": {
@@ -263,18 +250,12 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
-                "potency": {},
                 "potencyRune": {
                     "value": 0
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
                 },
                 "price": {
                     "value": {
@@ -293,6 +274,11 @@
                 "propertyRune4": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 1,
                 "resiliencyRune": {
                     "value": ""
@@ -300,9 +286,6 @@
                 "rules": [],
                 "size": "med",
                 "slug": "hide-armor",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "speedPenalty": -5,
                 "stackGroup": null,
                 "strength": 2,
@@ -346,25 +329,22 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -406,25 +386,22 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {}
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "quantity": 1,
                 "rules": [],
                 "size": "med",
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -453,7 +430,7 @@
                 "baseItem": null,
                 "containerId": null,
                 "description": {
-                    "value": "<p>This impressive-looking helmet is crafted to resemble the skull of a mighty stag. Although made from bone, the antlers and helm are as strong as iron. While the Stag Lord himself wears this helmet in the<em> Kingmaker Adventure Path</em>, stag's helms are actually the creation of the church of @UUID[Compendium.pf2e.deities.Item.Erastil], and worshipers of this deity find that the helm is not only particularly comfortable to wear, but that they can activate it once per hour rather than once per day.</p>\n<p>Rather than restrict the senses, a stag's helm enhances them, causing the world to appear in more vibrant colors and significantly enhancing the ambient sounds of the region without making them distracting. While worn, it grants a +1 item bonus to Perception checks.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"pf2-icon\">F</span></p>\n<p><strong>Frequency</strong> once per day (or once per hour if the wearer worships Erastil)</p>\n<p><strong>Effect</strong> Choose a single creature within 30 feet. The stag's helm focuses your aim and grants supernatural insight into your next shot. Your target is @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] to the next ranged Strike you make this turn against them.</p>"
+                    "value": "<p>This impressive-looking helmet is crafted to resemble the skull of a mighty stag. Although made from bone, the antlers and helm are as strong as iron. While the Stag Lord himself wears this helmet in the<em> Kingmaker Adventure Path</em>, stag's helms are actually the creation of the church of @UUID[Compendium.pf2e.deities.Item.Erastil], and worshipers of this deity find that the helm is not only particularly comfortable to wear, but that they can activate it once per hour rather than once per day.</p>\n<p>Rather than restrict the senses, a stag's helm enhances them, causing the world to appear in more vibrant colors and significantly enhancing the ambient sounds of the region without making them distracting. While worn, it grants a +1 item bonus to Perception checks.</p>\n<hr />\n<p><strong>Activate</strong> <span class=\"action-glyph\">F</span></p>\n<p><strong>Frequency</strong> once per day (or once per hour if the wearer worships Erastil)</p>\n<p><strong>Effect</strong> Choose a single creature within 30 feet. The stag's helm focuses your aim and grants supernatural insight into your next shot. Your target is @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] to the next ranged Strike you make this turn against them.</p>"
                 },
                 "equipped": {
                     "carryType": "worn",
@@ -471,19 +448,19 @@
                 "level": {
                     "value": 6
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": null
-                },
-                "preciousMaterialGrade": {
-                    "value": null
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 240
                     }
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Kingmaker"
                 },
                 "quantity": 1,
                 "rules": [
@@ -496,14 +473,10 @@
                 ],
                 "size": "med",
                 "slug": "stags-helm",
-                "source": {
-                    "value": "Pathfinder Kingmaker"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "rare",
                     "value": [
-                        "divination",
                         "invested",
                         "magical"
                     ]
@@ -561,14 +534,9 @@
                 "level": {
                     "value": 0
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "per": 10,
@@ -576,13 +544,15 @@
                         "sp": 1
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 20,
                 "rules": [],
                 "size": "med",
                 "slug": "arrows",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": "arrows",
                 "traits": {
                     "rarity": "common",
@@ -604,7 +574,7 @@
                     "sourceId": "Compendium.pf2e.equipment-srd.Item.e0vSAQfxhHauiAoD"
                 }
             },
-            "img": "systems/pf2e/icons/equipment/consumables/potions/healing-potion.webp",
+            "img": "icons/consumables/potions/bottle-round-corked-orante-red.webp",
             "name": "Healing Potion (Lesser)",
             "sort": 800000,
             "system": {
@@ -641,27 +611,24 @@
                 "level": {
                     "value": 3
                 },
-                "negateBulk": {
-                    "value": "0"
-                },
-                "preciousMaterial": {
-                    "value": ""
-                },
-                "preciousMaterialGrade": {
-                    "value": ""
+                "material": {
+                    "grade": null,
+                    "type": null
                 },
                 "price": {
                     "value": {
                         "gp": 12
                     }
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
                 "quantity": 2,
                 "rules": [],
                 "size": "med",
                 "slug": "healing-potion-lesser",
-                "source": {
-                    "value": "Pathfinder Core Rulebook"
-                },
                 "stackGroup": null,
                 "traits": {
                     "rarity": "common",
@@ -669,9 +636,8 @@
                         "consumable",
                         "healing",
                         "magical",
-                        "necromancy",
-                        "positive",
-                        "potion"
+                        "potion",
+                        "vitality"
                     ]
                 },
                 "usage": {
@@ -684,6 +650,56 @@
             "type": "consumable"
         },
         {
+            "_id": "7ZJa96seYqyyrMhT",
+            "flags": {
+                "core": {
+                    "sourceId": "Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18"
+                }
+            },
+            "img": "systems/pf2e/icons/conditions/sickened.webp",
+            "name": "Sickened",
+            "sort": 900000,
+            "system": {
+                "description": {
+                    "value": "<p>You feel ill. Sickened always includes a value. You take a status penalty equal to this value on all your checks and DCs. You can't willingly ingest anything-including elixirs and potions-while sickened.</p>\n<p>You can spend a single action retching in an attempt to recover, which lets you immediately attempt a Fortitude save against the DC of the effect that made you sickened. On a success, you reduce your sickened value by 1 (or by 2 on a critical success).</p>"
+                },
+                "duration": {
+                    "expiry": null,
+                    "unit": "unlimited",
+                    "value": 0
+                },
+                "group": null,
+                "overrides": [],
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Core Rulebook"
+                },
+                "references": {
+                    "children": [],
+                    "immunityFrom": [],
+                    "overriddenBy": [],
+                    "overrides": []
+                },
+                "rules": [
+                    {
+                        "key": "FlatModifier",
+                        "selector": "all",
+                        "slug": "sickened",
+                        "type": "status",
+                        "value": "-@item.badge.value"
+                    }
+                ],
+                "slug": "sickened",
+                "traits": {},
+                "value": {
+                    "isValued": true,
+                    "value": null
+                }
+            },
+            "type": "condition"
+        },
+        {
             "_id": "gj9hDQvaXekxyv1Q",
             "flags": {
                 "pf2e": {
@@ -692,7 +708,7 @@
             },
             "img": "systems/pf2e/icons/default-icons/melee.svg",
             "name": "Longsword",
-            "sort": 900000,
+            "sort": 1000000,
             "system": {
                 "attack": {
                     "value": ""
@@ -701,7 +717,7 @@
                     "value": []
                 },
                 "bonus": {
-                    "value": 14
+                    "value": 15
                 },
                 "damageRolls": {
                     "zYgGw2txojupGaxk": {
@@ -712,11 +728,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -738,7 +756,7 @@
             },
             "img": "systems/pf2e/icons/default-icons/melee.svg",
             "name": "Composite Longbow",
-            "sort": 1000000,
+            "sort": 1100000,
             "system": {
                 "attack": {
                     "value": ""
@@ -747,7 +765,7 @@
                     "value": []
                 },
                 "bonus": {
-                    "value": 16
+                    "value": 17
                 },
                 "damageRolls": {
                     "dnfCPXWYbRazS79K": {
@@ -758,11 +776,13 @@
                 "description": {
                     "value": ""
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -784,7 +804,7 @@
             "_id": "N7BomXiXSkV8IDmE",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Perpetual Hangover",
-            "sort": 1100000,
+            "sort": 1200000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -796,14 +816,16 @@
                 "description": {
                     "value": "<p>The Stag Lord is in a constant cycling state of being drunk or hungover. As a result, he is constantly @UUID[Compendium.pf2e.conditionitems.Item.Sickened]{Sickened 1}, and cannot reduce his sickened state to lower than 1 (although if effects increase his sickened value, he can reduce them back toward 1 as normal). The Stag Lord can willingly ingest food and drink (including potions and elixirs) while sickened. The values in this stat block have been adjusted to account for his sickened state.</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -818,7 +840,7 @@
             "_id": "4mK32Hq1EHPgHPW4",
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Dread Striker",
-            "sort": 1200000,
+            "sort": 1300000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -829,6 +851,11 @@
                 "category": "offensive",
                 "description": {
                     "value": "<p>The Stag Lord capitalizes on his enemies' fear; any creature that has the @UUID[Compendium.pf2e.conditionitems.Item.Frightened] condition is also @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] against his attacks.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
@@ -849,9 +876,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -866,7 +890,7 @@
             "_id": "H5KqV1tEsBEfhfvU",
             "img": "systems/pf2e/icons/actions/OneAction.webp",
             "name": "Hunt Prey",
-            "sort": 1300000,
+            "sort": 1400000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -876,7 +900,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": ""
+                    "value": "<p>You designate a single creature as your prey and focus your attacks against that creature. You must be able to see or hear the prey, or you must be tracking the prey during exploration.</p>\n<p>You gain a +2 circumstance bonus to Perception checks when you @UUID[Compendium.pf2e.actionspf2e.Item.Seek] your prey and a +2 circumstance bonus to Survival checks when you @UUID[Compendium.pf2e.actionspf2e.Item.Track] your prey. You also ignore the penalty for making ranged attacks within your second range increment against the prey you're hunting.</p>\n<p>You can have only one creature designated as your prey at a time. If you use Hunt Prey against a creature when you already have a creature designated, the prior creature loses the designation and the new prey gains the designation. Your designation lasts until your next daily preparations.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
                 },
                 "requirements": {
                     "value": ""
@@ -921,9 +950,6 @@
                     }
                 ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -945,7 +971,7 @@
             },
             "img": "systems/pf2e/icons/actions/Passive.webp",
             "name": "Sneak Attack",
-            "sort": 1400000,
+            "sort": 1500000,
             "system": {
                 "actionType": {
                     "value": "passive"
@@ -955,7 +981,12 @@
                 },
                 "category": "offensive",
                 "description": {
-                    "value": "<p>The Stag Lord deals 2d6 extra precision damage to off-guard creatures.</p>\n<hr />\n<p>@Localize[PF2E.NPC.Abilities.Glossary.SneakAttack]</p>"
+                    "value": "<p>The Stag Lord deals 2d6 extra precision damage to @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard] creatures.</p>"
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": "Pathfinder Bestiary"
                 },
                 "requirements": {
                     "value": ""
@@ -967,21 +998,7 @@
                         "dieSize": "d6",
                         "key": "DamageDice",
                         "predicate": [
-                            "target:condition:off-guard",
-                            {
-                                "or": [
-                                    "item:trait:agile",
-                                    "item:trait:finesse",
-                                    {
-                                        "and": [
-                                            "item:ranged",
-                                            {
-                                                "not": "item:thrown-melee"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
+                            "target:condition:off-guard"
                         ],
                         "selector": "strike-damage"
                     },
@@ -994,9 +1011,6 @@
                     }
                 ],
                 "slug": "sneak-attack",
-                "source": {
-                    "value": "Pathfinder Bestiary"
-                },
                 "traits": {
                     "rarity": "common",
                     "value": []
@@ -1014,7 +1028,7 @@
             "_id": "5UTWzAXIsjMqThHw",
             "img": "systems/pf2e/icons/actions/TwoActions.webp",
             "name": "Unfair Aim",
-            "sort": 1500000,
+            "sort": 1600000,
             "system": {
                 "actionType": {
                     "value": "action"
@@ -1026,14 +1040,42 @@
                 "description": {
                     "value": "<p>The Stag Lord lines up a shot and then attempts a ranged Strike against a hunted prey. On this strike, he treats the target as if they were @UUID[Compendium.pf2e.conditionitems.Item.Off-Guard].</p>"
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "requirements": {
                     "value": ""
                 },
-                "rules": [],
+                "rules": [
+                    {
+                        "disabledIf": [
+                            {
+                                "not": "hunted-prey"
+                            }
+                        ],
+                        "disabledValue": false,
+                        "domain": "all",
+                        "key": "RollOption",
+                        "option": "unfair-aim",
+                        "toggleable": true
+                    },
+                    {
+                        "key": "EphemeralEffect",
+                        "predicate": [
+                            "hunted-prey",
+                            "ranged",
+                            "unfair-aim"
+                        ],
+                        "selectors": [
+                            "strike-attack-roll",
+                            "strike-damage"
+                        ],
+                        "uuid": "Compendium.pf2e.conditionitems.Item.Off-Guard"
+                    }
+                ],
                 "slug": null,
-                "source": {
-                    "value": ""
-                },
                 "traits": {
                     "rarity": "common",
                     "value": [
@@ -1050,53 +1092,7 @@
             "_id": "GyC7K3qmxKANQ1MR",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Acrobatics",
-            "sort": 1600000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 13
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "dAS5LsDT6IFXsukr",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Athletics",
             "sort": 1700000,
-            "system": {
-                "description": {
-                    "value": ""
-                },
-                "mod": {
-                    "value": 12
-                },
-                "proficient": {
-                    "value": 0
-                },
-                "rules": [],
-                "slug": null,
-                "source": {
-                    "value": ""
-                }
-            },
-            "type": "lore"
-        },
-        {
-            "_id": "HtyhdIe02EAdRrXH",
-            "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Intimidation",
-            "sort": 1800000,
             "system": {
                 "description": {
                     "value": ""
@@ -1107,19 +1103,22 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "traits": {}
             },
             "type": "lore"
         },
         {
-            "_id": "STkGuWlnh8A6qkmn",
+            "_id": "dAS5LsDT6IFXsukr",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
-            "name": "Stealth",
-            "sort": 1900000,
+            "name": "Athletics",
+            "sort": 1800000,
             "system": {
                 "description": {
                     "value": ""
@@ -1130,11 +1129,66 @@
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
+                "traits": {}
+            },
+            "type": "lore"
+        },
+        {
+            "_id": "HtyhdIe02EAdRrXH",
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Intimidation",
+            "sort": 1900000,
+            "system": {
+                "description": {
                     "value": ""
-                }
+                },
+                "mod": {
+                    "value": 15
+                },
+                "proficient": {
+                    "value": 0
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {}
+            },
+            "type": "lore"
+        },
+        {
+            "_id": "STkGuWlnh8A6qkmn",
+            "img": "systems/pf2e/icons/default-icons/lore.svg",
+            "name": "Stealth",
+            "sort": 2000000,
+            "system": {
+                "description": {
+                    "value": ""
+                },
+                "mod": {
+                    "value": 14
+                },
+                "proficient": {
+                    "value": 0
+                },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
+                "rules": [],
+                "slug": null,
+                "traits": {}
             },
             "type": "lore"
         },
@@ -1142,22 +1196,25 @@
             "_id": "sJ2uPfUwDz8BYoYi",
             "img": "systems/pf2e/icons/default-icons/lore.svg",
             "name": "Survival",
-            "sort": 2000000,
+            "sort": 2100000,
             "system": {
                 "description": {
                     "value": ""
                 },
                 "mod": {
-                    "value": 8
+                    "value": 9
                 },
                 "proficient": {
                     "value": 0
                 },
+                "publication": {
+                    "license": "OGL",
+                    "remaster": false,
+                    "title": ""
+                },
                 "rules": [],
                 "slug": null,
-                "source": {
-                    "value": ""
-                }
+                "traits": {}
             },
             "type": "lore"
         }
@@ -1187,7 +1244,7 @@
         "attributes": {
             "ac": {
                 "details": "",
-                "value": 22
+                "value": 23
             },
             "allSaves": {
                 "value": ""
@@ -1202,7 +1259,7 @@
                 "statistic": "perception"
             },
             "perception": {
-                "value": 15
+                "value": 16
             },
             "speed": {
                 "otherSpeeds": [],
@@ -1210,33 +1267,31 @@
             }
         },
         "details": {
-            "alignment": {
-                "value": "CE"
-            },
             "blurb": "Male human bandit lord",
-            "creatureType": "",
             "level": {
                 "value": 6
             },
             "privateNotes": "",
             "publicNotes": "",
-            "source": {
-                "value": "Pathfinder Kingmaker"
+            "publication": {
+                "license": "OGL",
+                "remaster": false,
+                "title": "Pathfinder Kingmaker"
             }
         },
         "resources": {},
         "saves": {
             "fortitude": {
                 "saveDetail": "",
-                "value": 14
+                "value": 15
             },
             "reflex": {
                 "saveDetail": "",
-                "value": 15
+                "value": 16
             },
             "will": {
                 "saveDetail": "",
-                "value": 8
+                "value": 9
             }
         },
         "traits": {
@@ -1255,6 +1310,8 @@
                 "value": "med"
             },
             "value": [
+                "chaotic",
+                "evil",
                 "human",
                 "humanoid"
             ]

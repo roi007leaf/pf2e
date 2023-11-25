@@ -1,12 +1,21 @@
 import {
     BasePhysicalItemSource,
     Investable,
+    ItemMaterialData,
     PhysicalItemTraits,
     PhysicalSystemData,
     PhysicalSystemSource,
 } from "@item/physical/data.ts";
-import { OneToFour, ZeroToThree } from "@module/data.ts";
-import { ArmorCategory, ArmorGroup, ArmorTrait, BaseArmorType, OtherArmorTag, ResilientRuneType } from "./index.ts";
+import { OneToFour, ZeroToFour, ZeroToThree } from "@module/data.ts";
+import {
+    ArmorCategory,
+    ArmorGroup,
+    ArmorPropertyRuneType,
+    ArmorTrait,
+    BaseArmorType,
+    OtherArmorTag,
+    ResilientRuneType,
+} from "./index.ts";
 
 type ArmorSource = BasePhysicalItemSource<"armor", ArmorSystemSource>;
 
@@ -17,9 +26,12 @@ interface ArmorSystemSource extends Investable<PhysicalSystemSource> {
     baseItem: BaseArmorType | null;
     acBonus: number;
     strength: number | null;
-    dexCap: number;
-    checkPenalty: number | null;
-    speedPenalty: number | null;
+    dexCap: number | null;
+    checkPenalty: number;
+    speedPenalty: number;
+    /** Whether the armor is "specific magic armor" */
+    specific?: SpecificArmorData;
+
     potencyRune: {
         value: OneToFour | null;
     };
@@ -40,19 +52,34 @@ interface ArmorSystemSource extends Investable<PhysicalSystemSource> {
     };
 }
 
+/** A weapon can either be unspecific or specific along with baseline material and runes */
+type SpecificArmorData =
+    | {
+          value: false;
+          material?: never;
+          runes?: never;
+      }
+    | {
+          value: true;
+          material: Omit<ItemMaterialData, "effects">;
+          runes: Pick<ArmorRuneData, "potency" | "resilient">;
+      };
+
 interface ArmorSystemData
-    extends Omit<ArmorSystemSource, "hp" | "identification" | "price" | "temporary" | "usage">,
-        Omit<Investable<PhysicalSystemData>, "traits"> {
-    baseItem: BaseArmorType;
-    runes: {
-        potency: number;
-        resilient: ZeroToThree;
-        property: string[];
-    };
+    extends Omit<ArmorSystemSource, "hp" | "identification" | "material" | "price" | "temporary" | "usage">,
+        Omit<Investable<PhysicalSystemData>, "baseItem" | "traits"> {
+    runes: ArmorRuneData;
 }
 
 interface ArmorTraits extends PhysicalItemTraits<ArmorTrait> {
     otherTags: OtherArmorTag[];
 }
 
-export { ArmorSource, ArmorSystemData, ArmorSystemSource };
+interface ArmorRuneData {
+    potency: ZeroToFour;
+    resilient: ZeroToThree;
+    property: ArmorPropertyRuneType[];
+    effects: ArmorPropertyRuneType[];
+}
+
+export type { ArmorSource, ArmorSystemData, ArmorSystemSource };

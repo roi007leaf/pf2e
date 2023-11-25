@@ -1,6 +1,6 @@
 {
     "_id": "LzYi0OuOoypNb6jd",
-    "img": "systems/pf2e/icons/features/classes/panache.webp",
+    "img": "icons/commodities/treasure/crown-gold-laurel-wreath.webp",
     "name": "Panache",
     "system": {
         "actionType": {
@@ -18,6 +18,11 @@
         },
         "prerequisites": {
             "value": []
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Advanced Player's Guide"
         },
         "rules": [
             {
@@ -37,9 +42,6 @@
                 "title": "{item|name}"
             }
         ],
-        "source": {
-            "value": "Pathfinder Advanced Player's Guide"
-        },
         "traits": {
             "rarity": "common",
             "value": [

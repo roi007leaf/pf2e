@@ -11,7 +11,7 @@
         "description": {
             "value": "<p>This suit of +2 greater resilient full plate is decorated with swirling, ornate motifs of waves and fish scales.</p>\n<p>While wearing it, you take no Speed reduction or check penalty from armor when Swimming, gain a +2 item bonus to Athletics checks to Swim, can breathe underwater, and can speak Aquan.</p>"
         },
-        "dexCap": 0,
+        "dexCap": null,
         "equippedBulk": {
             "value": "4"
         },
@@ -24,18 +24,12 @@
         "level": {
             "value": 15
         },
-        "negateBulk": {
-            "value": "0"
+        "material": {
+            "grade": null,
+            "type": null
         },
-        "potency": {},
         "potencyRune": {
             "value": 2
-        },
-        "preciousMaterial": {
-            "value": ""
-        },
-        "preciousMaterialGrade": {
-            "value": ""
         },
         "price": {
             "value": {
@@ -54,6 +48,11 @@
         "propertyRune4": {
             "value": ""
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Core Rulebook"
+        },
         "quantity": 1,
         "resiliencyRune": {
             "value": "greaterResilient"
@@ -71,8 +70,16 @@
             }
         ],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Core Rulebook"
+        "specific": {
+            "material": {
+                "grade": null,
+                "type": null
+            },
+            "runes": {
+                "potency": 2,
+                "resilient": 3
+            },
+            "value": true
         },
         "speedPenalty": -10,
         "stackGroup": null,
@@ -80,7 +87,6 @@
         "traits": {
             "rarity": "uncommon",
             "value": [
-                "abjuration",
                 "bulwark",
                 "invested",
                 "magical"

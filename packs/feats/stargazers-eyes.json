@@ -1,6 +1,6 @@
 {
     "_id": "5KXJkEs39y1gaPEm",
-    "img": "systems/pf2e/icons/default-icons/feats.webp",
+    "img": "icons/sundries/books/book-red-exclamation.webp",
     "name": "Stargazer's Eyes",
     "system": {
         "actionType": {
@@ -23,6 +23,11 @@
                     "value": "Oatia Skysage Dedication"
                 }
             ]
+        },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder #187: The Seventh Arch"
         },
         "rules": [
             {
@@ -48,9 +53,6 @@
                 "option": "feat:stargazers-eyes:{actor|flags.pf2e.feats.stargazersEyes.count}"
             }
         ],
-        "source": {
-            "value": "Pathfinder #187: The Seventh Arch"
-        },
         "traits": {
             "rarity": "common",
             "value": [

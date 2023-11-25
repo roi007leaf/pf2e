@@ -1,6 +1,6 @@
 {
     "_id": "3hhRWYl1O2FRfAbn",
-    "img": "systems/pf2e/icons/default-icons/consumable.svg",
+    "img": "systems/pf2e/icons/equipment/consumables/fulus/fulu-modest.webp",
     "name": "Ghost Delivery Fulu",
     "system": {
         "autoDestroy": {
@@ -32,32 +32,28 @@
         "level": {
             "value": 8
         },
-        "negateBulk": {
-            "value": "0"
-        },
-        "preciousMaterial": {
-            "value": null
-        },
-        "preciousMaterialGrade": {
-            "value": null
+        "material": {
+            "grade": null,
+            "type": null
         },
         "price": {
             "value": {
                 "gp": 100
             }
         },
+        "publication": {
+            "license": "OGL",
+            "remaster": false,
+            "title": "Pathfinder Treasure Vault"
+        },
         "quantity": 1,
         "rules": [],
         "size": "med",
-        "source": {
-            "value": "Pathfinder Treasure Vault"
-        },
         "stackGroup": null,
         "traits": {
             "rarity": "common",
             "value": [
                 "consumable",
-                "divination",
                 "fulu",
                 "magical"
             ]
